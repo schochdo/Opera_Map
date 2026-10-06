@@ -12,8 +12,16 @@ const CameraRig: React.FC<{ controlsRef: React.RefObject<OrbitControlsImpl> }> =
   const cameraTarget = useOperaStore((state) => state.cameraTarget);
   const isAnimating = useOperaStore((state) => state.isAnimatingCamera);
   const stopCameraAnimation = useOperaStore((state) => state.stopCameraAnimation);
+  const headlightRef = useRef<THREE.DirectionalLight>(null);
 
   useFrame(({ camera }) => {
+    // Keep headlight strictly locked to camera position pointing at the globe center:
+    // Guarantees whatever country or hemisphere the user is viewing is ALWAYS in 100% full, radiant daylight
+    // Completely eliminates any dark side or "night mode" on the Earth
+    if (headlightRef.current) {
+      headlightRef.current.position.copy(camera.position);
+    }
+
     // Dynamically scale rotation/pan speed based on zoom distance to prevent high speed when zoomed in
     if (controlsRef.current) {
       // Ensure controls target is strictly locked to center of the globe (0, 0, 0)
@@ -72,7 +80,13 @@ const CameraRig: React.FC<{ controlsRef: React.RefObject<OrbitControlsImpl> }> =
     }
   });
 
-  return null;
+  return (
+    <directionalLight
+      ref={headlightRef}
+      intensity={1.8}
+      color="#fffdf8"
+    />
+  );
 };
 
 export const App: React.FC = () => {
@@ -82,48 +96,49 @@ export const App: React.FC = () => {
   const isAutoRotating = useOperaStore((state) => state.isAutoRotating);
 
   return (
-    <div className="relative h-screen w-screen overflow-hidden bg-[#090d14] font-serif select-none">
-      {/* CLEAN, ELEGANT THEATRICAL BACKDROP (Curtains removed for maximum readability) */}
+    <div className="relative h-screen w-screen overflow-hidden bg-[#0a101a] font-serif select-none">
+      {/* LUMINOUS, REFINED THEATRICAL GALLERY BACKDROP */}
       <div
-        className="pointer-events-none absolute inset-0 z-0 opacity-80"
+        className="pointer-events-none absolute inset-0 z-0"
         style={{
           background:
-            'radial-gradient(ellipse 80% 75% at 50% 50%, rgba(22, 32, 48, 0.5) 0%, rgba(8, 11, 18, 0.98) 100%)',
+            'radial-gradient(ellipse 85% 75% at 50% 45%, rgba(32, 50, 78, 0.85) 0%, rgba(13, 20, 32, 0.98) 100%)',
         }}
       />
 
       {/* 3D WEBGL CANVASCENE */}
       <div className="absolute inset-0 z-0">
         <Canvas
-          shadows
           camera={{ position: [4.54, 5.20, -1.13], fov: 42 }}
           gl={{ antialias: true, alpha: true }}
         >
-          {/* THEATRICAL LIGHTING RIG — Crisp, Radiant & Clear */}
-          <ambientLight intensity={1.25} color="#ffffff" />
+          {/* RADIANT CARTOGRAPHIC STUDIO LIGHTING RIG — Crisp, Radiant, 100% Even Day Lighting */}
+          <ambientLight intensity={1.6} color="#ffffff" />
 
-          {/* Main Key Spotlight (Brilliant clean warm-white) */}
+          {/* Balanced Top Light (Illuminates northern hemisphere) */}
           <directionalLight
-            position={[8, 12, 7]}
-            intensity={2.8}
-            color="#fffcf5"
-            castShadow
-            shadow-mapSize={[1024, 1024]}
-          />
-
-          {/* Secondary Fill Light (Clean cool fill to lift murky brown shadows) */}
-          <directionalLight
-            position={[-8, 6, -5]}
+            position={[0, 16, 4]}
             intensity={0.9}
-            color="#dbeafe"
+            color="#fffcf5"
           />
 
-          {/* Footlight Glow from bottom proscenium */}
-          <pointLight
-            position={[0, -5, 4]}
+          {/* Balanced Bottom Fill Light (Illuminates southern hemisphere) */}
+          <directionalLight
+            position={[0, -16, 4]}
+            intensity={0.8}
+            color="#fef8eb"
+          />
+
+          {/* Balanced East/West Cross-Lights (Eliminates edge shading when spinning) */}
+          <directionalLight
+            position={[16, 0, -6]}
             intensity={0.7}
-            color="#fef3c7"
-            distance={15}
+            color="#ffffff"
+          />
+          <directionalLight
+            position={[-16, 0, -6]}
+            intensity={0.7}
+            color="#ffffff"
           />
 
           {/* 3D Papercraft Globe */}

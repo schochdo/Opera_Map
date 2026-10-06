@@ -38,14 +38,13 @@ export const PapercraftGlobe: React.FC = () => {
 
   return (
     <group ref={globeGroupRef}>
-      {/* 3D Papercraft Globe Sphere with Textured Continents (256x256 segments eliminate chord distortion) */}
-      <mesh receiveShadow castShadow>
+      {/* 3D Papercraft Globe Sphere with Textured Continents (256x256 segments, evenly illuminated) */}
+      <mesh>
         <sphereGeometry args={[GLOBE_RADIUS, 256, 256]} />
         <meshStandardMaterial
           map={globeTexture}
-          roughness={0.78}
-          metalness={0.05}
-          bumpScale={0.03}
+          roughness={0.65}
+          metalness={0.02}
         />
       </mesh>
 

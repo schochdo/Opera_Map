@@ -21,33 +21,33 @@ export function createPapercraftGlobeTexture(onLoaded?: () => void): THREE.Canva
   };
 
   const drawBaseTexture = (geojson?: any) => {
-    // 1. RICH NAUTICAL SAPPHIRE-SLATE OCEAN
+    // 1. LUMINOUS NAUTICAL SAPPHIRE-AZURE OCEAN (Bright, vibrant, and clear)
     const oceanGrad = ctx.createRadialGradient(
-      width / 2, height / 2, 80,
-      width / 2, height / 2, width / 1.4
+      width / 2, height / 2, 200,
+      width / 2, height / 2, width / 1.3
     );
-    oceanGrad.addColorStop(0, '#24374a');
-    oceanGrad.addColorStop(0.5, '#1b2a3a');
-    oceanGrad.addColorStop(1, '#131e2a');
+    oceanGrad.addColorStop(0, '#3b6287'); // Luminous azure-slate in temperate/equatorial zones
+    oceanGrad.addColorStop(0.5, '#2c4d6e'); // Rich Mediterranean nautical blue
+    oceanGrad.addColorStop(1, '#203a54'); // Crisp navy at polar latitudes
     ctx.fillStyle = oceanGrad;
     ctx.fillRect(0, 0, width, height);
 
     // Subtle antique oceanic wavelets
-    ctx.strokeStyle = 'rgba(212, 230, 250, 0.05)';
-    ctx.lineWidth = 1;
-    for (let y = 14; y < height; y += 12) {
+    ctx.strokeStyle = 'rgba(220, 238, 255, 0.14)';
+    ctx.lineWidth = 1.5;
+    for (let y = 24; y < height; y += 22) {
       ctx.beginPath();
       ctx.moveTo(0, y);
       ctx.lineTo(width, y);
       ctx.stroke();
     }
 
-    // 2. VECTOR LANDMASSES & COUNTRY OUTLINES (Crisp vector polygons, zero JPEG blur)
+    // 2. VECTOR LANDMASSES & COUNTRY OUTLINES (Luminous antique ivory parchment)
     if (geojson && geojson.features) {
-      // First pass: draw all land polygons with warm antique parchment fill & fine border ink
-      ctx.fillStyle = '#f3ebe0';
-      ctx.strokeStyle = 'rgba(140, 110, 75, 0.5)'; // Fine antique country border line
-      ctx.lineWidth = 1.2;
+      // Draw all land polygons with bright warm antique ivory parchment & crisp boundary ink
+      ctx.fillStyle = '#faf5ea'; // Luminous, high-contrast ivory parchment
+      ctx.strokeStyle = 'rgba(120, 90, 55, 0.7)'; // Fine antique country border line
+      ctx.lineWidth = 2.0;
 
       geojson.features.forEach((feature: any) => {
         const geom = feature.geometry;
@@ -79,21 +79,21 @@ export function createPapercraftGlobeTexture(onLoaded?: () => void): THREE.Canva
     }
 
     // 3. ELEGANT GOLD CARTOGRAPHY GRID & MERIDIANS
-    ctx.lineWidth = 1;
+    ctx.lineWidth = 1.8;
 
     // Equator (Double gold line)
     const eqY = height / 2;
-    ctx.strokeStyle = 'rgba(212, 175, 55, 0.45)';
+    ctx.strokeStyle = 'rgba(235, 195, 75, 0.65)';
     ctx.beginPath();
-    ctx.moveTo(0, eqY - 1);
-    ctx.lineTo(width, eqY - 1);
-    ctx.moveTo(0, eqY + 1);
-    ctx.lineTo(width, eqY + 1);
+    ctx.moveTo(0, eqY - 2);
+    ctx.lineTo(width, eqY - 2);
+    ctx.moveTo(0, eqY + 2);
+    ctx.lineTo(width, eqY + 2);
     ctx.stroke();
 
     // Tropics
-    ctx.setLineDash([6, 6]);
-    ctx.strokeStyle = 'rgba(212, 175, 55, 0.22)';
+    ctx.setLineDash([12, 12]);
+    ctx.strokeStyle = 'rgba(235, 195, 75, 0.35)';
     const cancerY = ((90 - 23.5) / 180) * height;
     const capricornY = ((90 + 23.5) / 180) * height;
     ctx.beginPath();
@@ -104,7 +104,7 @@ export function createPapercraftGlobeTexture(onLoaded?: () => void): THREE.Canva
     ctx.stroke();
 
     // Major Meridians every 30 degrees
-    ctx.setLineDash([4, 8]);
+    ctx.setLineDash([8, 16]);
     for (let lon = -180; lon < 180; lon += 30) {
       const { x } = toXY(0, lon);
       ctx.beginPath();
@@ -114,11 +114,11 @@ export function createPapercraftGlobeTexture(onLoaded?: () => void): THREE.Canva
     }
     ctx.setLineDash([]);
 
-    // 4. OCEAN WATERMARK CALLIGRAPHY ONLY (No continent/country text to eliminate clutter)
+    // 4. OCEAN WATERMARK CALLIGRAPHY ONLY (Scaled for 8K resolution, clear and elegant)
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
-    ctx.font = 'italic 13px "Cormorant Garamond", Georgia, serif';
-    ctx.fillStyle = 'rgba(215, 230, 248, 0.45)';
+    ctx.font = 'italic 32px "Cormorant Garamond", Georgia, serif';
+    ctx.fillStyle = 'rgba(235, 245, 255, 0.75)';
 
     const oceans = [
       { text: '~ Oceanus Atlanticus ~', lat: 26, lng: -38 },

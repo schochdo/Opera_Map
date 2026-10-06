@@ -33,8 +33,8 @@ export const OperaUIOverlay: React.FC = () => {
   const selectedHouse = houses.find((h) => h.id === selectedHouseId);
 
   const panelBg = {
-    backgroundColor: 'rgba(12, 17, 26, 0.96)',
-    borderColor: 'rgba(212, 175, 55, 0.4)',
+    backgroundColor: 'rgba(16, 24, 38, 0.97)',
+    borderColor: 'rgba(212, 175, 55, 0.5)',
   };
 
   const countryCount = new Set(houses.map((h) => h.country)).size;
@@ -114,7 +114,7 @@ export const OperaUIOverlay: React.FC = () => {
       {/* 1. TOP HEADER: FLUSH ACROSS TOP, LEFT, AND RIGHT EDGES        */}
       {/* ------------------------------------------------------------- */}
       <header
-        className="pointer-events-auto flex flex-wrap items-center justify-between gap-4 border-b border-amber-500/40 px-6 py-3.5 shadow-2xl backdrop-blur-md shrink-0 w-full z-30"
+        className="pointer-events-auto flex flex-wrap items-center justify-between gap-4 border-b border-amber-500/50 px-6 py-3.5 shadow-2xl backdrop-blur-md shrink-0 w-full z-30"
         style={panelBg}
       >
         <div className="flex items-center space-x-4">
@@ -133,12 +133,12 @@ export const OperaUIOverlay: React.FC = () => {
 
         {/* Global Summary Badge */}
         <div className="hidden lg:flex items-center gap-3">
-          <div className="flex items-center gap-2 rounded-lg border border-amber-600/50 bg-[#090d14]/90 px-4 py-2 text-sm font-cinzel text-amber-200 shadow-inner">
-            <span className="text-amber-400 font-bold">{houses.length} Venues</span>
+          <div className="flex items-center gap-2 rounded-lg border border-amber-500/60 bg-[#121c2d] px-4 py-2 text-sm font-cinzel text-amber-200 shadow-md">
+            <span className="text-amber-300 font-bold">{houses.length} Venues</span>
             <span className="text-slate-500">•</span>
-            <span className="text-slate-300">{countryCount} Countries</span>
+            <span className="text-slate-200">{countryCount} Countries</span>
             <span className="text-slate-500">•</span>
-            <span className="text-amber-300/90 font-garamond italic text-[15px]">1585–Modern Era</span>
+            <span className="text-amber-200/90 font-garamond italic text-[15px]">1585–Modern Era</span>
           </div>
         </div>
       </header>
@@ -157,25 +157,25 @@ export const OperaUIOverlay: React.FC = () => {
             <h2 className="font-cinzel text-base font-bold tracking-wider text-amber-300 uppercase flex items-center gap-2">
               <Building className="h-4 w-4 text-amber-300" /> Opera Directory
             </h2>
-            <span className="text-xs md:text-sm font-cinzel font-bold text-amber-200 bg-[#121824] px-3 py-1 rounded border border-slate-700">
+            <span className="text-xs md:text-sm font-cinzel font-bold text-amber-200 bg-[#162338] px-3 py-1 rounded border border-slate-600">
               {filteredHouses.length} / {houses.length} Houses
             </span>
           </div>
 
           {/* Search Box */}
           <div className="relative shrink-0">
-            <Search className="absolute left-3 top-3 h-4 w-4 text-slate-400" />
+            <Search className="absolute left-3 top-3 h-4 w-4 text-slate-300" />
             <input
               type="text"
               placeholder="Search house, city, composer, premiere..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full rounded-lg border border-amber-700/60 bg-[#0a0e14] pl-9 pr-8 py-2 text-sm md:text-[15px] text-slate-100 placeholder-slate-400 focus:border-amber-400 focus:outline-none shadow-inner"
+              className="w-full rounded-lg border border-amber-600/70 bg-[#131d2e] pl-9 pr-8 py-2 text-sm md:text-[15px] text-slate-100 placeholder-slate-300 focus:border-amber-400 focus:outline-none shadow-inner"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
-                className="absolute right-3 top-2.5 text-slate-400 hover:text-slate-200 text-sm cursor-pointer"
+                className="absolute right-3 top-2.5 text-slate-300 hover:text-white text-sm cursor-pointer"
                 title="Clear search"
               >
                 ✕
@@ -185,7 +185,7 @@ export const OperaUIOverlay: React.FC = () => {
 
           {/* Multi-Tier Classification Filter (Full-width rows with custom checkboxes, ZERO overlap) */}
           <div className="space-y-1.5 shrink-0">
-            <div className="flex items-center justify-between text-xs font-cinzel font-bold text-amber-300/85 tracking-wider uppercase px-0.5">
+            <div className="flex items-center justify-between text-xs font-cinzel font-bold text-amber-300/90 tracking-wider uppercase px-0.5">
               <span>Classification Filter ({selectedTiers.length}/4 Active)</span>
               <div className="flex items-center gap-2">
                 <button
@@ -193,16 +193,16 @@ export const OperaUIOverlay: React.FC = () => {
                   className={`text-[11px] font-cinzel transition cursor-pointer ${
                     selectedTiers.length === 4
                       ? 'text-amber-300 font-bold underline'
-                      : 'text-amber-400/80 hover:text-amber-200'
+                      : 'text-amber-400 hover:text-amber-200'
                   }`}
                   title="Select all tiers"
                 >
                   All
                 </button>
-                <span className="text-slate-600">•</span>
+                <span className="text-slate-500">•</span>
                 <button
                   onClick={clearAllTiers}
-                  className="text-[11px] font-cinzel text-slate-400 hover:text-amber-300 transition cursor-pointer"
+                  className="text-[11px] font-cinzel text-slate-300 hover:text-amber-300 transition cursor-pointer"
                   title="Clear all tiers"
                 >
                   Clear
@@ -220,8 +220,8 @@ export const OperaUIOverlay: React.FC = () => {
                     onClick={() => toggleTier(id)}
                     className={`w-full py-1.5 px-2.5 rounded-lg border text-left transition-all cursor-pointer flex items-center justify-between gap-2.5 ${
                       isChecked
-                        ? 'bg-gradient-to-r from-[#8d1720]/80 via-[#5a0d15]/80 to-[#121824] text-amber-100 border-amber-400/90 shadow-sm ring-1 ring-amber-500/30'
-                        : 'bg-[#0a0e14]/90 text-slate-400 border-slate-800 hover:text-slate-200 hover:border-slate-700'
+                        ? 'bg-gradient-to-r from-[#8d1720]/80 via-[#5a0d15]/80 to-[#18263c] text-amber-100 border-amber-400 shadow-sm ring-1 ring-amber-500/40'
+                        : 'bg-[#131e30]/95 text-slate-300 border-slate-700/80 hover:text-slate-100 hover:border-slate-500 hover:bg-[#18253b]'
                     }`}
                     title={`Toggle ${label}`}
                   >
@@ -231,17 +231,17 @@ export const OperaUIOverlay: React.FC = () => {
                         className={`w-4 h-4 rounded flex items-center justify-center text-[10px] font-bold shrink-0 transition-colors ${
                           isChecked
                             ? 'bg-amber-400 text-slate-950 font-black'
-                            : 'border border-slate-600 bg-slate-900/60 text-transparent'
+                            : 'border border-slate-500 bg-slate-800/80 text-transparent'
                         }`}
                       >
                         ✓
                       </div>
                       <span className="text-base shrink-0">{icon}</span>
                       <div className="min-w-0 flex flex-col">
-                        <span className={`text-[12px] font-cinzel font-bold leading-tight ${isChecked ? 'text-amber-100' : 'text-slate-300'}`}>
+                        <span className={`text-[12px] font-cinzel font-bold leading-tight ${isChecked ? 'text-amber-100' : 'text-slate-200'}`}>
                           {label}
                         </span>
-                        <span className="text-[11px] text-amber-200/60 font-garamond italic leading-none truncate">
+                        <span className="text-[11px] text-amber-200/80 font-garamond italic leading-none truncate">
                           {subtitle}
                         </span>
                       </div>
@@ -249,8 +249,8 @@ export const OperaUIOverlay: React.FC = () => {
                     <span
                       className={`text-[11px] font-cinzel font-bold px-2 py-0.5 rounded border shrink-0 ${
                         isChecked
-                          ? 'bg-[#121824] text-amber-300 border-amber-500/40'
-                          : 'bg-[#080c12] text-slate-500 border-slate-800'
+                          ? 'bg-[#18253b] text-amber-300 border-amber-500/40'
+                          : 'bg-[#18253b] text-slate-300 border-slate-700'
                       }`}
                     >
                       {count}
@@ -285,15 +285,15 @@ export const OperaUIOverlay: React.FC = () => {
                     onClick={() => setSelectedHouse(house.id)}
                     className={`cursor-pointer rounded-lg border p-3 transition-all duration-150 ${
                       isSelected
-                        ? 'border-amber-400 bg-gradient-to-r from-[#8d1720]/45 to-[#121824] shadow-md'
-                        : 'border-slate-800 bg-[#0a0e14]/85 hover:border-amber-500/50 hover:bg-[#121824]'
+                        ? 'border-amber-400 bg-gradient-to-r from-[#8d1720]/55 to-[#1a273d] shadow-md ring-1 ring-amber-400/40'
+                        : 'border-slate-700/80 bg-[#141f32]/95 hover:border-amber-500/70 hover:bg-[#1a2942]'
                     }`}
                   >
                     <div className="flex items-start justify-between gap-1.5">
                       <h4 className="font-cinzel text-sm md:text-[15px] font-bold text-amber-100 leading-snug">
                         {house.name}
                       </h4>
-                      <span className="text-xs font-cinzel font-bold text-amber-300/90 bg-[#16202e] px-2 py-0.5 rounded border border-slate-700 shrink-0">
+                      <span className="text-xs font-cinzel font-bold text-amber-200 bg-[#1c2b44] px-2 py-0.5 rounded border border-slate-600 shrink-0">
                         {tierLabel}
                       </span>
                     </div>
@@ -395,39 +395,39 @@ export const OperaUIOverlay: React.FC = () => {
               {/* Verified Architectural & Structural Specs */}
               <div className="grid grid-cols-2 gap-2.5 text-sm shrink-0">
                 {selectedHouse.inauguratedYear && (
-                  <div className="bg-[#0a0e14]/90 border border-slate-700/80 p-2.5 rounded-lg flex items-center gap-2.5">
+                  <div className="bg-[#142035] border border-slate-600/70 p-2.5 rounded-lg flex items-center gap-2.5">
                     <Calendar className="h-4 w-4 text-amber-400 shrink-0" />
                     <div>
-                      <div className="text-xs font-cinzel font-semibold text-slate-400 uppercase tracking-wider">
+                      <div className="text-xs font-cinzel font-semibold text-amber-200/90 uppercase tracking-wider">
                         Inaugurated
                       </div>
-                      <div className="font-bold text-sm md:text-base text-slate-100 mt-0.5">
+                      <div className="font-bold text-sm md:text-base text-white mt-0.5">
                         {selectedHouse.inauguratedYear}
                       </div>
                     </div>
                   </div>
                 )}
                 {selectedHouse.capacity && (
-                  <div className="bg-[#0a0e14]/90 border border-slate-700/80 p-2.5 rounded-lg flex items-center gap-2.5">
+                  <div className="bg-[#142035] border border-slate-600/70 p-2.5 rounded-lg flex items-center gap-2.5">
                     <Users className="h-4 w-4 text-amber-400 shrink-0" />
                     <div>
-                      <div className="text-xs font-cinzel font-semibold text-slate-400 uppercase tracking-wider">
+                      <div className="text-xs font-cinzel font-semibold text-amber-200/90 uppercase tracking-wider">
                         Capacity
                       </div>
-                      <div className="font-bold text-sm md:text-base text-slate-100 mt-0.5">
+                      <div className="font-bold text-sm md:text-base text-white mt-0.5">
                         {selectedHouse.capacity}
                       </div>
                     </div>
                   </div>
                 )}
                 {selectedHouse.architect && (
-                  <div className="bg-[#0a0e14]/90 border border-slate-700/80 p-2.5 rounded-lg flex items-center gap-2.5 col-span-2">
+                  <div className="bg-[#142035] border border-slate-600/70 p-2.5 rounded-lg flex items-center gap-2.5 col-span-2">
                     <Landmark className="h-4 w-4 text-amber-400 shrink-0" />
                     <div className="min-w-0">
-                      <div className="text-xs font-cinzel font-semibold text-slate-400 uppercase tracking-wider">
+                      <div className="text-xs font-cinzel font-semibold text-amber-200/90 uppercase tracking-wider">
                         Architect & Style
                       </div>
-                      <div className="font-bold text-sm md:text-[15px] text-slate-100 mt-0.5 truncate">
+                      <div className="font-bold text-sm md:text-[15px] text-white mt-0.5 truncate">
                         {selectedHouse.architect} {selectedHouse.architecturalStyle ? `• ${selectedHouse.architecturalStyle}` : ''}
                       </div>
                     </div>
@@ -438,17 +438,17 @@ export const OperaUIOverlay: React.FC = () => {
               {/* Scrollable Content: Description, Heritage & Verified World Premieres */}
               <div className="flex-1 space-y-3.5 overflow-y-auto pr-1 min-h-0">
                 {/* Description */}
-                <p className="text-sm md:text-[15px] text-slate-200 leading-relaxed font-garamond italic bg-[#0a0e14]/70 border border-slate-800/80 p-3 rounded-lg">
+                <p className="text-sm md:text-[15px] text-slate-100 leading-relaxed font-garamond italic bg-[#131e30] border border-slate-700/80 p-3.5 rounded-lg">
                   "{selectedHouse.description}"
                 </p>
 
                 {/* Historic Legacy & Significance */}
                 {selectedHouse.historicSignificance && (
-                  <div className="text-xs md:text-sm text-amber-100/95 bg-[#121824]/85 border border-amber-900/50 p-3 rounded-lg leading-relaxed">
-                    <span className="font-cinzel font-bold text-amber-300 block mb-1">
+                  <div className="text-xs md:text-sm text-amber-100 bg-[#17253b] border border-amber-600/50 p-3.5 rounded-lg leading-relaxed">
+                    <span className="font-cinzel font-bold text-amber-300 block mb-1 text-sm">
                       Historic Significance & Heritage:
                     </span>
-                    <span>{selectedHouse.historicSignificance}</span>
+                    <span className="text-slate-100 leading-relaxed">{selectedHouse.historicSignificance}</span>
                   </div>
                 )}
 
@@ -459,7 +459,7 @@ export const OperaUIOverlay: React.FC = () => {
                       <h3 className="font-cinzel text-xs md:text-sm font-bold text-amber-300 uppercase tracking-wider flex items-center gap-2">
                         <Music className="h-4 w-4 text-amber-400" /> Landmark World Premieres & Milestones
                       </h3>
-                      <span className="text-xs md:text-sm text-amber-300/80 font-garamond italic font-semibold">
+                      <span className="text-xs md:text-sm text-amber-200 font-garamond italic font-semibold">
                         Historical Archives
                       </span>
                     </div>
@@ -468,28 +468,28 @@ export const OperaUIOverlay: React.FC = () => {
                       {selectedHouse.historicPremieres.map((premiere, idx) => (
                         <div
                           key={idx}
-                          className="bg-[#0a0e14]/95 border border-slate-700/80 p-3 rounded-lg hover:border-amber-500/50 transition"
+                          className="bg-[#131e30] border border-slate-600/80 p-3.5 rounded-lg hover:border-amber-400/60 transition"
                         >
                           <div className="flex items-start justify-between gap-1.5">
-                            <h4 className="font-cinzel text-sm md:text-[15px] font-bold text-amber-100">
+                            <h4 className="font-cinzel text-sm md:text-[15px] font-bold text-white">
                               {premiere.title}
                             </h4>
-                            <span className="text-xs font-cinzel font-bold text-amber-300 bg-[#1a2332] px-2 py-0.5 rounded border border-slate-700 shrink-0">
+                            <span className="text-xs font-cinzel font-bold text-amber-200 bg-[#1c2c46] px-2 py-0.5 rounded border border-amber-600/40 shrink-0">
                               {premiere.premiereYear}
                             </span>
                           </div>
-                          <p className="text-xs md:text-sm text-amber-300/90 font-garamond italic font-medium mt-1">
+                          <p className="text-xs md:text-sm text-amber-200 font-garamond italic font-medium mt-1">
                             Composer: {premiere.composer}
                           </p>
                           {premiere.type && (
-                            <div className="mt-1">
-                              <span className="text-[11px] font-cinzel tracking-wider px-1.5 py-0.5 rounded bg-amber-900/40 text-amber-200 border border-amber-700/50 uppercase font-semibold">
+                            <div className="mt-1.5">
+                              <span className="text-[11px] font-cinzel tracking-wider px-2 py-0.5 rounded bg-amber-950/80 text-amber-200 border border-amber-600/60 uppercase font-semibold">
                                 {premiere.type.replace('_', ' ')}
                               </span>
                             </div>
                           )}
                           {premiere.details && (
-                            <p className="text-xs md:text-sm text-amber-200/80 font-garamond italic mt-1.5 leading-normal">
+                            <p className="text-xs md:text-sm text-slate-200 font-garamond mt-1.5 leading-normal">
                               • {premiere.details}
                             </p>
                           )}
@@ -501,12 +501,12 @@ export const OperaUIOverlay: React.FC = () => {
               </div>
 
               {/* Pinned Bottom Portal Button */}
-              <div className="pt-2.5 border-t border-slate-800 shrink-0">
+              <div className="pt-2.5 border-t border-slate-700 shrink-0">
                 <a
                   href={selectedHouse.websiteUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 rounded-lg border border-amber-500 bg-gradient-to-r from-[#7a101b] to-[#921422] py-2.5 text-xs md:text-sm font-cinzel font-bold tracking-wider text-amber-100 shadow-md hover:from-[#8f1522] hover:to-[#a41727] transition cursor-pointer"
+                  className="flex items-center justify-center gap-2 rounded-lg border border-amber-400 bg-gradient-to-r from-[#8d1720] to-[#b31d2c] py-2.5 text-xs md:text-sm font-cinzel font-bold tracking-wider text-amber-100 shadow-md hover:from-[#a31a26] hover:to-[#c82233] transition cursor-pointer"
                 >
                   Visit Official Box Office & Season Portal <ExternalLink className="h-4 w-4 text-amber-200" />
                 </a>
@@ -522,55 +522,55 @@ export const OperaUIOverlay: React.FC = () => {
                   <h2 className="font-cinzel text-base font-bold tracking-wider text-amber-300 uppercase flex items-center gap-2">
                     <Compass className="h-4 w-4 text-amber-300" /> The World of Opera
                   </h2>
-                  <p className="text-sm md:text-[15px] text-slate-300 font-garamond italic mt-1">
+                  <p className="text-sm md:text-[15px] text-slate-200 font-garamond italic mt-1">
                     Select any pin on the globe or browse the directory to inspect architectural dossiers, landmark world premieres, and historical milestones.
                   </p>
                 </div>
 
-                <div className="mt-4 space-y-3 text-xs md:text-sm text-slate-300">
-                  <div className="bg-[#0a0e14]/85 border border-slate-700/80 p-3.5 rounded-lg space-y-1.5">
+                <div className="mt-4 space-y-3 text-xs md:text-sm">
+                  <div className="bg-[#131e30] border border-slate-600/80 p-3.5 rounded-lg space-y-1.5">
                     <div className="flex items-center gap-2 font-cinzel font-bold text-sm md:text-[15px] text-amber-300">
                       <span className="text-base">🏛️</span>
                       <span>Tier 1: Global Premier Opera Palaces & Landmark Houses ({tierCounts[1]})</span>
                     </div>
-                    <p className="text-xs md:text-sm text-slate-300 leading-relaxed font-garamond">
+                    <p className="text-xs md:text-sm text-slate-100 leading-relaxed font-garamond">
                       International A-League institutions with massive global footprints, star rosters, and historic supremacy (e.g. The Met, La Scala, Wiener Staatsoper, Royal Opera House Covent Garden, Opéra Garnier & Bastille, Bayreuth Festspielhaus, Cairo Opera House / Khedivial [Aida premiere 1871], Royal Swedish Opera, Teatro Colón, Theatro Municipal do Rio de Janeiro, Sydney Opera House).
                     </p>
                   </div>
 
-                  <div className="bg-[#0a0e14]/85 border border-slate-700/80 p-3.5 rounded-lg space-y-1.5">
+                  <div className="bg-[#131e30] border border-slate-600/80 p-3.5 rounded-lg space-y-1.5">
                     <div className="flex items-center gap-2 font-cinzel font-bold text-sm md:text-[15px] text-amber-200">
                       <span className="text-base">🎭</span>
                       <span>Tier 2: Major Metropolitan & National Houses ({tierCounts[2]})</span>
                     </div>
-                    <p className="text-xs md:text-sm text-slate-300 leading-relaxed font-garamond">
+                    <p className="text-xs md:text-sm text-slate-100 leading-relaxed font-garamond">
                       Foremost civic, state, and national opera houses with year-round resident companies and pit orchestras (e.g. Cape Town Opera, Opera Philadelphia, Washington National Opera, Oper Leipzig, Opera Colorado / Ellie Caulkins, Houston, Canadian Opera Company, Gothenburg Opera, Tokyo NNTT, Teatro dell'Opera di Roma).
                     </p>
                   </div>
 
-                  <div className="bg-[#0a0e14]/85 border border-slate-700/80 p-3.5 rounded-lg space-y-1.5">
+                  <div className="bg-[#131e30] border border-slate-600/80 p-3.5 rounded-lg space-y-1.5">
                     <div className="flex items-center gap-2 font-cinzel font-bold text-sm md:text-[15px] text-red-300">
                       <span className="text-base">🎪</span>
                       <span>Tier 3: Boutique Stages & Renowned Festivals ({tierCounts[3]})</span>
                     </div>
-                    <p className="text-xs md:text-sm text-slate-300 leading-relaxed font-garamond">
+                    <p className="text-xs md:text-sm text-slate-100 leading-relaxed font-garamond">
                       High-standard professional companies in intimate historic jewel boxes or dedicated seasonal festivals (e.g. Central City Opera, Wheeler / Aspen Opera Theater, Bravo! Vail, Santa Fe Opera, Glimmerglass Festival, Chautauqua Opera, Tanglewood, Wolf Trap, Spoleto Festival USA, Savonlinna Opera Festival, Arena di Verona, Glyndebourne).
                     </p>
                   </div>
 
-                  <div className="bg-[#0a0e14]/85 border border-slate-700/80 p-3.5 rounded-lg space-y-1.5">
+                  <div className="bg-[#131e30] border border-slate-600/80 p-3.5 rounded-lg space-y-1.5">
                     <div className="flex items-center gap-2 font-cinzel font-bold text-sm md:text-[15px] text-blue-300">
                       <span className="text-base">👑</span>
                       <span>Tier 4: Historic Royal Court & Princely Theatres ({tierCounts[4]})</span>
                     </div>
-                    <p className="text-xs md:text-sm text-slate-300 leading-relaxed font-garamond">
+                    <p className="text-xs md:text-sm text-slate-100 leading-relaxed font-garamond">
                       Intact 16th- to 19th-century royal court theatres and architectural wonders preserved with original historical machinery and imperial provenance (Teatro Olimpico in Vicenza [1585, Palladio], Drottningholms Slottsteater [1766, intact 18th-century wooden stage machinery], Margravial Opera House in Bayreuth [1748, Bibiena], Opéra Royal de Versailles [1770, Gabriel], Teatro Malibran in Venice [1678], Teatro Giuseppe Verdi in Busseto [1868], Teatro Amazonas in Manaus, Theatro da Paz in Belém, Royal Opera House Mumbai).
                     </p>
                   </div>
                 </div>
               </div>
 
-              <div className="bg-[#090d14] border border-amber-900/60 p-3.5 rounded-lg text-center text-xs md:text-sm text-slate-300 font-garamond italic shrink-0">
+              <div className="bg-[#131e30] border border-amber-700/50 p-3.5 rounded-lg text-center text-xs md:text-sm text-amber-200/95 font-garamond italic shrink-0">
                 Tip: Search for composers such as "Verdi", "Puccini", "Wagner", or "Mozart" to find where their masterworks first premiered.
               </div>
             </div>
@@ -580,14 +580,14 @@ export const OperaUIOverlay: React.FC = () => {
         {/* ------------------------------------------------------------- */}
         {/* 3. CENTER BOTTOM CONTROLS: FLOATING PROSCENIUM CONTROL BAR     */}
         {/* ------------------------------------------------------------- */}
-        <footer className="pointer-events-auto absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-3.5 px-5 py-2 rounded-full border border-amber-600/60 bg-[#090d14]/95 shadow-2xl backdrop-blur-md text-xs md:text-sm font-cinzel text-amber-200/90 z-20">
+        <footer className="pointer-events-auto absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-3.5 px-5 py-2 rounded-full border border-amber-500/70 bg-[#101927]/95 shadow-2xl backdrop-blur-md text-xs md:text-sm font-cinzel text-amber-100 z-20">
           <span className="drop-shadow-md">
             {filteredHouses.length} OPERA HOUSES DISPLAYED • DRAG GLOBE TO ROTATE
           </span>
-          <div className="h-3.5 w-[1px] bg-amber-500/40" />
+          <div className="h-3.5 w-[1px] bg-amber-500/50" />
           <button
             onClick={toggleAutoRotate}
-            className="flex items-center gap-1.5 px-3 py-1 rounded-md bg-[#16202e] border border-amber-600/70 text-amber-200 hover:bg-[#1e2c40] hover:text-amber-100 transition shadow cursor-pointer font-bold"
+            className="flex items-center gap-1.5 px-3 py-1 rounded-md bg-[#1a2b42] border border-amber-500/80 text-amber-100 hover:bg-[#233854] transition shadow cursor-pointer font-bold"
           >
             <span>{isAutoRotating ? '⏸' : '▶'}</span>
             <span>{isAutoRotating ? 'Auto-Rotate: On' : 'Paused'}</span>
