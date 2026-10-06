@@ -10,13 +10,13 @@ const GLOBE_RADIUS = 3.2;
 
 export const PapercraftGlobe: React.FC = () => {
   const globeGroupRef = useRef<THREE.Group>(null);
-  const tierFilter = useOperaStore((state) => state.tierFilter);
+  const selectedTiers = useOperaStore((state) => state.selectedTiers);
   const searchQuery = useOperaStore((state) => state.searchQuery);
   const houses = useOperaStore((state) => state.houses);
   const getFilteredHouses = useOperaStore((state) => state.getFilteredHouses);
   const filteredHouses = useMemo(
     () => getFilteredHouses(),
-    [getFilteredHouses, tierFilter, searchQuery, houses]
+    [getFilteredHouses, selectedTiers, searchQuery, houses]
   );
 
   // Create papercraft parchment globe texture with continents and vintage typography
@@ -38,9 +38,9 @@ export const PapercraftGlobe: React.FC = () => {
 
   return (
     <group ref={globeGroupRef}>
-      {/* 3D Papercraft Globe Sphere with Textured Continents */}
+      {/* 3D Papercraft Globe Sphere with Textured Continents (256x256 segments eliminate chord distortion) */}
       <mesh receiveShadow castShadow>
-        <sphereGeometry args={[GLOBE_RADIUS, 64, 64]} />
+        <sphereGeometry args={[GLOBE_RADIUS, 256, 256]} />
         <meshStandardMaterial
           map={globeTexture}
           roughness={0.78}

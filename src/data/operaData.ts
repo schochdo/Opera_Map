@@ -4,10 +4,10 @@ import { OperaHouse } from '../types/opera';
 // MASTER COMPREHENSIVE WORLD OPERA ATLAS DATASET (183 VERIFIED VENUES)
 // Grounded in Wikipedia's Global Directory & OperaVision's European Network
 // Categorized by OPERA America & International Standards:
-// • Tier 1: Global Premier Houses & Shrines (34 venues)
+// • Tier 1: Global Premier Houses (34 venues)
 // • Tier 2: Major Metropolitan & National Houses (103 venues)
 // • Tier 3: Boutique Houses, Professional Regional Theatres & Festivals (37 venues)
-// • Tier 4: Historic Royal Court Theatres & Princely Opera Shrines (9 venues)
+// • Tier 4: Historic Royal Court & Princely Theatres (9 venues)
 // ═══════════════════════════════════════════════════════════════════════
 
 export const OPERA_HOUSES: OperaHouse[] = [
@@ -2387,7 +2387,7 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "description": "Renowned throughout the operatic world as the only opera company on Earth to have performed every single work of Giuseppe Verdi—all 28 operas, all alternate versions, his Requiem, and complete choral music.",
     "inauguratedYear": 1926,
     "architect": "Roy A. Benjamin (Restored 2008 by Westlake Reed Leskosky)",
-    "architecturalStyle": "Mediterranean Revival Theatre & Historic Verdi Shrine",
+    "architecturalStyle": "Mediterranean Revival Theatre & Historic Verdi Memorial Theatre",
     "capacity": "1,119 seats",
     "historicSignificance": "Home of the historic 28-year Verdi Cycle (1989–2016), an unprecedented achievement in world operatic history.",
     "historicPremieres": [
@@ -3865,7 +3865,7 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "architect": "Ferdinand Fellner & Hermann Helmer",
     "architecturalStyle": "Neo-Renaissance Horseshoe Theatre with Ganymede’s Fountain",
     "capacity": "611 seats",
-    "historicSignificance": "National lyric shrine of Slovakia; cradle of Slovak vocal artists including Peter Dvorský and Edita Gruberová.",
+    "historicSignificance": "National lyric stage of Slovakia; cradle of Slovak vocal artists including Peter Dvorský and Edita Gruberová.",
     "historicPremieres": [
       {
         "title": "Krútňava (The Whirlpool)",

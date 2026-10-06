@@ -2,13 +2,13 @@ import { create } from 'zustand';
 import { OperaHouse } from '../types/opera';
 import { OPERA_HOUSES } from '../data/operaData';
 
-export type TierFilterType = 'ALL' | 1 | 2 | 3 | 4;
+export type TierNumber = 1 | 2 | 3 | 4;
 
 interface OperaStore {
   houses: OperaHouse[];
 
   selectedHouseId: string | null;
-  tierFilter: TierFilterType; // 'ALL' = All houses, 1 = Tier 1 only, 2 = Tier 2 only, 3 = Tier 3 only, 4 = Tier 4 only
+  selectedTiers: number[]; // e.g. [1, 2, 3, 4] by default (all active)
   searchQuery: string;
 
   // Camera Target Lat/Long (Default centered on Europe)
@@ -19,7 +19,10 @@ interface OperaStore {
 
   // Actions
   setSelectedHouse: (houseId: string | null) => void;
-  setTierFilter: (tier: TierFilterType) => void;
+  toggleTier: (tier: number) => void;
+  selectAllTiers: () => void;
+  clearAllTiers: () => void;
+  setSelectedTiers: (tiers: number[]) => void;
   setSearchQuery: (query: string) => void;
   stopCameraAnimation: () => void;
   stopAutoRotate: () => void;
@@ -32,7 +35,7 @@ export const useOperaStore = create<OperaStore>((set, get) => ({
   houses: OPERA_HOUSES,
 
   selectedHouseId: null,
-  tierFilter: 'ALL',
+  selectedTiers: [1, 2, 3, 4],
   searchQuery: '',
 
   // Default camera targets Europe on start (lat 48°N, lng 14°E)
@@ -61,18 +64,29 @@ export const useOperaStore = create<OperaStore>((set, get) => ({
     }
   },
 
-  setTierFilter: (tier) => set({ tierFilter: tier }),
+  toggleTier: (tier: number) => {
+    const current = get().selectedTiers;
+    if (current.includes(tier)) {
+      set({ selectedTiers: current.filter((t) => t !== tier) });
+    } else {
+      set({ selectedTiers: [...current, tier].sort() });
+    }
+  },
+
+  selectAllTiers: () => set({ selectedTiers: [1, 2, 3, 4] }),
+  clearAllTiers: () => set({ selectedTiers: [] }),
+  setSelectedTiers: (tiers: number[]) => set({ selectedTiers: [...tiers].sort() }),
+
   setSearchQuery: (query) => set({ searchQuery: query }),
 
   stopCameraAnimation: () => set({ isAnimatingCamera: false }),
 
   getFilteredHouses: () => {
-    const { houses, tierFilter, searchQuery } = get();
+    const { houses, selectedTiers, searchQuery } = get();
 
     return houses.filter((house) => {
-      // Precise Tier Filtering:
-      // Clicking T1 shows ONLY Tier 1; T2 shows ONLY Tier 2; T3 shows ONLY Tier 3; T4 shows ONLY Tier 4; ALL shows everything!
-      if (tierFilter !== 'ALL' && house.tier !== tierFilter) {
+      // Multi-tier filtering: house tier must be selected
+      if (!selectedTiers.includes(house.tier)) {
         return false;
       }
 

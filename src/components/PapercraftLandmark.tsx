@@ -54,16 +54,23 @@ export const PapercraftLandmark: React.FC<LandmarkProps> = ({ house, globeRadius
     return { pinQuaternion: pinQ, shadowQuaternion: shadowQ, normal: norm };
   }, [position]);
 
-  // Subtle responsive bounce on selection or hover
-  useFrame(({ clock }) => {
+  // Dynamic camera distance-scaled sizing:
+  // When zoomed in close, pins scale down (0.95 - 1.1x) to stay refined and non-overlapping.
+  // When zoomed out to global view, pins scale up (up to 2.5x) so they remain visible pearls across the globe.
+  useFrame(({ camera, clock }) => {
     if (!groupRef.current) return;
+    const dist = camera.position.distanceTo(position);
+    const zoomFactor = THREE.MathUtils.clamp(0.65 + dist * 0.22, 0.95, 2.6);
+
     if (isSelected) {
-      const s = 1.25 + Math.sin(clock.getElapsedTime() * 4) * 0.06;
+      const pulse = 1.25 + Math.sin(clock.getElapsedTime() * 4) * 0.08;
+      const s = zoomFactor * pulse;
       groupRef.current.scale.set(s, s, s);
     } else if (hovered) {
-      groupRef.current.scale.lerp(new THREE.Vector3(1.2, 1.2, 1.2), 0.2);
+      const s = zoomFactor * 1.25;
+      groupRef.current.scale.lerp(new THREE.Vector3(s, s, s), 0.2);
     } else {
-      groupRef.current.scale.lerp(new THREE.Vector3(1, 1, 1), 0.2);
+      groupRef.current.scale.lerp(new THREE.Vector3(zoomFactor, zoomFactor, zoomFactor), 0.2);
     }
   });
 
@@ -170,7 +177,7 @@ export const PapercraftLandmark: React.FC<LandmarkProps> = ({ house, globeRadius
               }}
             >
               <span style={{ fontSize: '16px' }}>
-                {house.tier === 1 ? '🏛️' : house.tier === 2 ? '🎭' : house.tier === 3 ? '🎪' : '💎'}
+                {house.tier === 1 ? '🏛️' : house.tier === 2 ? '🎭' : house.tier === 3 ? '🎪' : '👑'}
               </span>
               <span>{house.name}</span>
               <span

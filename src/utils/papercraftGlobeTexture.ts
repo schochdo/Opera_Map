@@ -2,8 +2,8 @@ import * as THREE from 'three';
 
 // Generates an antique parchment globe texture with vector coastlines & country borders
 export function createPapercraftGlobeTexture(onLoaded?: () => void): THREE.CanvasTexture {
-  const width = 4096;
-  const height = 2048;
+  const width = 8192;
+  const height = 4096;
   const canvas = document.createElement('canvas');
   canvas.width = width;
   canvas.height = height;
@@ -44,10 +44,10 @@ export function createPapercraftGlobeTexture(onLoaded?: () => void): THREE.Canva
 
     // 2. VECTOR LANDMASSES & COUNTRY OUTLINES (Crisp vector polygons, zero JPEG blur)
     if (geojson && geojson.features) {
-      // First pass: draw all land polygons with warm antique parchment fill
+      // First pass: draw all land polygons with warm antique parchment fill & fine border ink
       ctx.fillStyle = '#f3ebe0';
-      ctx.strokeStyle = 'rgba(160, 130, 85, 0.55)'; // Fine antique country border line
-      ctx.lineWidth = 1;
+      ctx.strokeStyle = 'rgba(140, 110, 75, 0.5)'; // Fine antique country border line
+      ctx.lineWidth = 1.2;
 
       geojson.features.forEach((feature: any) => {
         const geom = feature.geometry;
@@ -72,6 +72,7 @@ export function createPapercraftGlobeTexture(onLoaded?: () => void): THREE.Canva
             });
             ctx.closePath();
             ctx.fill();
+            ctx.stroke();
           });
         });
       });

@@ -135,7 +135,7 @@ export const App: React.FC = () => {
             enablePan={false}
             enableDamping={true}
             dampingFactor={0.06}
-            minDistance={3.65}
+            minDistance={3.8}
             maxDistance={12}
             rotateSpeed={0.42}
             zoomSpeed={0.55}

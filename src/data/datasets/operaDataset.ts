@@ -66,12 +66,12 @@ export const OPERA_DATASET: AtlasDataset = {
         icon: '🎪',
       },
       tier4: {
-        label: 'Historic Royal Court Shrines',
+        label: 'Historic Royal Court Theatres',
         short: 'T4',
-        badge: '💎 Historic Royal Court Shrine',
+        badge: '👑 Historic Royal Court Theatre',
         desc: 'Intact 16th- to 19th-century royal court theatres and architectural monuments of world heritage preserved with original stage machinery (Teatro Olimpico, Drottningholm Court Theatre, Margravial Opera House, Opéra Royal de Versailles, Teatro Amazonas, Royal Opera House Mumbai).',
         color: '#2563eb',
-        icon: '💎',
+        icon: '👑',
       },
     },
     overviewCards: [
@@ -94,8 +94,8 @@ export const OPERA_DATASET: AtlasDataset = {
         description: 'World-renowned festivals and boutique stages: Arena di Verona, Bayreuth, Salzburg, Glyndebourne, Savonlinna, Santa Fe, Central City, Tanglewood.',
       },
       {
-        icon: '💎',
-        title: 'Historic Royal Court Shrines (Tier 4)',
+        icon: '👑',
+        title: 'Historic Royal Court Theatres (Tier 4)',
         color: 'text-blue-400',
         description: 'Intact 16th- to 19th-century royal court theatres and architectural wonders preserved with original stage machinery: Teatro Olimpico, Drottningholm, Margravial, Versailles, Amazonas, Mumbai.',
       },

@@ -14,8 +14,8 @@ export const CountryBorders: React.FC<CountryBordersProps> = ({ globeRadius }) =
   const materialRef = useRef<LineMaterial | null>(null);
 
   useEffect(() => {
-    // Surface radius offset to prevent z-fighting while staying tightly flush
-    const radius = globeRadius + 0.003;
+    // Surface radius offset flush to smooth 256-segment sphere (eliminates chord parallax)
+    const radius = globeRadius + 0.0006;
 
     fetch('/data/ne_50m_countries.geojson')
       .then((res) => res.json())
@@ -70,9 +70,9 @@ export const CountryBorders: React.FC<CountryBordersProps> = ({ globeRadius }) =
         // Single medium-width boundary line (warm antique bronze cartographic ink)
         const mat = new LineMaterial({
           color: 0x4a3720,
-          linewidth: 1.8, // Crisp medium-width boundary line across all zooms
+          linewidth: 1.3, // Crisp refined boundary line perfectly flush to sphere surface
           transparent: true,
-          opacity: 0.85,
+          opacity: 0.8,
           depthWrite: false,
         });
         mat.resolution.set(size.width, size.height);
