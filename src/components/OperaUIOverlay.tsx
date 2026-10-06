@@ -35,6 +35,8 @@ export const OperaUIOverlay: React.FC = () => {
     borderColor: 'rgba(212, 175, 55, 0.4)',
   };
 
+  const countryCount = new Set(houses.map((h) => h.country)).size;
+
   const tierCounts = {
     ALL: houses.length,
     1: houses.filter((h) => h.tier === 1).length,
@@ -46,7 +48,7 @@ export const OperaUIOverlay: React.FC = () => {
   const tierButtonConfig: { id: TierFilterType; label: string; icon: string; count: number }[] = [
     { id: 'ALL', label: 'All', icon: '🌐', count: tierCounts.ALL },
     { id: 1, label: 'T1: Premier', icon: '🏛️', count: tierCounts[1] },
-    { id: 2, label: 'T2: Regional', icon: '🎭', count: tierCounts[2] },
+    { id: 2, label: 'T2: Metro', icon: '🎭', count: tierCounts[2] },
     { id: 3, label: 'T3: Festivals', icon: '🎪', count: tierCounts[3] },
     { id: 4, label: 'T4: Historic', icon: '💎', count: tierCounts[4] },
   ];
@@ -54,13 +56,13 @@ export const OperaUIOverlay: React.FC = () => {
   const getTierBadgeText = (tier: number) => {
     switch (tier) {
       case 1:
-        return '🏛️ TIER 1: PREMIER OPERA HOUSE';
+        return '🏛️ TIER 1: GLOBAL PREMIER OPERA HOUSE';
       case 2:
-        return '🎭 TIER 2: REGIONAL OPERA HOUSE';
+        return '🎭 TIER 2: MAJOR METROPOLITAN & NATIONAL HOUSE';
       case 3:
-        return '🎪 TIER 3: FESTIVAL STAGE';
+        return '🎪 TIER 3: BOUTIQUE & RENOWNED FESTIVAL';
       case 4:
-        return '💎 TIER 4: HISTORIC GEM';
+        return '💎 TIER 4: HISTORIC LANDMARK & CULTURAL HERITAGE';
       default:
         return 'OPERA HOUSE';
     }
@@ -71,11 +73,11 @@ export const OperaUIOverlay: React.FC = () => {
       case 1:
         return 'T1 Premier';
       case 2:
-        return 'T2 Regional';
+        return 'T2 Metro';
       case 3:
         return 'T3 Festival';
       case 4:
-        return 'T4 Historic';
+        return 'T4 Landmark';
       default:
         return '';
     }
@@ -107,9 +109,9 @@ export const OperaUIOverlay: React.FC = () => {
         {/* Global Summary Badge */}
         <div className="hidden lg:flex items-center gap-3">
           <div className="flex items-center gap-2 rounded-lg border border-amber-600/50 bg-[#090d14]/90 px-4 py-2 text-sm font-cinzel text-amber-200 shadow-inner">
-            <span className="text-amber-400 font-bold">48 Venues</span>
+            <span className="text-amber-400 font-bold">{houses.length} Venues</span>
             <span className="text-slate-500">•</span>
-            <span className="text-slate-300">24 Countries</span>
+            <span className="text-slate-300">{countryCount} Countries</span>
             <span className="text-slate-500">•</span>
             <span className="text-amber-300/90 font-garamond italic text-[15px]">1585–Modern Era</span>
           </div>
@@ -442,40 +444,40 @@ export const OperaUIOverlay: React.FC = () => {
                   <div className="bg-[#0a0e14]/85 border border-slate-700/80 p-3.5 rounded-lg space-y-1.5">
                     <div className="flex items-center gap-2 font-cinzel font-bold text-sm md:text-[15px] text-amber-300">
                       <span className="text-base">🏛️</span>
-                      <span>Tier 1: Premier Opera Houses (20)</span>
+                      <span>Tier 1: Global Premier Opera Palaces & Historic Shrines ({tierCounts[1]})</span>
                     </div>
                     <p className="text-xs md:text-sm text-slate-300 leading-relaxed font-garamond">
-                      World-leading institutions with resident orchestras, international prestige, and renowned staging traditions (e.g. La Scala, Wiener Staatsoper, Opéra Garnier, The Met, Royal Opera House).
+                      International A-League institutions with massive global footprints, star rosters, and historic supremacy (e.g. The Met, La Scala, Wiener Staatsoper, Royal Opera House Covent Garden, Opéra Garnier & Bastille, Bayreuth Festspielhaus, Sydney Opera House, Teatro Colón).
                     </p>
                   </div>
 
                   <div className="bg-[#0a0e14]/85 border border-slate-700/80 p-3.5 rounded-lg space-y-1.5">
                     <div className="flex items-center gap-2 font-cinzel font-bold text-sm md:text-[15px] text-amber-200">
                       <span className="text-base">🎭</span>
-                      <span>Tier 2: Major Regional Theatres (12)</span>
+                      <span>Tier 2: Major Metropolitan & National Houses ({tierCounts[2]})</span>
                     </div>
                     <p className="text-xs md:text-sm text-slate-300 leading-relaxed font-garamond">
-                      Distinguished civic and national opera houses with vibrant regional traditions and acclaimed repertoire (e.g. Théâtre des Champs-Élysées, Sydney Opera House, Teatro Regio di Torino).
+                      Foremost civic, state, and national opera houses with year-round resident companies and pit orchestras (e.g. Opera Philadelphia, Washington National Opera, Oper Leipzig, Opera Colorado / Ellie Caulkins, Houston Grand Opera, Minnesota Opera, Deutsche Oper Berlin, Tokyo NNTT, Teatro dell'Opera di Roma).
                     </p>
                   </div>
 
                   <div className="bg-[#0a0e14]/85 border border-slate-700/80 p-3.5 rounded-lg space-y-1.5">
                     <div className="flex items-center gap-2 font-cinzel font-bold text-sm md:text-[15px] text-red-300">
                       <span className="text-base">🎪</span>
-                      <span>Tier 3: Iconic Festival Stages (4)</span>
+                      <span>Tier 3: Boutique Stages & Renowned Festivals ({tierCounts[3]})</span>
                     </div>
                     <p className="text-xs md:text-sm text-slate-300 leading-relaxed font-garamond">
-                      Dedicated pilgrimage festival theatres with celebrated summer seasons (Bayreuth Festspielhaus, Glyndebourne, Arena di Verona, Bregenzer Festspiele).
+                      High-standard professional companies in intimate historic jewel boxes or dedicated seasonal festivals (e.g. Central City Opera, Wheeler / Aspen Opera Theater, Bravo! Vail, Santa Fe Opera, Glimmerglass Festival, Chautauqua Opera, Tanglewood, Wolf Trap, Spoleto Festival USA, Arena di Verona, Glyndebourne, Wexford).
                     </p>
                   </div>
 
                   <div className="bg-[#0a0e14]/85 border border-slate-700/80 p-3.5 rounded-lg space-y-1.5">
                     <div className="flex items-center gap-2 font-cinzel font-bold text-sm md:text-[15px] text-blue-300">
                       <span className="text-base">💎</span>
-                      <span>Tier 4: Historic & Architectural Gems (12)</span>
+                      <span>Tier 4: Historic "Opera Houses" & Cultural Heritage Landmarks ({tierCounts[4]})</span>
                     </div>
                     <p className="text-xs md:text-sm text-slate-300 leading-relaxed font-garamond">
-                      Incomparable heritage marvels of extraordinary musicological and acoustic renown (Teatro Olimpico, Drottningholm Court Theatre, Margravial Opera House, Teatro Amazonas).
+                      18th-century court theatres or 19th-century Gilded Age / Boomtown buildings erected as "Opera Houses" conferring civic prestige, hosting touring troupes or preserved as cultural heritage (e.g. Fulton Opera House in Lancaster PA, Tabor Opera House in Leadville CO, Wright Opera House in Ouray CO, Drottningholm, Teatro Olimpico, Margravial Opera House).
                     </p>
                   </div>
                 </div>
