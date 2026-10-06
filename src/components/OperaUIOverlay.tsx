@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useOperaStore } from '../store/useOperaStore';
 import { TierPinIcon } from './TierPinIcon';
+import { AtlasInfoModal } from './AtlasInfoModal';
 import {
   ExternalLink,
   X,
@@ -12,6 +13,7 @@ import {
   Sparkles,
   Music,
   Calendar,
+  Info,
 } from 'lucide-react';
 
 export const OperaUIOverlay: React.FC = () => {
@@ -29,6 +31,8 @@ export const OperaUIOverlay: React.FC = () => {
     isAutoRotating,
     toggleAutoRotate,
   } = useOperaStore();
+
+  const [showInfoModal, setShowInfoModal] = useState(false);
 
   const filteredHouses = getFilteredHouses();
   const selectedHouse = houses.find((h) => h.id === selectedHouseId);
@@ -52,25 +56,21 @@ export const OperaUIOverlay: React.FC = () => {
     {
       id: 1,
       label: 'Tier 1: Global Premier',
-      subtitle: 'World Flagship Houses & Historic Stages',
       count: tierCounts[1],
     },
     {
       id: 2,
       label: 'Tier 2: Major Metropolitan',
-      subtitle: 'Metropolitan & National Companies',
       count: tierCounts[2],
     },
     {
       id: 3,
       label: 'Tier 3: Festivals & Boutique',
-      subtitle: 'Summer Festivals & Intimate Gem Stages',
       count: tierCounts[3],
     },
     {
       id: 4,
       label: 'Tier 4: Historic Royal Court',
-      subtitle: '16th–18th C. Royal & Princely Theatres',
       count: tierCounts[4],
     },
   ];
@@ -141,32 +141,39 @@ export const OperaUIOverlay: React.FC = () => {
       {/* 1. TOP HEADER: FLUSH ACROSS TOP, LEFT, AND RIGHT EDGES        */}
       {/* ------------------------------------------------------------- */}
       <header
-        className="pointer-events-auto flex flex-wrap items-center justify-between gap-4 border-b border-amber-500/50 px-6 py-4 shadow-2xl backdrop-blur-md shrink-0 w-full z-30"
+        className="pointer-events-auto flex flex-wrap items-center justify-between gap-4 border-b border-amber-500/50 px-6 py-3.5 shadow-2xl backdrop-blur-md shrink-0 w-full z-30"
         style={panelBg}
       >
-        <div className="flex items-center space-x-4">
-          <div className="flex h-12 w-12 items-center justify-center rounded-lg border border-amber-500/70 bg-gradient-to-br from-[#8d1720] to-[#5a0d15] text-amber-200 shadow-lg">
-            <Landmark className="h-6 w-6 text-amber-300" />
+        <div className="flex items-center space-x-3.5">
+          <div className="flex h-11 w-11 items-center justify-center rounded-lg border border-amber-500/70 bg-gradient-to-br from-[#8d1720] to-[#5a0d15] text-amber-200 shadow-lg">
+            <Landmark className="h-5 w-5 text-amber-300" />
           </div>
           <div>
-            <h1 className="font-cinzel text-2xl md:text-3xl font-bold tracking-[0.16em] text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-100 to-amber-300">
+            <h1 className="font-cinzel text-xl md:text-2xl font-bold tracking-[0.16em] text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-100 to-amber-300">
               The World of Opera
             </h1>
-            <p className="text-base md:text-lg tracking-wide text-amber-200 font-garamond font-medium mt-1">
+            <p className="text-xs md:text-sm tracking-wide text-amber-200 font-garamond font-medium">
               An Illustrated Cartography of Historical Opera Houses & Landmark Premieres
             </p>
           </div>
         </div>
 
-        {/* Global Summary Badge */}
-        <div className="hidden lg:flex items-center gap-3">
-          <div className="flex items-center gap-2.5 rounded-lg border border-amber-500/60 bg-[#121c2d] px-4 py-2.5 text-base font-cinzel text-amber-200 shadow-md">
-            <span className="text-amber-300 font-bold">{houses.length} Venues</span>
+        {/* Global Summary Badge & Info Guide Button */}
+        <div className="flex items-center gap-3">
+          <div className="hidden lg:flex items-center gap-2 rounded-lg border border-slate-700/60 bg-[#121c2d]/80 px-3 py-1.5 text-sm font-cinzel text-slate-200 shadow-sm">
+            <span>{countryCount} Countries</span>
             <span className="text-slate-500">•</span>
-            <span className="text-slate-200">{countryCount} Countries</span>
-            <span className="text-slate-500">•</span>
-            <span className="text-amber-200 font-garamond italic text-[17px]">1585–Modern Era</span>
+            <span className="text-amber-200 font-garamond italic text-[15px]">1585–Modern Era</span>
           </div>
+
+          <button
+            onClick={() => setShowInfoModal(true)}
+            className="flex items-center gap-2 rounded-lg border border-amber-500/70 bg-[#162338] hover:bg-[#20324f] hover:border-amber-400 px-3.5 py-1.5 text-sm md:text-base font-cinzel font-bold text-amber-200 transition cursor-pointer shadow-md"
+            title="Atlas Guide & Tier Classification Criteria"
+          >
+            <Info className="h-4 w-4 text-amber-300" />
+            <span>Atlas Guide & Tiers</span>
+          </button>
         </div>
       </header>
 
@@ -176,33 +183,33 @@ export const OperaUIOverlay: React.FC = () => {
       <div className="relative flex flex-1 items-stretch justify-between pointer-events-none min-h-0 w-full overflow-hidden">
         {/* LEFT SIDEBAR: DIRECTORY (Flush against left edge and header) */}
         <aside
-          className="pointer-events-auto flex w-[440px] 2xl:w-[470px] flex-col space-y-3.5 border-r border-amber-500/40 p-5 shadow-2xl backdrop-blur-md min-h-0 overflow-hidden h-full z-20"
+          className="pointer-events-auto flex w-[430px] 2xl:w-[460px] flex-col space-y-3 border-r border-amber-500/40 p-4.5 shadow-2xl backdrop-blur-md min-h-0 overflow-hidden h-full z-20"
           style={panelBg}
         >
           {/* Header */}
-          <div className="flex items-center justify-between border-b border-amber-900/50 pb-2.5 shrink-0">
+          <div className="flex items-center justify-between border-b border-amber-900/50 pb-2 shrink-0">
             <h2 className="font-cinzel text-lg md:text-xl font-bold tracking-wider text-amber-300 uppercase flex items-center gap-2">
               <Building className="h-5 w-5 text-amber-300" /> Opera Directory
             </h2>
-            <span className="text-sm md:text-base font-cinzel font-bold text-amber-200 bg-[#162338] px-3.5 py-1 rounded border border-slate-600">
-              {filteredHouses.length} / {houses.length} Houses
+            <span className="text-sm font-cinzel font-bold text-amber-200 bg-[#162338] px-3 py-0.5 rounded border border-slate-600">
+              {filteredHouses.length}
             </span>
           </div>
 
           {/* Search Box */}
           <div className="relative shrink-0">
-            <Search className="absolute left-3.5 top-3.5 h-5 w-5 text-slate-300" />
+            <Search className="absolute left-3.5 top-3.5 h-4.5 w-4.5 text-slate-300" />
             <input
               type="text"
               placeholder="Search house, city, composer, premiere..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full rounded-lg border border-amber-600/70 bg-[#131d2e] pl-11 pr-9 py-3 text-base text-slate-100 placeholder-slate-400 focus:border-amber-400 focus:outline-none shadow-inner"
+              className="w-full rounded-lg border border-amber-600/70 bg-[#131d2e] pl-10 pr-9 py-2.5 text-base text-slate-100 placeholder-slate-400 focus:border-amber-400 focus:outline-none shadow-inner"
             />
             {searchQuery && (
               <button
                 onClick={() => setSearchQuery('')}
-                className="absolute right-3.5 top-3 text-slate-300 hover:text-white text-base cursor-pointer"
+                className="absolute right-3.5 top-2.5 text-slate-300 hover:text-white text-base cursor-pointer"
                 title="Clear search"
               >
                 ✕
@@ -210,14 +217,14 @@ export const OperaUIOverlay: React.FC = () => {
             )}
           </div>
 
-          {/* Multi-Tier Classification Filter (Full-width rows with custom checkboxes, ZERO overlap) */}
-          <div className="space-y-2 shrink-0">
-            <div className="flex items-center justify-between text-sm md:text-base font-cinzel font-bold text-amber-300 tracking-wider uppercase px-0.5">
-              <span>Classification Filter ({selectedTiers.length}/4 Active)</span>
+          {/* Streamlined Multi-Tier Classification Filter */}
+          <div className="space-y-1.5 shrink-0">
+            <div className="flex items-center justify-between text-xs md:text-sm font-cinzel font-bold text-amber-300 tracking-wider uppercase px-0.5 pb-0.5">
+              <span>Filter by Tier ({selectedTiers.length}/4 Active)</span>
               <div className="flex items-center gap-2">
                 <button
                   onClick={selectAllTiers}
-                  className={`text-sm font-cinzel font-bold px-2.5 py-0.5 rounded transition cursor-pointer ${
+                  className={`text-xs font-cinzel font-bold px-2 py-0.5 rounded transition cursor-pointer ${
                     selectedTiers.length === 4
                       ? 'bg-amber-400/25 text-amber-200 underline border border-amber-400/60'
                       : 'text-amber-400 hover:text-amber-200'
@@ -226,10 +233,10 @@ export const OperaUIOverlay: React.FC = () => {
                 >
                   All
                 </button>
-                <span className="text-slate-500">•</span>
+                <span className="text-slate-600">•</span>
                 <button
                   onClick={clearAllTiers}
-                  className="text-sm font-cinzel text-slate-300 hover:text-amber-300 transition cursor-pointer"
+                  className="text-xs font-cinzel text-slate-300 hover:text-amber-300 transition cursor-pointer"
                   title="Clear all tiers"
                 >
                   Clear
@@ -237,47 +244,32 @@ export const OperaUIOverlay: React.FC = () => {
               </div>
             </div>
 
-            {/* 4 Full-Width Multi-Select Rows */}
-            <div className="space-y-2">
-              {tierConfigs.map(({ id, label, subtitle, count }) => {
+            {/* 4 Streamlined Single-Line Buttons: Pin icon to left, tier label in middle, count to right */}
+            <div className="space-y-1.5">
+              {tierConfigs.map(({ id, label, count }) => {
                 const isChecked = selectedTiers.includes(id);
                 return (
                   <button
                     key={id}
                     onClick={() => toggleTier(id)}
-                    className={`w-full py-3 px-3.5 rounded-lg border text-left transition-all cursor-pointer flex items-center justify-between gap-3 ${
+                    className={`w-full py-2 px-3 rounded-lg border text-left transition-all cursor-pointer flex items-center justify-between gap-2.5 ${
                       isChecked
-                        ? 'bg-gradient-to-r from-[#8d1720]/90 via-[#5a0d15]/90 to-[#18263c] text-amber-100 border-amber-400 shadow-md ring-1 ring-amber-400/50'
-                        : 'bg-[#131e30]/95 text-slate-300 border-slate-700/80 hover:text-slate-100 hover:border-slate-500 hover:bg-[#18253b]'
+                        ? 'bg-gradient-to-r from-[#8d1720]/90 via-[#5a0d15]/90 to-[#18263c] text-amber-100 border-amber-400 shadow-sm ring-1 ring-amber-400/50'
+                        : 'bg-[#131e30]/80 text-slate-400 border-slate-700/60 opacity-60 hover:opacity-90 hover:border-slate-500'
                     }`}
                     title={`Toggle ${label}`}
                   >
-                    <div className="flex items-center gap-3.5 min-w-0">
-                      {/* Custom Checkbox */}
-                      <div
-                        className={`w-5 h-5 rounded flex items-center justify-center text-xs font-black shrink-0 transition-colors ${
-                          isChecked
-                            ? 'bg-amber-400 text-slate-950 font-black shadow-sm'
-                            : 'border border-slate-500 bg-slate-800/80 text-transparent'
-                        }`}
-                      >
-                        ✓
-                      </div>
-                      <TierPinIcon tier={id} className="w-7 h-7 shrink-0 drop-shadow" />
-                      <div className="min-w-0 flex flex-col">
-                        <span className={`text-base md:text-[17px] font-cinzel font-bold leading-tight ${isChecked ? 'text-amber-100' : 'text-slate-200'}`}>
-                          {label}
-                        </span>
-                        <span className={`text-[15px] md:text-[16px] leading-snug font-garamond font-medium mt-0.5 ${isChecked ? 'text-amber-100' : 'text-slate-300'}`}>
-                          {subtitle}
-                        </span>
-                      </div>
+                    <div className="flex items-center gap-2.5 min-w-0">
+                      <TierPinIcon tier={id} className="w-5 h-5 shrink-0" />
+                      <span className={`text-sm md:text-[15px] font-cinzel font-bold truncate ${isChecked ? 'text-amber-100' : 'text-slate-300'}`}>
+                        {label}
+                      </span>
                     </div>
                     <span
-                      className={`text-sm md:text-base font-cinzel font-bold px-3 py-1 rounded border shrink-0 ${
+                      className={`text-xs md:text-sm font-cinzel font-bold px-2 py-0.5 rounded border shrink-0 ${
                         isChecked
-                          ? 'bg-[#18253b] text-amber-300 border-amber-400/60 shadow-sm'
-                          : 'bg-[#18253b] text-slate-300 border-slate-700'
+                          ? 'bg-[#18253b] text-amber-300 border-amber-400/60'
+                          : 'bg-[#18253b] text-slate-400 border-slate-700'
                       }`}
                     >
                       {count}
@@ -372,15 +364,13 @@ export const OperaUIOverlay: React.FC = () => {
           </div>
         </aside>
 
-        {/* RIGHT SIDEBAR: DOSSIER & PROFILE (Flush against right edge and header) */}
-        <aside
-          className="pointer-events-auto flex w-[460px] 2xl:w-[500px] flex-col border-l border-amber-500/40 p-5 md:p-6 shadow-2xl backdrop-blur-md min-h-0 overflow-hidden h-full z-20"
-          style={panelBg}
-        >
-          {selectedHouse ? (
-            /* ------------------------------------------------------------- */
-            /* BESPOKE OPERA HOUSE PROFILE & HISTORICAL DOSSIER             */
-            /* ------------------------------------------------------------- */
+        {/* RIGHT SIDEBAR: DOSSIER & PROFILE (Rendered ONLY when an opera house is selected) */}
+        {selectedHouse && (
+          <aside
+            className="pointer-events-auto flex w-[460px] 2xl:w-[500px] flex-col border-l border-amber-500/40 p-5 md:p-6 shadow-2xl backdrop-blur-md min-h-0 overflow-hidden h-full z-20 animate-in fade-in duration-200"
+            style={panelBg}
+          >
+            {/* BESPOKE OPERA HOUSE PROFILE & HISTORICAL DOSSIER */}
             <div className="flex flex-col h-full min-h-0 space-y-4">
               {/* Header: Title at Top, City & Country, Tier Badge Below, Close [✕] Button at Top Right */}
               <div className="relative border-b-2 border-dashed border-amber-900/60 pb-3.5 shrink-0">
@@ -448,7 +438,6 @@ export const OperaUIOverlay: React.FC = () => {
                       <div className="text-xs md:text-sm font-cinzel font-bold text-amber-300 uppercase tracking-wider">
                         Architect & Style
                       </div>
-                      {/* Full architectural text wrapped naturally — NO TRUNCATION */}
                       <div className="font-bold text-base md:text-lg text-white mt-0.5 leading-snug break-words">
                         {selectedHouse.architect} {selectedHouse.architecturalStyle ? `• ${selectedHouse.architecturalStyle}` : ''}
                       </div>
@@ -459,7 +448,7 @@ export const OperaUIOverlay: React.FC = () => {
 
               {/* Scrollable Content: Description, Heritage & Verified World Premieres */}
               <div className="flex-1 space-y-4 overflow-y-auto pr-1 min-h-0">
-                {/* Description (Generous, highly legible font size and spacious padding) */}
+                {/* Description */}
                 <div className="bg-[#131e30] border border-slate-700/80 p-5 md:p-6 rounded-lg shadow-sm">
                   <p className="text-[18px] md:text-[19px] text-slate-100 leading-relaxed font-garamond italic">
                     "{selectedHouse.description}"
@@ -538,77 +527,15 @@ export const OperaUIOverlay: React.FC = () => {
                 </a>
               </div>
             </div>
-          ) : (
-            /* ------------------------------------------------------------- */
-            /* GLOBAL OPERA OVERVIEW (Empty State)                           */
-            /* ------------------------------------------------------------- */
-            <div className="flex flex-col h-full space-y-4 justify-between overflow-y-auto pr-1">
-              <div>
-                <div className="border-b border-amber-900/50 pb-3">
-                  <h2 className="font-cinzel text-xl md:text-2xl font-bold tracking-wider text-amber-300 uppercase flex items-center gap-2.5">
-                    <Compass className="h-6 w-6 text-amber-300" /> The World of Opera
-                  </h2>
-                  <p className="text-base md:text-[17px] text-amber-100 font-garamond leading-relaxed mt-2">
-                    Select any pin on the globe or browse the directory to inspect architectural dossiers, landmark world premieres, and historical milestones.
-                  </p>
-                </div>
-
-                <div className="mt-4 space-y-3.5">
-                  <div className="bg-[#131e30] border border-slate-600/80 p-5 md:p-6 rounded-lg space-y-2.5 shadow-sm">
-                    <div className="flex items-center gap-3 font-cinzel font-bold text-base md:text-lg text-amber-300">
-                      <TierPinIcon tier={1} className="w-6 h-6 shrink-0 drop-shadow" />
-                      <span>Tier 1: Global Premier Opera Palaces & Landmark Houses ({tierCounts[1]})</span>
-                    </div>
-                    <p className="text-base md:text-[17.5px] text-slate-100 leading-relaxed font-garamond">
-                      International A-League institutions with massive global footprints, star rosters, and historic supremacy.
-                    </p>
-                  </div>
-
-                  <div className="bg-[#131e30] border border-slate-600/80 p-5 md:p-6 rounded-lg space-y-2.5 shadow-sm">
-                    <div className="flex items-center gap-3 font-cinzel font-bold text-base md:text-lg text-slate-200">
-                      <TierPinIcon tier={2} className="w-6 h-6 shrink-0 drop-shadow" />
-                      <span>Tier 2: Major Metropolitan & National Houses ({tierCounts[2]})</span>
-                    </div>
-                    <p className="text-base md:text-[17.5px] text-slate-100 leading-relaxed font-garamond">
-                      Foremost civic, state, and national opera houses with year-round resident companies and pit orchestras.
-                    </p>
-                  </div>
-
-                  <div className="bg-[#131e30] border border-slate-600/80 p-5 md:p-6 rounded-lg space-y-2.5 shadow-sm">
-                    <div className="flex items-center gap-3 font-cinzel font-bold text-base md:text-lg text-red-300">
-                      <TierPinIcon tier={3} className="w-6 h-6 shrink-0 drop-shadow" />
-                      <span>Tier 3: Boutique Stages & Renowned Festivals ({tierCounts[3]})</span>
-                    </div>
-                    <p className="text-base md:text-[17.5px] text-slate-100 leading-relaxed font-garamond">
-                      High-standard professional companies in intimate historic jewel boxes and dedicated seasonal festivals.
-                    </p>
-                  </div>
-
-                  <div className="bg-[#131e30] border border-slate-600/80 p-5 md:p-6 rounded-lg space-y-2.5 shadow-sm">
-                    <div className="flex items-center gap-3 font-cinzel font-bold text-base md:text-lg text-blue-300">
-                      <TierPinIcon tier={4} className="w-6 h-6 shrink-0 drop-shadow" />
-                      <span>Tier 4: Historic Royal Court & Princely Theatres ({tierCounts[4]})</span>
-                    </div>
-                    <p className="text-base md:text-[17.5px] text-slate-100 leading-relaxed font-garamond">
-                      Intact 16th- to 18th-century royal, princely, and imperial court theatres preserved with original historical stage machinery.
-                    </p>
-                  </div>
-                </div>
-              </div>
-
-              <div className="bg-[#131e30] border border-amber-700/50 p-5 rounded-lg text-center text-base md:text-[17px] text-amber-200 font-garamond shrink-0 shadow-sm">
-                Tip: Search for composers such as "Verdi", "Puccini", "Wagner", or "Mozart" to find where their masterworks first premiered.
-              </div>
-            </div>
-          )}
-        </aside>
+          </aside>
+        )}
 
         {/* ------------------------------------------------------------- */}
         {/* 3. CENTER BOTTOM CONTROLS: FLOATING PROSCENIUM CONTROL BAR     */}
         {/* ------------------------------------------------------------- */}
         <footer className="pointer-events-auto absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-4 px-6 py-2.5 rounded-full border border-amber-500/70 bg-[#101927]/95 shadow-2xl backdrop-blur-md text-sm md:text-base font-cinzel text-amber-100 z-20 font-bold">
           <span className="drop-shadow-md">
-            {filteredHouses.length} OPERA HOUSES DISPLAYED • DRAG GLOBE TO ROTATE
+            DRAG GLOBE TO ROTATE • SELECT ANY PIN
           </span>
           <div className="h-4 w-[1px] bg-amber-500/50" />
           <button
@@ -620,6 +547,13 @@ export const OperaUIOverlay: React.FC = () => {
           </button>
         </footer>
       </div>
+
+      {/* ATLAS GUIDE & TIER CLASSIFICATION MODAL */}
+      <AtlasInfoModal
+        isOpen={showInfoModal}
+        onClose={() => setShowInfoModal(false)}
+        tierCounts={tierCounts}
+      />
     </div>
   );
 };
