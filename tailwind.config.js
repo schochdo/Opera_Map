@@ -8,8 +8,9 @@ export default {
     extend: {
       fontFamily: {
         cinzel: ['Cinzel', 'serif'],
-        garamond: ['"Cormorant Garamond"', 'serif'],
-        playfair: ['"Playfair Display"', 'serif'],
+        garamond: ['Lora', 'Georgia', '"Cormorant Garamond"', 'serif'],
+        lora: ['Lora', 'Georgia', 'serif'],
+        playfair: ['"Playfair Display"', 'Georgia', 'serif'],
       },
       colors: {
         parchment: {

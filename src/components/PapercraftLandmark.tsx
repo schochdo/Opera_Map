@@ -160,9 +160,9 @@ export const PapercraftLandmark: React.FC<LandmarkProps> = ({ house, globeRadius
             <div
               style={{
                 fontFamily: "'Cinzel', serif",
-                fontSize: '15px',
+                fontSize: '17px',
                 whiteSpace: 'nowrap',
-                padding: '8px 16px',
+                padding: '10px 20px',
                 borderRadius: '8px',
                 background: 'rgba(12, 17, 26, 0.97)',
                 color: '#ffffff',
@@ -170,22 +170,21 @@ export const PapercraftLandmark: React.FC<LandmarkProps> = ({ house, globeRadius
                 boxShadow: '0 8px 24px rgba(0, 0, 0, 0.85)',
                 display: 'flex',
                 alignItems: 'center',
-                gap: '8px',
+                gap: '9px',
                 userSelect: 'none',
                 fontWeight: 700,
                 letterSpacing: '0.04em',
               }}
             >
-              <span style={{ fontSize: '16px' }}>
+              <span style={{ fontSize: '19px' }}>
                 {house.tier === 1 ? '🏛️' : house.tier === 2 ? '🎭' : house.tier === 3 ? '🎪' : '👑'}
               </span>
               <span>{house.name}</span>
               <span
                 style={{
-                  fontSize: '14px',
+                  fontSize: '16px',
                   color: '#f3c448',
-                  fontFamily: "'Cormorant Garamond', serif",
-                  fontStyle: 'italic',
+                  fontFamily: "'Lora', 'Georgia', serif",
                   fontWeight: 600,
                   marginLeft: '4px',
                 }}
