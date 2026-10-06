@@ -75,14 +75,48 @@ export const PapercraftLandmark: React.FC<LandmarkProps> = ({ house, globeRadius
     }
   });
 
-  // Sleek, refined cartographic pin proportions (subtle and non-overlapping)
-  const needleHeight = house.tier === 1 ? 0.026 : house.tier === 2 ? 0.020 : house.tier === 3 ? 0.016 : 0.018;
-  const headRadius   = house.tier === 1 ? 0.0125 : house.tier === 2 ? 0.0095 : house.tier === 3 ? 0.008 : 0.0085;
-  const needleR      = house.tier === 1 ? 0.0014 : house.tier === 2 ? 0.0011 : 0.0009;
-  const headColor    = house.tier === 1 ? '#f59e0b' : house.tier === 2 ? '#d8e2ec' : house.tier === 3 ? '#dc2626' : '#2563eb';
+  // Sleek, refined cartographic pin proportions (subtle and non-overlapping in Europe)
+  const needleHeight = house.tier === 1 ? 0.027 : house.tier === 2 ? 0.022 : house.tier === 3 ? 0.017 : 0.019;
+  const headRadius   = house.tier === 1 ? 0.0125 : house.tier === 2 ? 0.0108 : house.tier === 3 ? 0.0085 : 0.0090;
+  const needleR      = house.tier === 1 ? 0.0014 : house.tier === 2 ? 0.0012 : 0.0009;
+
+  // Luminous pearl head colors
+  const headColor =
+    house.tier === 1
+      ? '#fbbf24' // Imperial Gold
+      : house.tier === 2
+      ? '#f8fafc' // Brilliant Sterling Platinum Silver
+      : house.tier === 3
+      ? '#ef4444' // Crimson Ruby
+      : '#3b82f6'; // Royal Sapphire
+
+  // Radiant base glow colors (stamped on the globe surface)
+  const glowColor =
+    house.tier === 1
+      ? '#f59e0b'
+      : house.tier === 2
+      ? '#e2e8f0'
+      : house.tier === 3
+      ? '#f87171'
+      : '#60a5fa';
+
+  // Base emissive tint for self-illumination (prevents washed-out/black metallic appearance)
+  const baseEmissive =
+    house.tier === 1
+      ? '#d97706'
+      : house.tier === 2
+      ? '#cbd5e1'
+      : house.tier === 3
+      ? '#991b1b'
+      : '#1d4ed8';
+
+  const baseEmissiveIntensity = house.tier === 2 ? 0.35 : 0.22;
+
   const headEmissive = isSelected
-    ? (house.tier === 3 ? '#ff2222' : house.tier === 4 ? '#3b82f6' : house.tier === 2 ? '#f1f5f9' : '#fbbf24')
-    : (hovered ? '#ffffff' : '#000000');
+    ? (house.tier === 3 ? '#ff2222' : house.tier === 4 ? '#3b82f6' : house.tier === 2 ? '#ffffff' : '#fbbf24')
+    : (hovered ? '#ffffff' : baseEmissive);
+
+  const headEmissiveIntensity = isSelected ? 0.85 : hovered ? 0.5 : baseEmissiveIntensity;
   const tipY = needleHeight + headRadius;
 
   return (
@@ -99,11 +133,48 @@ export const PapercraftLandmark: React.FC<LandmarkProps> = ({ house, globeRadius
       }}
       onPointerOut={() => setHovered(false)}
     >
-      {/* 1. Subtle soft contact shadow flush on globe surface */}
-      <mesh position={normal.clone().multiplyScalar(0.0015)} quaternion={shadowQuaternion}>
-        <circleGeometry args={[headRadius * 0.9, 16]} />
-        <meshBasicMaterial color="#000000" transparent opacity={0.22} depthWrite={false} />
-      </mesh>
+      {/* 1. Luminous Base Grommet & Glow Ring on Globe Surface */}
+      <group position={normal.clone().multiplyScalar(0.0020)} quaternion={shadowQuaternion}>
+        {/* A. Soft Dark Shadow Disc: Grounds the pin and contrasts with white land or blue sea */}
+        <mesh>
+          <circleGeometry args={[headRadius * 1.9, 24]} />
+          <meshBasicMaterial color="#050b14" transparent opacity={0.65} depthWrite={false} />
+        </mesh>
+
+        {/* B. Luminous Glow Ring: Vibrant halo in tier's distinctive color */}
+        <mesh position={[0, 0, 0.0001]}>
+          <ringGeometry args={[headRadius * 0.7, headRadius * 1.75, 24]} />
+          <meshBasicMaterial
+            color={glowColor}
+            transparent
+            opacity={house.tier === 2 ? 0.95 : 0.85}
+            depthWrite={false}
+            side={THREE.DoubleSide}
+          />
+        </mesh>
+
+        {/* C. Crisp Dark Perimeter Ring: Distinct outer boundary */}
+        <mesh position={[0, 0, 0.0002]}>
+          <ringGeometry args={[headRadius * 1.7, headRadius * 1.9, 24]} />
+          <meshBasicMaterial
+            color="#050a12"
+            transparent
+            opacity={0.88}
+            depthWrite={false}
+            side={THREE.DoubleSide}
+          />
+        </mesh>
+
+        {/* D. Center Metallic Puncture Grommet */}
+        <mesh position={[0, 0, 0.0003]}>
+          <ringGeometry args={[needleR * 0.8, headRadius * 0.7, 20]} />
+          <meshBasicMaterial
+            color={house.tier === 2 ? '#ffffff' : '#fbbf24'}
+            depthWrite={false}
+            side={THREE.DoubleSide}
+          />
+        </mesh>
+      </group>
 
       {/* 2. Upright Pin assembly: projects directly outward from surface */}
       <group quaternion={pinQuaternion}>
@@ -113,47 +184,57 @@ export const PapercraftLandmark: React.FC<LandmarkProps> = ({ house, globeRadius
           <meshBasicMaterial visible={false} />
         </mesh>
 
-        {/* Slender polished pin needle (polished steel/silver for Tier 2, brass for others) */}
+        {/* Slender polished pin needle */}
         <mesh position={[0, needleHeight / 2, 0]}>
           <cylinderGeometry args={[needleR * 0.8, needleR, needleHeight, 8]} />
           <meshStandardMaterial
-            color={house.tier === 2 ? '#c2ccd8' : '#d4af37'}
-            metalness={0.92}
-            roughness={0.18}
+            color={house.tier === 2 ? '#e2e8f0' : '#d4af37'}
+            metalness={0.45}
+            roughness={0.22}
           />
         </mesh>
 
-        {/* Small collar flange under the pearl bead */}
+        {/* High-contrast collar flange under the pearl bead */}
         <mesh position={[0, needleHeight - 0.001, 0]}>
-          <cylinderGeometry args={[headRadius * 0.5, headRadius * 0.35, 0.003, 8]} />
+          <cylinderGeometry args={[headRadius * 0.55, headRadius * 0.35, 0.003, 8]} />
           <meshStandardMaterial
-            color={house.tier === 2 ? '#a3b0be' : '#b8860b'}
-            metalness={0.92}
-            roughness={0.2}
+            color={house.tier === 2 ? '#1e293b' : '#78350f'}
+            metalness={0.5}
+            roughness={0.3}
+          />
+        </mesh>
+
+        {/* Inverted-Hull Dark Silhouette Outline around Pearl Head (crisp 1-pixel contrast border) */}
+        <mesh position={[0, tipY, 0]}>
+          <sphereGeometry args={[headRadius * 1.15, 18, 18]} />
+          <meshBasicMaterial
+            color="#080e18"
+            side={THREE.BackSide}
+            depthWrite={false}
           />
         </mesh>
 
         {/* Smooth spherical pearl head */}
         <mesh position={[0, tipY, 0]}>
-          <sphereGeometry args={[headRadius, 18, 18]} />
+          <sphereGeometry args={[headRadius, 20, 20]} />
           <meshStandardMaterial
             color={headColor}
             emissive={headEmissive}
-            emissiveIntensity={isSelected ? 0.75 : hovered ? 0.3 : 0}
-            metalness={house.tier === 2 ? 0.92 : house.tier === 1 ? 0.85 : house.tier === 3 ? 0.2 : 0.3}
-            roughness={house.tier === 2 ? 0.14 : house.tier === 1 ? 0.18 : 0.15}
+            emissiveIntensity={headEmissiveIntensity}
+            metalness={0.20}
+            roughness={0.20}
           />
         </mesh>
 
         {/* Selected halo ring indicator */}
         {isSelected && (
           <mesh position={[0, tipY, 0]}>
-            <ringGeometry args={[headRadius * 1.3, headRadius * 1.6, 24]} />
+            <ringGeometry args={[headRadius * 1.35, headRadius * 1.7, 24]} />
             <meshBasicMaterial
-              color={house.tier === 2 ? '#e2e8f0' : house.tier === 1 ? '#fbbf24' : '#ffffff'}
+              color={house.tier === 2 ? '#ffffff' : house.tier === 1 ? '#fbbf24' : '#ffffff'}
               side={THREE.DoubleSide}
               transparent
-              opacity={0.85}
+              opacity={0.9}
             />
           </mesh>
         )}
