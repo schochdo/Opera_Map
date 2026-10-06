@@ -17,9 +17,9 @@ export function latLongToVector3(lat: number, lng: number, radius: number): THRE
 // ─────────────────────────────────────────────────────────────
 // ELEGANT MAP PUSH PINS
 // Classic brass needle with polished spherical pearl heads:
-// • Tier 1: Large Imperial Gold pearl (#f3c448)
-// • Tier 2: Warm Antique Brass pearl (#c9a13b)
-// • Tier 3: Crimson Ruby pearl (#b91c1c)
+// • Tier 1: Large Imperial Gold pearl (#f59e0b)
+// • Tier 2: Polished Sterling Silver pearl (#d8e2ec)
+// • Tier 3: Crimson Ruby pearl (#dc2626)
 // • Tier 4: Royal Sapphire pearl (#2563eb)
 // ─────────────────────────────────────────────────────────────
 
@@ -78,9 +78,9 @@ export const PapercraftLandmark: React.FC<LandmarkProps> = ({ house, globeRadius
   const needleHeight = house.tier === 1 ? 0.026 : house.tier === 2 ? 0.020 : house.tier === 3 ? 0.016 : 0.018;
   const headRadius   = house.tier === 1 ? 0.0125 : house.tier === 2 ? 0.0095 : house.tier === 3 ? 0.008 : 0.0085;
   const needleR      = house.tier === 1 ? 0.0014 : house.tier === 2 ? 0.0011 : 0.0009;
-  const headColor    = house.tier === 1 ? '#f59e0b' : house.tier === 2 ? '#d97706' : house.tier === 3 ? '#dc2626' : '#2563eb';
+  const headColor    = house.tier === 1 ? '#f59e0b' : house.tier === 2 ? '#d8e2ec' : house.tier === 3 ? '#dc2626' : '#2563eb';
   const headEmissive = isSelected
-    ? (house.tier === 3 ? '#ff2222' : house.tier === 4 ? '#3b82f6' : '#fbbf24')
+    ? (house.tier === 3 ? '#ff2222' : house.tier === 4 ? '#3b82f6' : house.tier === 2 ? '#f1f5f9' : '#fbbf24')
     : (hovered ? '#ffffff' : '#000000');
   const tipY = needleHeight + headRadius;
 
@@ -112,16 +112,24 @@ export const PapercraftLandmark: React.FC<LandmarkProps> = ({ house, globeRadius
           <meshBasicMaterial visible={false} />
         </mesh>
 
-        {/* Slender polished brass pin needle */}
+        {/* Slender polished pin needle (polished steel/silver for Tier 2, brass for others) */}
         <mesh position={[0, needleHeight / 2, 0]}>
           <cylinderGeometry args={[needleR * 0.8, needleR, needleHeight, 8]} />
-          <meshStandardMaterial color="#d4af37" metalness={0.9} roughness={0.2} />
+          <meshStandardMaterial
+            color={house.tier === 2 ? '#c2ccd8' : '#d4af37'}
+            metalness={0.92}
+            roughness={0.18}
+          />
         </mesh>
 
-        {/* Small brass collar flange under the pearl bead */}
+        {/* Small collar flange under the pearl bead */}
         <mesh position={[0, needleHeight - 0.001, 0]}>
           <cylinderGeometry args={[headRadius * 0.5, headRadius * 0.35, 0.003, 8]} />
-          <meshStandardMaterial color="#b8860b" metalness={0.92} roughness={0.2} />
+          <meshStandardMaterial
+            color={house.tier === 2 ? '#a3b0be' : '#b8860b'}
+            metalness={0.92}
+            roughness={0.2}
+          />
         </mesh>
 
         {/* Smooth spherical pearl head */}
@@ -131,8 +139,8 @@ export const PapercraftLandmark: React.FC<LandmarkProps> = ({ house, globeRadius
             color={headColor}
             emissive={headEmissive}
             emissiveIntensity={isSelected ? 0.75 : hovered ? 0.3 : 0}
-            metalness={house.tier === 3 ? 0.2 : house.tier === 4 ? 0.3 : 0.85}
-            roughness={house.tier === 3 ? 0.15 : house.tier === 4 ? 0.15 : 0.18}
+            metalness={house.tier === 2 ? 0.92 : house.tier === 1 ? 0.85 : house.tier === 3 ? 0.2 : 0.3}
+            roughness={house.tier === 2 ? 0.14 : house.tier === 1 ? 0.18 : 0.15}
           />
         </mesh>
 
@@ -141,10 +149,10 @@ export const PapercraftLandmark: React.FC<LandmarkProps> = ({ house, globeRadius
           <mesh position={[0, tipY, 0]}>
             <ringGeometry args={[headRadius * 1.3, headRadius * 1.6, 24]} />
             <meshBasicMaterial
-              color="#ffffff"
+              color={house.tier === 2 ? '#e2e8f0' : house.tier === 1 ? '#fbbf24' : '#ffffff'}
               side={THREE.DoubleSide}
               transparent
-              opacity={0.8}
+              opacity={0.85}
             />
           </mesh>
         )}
@@ -166,7 +174,7 @@ export const PapercraftLandmark: React.FC<LandmarkProps> = ({ house, globeRadius
                 borderRadius: '8px',
                 background: 'rgba(12, 17, 26, 0.97)',
                 color: '#ffffff',
-                border: `1.5px solid ${house.tier === 1 ? '#d4af37' : house.tier === 2 ? '#c59b27' : house.tier === 3 ? '#b91c1c' : '#2563eb'}`,
+                border: `1.5px solid ${house.tier === 1 ? '#d4af37' : house.tier === 2 ? '#cbd5e1' : house.tier === 3 ? '#b91c1c' : '#2563eb'}`,
                 boxShadow: '0 8px 24px rgba(0, 0, 0, 0.85)',
                 display: 'flex',
                 alignItems: 'center',
@@ -183,7 +191,7 @@ export const PapercraftLandmark: React.FC<LandmarkProps> = ({ house, globeRadius
               <span
                 style={{
                   fontSize: '16px',
-                  color: '#f3c448',
+                  color: house.tier === 2 ? '#cbd5e1' : '#f3c448',
                   fontFamily: "'Lora', 'Georgia', serif",
                   fontWeight: 600,
                   marginLeft: '4px',

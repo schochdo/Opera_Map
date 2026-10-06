@@ -108,6 +108,36 @@ export const OperaUIOverlay: React.FC = () => {
     }
   };
 
+  const getTierBadgeStyle = (tier: number) => {
+    switch (tier) {
+      case 1:
+        return 'text-amber-300 bg-amber-950/70 border-amber-400/80 shadow-sm';
+      case 2:
+        return 'text-slate-100 bg-slate-800/95 border-slate-300 shadow-sm';
+      case 3:
+        return 'text-red-300 bg-red-950/70 border-red-500/80 shadow-sm';
+      case 4:
+        return 'text-blue-300 bg-blue-950/70 border-blue-400/80 shadow-sm';
+      default:
+        return 'text-slate-300 bg-slate-800 border-slate-600';
+    }
+  };
+
+  const getDossierTierBadgeClass = (tier: number) => {
+    switch (tier) {
+      case 1:
+        return 'bg-gradient-to-r from-[#7a101b] to-[#5a0d15] text-amber-100 border-amber-400/80 shadow-sm';
+      case 2:
+        return 'bg-gradient-to-r from-slate-900 via-slate-800 to-slate-900 text-slate-100 border-slate-300 shadow-md ring-1 ring-slate-400/40';
+      case 3:
+        return 'bg-gradient-to-r from-red-950 to-[#4a080e] text-red-100 border-red-500/80 shadow-sm';
+      case 4:
+        return 'bg-gradient-to-r from-blue-950 to-[#0d1e38] text-blue-100 border-blue-400/80 shadow-sm';
+      default:
+        return 'bg-slate-800 text-slate-100 border-slate-600';
+    }
+  };
+
   return (
     <div className="pointer-events-none absolute inset-0 z-20 flex flex-col justify-between select-none font-serif overflow-hidden">
       {/* ------------------------------------------------------------- */}
@@ -238,9 +268,24 @@ export const OperaUIOverlay: React.FC = () => {
                       </div>
                       <span className="text-2xl shrink-0">{icon}</span>
                       <div className="min-w-0 flex flex-col">
-                        <span className={`text-base md:text-[17px] font-cinzel font-bold leading-tight ${isChecked ? 'text-amber-100' : 'text-slate-200'}`}>
-                          {label}
-                        </span>
+                        <div className="flex items-center gap-2 flex-wrap">
+                          <span className={`text-base md:text-[17px] font-cinzel font-bold leading-tight ${isChecked ? 'text-amber-100' : 'text-slate-200'}`}>
+                            {label}
+                          </span>
+                          <span
+                            className={`text-[11px] font-cinzel font-bold px-1.5 py-0.5 rounded border uppercase tracking-wider ${
+                              id === 1
+                                ? 'text-amber-300 bg-amber-950/70 border-amber-500/70'
+                                : id === 2
+                                ? 'text-slate-100 bg-slate-800/90 border-slate-300 shadow-sm'
+                                : id === 3
+                                ? 'text-red-300 bg-red-950/70 border-red-500/70'
+                                : 'text-blue-300 bg-blue-950/70 border-blue-500/70'
+                            }`}
+                          >
+                            {id === 1 ? 'Gold Pin' : id === 2 ? 'Silver Pin' : id === 3 ? 'Ruby Pin' : 'Sapphire Pin'}
+                          </span>
+                        </div>
                         <span className={`text-[15px] md:text-[16px] leading-snug font-garamond font-medium mt-0.5 ${isChecked ? 'text-amber-100' : 'text-slate-300'}`}>
                           {subtitle}
                         </span>
@@ -293,7 +338,7 @@ export const OperaUIOverlay: React.FC = () => {
                       <h4 className="font-cinzel text-base md:text-[17px] font-bold text-amber-100 leading-snug">
                         {house.name}
                       </h4>
-                      <span className="text-xs md:text-sm font-cinzel font-bold text-amber-200 bg-[#1c2b44] px-2.5 py-1 rounded border border-slate-600 shrink-0">
+                      <span className={`text-xs md:text-sm font-cinzel font-bold px-2.5 py-1 rounded border shrink-0 ${getTierBadgeStyle(house.tier)}`}>
                         {tierLabel}
                       </span>
                     </div>
@@ -365,7 +410,7 @@ export const OperaUIOverlay: React.FC = () => {
                       {selectedHouse.city}, {selectedHouse.country}
                     </p>
                     <div className="mt-2.5">
-                      <span className="inline-flex items-center gap-2 rounded-md bg-gradient-to-r from-[#7a101b] to-[#5a0d15] px-3.5 py-1.5 text-sm md:text-base font-cinzel font-bold tracking-wider text-amber-100 border border-amber-500/60 shadow-sm">
+                      <span className={`inline-flex items-center gap-2 rounded-md px-3.5 py-1.5 text-sm md:text-base font-cinzel font-bold tracking-wider border ${getDossierTierBadgeClass(selectedHouse.tier)}`}>
                         {getTierBadgeText(selectedHouse.tier)}
                       </span>
                     </div>
@@ -524,9 +569,14 @@ export const OperaUIOverlay: React.FC = () => {
 
                 <div className="mt-4 space-y-3.5">
                   <div className="bg-[#131e30] border border-slate-600/80 p-4 rounded-lg space-y-2">
-                    <div className="flex items-center gap-2.5 font-cinzel font-bold text-base md:text-lg text-amber-300">
-                      <span className="text-xl">🏛️</span>
-                      <span>Tier 1: Global Premier Opera Palaces & Landmark Houses ({tierCounts[1]})</span>
+                    <div className="flex items-center justify-between font-cinzel font-bold text-base md:text-lg text-amber-300">
+                      <div className="flex items-center gap-2.5">
+                        <span className="text-xl">🏛️</span>
+                        <span>Tier 1: Global Premier Opera Palaces & Landmark Houses ({tierCounts[1]})</span>
+                      </div>
+                      <span className="text-xs px-2.5 py-0.5 rounded bg-amber-950/70 text-amber-300 border border-amber-500 font-sans font-semibold">
+                        Gold Pin
+                      </span>
                     </div>
                     <p className="text-base md:text-[17.5px] text-slate-100 leading-relaxed font-garamond">
                       International A-League institutions with massive global footprints, star rosters, and historic supremacy (e.g. The Met, La Scala, Wiener Staatsoper, Royal Opera House Covent Garden, Opéra Garnier & Bastille, Bayreuth Festspielhaus, Cairo Opera House / Khedivial [Aida premiere 1871], Royal Swedish Opera, Teatro Colón, Theatro Municipal do Rio de Janeiro, Sydney Opera House).
@@ -534,9 +584,14 @@ export const OperaUIOverlay: React.FC = () => {
                   </div>
 
                   <div className="bg-[#131e30] border border-slate-600/80 p-4 rounded-lg space-y-2">
-                    <div className="flex items-center gap-2.5 font-cinzel font-bold text-base md:text-lg text-amber-200">
-                      <span className="text-xl">🎭</span>
-                      <span>Tier 2: Major Metropolitan & National Houses ({tierCounts[2]})</span>
+                    <div className="flex items-center justify-between font-cinzel font-bold text-base md:text-lg text-slate-200">
+                      <div className="flex items-center gap-2.5">
+                        <span className="text-xl">🎭</span>
+                        <span>Tier 2: Major Metropolitan & National Houses ({tierCounts[2]})</span>
+                      </div>
+                      <span className="text-xs px-2.5 py-0.5 rounded bg-slate-800 text-slate-100 border border-slate-300 shadow-sm font-sans font-semibold">
+                        Silver Pin
+                      </span>
                     </div>
                     <p className="text-base md:text-[17.5px] text-slate-100 leading-relaxed font-garamond">
                       Foremost civic, state, and national opera houses with year-round resident companies and pit orchestras (e.g. Cape Town Opera, Opera Philadelphia, Washington National Opera, Oper Leipzig, Opera Colorado / Ellie Caulkins, Houston, Canadian Opera Company, Gothenburg Opera, Tokyo NNTT, Teatro dell'Opera di Roma).
@@ -544,9 +599,14 @@ export const OperaUIOverlay: React.FC = () => {
                   </div>
 
                   <div className="bg-[#131e30] border border-slate-600/80 p-4 rounded-lg space-y-2">
-                    <div className="flex items-center gap-2.5 font-cinzel font-bold text-base md:text-lg text-red-300">
-                      <span className="text-xl">🎪</span>
-                      <span>Tier 3: Boutique Stages & Renowned Festivals ({tierCounts[3]})</span>
+                    <div className="flex items-center justify-between font-cinzel font-bold text-base md:text-lg text-red-300">
+                      <div className="flex items-center gap-2.5">
+                        <span className="text-xl">🎪</span>
+                        <span>Tier 3: Boutique Stages & Renowned Festivals ({tierCounts[3]})</span>
+                      </div>
+                      <span className="text-xs px-2.5 py-0.5 rounded bg-red-950/70 text-red-300 border border-red-500 font-sans font-semibold">
+                        Ruby Pin
+                      </span>
                     </div>
                     <p className="text-base md:text-[17.5px] text-slate-100 leading-relaxed font-garamond">
                       High-standard professional companies in intimate historic jewel boxes or dedicated seasonal festivals (e.g. Central City Opera, Wheeler / Aspen Opera Theater, Bravo! Vail, Santa Fe Opera, Glimmerglass Festival, Chautauqua Opera, Tanglewood, Wolf Trap, Spoleto Festival USA, Savonlinna Opera Festival, Arena di Verona, Glyndebourne).
@@ -554,9 +614,14 @@ export const OperaUIOverlay: React.FC = () => {
                   </div>
 
                   <div className="bg-[#131e30] border border-slate-600/80 p-4 rounded-lg space-y-2">
-                    <div className="flex items-center gap-2.5 font-cinzel font-bold text-base md:text-lg text-blue-300">
-                      <span className="text-xl">👑</span>
-                      <span>Tier 4: Historic Royal Court & Princely Theatres ({tierCounts[4]})</span>
+                    <div className="flex items-center justify-between font-cinzel font-bold text-base md:text-lg text-blue-300">
+                      <div className="flex items-center gap-2.5">
+                        <span className="text-xl">👑</span>
+                        <span>Tier 4: Historic Royal Court & Princely Theatres ({tierCounts[4]})</span>
+                      </div>
+                      <span className="text-xs px-2.5 py-0.5 rounded bg-blue-950/70 text-blue-300 border border-blue-500 font-sans font-semibold">
+                        Sapphire Pin
+                      </span>
                     </div>
                     <p className="text-base md:text-[17.5px] text-slate-100 leading-relaxed font-garamond">
                       Intact 16th- to 19th-century royal court theatres and architectural wonders preserved with original historical machinery and imperial provenance (Teatro Olimpico in Vicenza [1585, Palladio], Drottningholms Slottsteater [1766, intact 18th-century wooden stage machinery], Margravial Opera House in Bayreuth [1748, Bibiena], Opéra Royal de Versailles [1770, Gabriel], Teatro Malibran in Venice [1678], Teatro Giuseppe Verdi in Busseto [1868], Teatro Amazonas in Manaus, Theatro da Paz in Belém, Royal Opera House Mumbai).

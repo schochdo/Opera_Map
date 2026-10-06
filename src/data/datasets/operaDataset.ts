@@ -54,7 +54,7 @@ export const OPERA_DATASET: AtlasDataset = {
         short: 'T2',
         badge: '🎭 Major Metropolitan / National Opera House',
         desc: 'Foremost civic, state, and national opera houses with year-round resident companies: Cape Town Opera, Canadian Opera Company, Opera Philadelphia, Washington National Opera, Oper Leipzig, Houston Grand Opera, Gothenburg Opera.',
-        color: '#c9a13b',
+        color: '#d8e2ec',
         icon: '🎭',
       },
       tier3: {
@@ -84,7 +84,7 @@ export const OPERA_DATASET: AtlasDataset = {
       {
         icon: '🎭',
         title: 'Major Metropolitan & National Houses (Tier 2)',
-        color: 'text-amber-400/90',
+        color: 'text-slate-200',
         description: 'Cape Town Opera, Canadian Opera Company, Houston, Seattle, Leipzig, Gothenburg, Tokyo NNTT, Hamburg, Frankfurt, Teatro dell\'Opera di Roma.',
       },
       {
