@@ -309,9 +309,9 @@ export const OperaUIOverlay: React.FC = () => {
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
                         className="inline-flex items-center gap-1 text-xs font-cinzel text-amber-300 hover:text-amber-100 hover:underline shrink-0 ml-2 not-italic font-bold"
-                        title={`Open official box office portal for ${house.name}`}
+                        title={`Visit website for ${house.name}`}
                       >
-                        Portal <ExternalLink className="h-3 w-3 text-amber-300" />
+                        Website <ExternalLink className="h-3 w-3 text-amber-300" />
                       </a>
                     </div>
 
@@ -495,7 +495,7 @@ export const OperaUIOverlay: React.FC = () => {
                 )}
               </div>
 
-              {/* Pinned Bottom Portal Button */}
+              {/* Pinned Bottom Website Button */}
               <div className="pt-2.5 border-t border-slate-700 shrink-0">
                 <a
                   href={selectedHouse.websiteUrl}
@@ -503,7 +503,7 @@ export const OperaUIOverlay: React.FC = () => {
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2 rounded-lg border border-amber-400 bg-gradient-to-r from-[#8d1720] to-[#b31d2c] py-3 text-sm md:text-base font-cinzel font-bold tracking-wider text-amber-100 shadow-md hover:from-[#a31a26] hover:to-[#c82233] transition cursor-pointer"
                 >
-                  Visit Official Box Office & Season Portal <ExternalLink className="h-4 w-4 text-amber-200" />
+                  Visit Website <ExternalLink className="h-4 w-4 text-amber-200" />
                 </a>
               </div>
             </div>
