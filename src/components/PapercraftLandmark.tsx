@@ -42,26 +42,13 @@ export const PapercraftLandmark: React.FC<LandmarkProps> = ({ house, globeRadius
 
   const { pinQuaternion, shadowQuaternion, normal } = useMemo(() => {
     const norm = position.clone().normalize();
-    const worldUp = new THREE.Vector3(0, 1, 0);
 
-    // East vector: points along latitude line in direction of increasing longitude (Screen Right)
-    let east = new THREE.Vector3().crossVectors(worldUp, norm).normalize();
-    if (east.lengthSq() < 0.001) east.set(1, 0, 0);
+    // Stand upright directly along the globe surface normal:
+    // This places the pinhead directly above its true geographic coordinates
+    // and prevents pins from leaning into neighboring cities or overlapping
+    const pinQ = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), norm);
 
-    // North vector: points along meridian toward North Pole (Screen Up)
-    const north = new THREE.Vector3().crossVectors(norm, east).normalize();
-
-    // Uniform 3D push-pin vector: slants UP (North) and to the RIGHT (East) while projecting outward from globe
-    const pinAxis = new THREE.Vector3()
-      .addScaledVector(east, 0.45)
-      .addScaledVector(north, 0.45)
-      .addScaledVector(norm, 0.77)
-      .normalize();
-
-    // Pin quaternion rotates default Y-up axis (0, 1, 0) to pinAxis
-    const pinQ = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 1, 0), pinAxis);
-
-    // Shadow quaternion aligns circle normal (0, 0, 1) with surface normal
+    // Shadow quaternion aligns circle normal with surface normal
     const shadowQ = new THREE.Quaternion().setFromUnitVectors(new THREE.Vector3(0, 0, 1), norm);
 
     return { pinQuaternion: pinQ, shadowQuaternion: shadowQ, normal: norm };
@@ -71,23 +58,23 @@ export const PapercraftLandmark: React.FC<LandmarkProps> = ({ house, globeRadius
   useFrame(({ clock }) => {
     if (!groupRef.current) return;
     if (isSelected) {
-      const s = 1.08 + Math.sin(clock.getElapsedTime() * 3.5) * 0.04;
+      const s = 1.25 + Math.sin(clock.getElapsedTime() * 4) * 0.06;
       groupRef.current.scale.set(s, s, s);
     } else if (hovered) {
-      groupRef.current.scale.lerp(new THREE.Vector3(1.12, 1.12, 1.12), 0.15);
+      groupRef.current.scale.lerp(new THREE.Vector3(1.2, 1.2, 1.2), 0.2);
     } else {
-      groupRef.current.scale.lerp(new THREE.Vector3(1, 1, 1), 0.15);
+      groupRef.current.scale.lerp(new THREE.Vector3(1, 1, 1), 0.2);
     }
   });
 
-  // Pin geometry proportions across 4 tiers
-  const needleHeight = house.tier === 1 ? 0.09 : house.tier === 2 ? 0.07 : house.tier === 3 ? 0.055 : 0.048;
-  const headRadius   = house.tier === 1 ? 0.034 : house.tier === 2 ? 0.024 : house.tier === 3 ? 0.018 : 0.016;
-  const needleR      = house.tier === 1 ? 0.0035 : house.tier === 2 ? 0.0028 : 0.0022;
-  const headColor    = house.tier === 1 ? '#f3c448' : house.tier === 2 ? '#c9a13b' : house.tier === 3 ? '#b91c1c' : '#2563eb';
+  // Sleek, refined cartographic pin proportions (subtle and non-overlapping)
+  const needleHeight = house.tier === 1 ? 0.026 : house.tier === 2 ? 0.020 : house.tier === 3 ? 0.016 : 0.018;
+  const headRadius   = house.tier === 1 ? 0.0125 : house.tier === 2 ? 0.0095 : house.tier === 3 ? 0.008 : 0.0085;
+  const needleR      = house.tier === 1 ? 0.0014 : house.tier === 2 ? 0.0011 : 0.0009;
+  const headColor    = house.tier === 1 ? '#f59e0b' : house.tier === 2 ? '#d97706' : house.tier === 3 ? '#dc2626' : '#2563eb';
   const headEmissive = isSelected
-    ? (house.tier === 3 ? '#ff3333' : house.tier === 4 ? '#60a5fa' : '#ffd54f')
-    : '#000000';
+    ? (house.tier === 3 ? '#ff2222' : house.tier === 4 ? '#3b82f6' : '#fbbf24')
+    : (hovered ? '#ffffff' : '#000000');
   const tipY = needleHeight + headRadius;
 
   return (
@@ -106,35 +93,54 @@ export const PapercraftLandmark: React.FC<LandmarkProps> = ({ house, globeRadius
     >
       {/* 1. Subtle soft contact shadow flush on globe surface */}
       <mesh position={normal.clone().multiplyScalar(0.0015)} quaternion={shadowQuaternion}>
-        <circleGeometry args={[headRadius * 0.75, 20]} />
-        <meshBasicMaterial color="#000000" transparent opacity={0.14} depthWrite={false} />
+        <circleGeometry args={[headRadius * 0.9, 16]} />
+        <meshBasicMaterial color="#000000" transparent opacity={0.22} depthWrite={false} />
       </mesh>
 
-      {/* 2. Slanted Pin assembly: uniform UP-and-to-the-RIGHT orientation everywhere */}
+      {/* 2. Upright Pin assembly: projects directly outward from surface */}
       <group quaternion={pinQuaternion}>
+        {/* Generous invisible raycast pick-target: ensures clicks never miss even on small heads */}
+        <mesh position={[0, tipY, 0]}>
+          <sphereGeometry args={[Math.max(headRadius * 2.2, 0.024), 10, 10]} />
+          <meshBasicMaterial visible={false} />
+        </mesh>
+
         {/* Slender polished brass pin needle */}
         <mesh position={[0, needleHeight / 2, 0]}>
-          <cylinderGeometry args={[needleR * 0.7, needleR, needleHeight, 8]} />
-          <meshStandardMaterial color="#c59b27" metalness={0.85} roughness={0.2} />
+          <cylinderGeometry args={[needleR * 0.8, needleR, needleHeight, 8]} />
+          <meshStandardMaterial color="#d4af37" metalness={0.9} roughness={0.2} />
         </mesh>
 
         {/* Small brass collar flange under the pearl bead */}
-        <mesh position={[0, needleHeight - 0.002, 0]}>
-          <cylinderGeometry args={[headRadius * 0.45, headRadius * 0.3, 0.005, 8]} />
-          <meshStandardMaterial color="#b8860b" metalness={0.9} roughness={0.25} />
+        <mesh position={[0, needleHeight - 0.001, 0]}>
+          <cylinderGeometry args={[headRadius * 0.5, headRadius * 0.35, 0.003, 8]} />
+          <meshStandardMaterial color="#b8860b" metalness={0.92} roughness={0.2} />
         </mesh>
 
         {/* Smooth spherical pearl head */}
         <mesh position={[0, tipY, 0]}>
-          <sphereGeometry args={[headRadius, 20, 20]} />
+          <sphereGeometry args={[headRadius, 18, 18]} />
           <meshStandardMaterial
             color={headColor}
             emissive={headEmissive}
-            emissiveIntensity={isSelected ? 0.55 : 0}
-            metalness={house.tier === 3 ? 0.25 : house.tier === 4 ? 0.35 : 0.85}
-            roughness={house.tier === 3 ? 0.15 : house.tier === 4 ? 0.16 : 0.18}
+            emissiveIntensity={isSelected ? 0.75 : hovered ? 0.3 : 0}
+            metalness={house.tier === 3 ? 0.2 : house.tier === 4 ? 0.3 : 0.85}
+            roughness={house.tier === 3 ? 0.15 : house.tier === 4 ? 0.15 : 0.18}
           />
         </mesh>
+
+        {/* Selected halo ring indicator */}
+        {isSelected && (
+          <mesh position={[0, tipY, 0]}>
+            <ringGeometry args={[headRadius * 1.3, headRadius * 1.6, 24]} />
+            <meshBasicMaterial
+              color="#ffffff"
+              side={THREE.DoubleSide}
+              transparent
+              opacity={0.8}
+            />
+          </mesh>
+        )}
 
         {/* Tooltip: ONLY shown on hover — clean typography, never intrusive */}
         {hovered && (

@@ -1,13 +1,13 @@
 import { OperaHouse } from '../types/opera';
 
 // ═══════════════════════════════════════════════════════════════════════
-// MASTER COMPREHENSIVE WORLD OPERA ATLAS DATASET (190 VERIFIED VENUES)
+// MASTER COMPREHENSIVE WORLD OPERA ATLAS DATASET (183 VERIFIED VENUES)
 // Grounded in Wikipedia's Global Directory & OperaVision's European Network
 // Categorized by OPERA America & International Standards:
 // • Tier 1: Global Premier Houses & Shrines (34 venues)
 // • Tier 2: Major Metropolitan & National Houses (103 venues)
 // • Tier 3: Boutique Houses, Professional Regional Theatres & Festivals (37 venues)
-// • Tier 4: Historic "Opera Houses" & Cultural Heritage Landmarks (16 venues)
+// • Tier 4: Historic Royal Court Theatres & Princely Opera Shrines (9 venues)
 // ═══════════════════════════════════════════════════════════════════════
 
 export const OPERA_HOUSES: OperaHouse[] = [
@@ -2804,114 +2804,6 @@ export const OPERA_HOUSES: OperaHouse[] = [
     ]
   },
   {
-    "id": "fulton-opera-house",
-    "name": "Fulton Opera House",
-    "city": "Lancaster",
-    "country": "USA",
-    "region": "Americas",
-    "latitude": 40.0381,
-    "longitude": -76.3094,
-    "tier": 4,
-    "venueType": "HISTORIC_GEM",
-    "websiteUrl": "https://thefulton.org",
-    "description": "The oldest continuously operating theatre in the United States and a National Historic Landmark. Built in 1852 by Christopher Hager over the foundation of Lancaster’s pre-Revolutionary jail; historically hosted traveling opera troupes, minstrel shows, and Mark Twain.",
-    "inauguratedYear": 1852,
-    "architect": "Samuel Sloan & John Durang",
-    "architecturalStyle": "Victorian Classical with Carved Wooden Bust of Robert Fulton",
-    "capacity": "684 seats",
-    "historicSignificance": "Oldest continuously operating theatre in the United States; National Historic Landmark; home to OperaLancaster (1960–2004).",
-    "historicPremieres": [
-      {
-        "title": "Darkest Russia",
-        "composer": "Sydney Rosenfeld",
-        "premiereYear": 1894,
-        "type": "HISTORIC_STAGING",
-        "details": "Legendary stop on the 19th-century American theatrical circuit."
-      }
-    ]
-  },
-  {
-    "id": "tabor-opera-house",
-    "name": "Tabor Opera House",
-    "city": "Leadville",
-    "country": "USA",
-    "region": "Americas",
-    "latitude": 39.2489,
-    "longitude": -106.2917,
-    "tier": 4,
-    "venueType": "HISTORIC_GEM",
-    "websiteUrl": "https://taboroperahouse.net",
-    "description": "Built in 1879 by Colorado \"Silver King\" Horace Tabor at an elevation of 10,152 feet in the booming mining town of Leadville. Constructed of solid brick and native pine in just 100 days; hosted Emma Abbott’s English Opera Company, Oscar Wilde, and John L. Sullivan.",
-    "inauguratedYear": 1879,
-    "architect": "Charles H. Lee",
-    "architecturalStyle": "Victorian Boomtown Italianate Brick with Andrews Patent Opera Chairs",
-    "capacity": "880 seats",
-    "historicSignificance": "America’s most famous high-altitude frontier opera house; National Historic Landmark undergoing major preservation.",
-    "historicPremieres": [
-      {
-        "title": "The Bohemian Girl & Martha",
-        "composer": "Michael Balfe & Friedrich von Flotow",
-        "premiereYear": 1881,
-        "type": "HISTORIC_STAGING",
-        "details": "Performed by the Emma Abbott English Opera Company at 10,152 feet elevation."
-      }
-    ]
-  },
-  {
-    "id": "wright-opera-house",
-    "name": "Wright Opera House",
-    "city": "Ouray",
-    "country": "USA",
-    "region": "Americas",
-    "latitude": 38.0228,
-    "longitude": -107.6714,
-    "tier": 4,
-    "venueType": "HISTORIC_GEM",
-    "websiteUrl": "https://thewrightoperahouse.org",
-    "description": "Built in 1888 by Edward and Frances Wright in the dramatic San Juan Mountains mining town of Ouray (\"The Switzerland of America\"). Constructed as an opera house to bring cultural refinement to miners; now a beloved community arts and performance centre.",
-    "inauguratedYear": 1888,
-    "architect": "Local Mining Craftsmen & Iron Front Fabricators",
-    "architecturalStyle": "Victorian Cast-Iron Front Commercial Opera Hall",
-    "capacity": "250 seats",
-    "historicSignificance": "Intact 1880s San Juan Mountain mining town opera hall; registered on the National Register of Historic Places.",
-    "historicPremieres": [
-      {
-        "title": "Grand Opening Theatrical Ball",
-        "composer": "Ouray Band",
-        "premiereYear": 1888,
-        "type": "INAUGURAL_OPERA",
-        "details": "Gala opening dedication on 4 December 1888 bringing cultural legitimacy to frontier Colorado."
-      }
-    ]
-  },
-  {
-    "id": "pipers-opera-house",
-    "name": "Piper’s Opera House",
-    "city": "Virginia City",
-    "country": "USA",
-    "region": "Americas",
-    "latitude": 39.3108,
-    "longitude": -119.6497,
-    "tier": 4,
-    "venueType": "HISTORIC_GEM",
-    "websiteUrl": "https://pipersoperahouse.com",
-    "description": "Built in 1885 by John Piper in Nevada’s legendary Comstock Lode silver boomtown. Featured a patented spring-cushioned dance floor; hosted Italian opera companies, Enrico Caruso, Edwin Booth, and Buffalo Bill Cody.",
-    "inauguratedYear": 1885,
-    "architect": "John Piper & Local Comstock Carpenters",
-    "architecturalStyle": "Frontier Boomtown Timber Hall with Spring-Mounted Dance Floor",
-    "capacity": "400 seats",
-    "historicSignificance": "The premier theatrical showcase of the American Comstock Lode; National Historic Landmark.",
-    "historicPremieres": [
-      {
-        "title": "Il Trovatore (Comstock Tour)",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1886,
-        "type": "HISTORIC_STAGING",
-        "details": "Staged by traveling San Francisco opera troupes for Nevada silver miners."
-      }
-    ]
-  },
-  {
     "id": "drottningholm-court-theatre",
     "name": "Drottningholms Slottsteater",
     "city": "Stockholm",
@@ -4642,60 +4534,6 @@ export const OPERA_HOUSES: OperaHouse[] = [
     ]
   },
   {
-    "id": "brown-grand-theatre-kansas",
-    "name": "Brown Grand Theatre (Concordia Opera House)",
-    "city": "Concordia",
-    "country": "USA",
-    "region": "Americas",
-    "latitude": 39.5714,
-    "longitude": -97.6606,
-    "tier": 4,
-    "venueType": "HISTORIC_GEM",
-    "websiteUrl": "https://www.browngrand.org",
-    "description": "Built in 1907 by banker Napoleon Bonaparte Brown as a lavish Victorian opera house in north-central Kansas. Fully restored in 1980, it retains its iconic 1907 drop curtain depicting Napoleon at the Battle of Waterloo.",
-    "inauguratedYear": 1907,
-    "architect": "Carl Boller",
-    "architecturalStyle": "Renaissance Revival / Victorian Opera House with Original Drop Curtain",
-    "capacity": "650 seats",
-    "historicSignificance": "Rural Kansas’s most splendid historic opera house; continuously preserved theatrical landmark on the National Register of Historic Places.",
-    "historicPremieres": [
-      {
-        "title": "The Pink Lady (Inaugural Touring Season)",
-        "composer": "Ivan Caryll",
-        "premiereYear": 1907,
-        "type": "HISTORIC_STAGING",
-        "details": "Touring Broadway light opera company performance during inaugural season."
-      }
-    ]
-  },
-  {
-    "id": "mcpherson-opera-house-kansas",
-    "name": "McPherson Opera House",
-    "city": "McPherson",
-    "country": "USA",
-    "region": "Americas",
-    "latitude": 38.3712,
-    "longitude": -97.6644,
-    "tier": 4,
-    "venueType": "HISTORIC_GEM",
-    "websiteUrl": "https://mcphersonoperahouse.org",
-    "description": "Constructed in 1889 during the Kansas boom era, this grand Richardsonian Romanesque opera house was designed by C.W. Terry. Hosted traveling opera troupes, John Philip Sousa, and William Jennings Bryan before being fully restored in 2010.",
-    "inauguratedYear": 1889,
-    "architect": "C.W. Terry",
-    "architecturalStyle": "Richardsonian Romanesque Red Brick & Sandstone Landmark",
-    "capacity": "497 seats",
-    "historicSignificance": "Kansas Gilded Age boomtown opera house; restored to acoustic and architectural perfection as a cultural community hub.",
-    "historicPremieres": [
-      {
-        "title": "The Gypsy Baron (Der Zigeunerbaron)",
-        "composer": "Johann Strauss II",
-        "premiereYear": 1890,
-        "type": "HISTORIC_STAGING",
-        "details": "Touring American opera company staging during the theater’s opening decade."
-      }
-    ]
-  },
-  {
     "id": "arizona-opera",
     "name": "Arizona Opera (Phoenix Symphony Hall & Tucson Music Hall)",
     "city": "Phoenix & Tucson",
@@ -5193,33 +5031,6 @@ export const OPERA_HOUSES: OperaHouse[] = [
         "premiereYear": 1958,
         "type": "HISTORIC_STAGING",
         "details": "Legendary live performance starring Maria Callas and Alfredo Kraus, conducted by Franco Ghione."
-      }
-    ]
-  },
-  {
-    "id": "woodward-opera-house-ohio",
-    "name": "The Woodward Opera House",
-    "city": "Mount Vernon",
-    "country": "USA",
-    "region": "Americas",
-    "latitude": 40.3934,
-    "longitude": -82.4857,
-    "tier": 4,
-    "venueType": "HISTORIC_GEM",
-    "websiteUrl": "https://thewoodward.org",
-    "description": "Completed in 1851, the Woodward Opera House is recognized by architectural historians as the oldest authentic 19th-century Gilded Age second-floor opera house remaining in the United States. Recently completed a meticulous $21 million historical restoration.",
-    "inauguratedYear": 1851,
-    "architect": "Dr. Ebenezer Woodward",
-    "architecturalStyle": "Antebellum Greek Revival / Victorian Horseshoe Opera Hall",
-    "capacity": "500 seats",
-    "historicSignificance": "America’s oldest authentic 19th-century second-floor opera house; National Register of Historic Places.",
-    "historicPremieres": [
-      {
-        "title": "The Bohemian Girl (Historic Tour)",
-        "composer": "Michael William Balfe",
-        "premiereYear": 1855,
-        "type": "HISTORIC_STAGING",
-        "details": "Early American touring opera performance during the theatre’s first decade."
       }
     ]
   },

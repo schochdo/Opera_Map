@@ -45,12 +45,11 @@ export const OperaUIOverlay: React.FC = () => {
     4: houses.filter((h) => h.tier === 4).length,
   };
 
-  const tierButtonConfig: { id: TierFilterType; label: string; icon: string; count: number }[] = [
-    { id: 'ALL', label: 'All', icon: '🌐', count: tierCounts.ALL },
-    { id: 1, label: 'T1: Premier', icon: '🏛️', count: tierCounts[1] },
-    { id: 2, label: 'T2: Metro', icon: '🎭', count: tierCounts[2] },
-    { id: 3, label: 'T3: Festivals', icon: '🎪', count: tierCounts[3] },
-    { id: 4, label: 'T4: Historic', icon: '💎', count: tierCounts[4] },
+  const tierCardsConfig: { id: TierFilterType; label: string; icon: string; count: number }[] = [
+    { id: 1, label: 'T1: Global Premier', icon: '🏛️', count: tierCounts[1] },
+    { id: 2, label: 'T2: Major Metro', icon: '🎭', count: tierCounts[2] },
+    { id: 3, label: 'T3: Festivals & Boutique', icon: '🎪', count: tierCounts[3] },
+    { id: 4, label: 'T4: Royal Court Shrines', icon: '💎', count: tierCounts[4] },
   ];
 
   const getTierBadgeText = (tier: number) => {
@@ -62,7 +61,7 @@ export const OperaUIOverlay: React.FC = () => {
       case 3:
         return '🎪 TIER 3: BOUTIQUE & RENOWNED FESTIVAL';
       case 4:
-        return '💎 TIER 4: HISTORIC LANDMARK & CULTURAL HERITAGE';
+        return '💎 TIER 4: HISTORIC ROYAL COURT SHRINE';
       default:
         return 'OPERA HOUSE';
     }
@@ -77,7 +76,7 @@ export const OperaUIOverlay: React.FC = () => {
       case 3:
         return 'T3 Festival';
       case 4:
-        return 'T4 Landmark';
+        return 'T4 Court Shrine';
       default:
         return '';
     }
@@ -158,28 +157,62 @@ export const OperaUIOverlay: React.FC = () => {
             )}
           </div>
 
-          {/* Strict Tier Filter Buttons (All, T1, T2, T3, T4) */}
+          {/* Classification Filter (Full-width All toggle + 2x2 grid, NO TEXT TRUNCATION) */}
           <div className="space-y-1.5 shrink-0">
-            <div className="text-xs font-cinzel font-bold text-amber-300/80 tracking-wider uppercase px-0.5">
-              Filter By Classification:
+            <div className="flex items-center justify-between text-xs font-cinzel font-bold text-amber-300/80 tracking-wider uppercase px-0.5">
+              <span>Classification Filter:</span>
+              {tierFilter !== 'ALL' && (
+                <button
+                  onClick={() => setTierFilter('ALL')}
+                  className="text-[11px] text-amber-400 hover:text-amber-200 underline font-normal lowercase cursor-pointer"
+                >
+                  show all
+                </button>
+              )}
             </div>
-            <div className="grid grid-cols-5 gap-1 shrink-0">
-              {tierButtonConfig.map(({ id, label, icon, count }) => {
+
+            {/* Row 1: All Venues Full-Width Bar */}
+            <button
+              onClick={() => setTierFilter('ALL')}
+              className={`w-full py-1.5 px-3 rounded-lg border text-xs md:text-[13px] font-cinzel flex items-center justify-between transition-all cursor-pointer ${
+                tierFilter === 'ALL'
+                  ? 'bg-gradient-to-r from-[#8d1720] to-[#5a0d15] text-amber-100 border-amber-400 font-bold shadow-md ring-1 ring-amber-400/50'
+                  : 'bg-[#0a0e14] text-slate-300 border-slate-700/80 hover:text-amber-200 hover:border-amber-600/50 font-medium'
+              }`}
+            >
+              <span className="flex items-center gap-2">
+                <span className="text-sm">🌐</span>
+                <span className="font-bold">All Opera Houses & Shrines</span>
+              </span>
+              <span className="text-[11px] bg-[#121824] px-2 py-0.5 rounded border border-slate-700 font-bold text-amber-200">
+                {tierCounts.ALL}
+              </span>
+            </button>
+
+            {/* Row 2: 2x2 Grid with generous width - NO OVERRUNNING OR TRUNCATION */}
+            <div className="grid grid-cols-2 gap-1.5 shrink-0">
+              {tierCardsConfig.map(({ id, label, icon, count }) => {
                 const isActive = tierFilter === id;
                 return (
                   <button
                     key={String(id)}
                     onClick={() => setTierFilter(id)}
-                    className={`py-2 px-1 text-xs md:text-[13px] rounded border transition-all text-center cursor-pointer font-cinzel flex flex-col items-center justify-center gap-0.5 ${
+                    className={`py-2 px-2.5 rounded-lg border text-xs font-cinzel transition-all cursor-pointer flex flex-col justify-between gap-1 text-left ${
                       isActive
                         ? 'bg-gradient-to-b from-[#8d1720] to-[#5a0d15] text-amber-100 border-amber-400 font-bold shadow-md ring-1 ring-amber-400/50'
                         : 'bg-[#0a0e14] text-slate-300 border-slate-700/80 hover:text-amber-200 hover:border-amber-600/50 font-medium'
                     }`}
                     title={`Filter by ${label}`}
                   >
-                    <span className="text-sm">{icon}</span>
-                    <span className="leading-tight truncate w-full text-center">{label}</span>
-                    <span className="text-[11px] opacity-80">({count})</span>
+                    <div className="flex items-center justify-between w-full">
+                      <span className="text-sm">{icon}</span>
+                      <span className="text-[11px] opacity-90 bg-[#16202e] px-1.5 py-0.2 rounded border border-slate-700">
+                        {count}
+                      </span>
+                    </div>
+                    <span className="leading-tight font-bold text-amber-100 text-[12px] truncate w-full">
+                      {label}
+                    </span>
                   </button>
                 );
               })}
@@ -474,10 +507,10 @@ export const OperaUIOverlay: React.FC = () => {
                   <div className="bg-[#0a0e14]/85 border border-slate-700/80 p-3.5 rounded-lg space-y-1.5">
                     <div className="flex items-center gap-2 font-cinzel font-bold text-sm md:text-[15px] text-blue-300">
                       <span className="text-base">💎</span>
-                      <span>Tier 4: Historic Court Theatres & Boomtown Opera Houses ({tierCounts[4]})</span>
+                      <span>Tier 4: Historic Royal Court Theatres & Princely Shrines ({tierCounts[4]})</span>
                     </div>
                     <p className="text-xs md:text-sm text-slate-300 leading-relaxed font-garamond">
-                      Intact European court theatres preserved with original 18th-century machinery (Teatro Olimpico 1585, Drottningholm Court Theatre 1766, Margravial Opera House, Opéra Royal de Versailles) alongside authentic 19th-century Gilded Age / Boomtown buildings erected as "Opera Houses" to confer civic prestige and host touring troupes (Fulton Opera House in Lancaster PA, Tabor Opera House in Leadville CO, Wright Opera House in Ouray CO, Brown Grand Theatre in Concordia KS, Woodward Opera House in OH).
+                      Intact 16th- to 19th-century royal court theatres and architectural wonders preserved with original historical machinery and imperial provenance (Teatro Olimpico in Vicenza [1585, Palladio], Drottningholms Slottsteater [1766, intact 18th-century wooden stage machinery], Margravial Opera House in Bayreuth [1748, Bibiena], Opéra Royal de Versailles [1770, Gabriel], Teatro Malibran in Venice [1678], Teatro Giuseppe Verdi in Busseto [1868], Teatro Amazonas in Manaus, Theatro da Paz in Belém, Royal Opera House Mumbai).
                     </p>
                   </div>
                 </div>

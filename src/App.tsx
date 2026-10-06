@@ -43,8 +43,8 @@ const CameraRig: React.FC<{ controlsRef: React.RefObject<OrbitControlsImpl> }> =
       const currDir = currPos.clone().normalize();
 
       const angle = currDir.angleTo(targetDir);
-      // Maintain comfortable viewing zoom between 5.4 and 6.4
-      const targetDist = THREE.MathUtils.clamp(currDist, 5.4, 6.4);
+      // Maintain comfortable close inspection viewing zoom between 4.7 and 5.6
+      const targetDist = THREE.MathUtils.clamp(currDist, 4.7, 5.6);
       const distDiff = Math.abs(currDist - targetDist);
 
       if (angle < 0.003 && distDiff < 0.02) {
@@ -135,7 +135,7 @@ export const App: React.FC = () => {
             enablePan={false}
             enableDamping={true}
             dampingFactor={0.06}
-            minDistance={4.2}
+            minDistance={3.65}
             maxDistance={12}
             rotateSpeed={0.42}
             zoomSpeed={0.55}
