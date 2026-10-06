@@ -6,8 +6,8 @@ import { OperaHouse } from '../types/opera';
 // Categorized by OPERA America & International Standards:
 // • Tier 1: Global Premier Houses (34 venues)
 // • Tier 2: Major Metropolitan & National Houses (103 venues)
-// • Tier 3: Boutique Houses, Professional Regional Theatres & Festivals (37 venues)
-// • Tier 4: Historic Royal Court & Princely Theatres (9 venues)
+// • Tier 3: Boutique Houses, Professional Regional Theatres & Festivals (41 venues)
+// • Tier 4: Historic Royal Court & Princely Theatres (5 venues)
 // ═══════════════════════════════════════════════════════════════════════
 
 export const OPERA_HOUSES: OperaHouse[] = [
@@ -2920,8 +2920,8 @@ export const OPERA_HOUSES: OperaHouse[] = [
   "region": "Americas",
   "latitude": -3.1303,
   "longitude": -60.0233,
-  "tier": 4,
-  "venueType": "HISTORIC_GEM",
+  "tier": 3,
+  "venueType": "FESTIVAL",
   "websiteUrl": "https://en.wikipedia.org/wiki/Amazon_Theatre",
   "description": "The legendary Belle Époque opera house rising in the heart of the Amazon rainforest in Manaus. Built during the Rubber Boom with materials shipped from across Europe: Italian marble, Scottish iron, Paris crystal chandeliers, and a dome tiled in the Brazilian flag.",
   "inauguratedYear": 1896,
@@ -3510,7 +3510,7 @@ export const OPERA_HOUSES: OperaHouse[] = [
   "region": "Europe",
   "latitude": 44.9817,
   "longitude": 10.0417,
-  "tier": 4,
+  "tier": 3,
   "venueType": "HISTORIC_GEM",
   "websiteUrl": "https://bussetolive.com/",
   "description": "Built in the 1860s right inside the medieval Rocca castle in Giuseppe Verdi’s hometown village of Busseto. Despite donating 10,000 lire for its construction, Verdi famously boycotted the grand opening and never stepped foot inside because he thought it was an extravagant waste of money for a small town!",
@@ -4284,8 +4284,8 @@ export const OPERA_HOUSES: OperaHouse[] = [
   "region": "Americas",
   "latitude": -1.4533,
   "longitude": -48.4947,
-  "tier": 4,
-  "venueType": "HISTORIC_GEM",
+  "tier": 3,
+  "venueType": "FESTIVAL",
   "websiteUrl": "https://theatrodapaz.com.br",
   "description": "The first grand opera house built in the Amazon basin during the Rubber Boom, predating Manaus by nearly 20 years. Built with materials imported from Europe, overlooking Praça da República in Belém.",
   "inauguratedYear": 1878,
@@ -5042,7 +5042,7 @@ export const OPERA_HOUSES: OperaHouse[] = [
   "region": "Asia-Pacific",
   "latitude": 18.9554,
   "longitude": 72.8188,
-  "tier": 4,
+  "tier": 3,
   "venueType": "HISTORIC_GEM",
   "websiteUrl": "https://royaloperahouse.in",
   "description": "India’s only surviving authentic historic opera house, inaugurated in 1911 by King George V and completed in 1916. Built during the British Raj in Baroque and Neo-Classical styles with Italian marble and gilded Corinthian columns; awarded a UNESCO Asia-Pacific Award for Cultural Heritage Conservation in 2017 following a meticulous restoration by Abha Narain Lambah. Stages Western opera productions and symphony concerts.",

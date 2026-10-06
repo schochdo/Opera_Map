@@ -626,7 +626,7 @@ export const OperaUIOverlay: React.FC = () => {
                       </span>
                     </div>
                     <p className="text-base md:text-[17.5px] text-slate-100 leading-relaxed font-garamond">
-                      Intact 16th- to 19th-century royal court theatres and architectural wonders preserved with original historical machinery and imperial provenance.
+                      Intact 16th- to 18th-century royal, princely, and imperial court theatres preserved with original historical stage machinery.
                     </p>
                   </div>
                 </div>
