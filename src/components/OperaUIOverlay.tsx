@@ -354,36 +354,28 @@ export const OperaUIOverlay: React.FC = () => {
             /* BESPOKE OPERA HOUSE PROFILE & HISTORICAL DOSSIER             */
             /* ------------------------------------------------------------- */
             <div className="flex flex-col h-full min-h-0 space-y-3.5">
-              {/* Header with Official Website Link */}
+              {/* Header: Title at Top, City & Country, Tier Badge Below, Close [✕] Button at Top Right */}
               <div className="relative border-b-2 border-dashed border-amber-900/60 pb-3.5 shrink-0">
                 <div className="flex items-start justify-between gap-3">
                   <div className="flex-1 min-w-0">
-                    <span className="inline-flex items-center gap-1.5 rounded bg-[#7a101b] px-2.5 py-1 text-xs md:text-sm font-cinzel font-bold tracking-wider text-amber-100 border border-amber-500/50">
-                      {getTierBadgeText(selectedHouse.tier)}
-                    </span>
-                    <h2 className="font-cinzel text-lg md:text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-100 via-amber-200 to-amber-300 mt-1.5 leading-snug">
+                    <h2 className="font-cinzel text-xl md:text-2xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-amber-100 via-yellow-100 to-amber-300 leading-tight">
                       {selectedHouse.name}
                     </h2>
-                    <p className="text-sm md:text-[15px] text-amber-300/90 font-garamond italic font-semibold mt-0.5">
+                    <p className="text-base md:text-[17px] text-amber-300/95 font-garamond italic font-semibold mt-1">
                       {selectedHouse.city}, {selectedHouse.country}
                     </p>
+                    <div className="mt-2.5">
+                      <span className="inline-flex items-center gap-1.5 rounded-md bg-gradient-to-r from-[#7a101b] to-[#5a0d15] px-3 py-1.5 text-xs md:text-sm font-cinzel font-bold tracking-wider text-amber-100 border border-amber-500/60 shadow-sm">
+                        {getTierBadgeText(selectedHouse.tier)}
+                      </span>
+                    </div>
                   </div>
 
-                  {/* Header Actions */}
-                  <div className="flex items-center gap-2 shrink-0">
-                    <a
-                      href={selectedHouse.websiteUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-1.5 rounded-lg border border-amber-500/80 bg-gradient-to-r from-[#7a101b] to-[#921422] px-3 py-1.5 text-xs md:text-sm font-cinzel font-bold text-amber-100 hover:from-[#8f1522] hover:to-[#a41727] transition shadow cursor-pointer"
-                      title="Open official website in new tab"
-                    >
-                      <span>Website</span>
-                      <ExternalLink className="h-3.5 w-3.5 text-amber-200" />
-                    </a>
+                  {/* Header Close Button (Website button removed as redundant with portal button below) */}
+                  <div className="shrink-0 pt-0.5">
                     <button
                       onClick={() => setSelectedHouse(null)}
-                      className="rounded p-1 text-slate-400 hover:bg-slate-800 hover:text-amber-200 transition cursor-pointer"
+                      className="rounded-lg p-1.5 text-slate-300 hover:bg-slate-800 hover:text-amber-200 transition cursor-pointer border border-slate-700/60"
                       title="Close dossier"
                     >
                       <X className="h-5 w-5" />
@@ -395,39 +387,40 @@ export const OperaUIOverlay: React.FC = () => {
               {/* Verified Architectural & Structural Specs */}
               <div className="grid grid-cols-2 gap-2.5 text-sm shrink-0">
                 {selectedHouse.inauguratedYear && (
-                  <div className="bg-[#142035] border border-slate-600/70 p-2.5 rounded-lg flex items-center gap-2.5">
-                    <Calendar className="h-4 w-4 text-amber-400 shrink-0" />
+                  <div className="bg-[#142035] border border-slate-600/70 p-3 rounded-lg flex items-center gap-3">
+                    <Calendar className="h-5 w-5 text-amber-400 shrink-0" />
                     <div>
-                      <div className="text-xs font-cinzel font-semibold text-amber-200/90 uppercase tracking-wider">
+                      <div className="text-xs md:text-[13px] font-cinzel font-bold text-amber-200/90 uppercase tracking-wider">
                         Inaugurated
                       </div>
-                      <div className="font-bold text-sm md:text-base text-white mt-0.5">
+                      <div className="font-bold text-base md:text-lg text-white mt-0.5">
                         {selectedHouse.inauguratedYear}
                       </div>
                     </div>
                   </div>
                 )}
                 {selectedHouse.capacity && (
-                  <div className="bg-[#142035] border border-slate-600/70 p-2.5 rounded-lg flex items-center gap-2.5">
-                    <Users className="h-4 w-4 text-amber-400 shrink-0" />
+                  <div className="bg-[#142035] border border-slate-600/70 p-3 rounded-lg flex items-center gap-3">
+                    <Users className="h-5 w-5 text-amber-400 shrink-0" />
                     <div>
-                      <div className="text-xs font-cinzel font-semibold text-amber-200/90 uppercase tracking-wider">
+                      <div className="text-xs md:text-[13px] font-cinzel font-bold text-amber-200/90 uppercase tracking-wider">
                         Capacity
                       </div>
-                      <div className="font-bold text-sm md:text-base text-white mt-0.5">
+                      <div className="font-bold text-base md:text-lg text-white mt-0.5">
                         {selectedHouse.capacity}
                       </div>
                     </div>
                   </div>
                 )}
                 {selectedHouse.architect && (
-                  <div className="bg-[#142035] border border-slate-600/70 p-2.5 rounded-lg flex items-center gap-2.5 col-span-2">
-                    <Landmark className="h-4 w-4 text-amber-400 shrink-0" />
-                    <div className="min-w-0">
-                      <div className="text-xs font-cinzel font-semibold text-amber-200/90 uppercase tracking-wider">
+                  <div className="bg-[#142035] border border-slate-600/70 p-3 rounded-lg flex items-start gap-3 col-span-2">
+                    <Landmark className="h-5 w-5 text-amber-400 shrink-0 mt-0.5" />
+                    <div className="min-w-0 flex-1">
+                      <div className="text-xs md:text-[13px] font-cinzel font-bold text-amber-200/90 uppercase tracking-wider">
                         Architect & Style
                       </div>
-                      <div className="font-bold text-sm md:text-[15px] text-white mt-0.5 truncate">
+                      {/* Full architectural text wrapped naturally — NO TRUNCATION */}
+                      <div className="font-bold text-sm md:text-base text-white mt-0.5 leading-snug break-words">
                         {selectedHouse.architect} {selectedHouse.architecturalStyle ? `• ${selectedHouse.architecturalStyle}` : ''}
                       </div>
                     </div>
@@ -437,18 +430,20 @@ export const OperaUIOverlay: React.FC = () => {
 
               {/* Scrollable Content: Description, Heritage & Verified World Premieres */}
               <div className="flex-1 space-y-3.5 overflow-y-auto pr-1 min-h-0">
-                {/* Description */}
-                <p className="text-sm md:text-[15px] text-slate-100 leading-relaxed font-garamond italic bg-[#131e30] border border-slate-700/80 p-3.5 rounded-lg">
+                {/* Description (Generous, highly legible font size) */}
+                <p className="text-base md:text-[17px] text-slate-100 leading-relaxed font-garamond italic bg-[#131e30] border border-slate-700/80 p-4 rounded-lg">
                   "{selectedHouse.description}"
                 </p>
 
                 {/* Historic Legacy & Significance */}
                 {selectedHouse.historicSignificance && (
-                  <div className="text-xs md:text-sm text-amber-100 bg-[#17253b] border border-amber-600/50 p-3.5 rounded-lg leading-relaxed">
-                    <span className="font-cinzel font-bold text-amber-300 block mb-1 text-sm">
+                  <div className="bg-[#17253b] border border-amber-600/50 p-4 rounded-lg leading-relaxed">
+                    <span className="font-cinzel font-bold text-amber-300 block mb-1.5 text-xs md:text-sm uppercase tracking-wider">
                       Historic Significance & Heritage:
                     </span>
-                    <span className="text-slate-100 leading-relaxed">{selectedHouse.historicSignificance}</span>
+                    <span className="text-slate-100 leading-relaxed font-garamond text-base md:text-[17px] block">
+                      {selectedHouse.historicSignificance}
+                    </span>
                   </div>
                 )}
 
@@ -471,25 +466,25 @@ export const OperaUIOverlay: React.FC = () => {
                           className="bg-[#131e30] border border-slate-600/80 p-3.5 rounded-lg hover:border-amber-400/60 transition"
                         >
                           <div className="flex items-start justify-between gap-1.5">
-                            <h4 className="font-cinzel text-sm md:text-[15px] font-bold text-white">
+                            <h4 className="font-cinzel text-base md:text-[17px] font-bold text-white">
                               {premiere.title}
                             </h4>
-                            <span className="text-xs font-cinzel font-bold text-amber-200 bg-[#1c2c46] px-2 py-0.5 rounded border border-amber-600/40 shrink-0">
+                            <span className="text-xs md:text-sm font-cinzel font-bold text-amber-200 bg-[#1c2c46] px-2.5 py-1 rounded border border-amber-600/40 shrink-0">
                               {premiere.premiereYear}
                             </span>
                           </div>
-                          <p className="text-xs md:text-sm text-amber-200 font-garamond italic font-medium mt-1">
+                          <p className="text-sm md:text-base text-amber-200 font-garamond italic font-semibold mt-1">
                             Composer: {premiere.composer}
                           </p>
                           {premiere.type && (
-                            <div className="mt-1.5">
-                              <span className="text-[11px] font-cinzel tracking-wider px-2 py-0.5 rounded bg-amber-950/80 text-amber-200 border border-amber-600/60 uppercase font-semibold">
+                            <div className="mt-2">
+                              <span className="text-xs md:text-[13px] font-cinzel font-bold tracking-wider px-2.5 py-1 rounded bg-[#7a101b] text-amber-100 border border-amber-500/70 uppercase inline-block">
                                 {premiere.type.replace('_', ' ')}
                               </span>
                             </div>
                           )}
                           {premiere.details && (
-                            <p className="text-xs md:text-sm text-slate-200 font-garamond mt-1.5 leading-normal">
+                            <p className="text-sm md:text-base text-slate-100 font-garamond mt-2 leading-relaxed">
                               • {premiere.details}
                             </p>
                           )}
@@ -506,7 +501,7 @@ export const OperaUIOverlay: React.FC = () => {
                   href={selectedHouse.websiteUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-2 rounded-lg border border-amber-400 bg-gradient-to-r from-[#8d1720] to-[#b31d2c] py-2.5 text-xs md:text-sm font-cinzel font-bold tracking-wider text-amber-100 shadow-md hover:from-[#a31a26] hover:to-[#c82233] transition cursor-pointer"
+                  className="flex items-center justify-center gap-2 rounded-lg border border-amber-400 bg-gradient-to-r from-[#8d1720] to-[#b31d2c] py-3 text-sm md:text-base font-cinzel font-bold tracking-wider text-amber-100 shadow-md hover:from-[#a31a26] hover:to-[#c82233] transition cursor-pointer"
                 >
                   Visit Official Box Office & Season Portal <ExternalLink className="h-4 w-4 text-amber-200" />
                 </a>
