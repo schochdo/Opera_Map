@@ -1,6 +1,6 @@
 import * as THREE from 'three';
 
-// Generates an antique parchment globe texture with vector coastlines & country borders
+// Generates an antique parchment globe texture with vector coastlines, Great Lakes, state & country borders
 export function createPapercraftGlobeTexture(onLoaded?: () => void): THREE.CanvasTexture {
   const width = 8192;
   const height = 4096;
@@ -20,7 +20,7 @@ export function createPapercraftGlobeTexture(onLoaded?: () => void): THREE.Canva
     return { x, y };
   };
 
-  const drawBaseTexture = (geojson?: any) => {
+  const drawBaseTexture = (countryGeojson?: any, lakesGeojson?: any, statesGeojson?: any) => {
     // 1. LUMINOUS NAUTICAL SAPPHIRE-AZURE OCEAN (Bright, vibrant, and clear)
     const oceanGrad = ctx.createRadialGradient(
       width / 2, height / 2, 200,
@@ -42,14 +42,13 @@ export function createPapercraftGlobeTexture(onLoaded?: () => void): THREE.Canva
       ctx.stroke();
     }
 
-    // 2. VECTOR LANDMASSES & COUNTRY OUTLINES (Luminous antique ivory parchment)
-    if (geojson && geojson.features) {
-      // Draw all land polygons with bright warm antique ivory parchment & crisp boundary ink
-      ctx.fillStyle = '#faf5ea'; // Luminous, high-contrast ivory parchment
+    // 2a. VECTOR LANDMASSES & COUNTRY OUTLINES (Luminous antique ivory parchment)
+    if (countryGeojson && countryGeojson.features) {
+      ctx.fillStyle = '#faf5ea'; // Luminous, high-contrast warm ivory parchment
       ctx.strokeStyle = 'rgba(120, 90, 55, 0.7)'; // Fine antique country border line
       ctx.lineWidth = 2.0;
 
-      geojson.features.forEach((feature: any) => {
+      countryGeojson.features.forEach((feature: any) => {
         const geom = feature.geometry;
         if (!geom) return;
 
@@ -76,6 +75,72 @@ export function createPapercraftGlobeTexture(onLoaded?: () => void): THREE.Canva
           });
         });
       });
+    }
+
+    // 2b. MAJOR INLAND BODIES OF WATER & GREAT LAKES (Rich nautical sapphire fill with antique shoreline)
+    if (lakesGeojson && lakesGeojson.features) {
+      ctx.fillStyle = oceanGrad; // Matches ocean water exactly
+      ctx.strokeStyle = 'rgba(80, 60, 40, 0.65)'; // Fine shoreline ink
+      ctx.lineWidth = 1.8;
+
+      lakesGeojson.features.forEach((feature: any) => {
+        const geom = feature.geometry;
+        if (!geom) return;
+
+        const polyList =
+          geom.type === 'Polygon'
+            ? [geom.coordinates]
+            : geom.type === 'MultiPolygon'
+            ? geom.coordinates
+            : [];
+
+        polyList.forEach((poly: any) => {
+          poly.forEach((ring: any) => {
+            if (!ring || ring.length < 3) return;
+
+            ctx.beginPath();
+            ring.forEach(([lng, lat]: [number, number], i: number) => {
+              const { x, y } = toXY(lat, lng);
+              if (i === 0) ctx.moveTo(x, y);
+              else ctx.lineTo(x, y);
+            });
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+          });
+        });
+      });
+    }
+
+    // 2c. STATE & PROVINCIAL BOUNDARIES (Lighter warm brown / soft antique gray)
+    if (statesGeojson && statesGeojson.features) {
+      ctx.strokeStyle = 'rgba(155, 130, 105, 0.45)'; // Lighter antique warm brown/gray ink
+      ctx.lineWidth = 1.3;
+      ctx.setLineDash([8, 6]); // Subtle antique dashed state boundary
+
+      statesGeojson.features.forEach((feature: any) => {
+        const geom = feature.geometry;
+        if (!geom) return;
+
+        const lines =
+          geom.type === 'LineString'
+            ? [geom.coordinates]
+            : geom.type === 'MultiLineString'
+            ? geom.coordinates
+            : [];
+
+        lines.forEach((line: any) => {
+          if (!line || line.length < 2) return;
+          ctx.beginPath();
+          line.forEach(([lng, lat]: [number, number], i: number) => {
+            const { x, y } = toXY(lat, lng);
+            if (i === 0) ctx.moveTo(x, y);
+            else ctx.lineTo(x, y);
+          });
+          ctx.stroke();
+        });
+      });
+      ctx.setLineDash([]);
     }
 
     // 3. ELEGANT GOLD CARTOGRAPHY GRID & MERIDIANS
@@ -114,7 +179,7 @@ export function createPapercraftGlobeTexture(onLoaded?: () => void): THREE.Canva
     }
     ctx.setLineDash([]);
 
-    // 4. OCEAN WATERMARK CALLIGRAPHY ONLY (Scaled for 8K resolution, clear and elegant)
+    // 4. OCEAN WATERMARK CALLIGRAPHY ONLY
     ctx.textAlign = 'center';
     ctx.textBaseline = 'middle';
     ctx.font = 'italic 32px "Cormorant Garamond", Georgia, serif';
@@ -144,16 +209,19 @@ export function createPapercraftGlobeTexture(onLoaded?: () => void): THREE.Canva
   texture.magFilter = THREE.LinearFilter;
   texture.anisotropy = 16;
 
-  // Load high-resolution 50m vector GeoJSON for crisp continent boundaries
-  fetch('/data/ne_50m_countries.geojson')
-    .then((res) => res.json())
-    .then((geojson) => {
-      drawBaseTexture(geojson);
+  // Load high-resolution 50m vector GeoJSON for continents, Great Lakes, and state borders
+  Promise.all([
+    fetch('/data/ne_50m_countries.geojson').then((res) => res.json()).catch(() => null),
+    fetch('/data/ne_50m_lakes.geojson').then((res) => res.json()).catch(() => null),
+    fetch('/data/ne_50m_admin_1_states_provinces_lines.geojson').then((res) => res.json()).catch(() => null),
+  ])
+    .then(([countryGeojson, lakesGeojson, statesGeojson]) => {
+      drawBaseTexture(countryGeojson, lakesGeojson, statesGeojson);
       texture.needsUpdate = true;
       if (onLoaded) onLoaded();
     })
     .catch((err) => {
-      console.warn('Failed to load 50m country GeoJSON, using fallback base:', err);
+      console.warn('Failed to load map GeoJSON datasets, using fallback base:', err);
     });
 
   return texture;
