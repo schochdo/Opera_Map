@@ -447,7 +447,7 @@ export const OperaUIOverlay: React.FC = () => {
                       <span>Tier 1: Global Premier Opera Palaces & Historic Shrines ({tierCounts[1]})</span>
                     </div>
                     <p className="text-xs md:text-sm text-slate-300 leading-relaxed font-garamond">
-                      International A-League institutions with massive global footprints, star rosters, and historic supremacy (e.g. The Met, La Scala, Wiener Staatsoper, Royal Opera House Covent Garden, Opéra Garnier & Bastille, Bayreuth Festspielhaus, Sydney Opera House, Teatro Colón).
+                      International A-League institutions with massive global footprints, star rosters, and historic supremacy (e.g. The Met, La Scala, Wiener Staatsoper, Royal Opera House Covent Garden, Opéra Garnier & Bastille, Bayreuth Festspielhaus, Cairo Opera House / Khedivial [Aida premiere 1871], Royal Swedish Opera, Teatro Colón, Theatro Municipal do Rio de Janeiro, Sydney Opera House).
                     </p>
                   </div>
 
@@ -457,7 +457,7 @@ export const OperaUIOverlay: React.FC = () => {
                       <span>Tier 2: Major Metropolitan & National Houses ({tierCounts[2]})</span>
                     </div>
                     <p className="text-xs md:text-sm text-slate-300 leading-relaxed font-garamond">
-                      Foremost civic, state, and national opera houses with year-round resident companies and pit orchestras (e.g. Opera Philadelphia, Washington National Opera, Oper Leipzig, Opera Colorado / Ellie Caulkins, Houston Grand Opera, Minnesota Opera, Deutsche Oper Berlin, Tokyo NNTT, Teatro dell'Opera di Roma).
+                      Foremost civic, state, and national opera houses with year-round resident companies and pit orchestras (e.g. Cape Town Opera, Opera Philadelphia, Washington National Opera, Oper Leipzig, Opera Colorado / Ellie Caulkins, Houston, Canadian Opera Company, Gothenburg Opera, Tokyo NNTT, Teatro dell'Opera di Roma).
                     </p>
                   </div>
 
@@ -467,17 +467,17 @@ export const OperaUIOverlay: React.FC = () => {
                       <span>Tier 3: Boutique Stages & Renowned Festivals ({tierCounts[3]})</span>
                     </div>
                     <p className="text-xs md:text-sm text-slate-300 leading-relaxed font-garamond">
-                      High-standard professional companies in intimate historic jewel boxes or dedicated seasonal festivals (e.g. Central City Opera, Wheeler / Aspen Opera Theater, Bravo! Vail, Santa Fe Opera, Glimmerglass Festival, Chautauqua Opera, Tanglewood, Wolf Trap, Spoleto Festival USA, Arena di Verona, Glyndebourne, Wexford).
+                      High-standard professional companies in intimate historic jewel boxes or dedicated seasonal festivals (e.g. Central City Opera, Wheeler / Aspen Opera Theater, Bravo! Vail, Santa Fe Opera, Glimmerglass Festival, Chautauqua Opera, Tanglewood, Wolf Trap, Spoleto Festival USA, Savonlinna Opera Festival, Arena di Verona, Glyndebourne).
                     </p>
                   </div>
 
                   <div className="bg-[#0a0e14]/85 border border-slate-700/80 p-3.5 rounded-lg space-y-1.5">
                     <div className="flex items-center gap-2 font-cinzel font-bold text-sm md:text-[15px] text-blue-300">
                       <span className="text-base">💎</span>
-                      <span>Tier 4: Historic "Opera Houses" & Cultural Heritage Landmarks ({tierCounts[4]})</span>
+                      <span>Tier 4: Historic Court Theatres & Boomtown Opera Houses ({tierCounts[4]})</span>
                     </div>
                     <p className="text-xs md:text-sm text-slate-300 leading-relaxed font-garamond">
-                      18th-century court theatres or 19th-century Gilded Age / Boomtown buildings erected as "Opera Houses" conferring civic prestige, hosting touring troupes or preserved as cultural heritage (e.g. Fulton Opera House in Lancaster PA, Tabor Opera House in Leadville CO, Wright Opera House in Ouray CO, Drottningholm, Teatro Olimpico, Margravial Opera House).
+                      Intact European court theatres preserved with original 18th-century machinery (Teatro Olimpico 1585, Drottningholm Court Theatre 1766, Margravial Opera House, Opéra Royal de Versailles) alongside authentic 19th-century Gilded Age / Boomtown buildings erected as "Opera Houses" to confer civic prestige and host touring troupes (Fulton Opera House in Lancaster PA, Tabor Opera House in Leadville CO, Wright Opera House in Ouray CO, Brown Grand Theatre in Concordia KS, Woodward Opera House in OH).
                     </p>
                   </div>
                 </div>

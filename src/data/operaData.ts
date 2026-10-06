@@ -1,13 +1,13 @@
 import { OperaHouse } from '../types/opera';
 
 // ═══════════════════════════════════════════════════════════════════════
-// MASTER COMPREHENSIVE WORLD OPERA ATLAS DATASET (167 VERIFIED VENUES)
+// MASTER COMPREHENSIVE WORLD OPERA ATLAS DATASET (173 VERIFIED VENUES)
 // Grounded in Wikipedia's Global Directory & OperaVision's European Network
 // Categorized by OPERA America & International Standards:
-// • Tier 1: Global Premier Houses & Shrines (30 venues)
-// • Tier 2: Major Metropolitan & National Houses (88 venues)
-// • Tier 3: Boutique Houses, Professional Regional Theatres & Festivals (33 venues)
-// • Tier 4: Historic "Opera Houses" & Cultural Heritage Landmarks (16 venues)
+// • Tier 1: Global Premier Houses & Shrines (32 venues)
+// • Tier 2: Major Metropolitan & National Houses (92 venues)
+// • Tier 3: Boutique Houses, Professional Regional Theatres & Festivals (34 venues)
+// • Tier 4: Historic "Opera Houses" & Cultural Heritage Landmarks (15 venues)
 // ═══════════════════════════════════════════════════════════════════════
 
 export const OPERA_HOUSES: OperaHouse[] = [
@@ -2912,60 +2912,6 @@ export const OPERA_HOUSES: OperaHouse[] = [
     ]
   },
   {
-    "id": "cohoes-music-hall",
-    "name": "Cohoes Music Hall (Cohoes Opera House)",
-    "city": "Cohoes",
-    "country": "USA",
-    "region": "Americas",
-    "latitude": 42.7744,
-    "longitude": -73.7011,
-    "tier": 4,
-    "venueType": "HISTORIC_GEM",
-    "websiteUrl": "https://thecohoesmusichall.org",
-    "description": "Built in 1874 in the textile mill city of Cohoes, New York. The fourth-oldest operating theatre in New York State; celebrated for its pristine Victorian acoustic woodwork and historic touring theatrical runs.",
-    "inauguratedYear": 1874,
-    "architect": "Nichols & Brown",
-    "architecturalStyle": "Second Empire Mansard Roof with High Victorian Proscenium",
-    "capacity": "450 seats",
-    "historicSignificance": "Historic Gilded Age industrial boom theatre; hosted Buffalo Bill, John L. Sullivan, and touring light operas.",
-    "historicPremieres": [
-      {
-        "title": "The Bohemian Girl",
-        "composer": "Michael Balfe",
-        "premiereYear": 1874,
-        "type": "INAUGURAL_OPERA",
-        "details": "Inaugural lyric staging opening the historic Mohawk Valley music hall."
-      }
-    ]
-  },
-  {
-    "id": "colorado-chautauqua-auditorium",
-    "name": "Colorado Chautauqua Auditorium",
-    "city": "Boulder",
-    "country": "USA",
-    "region": "Americas",
-    "latitude": 39.9986,
-    "longitude": -105.2819,
-    "tier": 4,
-    "venueType": "HISTORIC_GEM",
-    "websiteUrl": "https://www.chautauqua.com",
-    "description": "Built in 1898 at the foot of the Flatirons in Boulder, Colorado. The historic open-timber Chautauqua Auditorium is a National Historic Landmark renowned for natural acoustic resonance and summer classical concerts.",
-    "inauguratedYear": 1898,
-    "architect": "E.R. Rice",
-    "architecturalStyle": "Rustic Open-Air Skeleton Frame Timber Barn",
-    "capacity": "1,300 seats",
-    "historicSignificance": "Only continuously operating Chautauqua west of the Mississippi; National Historic Landmark.",
-    "historicPremieres": [
-      {
-        "title": "Inaugural Chautauqua Concert",
-        "composer": "Classical Masterworks",
-        "premiereYear": 1898,
-        "type": "INAUGURAL_OPERA",
-        "details": "Dedicated on 4 July 1898 to bring cultural, musical, and educational enlightenment to the American West."
-      }
-    ]
-  },
-  {
     "id": "drottningholm-court-theatre",
     "name": "Drottningholms Slottsteater",
     "city": "Stockholm",
@@ -5037,6 +4983,243 @@ export const OPERA_HOUSES: OperaHouse[] = [
         "premiereYear": 1962,
         "type": "INAUGURAL_OPERA",
         "details": "Inaugural production staged by the Anchorage Lyric Opera Guild."
+      }
+    ]
+  },
+  {
+    "id": "cairo-opera-house",
+    "name": "Cairo Opera House (Historic Khedivial Opera House / Dar El-Obera El-Masreyya)",
+    "city": "Cairo",
+    "country": "Egypt",
+    "region": "Middle East & Africa",
+    "latitude": 30.0425,
+    "longitude": 31.2241,
+    "tier": 1,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://cairoopera.org",
+    "description": "The supreme opera institution of the Arab world and Africa. Successor to the historic Khedivial Opera House (inaugurated in 1869 to celebrate the opening of the Suez Canal), where Giuseppe Verdi was commissioned by Khedive Ismail to create Aida, premiering to worldwide acclaim in 1871.",
+    "inauguratedYear": 1869,
+    "architect": "Pietro Avoscani (1869) / Nikken Sekkei (1988)",
+    "architecturalStyle": "Islamic-Postmodernist Cultural Complex with Neoclassical Lineage",
+    "capacity": "1,200 seats (Main Hall)",
+    "historicSignificance": "The fabled site of the world premiere of Giuseppe Verdi’s Aida (1871); the primary opera house in Africa and the Arab world.",
+    "historicPremieres": [
+      {
+        "title": "Aida",
+        "composer": "Giuseppe Verdi",
+        "premiereYear": 1871,
+        "type": "WORLD_PREMIERE",
+        "details": "Commissioned by Khedive Ismail Pasha to celebrate the Suez Canal; premiered at the Khedivial Opera House on 24 December 1871 conducted by Giovanni Bottesini."
+      },
+      {
+        "title": "Rigoletto",
+        "composer": "Giuseppe Verdi",
+        "premiereYear": 1869,
+        "type": "INAUGURAL_OPERA",
+        "details": "Grand opening gala of the Khedivial Opera House on 1 November 1869, attended by Empress Eugénie of France."
+      }
+    ]
+  },
+  {
+    "id": "alexandria-opera-house",
+    "name": "Alexandria Opera House (Sayed Darwish Theatre)",
+    "city": "Alexandria",
+    "country": "Egypt",
+    "region": "Middle East & Africa",
+    "latitude": 31.1989,
+    "longitude": 29.9042,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://cairoopera.org",
+    "description": "Built in 1921 by French-Italian architect Pietro Verrucci as the Théâtre Mohamed Aly. Renamed in honor of Sayed Darwish, the founding father of modern Egyptian music and operetta; Mediterranean jewel of Egypt’s national opera network.",
+    "inauguratedYear": 1921,
+    "architect": "Pietro Verrucci",
+    "architecturalStyle": "Italian Renaissance Revival with Gilded Proscenium & Boxes",
+    "capacity": "1,000 seats",
+    "historicSignificance": "Named for Egypt’s greatest musical dramatist Sayed Darwish; coastal home of Egyptian classical opera and visiting international troupes.",
+    "historicPremieres": [
+      {
+        "title": "Shahrazad",
+        "composer": "Sayed Darwish",
+        "premiereYear": 1921,
+        "type": "HISTORIC_STAGING",
+        "details": "Landmark Arabic musical theatre and operetta during the theatre’s opening decade."
+      }
+    ]
+  },
+  {
+    "id": "cape-town-opera",
+    "name": "Cape Town Opera (Artscape Opera House)",
+    "city": "Cape Town",
+    "country": "South Africa",
+    "region": "Middle East & Africa",
+    "latitude": -33.9208,
+    "longitude": 18.43,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://www.capetownopera.co.za",
+    "description": "Africa’s only permanent full-time professional year-round opera company, performing in the 1,487-seat Artscape Opera House. World-renowned for training international operatic superstars including Pretty Yende and Golda Schultz, and touring acclaimed productions to London, Paris, and Berlin.",
+    "inauguratedYear": 1971,
+    "architect": "Revel Fox & Partners",
+    "architecturalStyle": "Late Modernist Performing Arts Complex with Continental Proscenium",
+    "capacity": "1,487 seats",
+    "historicSignificance": "Sub-Saharan Africa’s premier opera company; creator of the globally toured Mandela Trilogy and renowned trainer of international Bel Canto stars.",
+    "historicPremieres": [
+      {
+        "title": "Mandela Trilogy",
+        "composer": "Peter Louis van Dijk & Mike Campbell",
+        "premiereYear": 2010,
+        "type": "WORLD_PREMIERE",
+        "details": "Critically acclaimed biographical operatic tribute to Nelson Mandela; toured to the London Coliseum, Ravenna Festival, and Dubai Opera."
+      },
+      {
+        "title": "Aida (Inaugural Production)",
+        "composer": "Giuseppe Verdi",
+        "premiereYear": 1971,
+        "type": "INAUGURAL_OPERA",
+        "details": "Grand inaugural opera performance opening the Nico Malan (Artscape) Opera House in May 1971."
+      }
+    ]
+  },
+  {
+    "id": "theatre-municipal-de-tunis",
+    "name": "Théâtre Municipal de Tunis (\"La Bonbonnière\")",
+    "city": "Tunis",
+    "country": "Tunisia",
+    "region": "Middle East & Africa",
+    "latitude": 36.7997,
+    "longitude": 10.1803,
+    "tier": 3,
+    "venueType": "HISTORIC_GEM",
+    "websiteUrl": "https://commune-tunis.gov.tn",
+    "description": "North Africa’s premier historic Art Nouveau opera theatre, opened in 1902 on Avenue Habib Bourguiba. Affectionately called \"La Bonbonnière\" for its exquisite jewel-box interior, it has hosted century-long traditions of French and Italian opera in Tunis.",
+    "inauguratedYear": 1902,
+    "architect": "Jean-Émile Resplandy",
+    "architecturalStyle": "Art Nouveau & Eclectic Italian Horseshoe with Gilt Stucco Cherubs",
+    "capacity": "1,350 seats",
+    "historicSignificance": "The oldest surviving active opera theatre in North Africa; home of the Tunisian Symphony Orchestra and historical Mediterranean tours.",
+    "historicPremieres": [
+      {
+        "title": "Manon (Inaugural Season)",
+        "composer": "Jules Massenet",
+        "premiereYear": 1902,
+        "type": "INAUGURAL_OPERA",
+        "details": "Inaugural opening performance on 20 November 1902."
+      }
+    ]
+  },
+  {
+    "id": "opera-dalger",
+    "name": "Opéra d'Alger (Boualem Bessaïh)",
+    "city": "Algiers",
+    "country": "Algeria",
+    "region": "Middle East & Africa",
+    "latitude": 36.7323,
+    "longitude": 2.9566,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://www.operadalger.dz",
+    "description": "Inaugurated in 2016 in Ouled Fayet, this contemporary 1,400-seat opera palace serves as Algeria’s premier lyrical stage. Blends modern acoustic engineering with traditional Arab-Andalusian architectural motifs; home to the Algerian National Symphony Orchestra.",
+    "inauguratedYear": 2016,
+    "architect": "Beijing Institute of Architectural Design",
+    "architecturalStyle": "Contemporary Arab-Andalusian Lyric Palace with Geometric Lattices",
+    "capacity": "1,400 seats",
+    "historicSignificance": "The first purpose-built opera house constructed in the Maghreb in the 21st century; center of Algerian national classical music.",
+    "historicPremieres": [
+      {
+        "title": "Inaugural Gala: Symphonie Maghrébine",
+        "composer": "Various Algerian Composers",
+        "premiereYear": 2016,
+        "type": "INAUGURAL_OPERA",
+        "details": "Gala inauguration on 20 July 2016 uniting the Algerian National Symphony and Arab vocalists."
+      }
+    ]
+  },
+  {
+    "id": "gothenburg-opera",
+    "name": "Gothenburg Opera (GöteborgsOperan)",
+    "city": "Gothenburg",
+    "country": "Sweden",
+    "region": "Europe",
+    "latitude": 57.7112,
+    "longitude": 11.9678,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://www.opera.se/en",
+    "description": "Standing dramatically on the waters of the Göta älv harbor, the Gothenburg Opera was designed by Jan Izikowitz with forms inspired by sailing ships, bridges, and bird wings. One of Scandinavia’s foremost producing houses and an active OperaVision streaming partner.",
+    "inauguratedYear": 1994,
+    "architect": "Jan Izikowitz",
+    "architecturalStyle": "Postmodern Maritime-Inspired Waterfront Opera Hall",
+    "capacity": "1,276 seats",
+    "historicSignificance": "Western Sweden’s premier lyrical and dance stage; internationally acclaimed for Wagner Ring cycles and innovative contemporary stagings.",
+    "historicPremieres": [
+      {
+        "title": "Aniara (New Production Gala)",
+        "composer": "Karl-Birger Blomdahl",
+        "premiereYear": 1994,
+        "type": "INAUGURAL_OPERA",
+        "details": "Inaugural gala production opening the harborfront opera house in October 1994."
+      }
+    ]
+  },
+  {
+    "id": "teatro-nacional-de-sao-carlos",
+    "name": "Teatro Nacional de São Carlos",
+    "city": "Lisbon",
+    "country": "Portugal",
+    "region": "Europe",
+    "latitude": 38.7095,
+    "longitude": -9.1415,
+    "tier": 1,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://saocarlos.pt",
+    "description": "Portugal’s only dedicated grand opera house, opened in 1793 in Lisbon’s Chiado district. Modeled directly on Milan’s Teatro alla Scala and Naples’ Teatro di San Carlo. Famous in operatic legend as the venue where Maria Callas gave her definitive live recording of Verdi’s La Traviata in 1958 with Alfredo Kraus.",
+    "inauguratedYear": 1793,
+    "architect": "José da Costa e Silva",
+    "architecturalStyle": "Neoclassical / Italian Rococo Royal Horseshoe with Imperial Box",
+    "capacity": "1,148 seats",
+    "historicSignificance": "Portugal’s primary lyrical monument for over two centuries; site of Maria Callas’s legendary 1958 Lisbon Traviata.",
+    "historicPremieres": [
+      {
+        "title": "La ballerina amante",
+        "composer": "Domenico Cimarosa",
+        "premiereYear": 1793,
+        "type": "INAUGURAL_OPERA",
+        "details": "Inaugural gala opera performance celebrating Queen Maria I on 30 June 1793."
+      },
+      {
+        "title": "La Traviata (Maria Callas Lisbon Debut)",
+        "composer": "Giuseppe Verdi",
+        "premiereYear": 1958,
+        "type": "HISTORIC_STAGING",
+        "details": "Legendary live performance starring Maria Callas and Alfredo Kraus, conducted by Franco Ghione."
+      }
+    ]
+  },
+  {
+    "id": "woodward-opera-house-ohio",
+    "name": "The Woodward Opera House",
+    "city": "Mount Vernon",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 40.3934,
+    "longitude": -82.4857,
+    "tier": 4,
+    "venueType": "HISTORIC_GEM",
+    "websiteUrl": "https://thewoodward.org",
+    "description": "Completed in 1851, the Woodward Opera House is recognized by architectural historians as the oldest authentic 19th-century Gilded Age second-floor opera house remaining in the United States. Recently completed a meticulous $21 million historical restoration.",
+    "inauguratedYear": 1851,
+    "architect": "Dr. Ebenezer Woodward",
+    "architecturalStyle": "Antebellum Greek Revival / Victorian Horseshoe Opera Hall",
+    "capacity": "500 seats",
+    "historicSignificance": "America’s oldest authentic 19th-century second-floor opera house; National Register of Historic Places.",
+    "historicPremieres": [
+      {
+        "title": "The Bohemian Girl (Historic Tour)",
+        "composer": "Michael William Balfe",
+        "premiereYear": 1855,
+        "type": "HISTORIC_STAGING",
+        "details": "Early American touring opera performance during the theatre’s first decade."
       }
     ]
   }
