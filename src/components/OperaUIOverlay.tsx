@@ -432,7 +432,7 @@ export const OperaUIOverlay: React.FC = () => {
               {/* Verified Architectural & Structural Specs */}
               <div className="grid grid-cols-2 gap-3 text-sm shrink-0">
                 {selectedHouse.inauguratedYear && (
-                  <div className="bg-[#142035] border border-slate-600/70 p-3 rounded-lg flex items-center gap-3">
+                  <div className="bg-[#142035] border border-slate-600/70 p-3.5 rounded-lg flex items-center gap-3">
                     <Calendar className="h-5 w-5 text-amber-400 shrink-0" />
                     <div>
                       <div className="text-xs md:text-sm font-cinzel font-bold text-amber-300 uppercase tracking-wider">
@@ -445,7 +445,7 @@ export const OperaUIOverlay: React.FC = () => {
                   </div>
                 )}
                 {selectedHouse.capacity && (
-                  <div className="bg-[#142035] border border-slate-600/70 p-3 rounded-lg flex items-center gap-3">
+                  <div className="bg-[#142035] border border-slate-600/70 p-3.5 rounded-lg flex items-center gap-3">
                     <Users className="h-5 w-5 text-amber-400 shrink-0" />
                     <div>
                       <div className="text-xs md:text-sm font-cinzel font-bold text-amber-300 uppercase tracking-wider">
@@ -458,7 +458,7 @@ export const OperaUIOverlay: React.FC = () => {
                   </div>
                 )}
                 {selectedHouse.architect && (
-                  <div className="bg-[#142035] border border-slate-600/70 p-3 rounded-lg flex items-start gap-3 col-span-2">
+                  <div className="bg-[#142035] border border-slate-600/70 p-4 rounded-lg flex items-start gap-3 col-span-2">
                     <Landmark className="h-5 w-5 text-amber-400 shrink-0 mt-0.5" />
                     <div className="min-w-0 flex-1">
                       <div className="text-xs md:text-sm font-cinzel font-bold text-amber-300 uppercase tracking-wider">
@@ -475,15 +475,17 @@ export const OperaUIOverlay: React.FC = () => {
 
               {/* Scrollable Content: Description, Heritage & Verified World Premieres */}
               <div className="flex-1 space-y-4 overflow-y-auto pr-1 min-h-0">
-                {/* Description (Generous, highly legible font size) */}
-                <p className="text-[18px] md:text-[19px] text-slate-100 leading-relaxed font-garamond italic bg-[#131e30] border border-slate-700/80 p-4.5 rounded-lg">
-                  "{selectedHouse.description}"
-                </p>
+                {/* Description (Generous, highly legible font size and spacious padding) */}
+                <div className="bg-[#131e30] border border-slate-700/80 p-5 md:p-6 rounded-lg shadow-sm">
+                  <p className="text-[18px] md:text-[19px] text-slate-100 leading-relaxed font-garamond italic">
+                    "{selectedHouse.description}"
+                  </p>
+                </div>
 
                 {/* Historic Legacy & Significance */}
                 {selectedHouse.historicSignificance && (
-                  <div className="bg-[#17253b] border border-amber-600/50 p-4.5 rounded-lg leading-relaxed">
-                    <span className="font-cinzel font-bold text-amber-300 block mb-1.5 text-base md:text-[17px] uppercase tracking-wider">
+                  <div className="bg-[#17253b] border border-amber-600/50 p-5 md:p-6 rounded-lg leading-relaxed shadow-sm">
+                    <span className="font-cinzel font-bold text-amber-300 block mb-2 text-base md:text-[17px] uppercase tracking-wider">
                       Historic Significance & Heritage:
                     </span>
                     <span className="text-slate-100 leading-relaxed font-garamond text-[18px] md:text-[19px] block">
@@ -508,28 +510,28 @@ export const OperaUIOverlay: React.FC = () => {
                       {selectedHouse.historicPremieres.map((premiere, idx) => (
                         <div
                           key={idx}
-                          className="bg-[#131e30] border border-slate-600/80 p-4 rounded-lg hover:border-amber-400/60 transition"
+                          className="bg-[#131e30] border border-slate-600/80 p-5 rounded-lg hover:border-amber-400/60 transition shadow-sm space-y-2"
                         >
-                          <div className="flex items-start justify-between gap-2">
-                            <h4 className="font-cinzel text-lg md:text-xl font-bold text-amber-100">
+                          <div className="flex items-start justify-between gap-3">
+                            <h4 className="font-cinzel text-lg md:text-xl font-bold text-amber-100 leading-snug">
                               {premiere.title}
                             </h4>
                             <span className="text-sm md:text-base font-cinzel font-bold text-amber-200 bg-[#1c2c46] px-3 py-1 rounded border border-amber-600/40 shrink-0">
                               {premiere.premiereYear}
                             </span>
                           </div>
-                          <p className="text-base md:text-[18px] text-amber-200 font-garamond font-semibold mt-1.5">
+                          <p className="text-base md:text-[18px] text-amber-200 font-garamond font-semibold">
                             Composer: {premiere.composer}
                           </p>
                           {premiere.type && (
-                            <div className="mt-2.5">
+                            <div className="pt-0.5">
                               <span className="text-xs md:text-sm font-cinzel font-bold tracking-wider px-3 py-1 rounded bg-[#7a101b] text-amber-100 border border-amber-500/70 uppercase inline-block">
                                 {premiere.type.replace('_', ' ')}
                               </span>
                             </div>
                           )}
                           {premiere.details && (
-                            <p className="text-base md:text-[18px] text-slate-100 font-garamond mt-2.5 leading-relaxed">
+                            <p className="text-base md:text-[18px] text-slate-100 font-garamond leading-relaxed pt-1.5 border-t border-slate-700/60">
                               • {premiere.details}
                             </p>
                           )}
@@ -568,7 +570,7 @@ export const OperaUIOverlay: React.FC = () => {
                 </div>
 
                 <div className="mt-4 space-y-3.5">
-                  <div className="bg-[#131e30] border border-slate-600/80 p-4 rounded-lg space-y-2">
+                  <div className="bg-[#131e30] border border-slate-600/80 p-5 md:p-6 rounded-lg space-y-2.5 shadow-sm">
                     <div className="flex items-center justify-between font-cinzel font-bold text-base md:text-lg text-amber-300">
                       <div className="flex items-center gap-2.5">
                         <span className="text-xl">🏛️</span>
@@ -583,7 +585,7 @@ export const OperaUIOverlay: React.FC = () => {
                     </p>
                   </div>
 
-                  <div className="bg-[#131e30] border border-slate-600/80 p-4 rounded-lg space-y-2">
+                  <div className="bg-[#131e30] border border-slate-600/80 p-5 md:p-6 rounded-lg space-y-2.5 shadow-sm">
                     <div className="flex items-center justify-between font-cinzel font-bold text-base md:text-lg text-slate-200">
                       <div className="flex items-center gap-2.5">
                         <span className="text-xl">🎭</span>
@@ -598,7 +600,7 @@ export const OperaUIOverlay: React.FC = () => {
                     </p>
                   </div>
 
-                  <div className="bg-[#131e30] border border-slate-600/80 p-4 rounded-lg space-y-2">
+                  <div className="bg-[#131e30] border border-slate-600/80 p-5 md:p-6 rounded-lg space-y-2.5 shadow-sm">
                     <div className="flex items-center justify-between font-cinzel font-bold text-base md:text-lg text-red-300">
                       <div className="flex items-center gap-2.5">
                         <span className="text-xl">🎪</span>
@@ -613,7 +615,7 @@ export const OperaUIOverlay: React.FC = () => {
                     </p>
                   </div>
 
-                  <div className="bg-[#131e30] border border-slate-600/80 p-4 rounded-lg space-y-2">
+                  <div className="bg-[#131e30] border border-slate-600/80 p-5 md:p-6 rounded-lg space-y-2.5 shadow-sm">
                     <div className="flex items-center justify-between font-cinzel font-bold text-base md:text-lg text-blue-300">
                       <div className="flex items-center gap-2.5">
                         <span className="text-xl">👑</span>
@@ -630,7 +632,7 @@ export const OperaUIOverlay: React.FC = () => {
                 </div>
               </div>
 
-              <div className="bg-[#131e30] border border-amber-700/50 p-4 rounded-lg text-center text-base md:text-[17px] text-amber-200 font-garamond shrink-0">
+              <div className="bg-[#131e30] border border-amber-700/50 p-5 rounded-lg text-center text-base md:text-[17px] text-amber-200 font-garamond shrink-0 shadow-sm">
                 Tip: Search for composers such as "Verdi", "Puccini", "Wagner", or "Mozart" to find where their masterworks first premiered.
               </div>
             </div>
