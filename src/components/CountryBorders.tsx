@@ -95,6 +95,13 @@ export const CountryBorders: React.FC<CountryBordersProps> = ({ globeRadius }) =
           const geom = feature.geometry;
           if (!geom) return;
 
+          // State boundaries only for United States and Canada (removes Russia, China, Brazil, etc.)
+          const a3 = feature.properties?.ADM0_A3;
+          const admName = feature.properties?.ADM0_NAME;
+          if (a3 && a3 !== 'USA' && a3 !== 'CAN' && admName !== 'United States of America' && admName !== 'Canada') {
+            return;
+          }
+
           const lines =
             geom.type === 'LineString'
               ? [geom.coordinates]
@@ -148,6 +155,13 @@ export const CountryBorders: React.FC<CountryBordersProps> = ({ globeRadius }) =
         geojson.features.forEach((feature: any) => {
           const geom = feature.geometry;
           if (!geom) return;
+
+          // Filter out river reservoirs or unnamed water features
+          const fcla = feature.properties?.featurecla;
+          const name = feature.properties?.name;
+          if (fcla === 'Reservoir' || (name && name.toLowerCase().includes('reservoir'))) {
+            return;
+          }
 
           const polyList =
             geom.type === 'Polygon'

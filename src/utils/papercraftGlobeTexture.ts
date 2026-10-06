@@ -87,6 +87,13 @@ export function createPapercraftGlobeTexture(onLoaded?: () => void): THREE.Canva
         const geom = feature.geometry;
         if (!geom) return;
 
+        // Filter out river reservoirs or unnamed water features
+        const fcla = feature.properties?.featurecla;
+        const name = feature.properties?.name;
+        if (fcla === 'Reservoir' || (name && name.toLowerCase().includes('reservoir'))) {
+          return;
+        }
+
         const polyList =
           geom.type === 'Polygon'
             ? [geom.coordinates]
@@ -112,7 +119,7 @@ export function createPapercraftGlobeTexture(onLoaded?: () => void): THREE.Canva
       });
     }
 
-    // 2c. STATE & PROVINCIAL BOUNDARIES (Lighter warm brown / soft antique gray)
+    // 2c. STATE & PROVINCIAL BOUNDARIES (United States and Canada ONLY - lighter warm brown/soft gray)
     if (statesGeojson && statesGeojson.features) {
       ctx.strokeStyle = 'rgba(155, 130, 105, 0.45)'; // Lighter antique warm brown/gray ink
       ctx.lineWidth = 1.3;
@@ -121,6 +128,13 @@ export function createPapercraftGlobeTexture(onLoaded?: () => void): THREE.Canva
       statesGeojson.features.forEach((feature: any) => {
         const geom = feature.geometry;
         if (!geom) return;
+
+        // State boundaries only for United States and Canada (removes Russia, China, Brazil, etc.)
+        const a3 = feature.properties?.ADM0_A3;
+        const admName = feature.properties?.ADM0_NAME;
+        if (a3 && a3 !== 'USA' && a3 !== 'CAN' && admName !== 'United States of America' && admName !== 'Canada') {
+          return;
+        }
 
         const lines =
           geom.type === 'LineString'
