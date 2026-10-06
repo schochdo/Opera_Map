@@ -4,6 +4,7 @@ import { Html } from '@react-three/drei';
 import * as THREE from 'three';
 import { OperaHouse } from '../types/opera';
 import { useOperaStore } from '../store/useOperaStore';
+import { TierPinIcon } from './TierPinIcon';
 
 export function latLongToVector3(lat: number, lng: number, radius: number): THREE.Vector3 {
   const phi = (90 - lat) * (Math.PI / 180);
@@ -184,9 +185,7 @@ export const PapercraftLandmark: React.FC<LandmarkProps> = ({ house, globeRadius
                 letterSpacing: '0.04em',
               }}
             >
-              <span style={{ fontSize: '19px' }}>
-                {house.tier === 1 ? '🏛️' : house.tier === 2 ? '🎭' : house.tier === 3 ? '🎪' : '👑'}
-              </span>
+              <TierPinIcon tier={house.tier} size={20} className="shrink-0 drop-shadow" />
               <span>{house.name}</span>
               <span
                 style={{

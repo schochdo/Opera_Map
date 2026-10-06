@@ -8,8 +8,8 @@ export const DATASET_REGISTRY: Record<string, AtlasDataset> = {
 };
 
 export const AVAILABLE_DATASETS = [
-  { id: 'opera', label: '🎭 Opera Houses', count: OPERA_DATASET.items.length },
-  { id: 'unesco', label: '🏛️ UNESCO World Heritage', count: UNESCO_DATASET.items.length },
+  { id: 'opera', label: 'Opera Houses', count: OPERA_DATASET.items.length },
+  { id: 'unesco', label: 'UNESCO World Heritage', count: UNESCO_DATASET.items.length },
 ];
 
 export function getDataset(id: string): AtlasDataset {
