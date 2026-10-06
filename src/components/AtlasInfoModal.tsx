@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { X, Info, Compass, Landmark, Music, MapPin } from 'lucide-react';
 import { TierPinIcon } from './TierPinIcon';
 
@@ -18,18 +18,39 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
   onClose,
   tierCounts,
 }) => {
+  // Close on Escape key press
+  useEffect(() => {
+    if (!isOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        onClose();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [isOpen, onClose]);
+
   if (!isOpen) return null;
 
   return (
     <div
-      className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/75 backdrop-blur-sm select-none font-serif overflow-y-auto"
-      onClick={onClose}
+      className="pointer-events-auto fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-black/80 backdrop-blur-md select-none font-serif overflow-y-auto cursor-default"
+      onClick={(e) => {
+        e.stopPropagation();
+        onClose();
+      }}
+      onPointerDown={(e) => e.stopPropagation()}
+      onMouseDown={(e) => e.stopPropagation()}
+      onWheel={(e) => e.stopPropagation()}
     >
       <div
-        className="relative w-full max-w-3xl rounded-xl border border-amber-500/60 bg-[#101927] p-6 md:p-8 shadow-2xl text-slate-100 max-h-[90vh] overflow-y-auto my-auto"
+        className="pointer-events-auto relative w-full max-w-3xl rounded-xl border border-amber-500/60 bg-[#101927] p-6 md:p-8 shadow-2xl text-slate-100 max-h-[90vh] overflow-y-auto my-auto z-50"
         onClick={(e) => e.stopPropagation()}
+        onPointerDown={(e) => e.stopPropagation()}
+        onMouseDown={(e) => e.stopPropagation()}
+        onWheel={(e) => e.stopPropagation()}
         style={{
-          boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.85), 0 0 35px rgba(212, 175, 55, 0.15)',
+          boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.95), 0 0 40px rgba(212, 175, 55, 0.2)',
         }}
       >
         {/* Header */}
@@ -48,11 +69,14 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
             </div>
           </div>
           <button
-            onClick={onClose}
-            className="rounded-lg p-2 text-slate-400 hover:bg-slate-800 hover:text-white transition cursor-pointer border border-slate-700/60 shrink-0"
-            title="Close guide"
+            onClick={(e) => {
+              e.stopPropagation();
+              onClose();
+            }}
+            className="rounded-lg p-2.5 text-slate-300 hover:bg-slate-800 hover:text-white transition cursor-pointer border border-slate-700/80 bg-slate-900/80 shrink-0 shadow"
+            title="Close guide (Esc)"
           >
-            <X className="h-5 w-5" />
+            <X className="h-6 w-6" />
           </button>
         </div>
 
@@ -161,8 +185,11 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
         {/* Modal Footer */}
         <div className="mt-6 pt-4 border-t border-slate-700 flex justify-end">
           <button
-            onClick={onClose}
-            className="px-5 py-2 rounded-lg border border-amber-500/70 bg-[#7a101b] hover:bg-[#8f1522] text-amber-100 font-cinzel font-bold transition cursor-pointer text-sm md:text-base shadow-md"
+            onClick={(e) => {
+              e.stopPropagation();
+              onClose();
+            }}
+            className="px-6 py-2.5 rounded-lg border border-amber-500/70 bg-[#7a101b] hover:bg-[#8f1522] text-amber-100 font-cinzel font-bold transition cursor-pointer text-sm md:text-base shadow-md"
           >
             Close Guide
           </button>
