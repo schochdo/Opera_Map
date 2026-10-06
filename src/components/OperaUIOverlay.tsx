@@ -531,19 +531,24 @@ export const OperaUIOverlay: React.FC = () => {
         )}
 
         {/* ------------------------------------------------------------- */}
-        {/* 3. CENTER BOTTOM CONTROLS: FLOATING PROSCENIUM CONTROL BAR     */}
+        {/* 3. CENTER BOTTOM CONTROLS: COMPACT FLOATING CONTROL BAR       */}
         {/* ------------------------------------------------------------- */}
-        <footer className="pointer-events-auto absolute bottom-4 left-1/2 -translate-x-1/2 flex items-center gap-4 px-6 py-2.5 rounded-full border border-amber-500/70 bg-[#101927]/95 shadow-2xl backdrop-blur-md text-sm md:text-base font-cinzel text-amber-100 z-20 font-bold">
-          <span className="drop-shadow-md">
-            DRAG GLOBE TO ROTATE • SELECT ANY PIN
+        <footer className="pointer-events-auto absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-2.5 px-3 py-1.5 rounded-full border border-amber-500/60 bg-[#101927]/95 shadow-xl backdrop-blur-md text-xs md:text-[13px] font-cinzel text-amber-100 z-20 font-bold whitespace-nowrap">
+          <span className="drop-shadow-sm text-slate-300 tracking-wide text-xs md:text-[13px]">
+            Drag Globe to Rotate
           </span>
-          <div className="h-4 w-[1px] bg-amber-500/50" />
+          <div className="h-3 w-[1px] bg-amber-500/40" />
           <button
             onClick={toggleAutoRotate}
-            className="flex items-center gap-2 px-3.5 py-1.5 rounded-md bg-[#1a2b42] border border-amber-500/80 text-amber-100 hover:bg-[#233854] transition shadow cursor-pointer font-bold text-sm md:text-base"
+            className={`flex items-center gap-1.5 px-2.5 py-1 rounded-full border transition shadow-sm cursor-pointer font-bold text-[11px] md:text-xs ${
+              isAutoRotating
+                ? 'bg-amber-500/25 text-amber-200 border-amber-400/80'
+                : 'bg-[#18263c] text-slate-300 border-slate-600/80 hover:text-white hover:border-slate-400'
+            }`}
+            title={isAutoRotating ? 'Pause auto-rotation' : 'Start auto-rotation'}
           >
-            <span>{isAutoRotating ? '⏸' : '▶'}</span>
-            <span>{isAutoRotating ? 'Auto-Rotate: On' : 'Paused'}</span>
+            <span className="text-[10px]">{isAutoRotating ? '⏸' : '▶'}</span>
+            <span>{isAutoRotating ? 'Auto-Rotate: On' : 'Auto-Rotate: Off'}</span>
           </button>
         </footer>
       </div>
