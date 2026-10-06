@@ -1,13 +1,13 @@
 import { OperaHouse } from '../types/opera';
 
 // ═══════════════════════════════════════════════════════════════════════
-// MASTER COMPREHENSIVE WORLD OPERA ATLAS DATASET (139 VERIFIED VENUES)
+// MASTER COMPREHENSIVE WORLD OPERA ATLAS DATASET (167 VERIFIED VENUES)
 // Grounded in Wikipedia's Global Directory & OperaVision's European Network
 // Categorized by OPERA America & International Standards:
-// • Tier 1: Global Premier Houses & Shrines (28 venues)
-// • Tier 2: Major Metropolitan & National Houses (71 venues)
-// • Tier 3: Boutique Houses, Professional Regional Theatres & Festivals (27 venues)
-// • Tier 4: Historic "Opera Houses" & Cultural Heritage Landmarks (13 venues)
+// • Tier 1: Global Premier Houses & Shrines (30 venues)
+// • Tier 2: Major Metropolitan & National Houses (88 venues)
+// • Tier 3: Boutique Houses, Professional Regional Theatres & Festivals (33 venues)
+// • Tier 4: Historic "Opera Houses" & Cultural Heritage Landmarks (16 venues)
 // ═══════════════════════════════════════════════════════════════════════
 
 export const OPERA_HOUSES: OperaHouse[] = [
@@ -4211,6 +4211,832 @@ export const OPERA_HOUSES: OperaHouse[] = [
         "premiereYear": 2003,
         "type": "INAUGURAL_OPERA",
         "details": "Opening production of the first Daegu International Opera Festival."
+      }
+    ]
+  },
+  {
+    "id": "canadian-opera-company",
+    "name": "Canadian Opera Company (Four Seasons Centre for the Performing Arts)",
+    "city": "Toronto",
+    "country": "Canada",
+    "region": "Americas",
+    "latitude": 43.6506,
+    "longitude": -79.3858,
+    "tier": 1,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://www.coc.ca",
+    "description": "Canada’s largest opera company and premier international lyric institution, performing in the Four Seasons Centre—Canada’s first purpose-built opera palace, celebrated for world-class acoustics engineered by Sound Space Design.",
+    "inauguratedYear": 2006,
+    "architect": "Jack Diamond (Diamond Schmitt Architects)",
+    "architecturalStyle": "Contemporary European Horseshoe with Acoustic Floating Plaster Shell",
+    "capacity": "2,071 seats",
+    "historicSignificance": "Canada’s flagship opera house; acclaimed for international co-productions and landmark complete Ring Cycle cycles directed by François Girard and Robert Lepage.",
+    "historicPremieres": [
+      {
+        "title": "The Golden Ass",
+        "composer": "Randolph Peters / Robertson Davies",
+        "premiereYear": 1999,
+        "type": "WORLD_PREMIERE",
+        "details": "Davies’ final libretto premiered with Canadian soprano Maureen Forrester."
+      },
+      {
+        "title": "Louis Riel",
+        "composer": "Harry Somers",
+        "premiereYear": 1967,
+        "type": "WORLD_PREMIERE",
+        "details": "Canada’s Centennial grand opera masterwork."
+      }
+    ]
+  },
+  {
+    "id": "opera-de-montreal",
+    "name": "Opéra de Montréal (Salle Wilfrid-Pelletier, Place des Arts)",
+    "city": "Montreal",
+    "country": "Canada",
+    "region": "Americas",
+    "latitude": 45.5087,
+    "longitude": -73.567,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://www.operademontreal.com/en",
+    "description": "The premier French-language opera company in North America, performing at Place des Arts in Montreal. Acclaimed for innovative commissions, international star casts, and nurturing young Canadian artists at the Atelier lyrique.",
+    "inauguratedYear": 1963,
+    "architect": "Affleck, Desbarats, Dimakopoulos, Lebensold & Sise",
+    "architecturalStyle": "Modernist Grand Concert Hall with Italian Proscenium",
+    "capacity": "2,982 seats",
+    "historicSignificance": "Quebec’s national lyric institution; famed for world premiere of Pink Floyd’s operatic adaptation Another Brick in the Wall.",
+    "historicPremieres": [
+      {
+        "title": "Another Brick in the Wall: The Opera",
+        "composer": "Julien Bilodeau / Roger Waters",
+        "premiereYear": 2017,
+        "type": "WORLD_PREMIERE",
+        "details": "Epochal operatic transformation of Roger Waters’ legendary concept album."
+      },
+      {
+        "title": "Nelligan",
+        "composer": "André Gagnon / Michel Tremblay",
+        "premiereYear": 1990,
+        "type": "WORLD_PREMIERE",
+        "details": "Romantic Quebecois opera celebrating poet Émile Nelligan."
+      }
+    ]
+  },
+  {
+    "id": "vancouver-opera",
+    "name": "Vancouver Opera (Queen Elizabeth Theatre)",
+    "city": "Vancouver",
+    "country": "Canada",
+    "region": "Americas",
+    "latitude": 49.2806,
+    "longitude": -123.1119,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://www.vancouveropera.ca",
+    "description": "Western Canada’s flagship opera company, founded in 1959. Performs at the civic Queen Elizabeth Theatre and is celebrated for historical debuts by Dame Joan Sutherland and Marilyn Horne under maestro Richard Bonynge.",
+    "inauguratedYear": 1959,
+    "architect": "Affleck, Desbarats, Dimakopoulos, Lebensold & Sise",
+    "architecturalStyle": "Mid-Century Modernist Civic Hall",
+    "capacity": "2,765 seats",
+    "historicSignificance": "Pacific Canada’s leading opera producer; catalyst for Joan Sutherland’s legendary North American triumphs.",
+    "historicPremieres": [
+      {
+        "title": "The Overcoat",
+        "composer": "James Rolfe / Morris Panych",
+        "premiereYear": 2018,
+        "type": "WORLD_PREMIERE",
+        "details": "Acclaimed modern Canadian adaptation of Gogol’s story."
+      },
+      {
+        "title": "Norma (Joan Sutherland Canadian Debut)",
+        "composer": "Vincenzo Bellini",
+        "premiereYear": 1963,
+        "type": "HISTORIC_STAGING",
+        "details": "Historic debut starring Joan Sutherland and Marilyn Horne."
+      }
+    ]
+  },
+  {
+    "id": "calgary-opera",
+    "name": "Calgary Opera (Southern Alberta Jubilee Auditorium)",
+    "city": "Calgary",
+    "country": "Canada",
+    "region": "Americas",
+    "latitude": 51.0628,
+    "longitude": -114.0933,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://calgaryopera.com",
+    "description": "Founded in 1972, Calgary Opera has grown into one of North America’s most prolific commissioners of new Canadian opera, presenting full-scale productions at the Southern Alberta Jubilee Auditorium.",
+    "inauguratedYear": 1955,
+    "architect": "Rule Wynn and Rule",
+    "architecturalStyle": "Mid-Century Modernist Prairie Hall",
+    "capacity": "2,538 seats",
+    "historicSignificance": "Pioneered original Canadian full-scale operas including John Estacio’s Filumena and Bramwell Tovey’s The Inventor.",
+    "historicPremieres": [
+      {
+        "title": "Filumena",
+        "composer": "John Estacio / John Murrell",
+        "premiereYear": 2003,
+        "type": "WORLD_PREMIERE",
+        "details": "One of the most performed Canadian operas in history, based on the life of Florence Losandro."
+      },
+      {
+        "title": "The Inventor",
+        "composer": "Bramwell Tovey / John Murrell",
+        "premiereYear": 2011,
+        "type": "WORLD_PREMIERE",
+        "details": "Original opera commissioned and premiered in Calgary."
+      }
+    ]
+  },
+  {
+    "id": "edmonton-opera",
+    "name": "Edmonton Opera (Northern Alberta Jubilee Auditorium)",
+    "city": "Edmonton",
+    "country": "Canada",
+    "region": "Americas",
+    "latitude": 53.5222,
+    "longitude": -113.5264,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://www.edmontonopera.com",
+    "description": "Western Canada’s oldest professional opera company, founded in 1963 by local music lovers. Performs at the Northern Alberta Jubilee Auditorium; historic stage for Beverly Sills, Plácido Domingo, and Maureen Forrester.",
+    "inauguratedYear": 1955,
+    "architect": "Rule Wynn and Rule",
+    "architecturalStyle": "Mid-Century Modernist Hall",
+    "capacity": "2,534 seats",
+    "historicSignificance": "Alberta’s oldest professional opera company; celebrated for grand traditional stagings in Edmonton.",
+    "historicPremieres": [
+      {
+        "title": "Lucia di Lammermoor (Beverly Sills Debut)",
+        "composer": "Gaetano Donizetti",
+        "premiereYear": 1969,
+        "type": "HISTORIC_STAGING",
+        "details": "Legendary performance starring American coloratura Beverly Sills."
+      }
+    ]
+  },
+  {
+    "id": "pacific-opera-victoria",
+    "name": "Pacific Opera Victoria (Royal Theatre)",
+    "city": "Victoria",
+    "country": "Canada",
+    "region": "Americas",
+    "latitude": 48.4239,
+    "longitude": -123.3619,
+    "tier": 3,
+    "venueType": "REGIONAL_HOUSE",
+    "websiteUrl": "https://pacificopera.ca",
+    "description": "Located in the historic 1913 Edwardian Royal Theatre on Vancouver Island. Acclaimed across Canada for adventurous repertoire, boutique casting, and regular commissions.",
+    "inauguratedYear": 1913,
+    "architect": "William D'Oyly Rochfort",
+    "architecturalStyle": "Edwardian Beaux-Arts Historic Theatre",
+    "capacity": "1,416 seats",
+    "historicSignificance": "Premier boutique opera company of Western Canada; celebrated for commissioning Canadian chamber operas.",
+    "historicPremieres": [
+      {
+        "title": "Missing",
+        "composer": "Brian Current / Marie Clements",
+        "premiereYear": 2017,
+        "type": "WORLD_PREMIERE",
+        "details": "Poignant co-commission giving voice to missing and murdered Indigenous women in Canada."
+      }
+    ]
+  },
+  {
+    "id": "theatro-municipal-rio-de-janeiro",
+    "name": "Theatro Municipal do Rio de Janeiro",
+    "city": "Rio de Janeiro",
+    "country": "Brazil",
+    "region": "Americas",
+    "latitude": -22.909,
+    "longitude": -43.1764,
+    "tier": 1,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://theatromunicipal.rj.gov.br",
+    "description": "One of the most opulent opera palaces in the Western Hemisphere, standing prominently on Cinelândia in downtown Rio. Inspired directly by Charles Garnier’s Paris Opéra, with gilded balconies, Carrara marble, and French crystal chandeliers.",
+    "inauguratedYear": 1909,
+    "architect": "Francisco de Oliveira Passos & Albert Guilbert",
+    "architecturalStyle": "Belle Époque Beaux-Arts & Art Nouveau with Parisian Gilded Façade",
+    "capacity": "2,252 seats",
+    "historicSignificance": "Brazil’s supreme Belle Époque opera palace; historic stage of Maria Callas, Enrico Caruso, Arturo Toscanini, and Heitor Villa-Lobos.",
+    "historicPremieres": [
+      {
+        "title": "Il Guarany (Inaugural Gala Season)",
+        "composer": "Carlos Gomes",
+        "premiereYear": 1909,
+        "type": "INAUGURAL_OPERA",
+        "details": "Brazil’s foremost 19th-century opera masterwork performed during the theater’s opening season."
+      },
+      {
+        "title": "Izaht",
+        "composer": "Heitor Villa-Lobos",
+        "premiereYear": 1958,
+        "type": "WORLD_PREMIERE",
+        "details": "Villa-Lobos’ dramatic opera premiered under his own direction."
+      }
+    ]
+  },
+  {
+    "id": "theatro-da-paz",
+    "name": "Theatro da Paz",
+    "city": "Belém",
+    "country": "Brazil",
+    "region": "Americas",
+    "latitude": -1.4533,
+    "longitude": -48.4947,
+    "tier": 4,
+    "venueType": "HISTORIC_GEM",
+    "websiteUrl": "https://theatrodapaz.com.br",
+    "description": "The first grand opera house built in the Amazon basin during the Rubber Boom, predating Manaus by nearly 20 years. Built with materials imported from Europe, overlooking Praça da República in Belém.",
+    "inauguratedYear": 1878,
+    "architect": "José Tibúrcio de Magalhães",
+    "architecturalStyle": "Neoclassical with Corinthian Columns & Italian Fresco Murals",
+    "capacity": "900 seats",
+    "historicSignificance": "Amazonia’s oldest historic opera palace; hosts the annual Festival de Ópera do Theatro da Paz.",
+    "historicPremieres": [
+      {
+        "title": "Il Guarany (Inaugural Opera)",
+        "composer": "Carlos Gomes",
+        "premiereYear": 1878,
+        "type": "INAUGURAL_OPERA",
+        "details": "Gala opening performance on 15 February 1878."
+      }
+    ]
+  },
+  {
+    "id": "teatro-solis",
+    "name": "Teatro Solís",
+    "city": "Montevideo",
+    "country": "Uruguay",
+    "region": "Americas",
+    "latitude": -34.9077,
+    "longitude": -56.2014,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://teatrosolis.org.uy",
+    "description": "Uruguay’s oldest and most prestigious national theatre, opened in 1856 in Montevideo’s Ciudad Vieja. Named after Spanish navigator Juan Díaz de Solís; renowned for its elliptical auditorium and pristine acoustics.",
+    "inauguratedYear": 1856,
+    "architect": "Carlo Zucchi & Francisco Xavier de Garmendia",
+    "architecturalStyle": "Neoclassical Horseshoe with Corinthian Portico",
+    "capacity": "1,250 seats",
+    "historicSignificance": "Oldest major opera house in South America; host to Enrico Caruso, Arturo Toscanini, Anna Pavlova, and Arthur Rubinstein.",
+    "historicPremieres": [
+      {
+        "title": "La Parisina",
+        "composer": "Tomás Giribaldi",
+        "premiereYear": 1878,
+        "type": "WORLD_PREMIERE",
+        "details": "The first Uruguayan national opera in history, premiered on 14 September 1878 to wild acclaim."
+      },
+      {
+        "title": "Ernani (Inaugural Gala)",
+        "composer": "Giuseppe Verdi",
+        "premiereYear": 1856,
+        "type": "INAUGURAL_OPERA",
+        "details": "Opening production of the theatre on 25 August 1856."
+      }
+    ]
+  },
+  {
+    "id": "teatro-colon-bogota",
+    "name": "Teatro Colón de Bogotá",
+    "city": "Bogotá",
+    "country": "Colombia",
+    "region": "Americas",
+    "latitude": 4.5968,
+    "longitude": -74.0742,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://teatrocolon.gov.co",
+    "description": "Colombia’s National Theatre, built to celebrate the fourth centenary of the discovery of America. Designed by Italian architect Pietro Cantini in Neoclassical style with exquisite ornate plasterwork and a ceiling painted by Filippo Mastellari.",
+    "inauguratedYear": 1892,
+    "architect": "Pietro Cantini",
+    "architecturalStyle": "Neoclassical Italian Horseshoe with Gilded Frescoes",
+    "capacity": "785 seats",
+    "historicSignificance": "Declared a National Monument of Colombia in 1975; home to the National Symphony Orchestra of Colombia and national opera productions.",
+    "historicPremieres": [
+      {
+        "title": "Hernani (Inaugural Opera)",
+        "composer": "Giuseppe Verdi",
+        "premiereYear": 1892,
+        "type": "INAUGURAL_OPERA",
+        "details": "Inaugural gala performance on 12 October 1892."
+      }
+    ]
+  },
+  {
+    "id": "teatro-municipal-de-lima",
+    "name": "Teatro Municipal de Lima",
+    "city": "Lima",
+    "country": "Peru",
+    "region": "Americas",
+    "latitude": -12.0447,
+    "longitude": -77.0347,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://teatromunicipal.lima.gob.pe",
+    "description": "The historic municipal opera theatre of Peru’s capital city, inaugurated in 1920 as the Teatro Forero. Restored to magnificence following a 1998 fire, featuring Louis XVI-inspired ornamentation, marble staircases, and an Italian horseshoe auditorium.",
+    "inauguratedYear": 1920,
+    "architect": "Alfredo Viale",
+    "architecturalStyle": "Neo-Renaissance / Louis XVI Italian Horseshoe",
+    "capacity": "1,022 seats",
+    "historicSignificance": "Historical center of Peruvian operatic life; stage for legendary Peruvian tenor Alejandro Granda and visiting international troupes.",
+    "historicPremieres": [
+      {
+        "title": "Aida (Inaugural Opera)",
+        "composer": "Giuseppe Verdi",
+        "premiereYear": 1920,
+        "type": "INAUGURAL_OPERA",
+        "details": "Grand gala opening of the theatre on 28 July 1920."
+      }
+    ]
+  },
+  {
+    "id": "teatro-del-libertador-san-martin",
+    "name": "Teatro del Libertador General San Martín",
+    "city": "Córdoba",
+    "country": "Argentina",
+    "region": "Americas",
+    "latitude": -31.419,
+    "longitude": -64.1873,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://teatrodellibertador.cba.gov.ar",
+    "description": "Designed by Francesco Tamburini (the Italian architect who designed Buenos Aires’ Teatro Colón), this 1891 opera house in Córdoba is celebrated as an acoustic masterpiece and Argentina’s finest historic provincial lyric stage.",
+    "inauguratedYear": 1891,
+    "architect": "Francesco Tamburini",
+    "architecturalStyle": "Italian Renaissance Revival with Gilded Iron Horseshoe",
+    "capacity": "1,000 seats",
+    "historicSignificance": "Argentina’s foremost historic provincial opera house; shared architectural parentage with the legendary Teatro Colón.",
+    "historicPremieres": [
+      {
+        "title": "Faust (Inaugural Gala)",
+        "composer": "Charles Gounod",
+        "premiereYear": 1891,
+        "type": "INAUGURAL_OPERA",
+        "details": "Opening night gala on 26 April 1891."
+      }
+    ]
+  },
+  {
+    "id": "opera-idaho-egyptian-theatre",
+    "name": "Opera Idaho (The Egyptian Theatre)",
+    "city": "Boise",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 43.6166,
+    "longitude": -116.2036,
+    "tier": 3,
+    "venueType": "REGIONAL_HOUSE",
+    "websiteUrl": "https://operaidaho.org",
+    "description": "Founded in 1973, Opera Idaho is Idaho’s premier professional opera company, staging grand operas, operettas, and recitals in Boise’s historic 1927 Egyptian Theatre—one of the few remaining Egyptian Revival movie palaces in the United States.",
+    "inauguratedYear": 1927,
+    "architect": "Tourtellotte & Hummel",
+    "architecturalStyle": "Egyptian Revival Theatrical Jewel Box with Scarab Motifs",
+    "capacity": "740 seats",
+    "historicSignificance": "The only professional opera company in the state of Idaho; preserves vibrant lyric opera in the Mountain West.",
+    "historicPremieres": [
+      {
+        "title": "The Barber of Seville (Inaugural Production)",
+        "composer": "Gioachino Rossini",
+        "premiereYear": 1973,
+        "type": "INAUGURAL_OPERA",
+        "details": "Inaugural production founding the company under the Boise Opera Association."
+      }
+    ]
+  },
+  {
+    "id": "utah-opera-capitol-theatre",
+    "name": "Utah Opera (Janet Quinney Lawson Capitol Theatre)",
+    "city": "Salt Lake City",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 40.7656,
+    "longitude": -111.8927,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://utahopera.org",
+    "description": "Founded in 1978 by baritone Glade Peterson, Utah Opera performs four grand productions each season at the historic 1913 Capitol Theatre. Combined with the Utah Symphony, it forms one of the premier integrated musical organizations in North America.",
+    "inauguratedYear": 1913,
+    "architect": "G. Albert Lansburgh",
+    "architecturalStyle": "Italian Renaissance Revival with Classical Terra Cotta",
+    "capacity": "1,876 seats",
+    "historicSignificance": "Flagship opera institution of the Great Basin and Intermountain West; nationally recognized for its resident artist studio and set construction shop.",
+    "historicPremieres": [
+      {
+        "title": "La bohème (Founding Season)",
+        "composer": "Giacomo Puccini",
+        "premiereYear": 1978,
+        "type": "INAUGURAL_OPERA",
+        "details": "First production presented by Utah Opera, starring founder Glade Peterson."
+      }
+    ]
+  },
+  {
+    "id": "lyric-opera-of-kansas-city",
+    "name": "Lyric Opera of Kansas City (Muriel Kauffman Theatre, Kauffman Center)",
+    "city": "Kansas City",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 39.0942,
+    "longitude": -94.5878,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://kcopera.org",
+    "description": "Serving the heartland across Missouri and Kansas since 1958, the Lyric Opera of Kansas City performs in the sweeping Moshe Safdie-designed Muriel Kauffman Theatre. Famed for championing American opera in English and national co-commissions.",
+    "inauguratedYear": 2011,
+    "architect": "Moshe Safdie",
+    "architecturalStyle": "Contemporary Sculptural Shell with Acoustic Beechwood Interior",
+    "capacity": "1,800 seats",
+    "historicSignificance": "Heartland opera powerhouse; world premiere venue for Carlisle Floyd’s The Passion of Jonathan Wade and Mark Campbell’s The Shining.",
+    "historicPremieres": [
+      {
+        "title": "The Passion of Jonathan Wade",
+        "composer": "Carlisle Floyd",
+        "premiereYear": 1991,
+        "type": "WORLD_PREMIERE",
+        "details": "Major revised world premiere of Floyd’s Civil War opera."
+      },
+      {
+        "title": "The Shining",
+        "composer": "Paul Moravec / Mark Campbell",
+        "premiereYear": 2016,
+        "type": "HISTORIC_STAGING",
+        "details": "Acclaimed co-commission adaptation of Stephen King’s novel."
+      }
+    ]
+  },
+  {
+    "id": "wichita-grand-opera",
+    "name": "Wichita Grand Opera (Century II Performing Arts Center)",
+    "city": "Wichita",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 37.6845,
+    "longitude": -97.3377,
+    "tier": 3,
+    "venueType": "REGIONAL_HOUSE",
+    "websiteUrl": "https://wichitagrandopera.org",
+    "description": "Founded in 2002 by Margaret Ann Pent and Parvan Bakardiev, Wichita Grand Opera brought world-renowned stars including Luciano Pavarotti, Plácido Domingo, and native Kansan bass-baritone Samuel Ramey to perform grand opera on the Kansas plains.",
+    "inauguratedYear": 1969,
+    "architect": "John M. Hickman & Roy K. Varenhorst",
+    "architecturalStyle": "Mid-Century Modernist Circular Dome",
+    "capacity": "2,178 seats",
+    "historicSignificance": "Kansas’s premier professional grand opera company; frequent artistic home to legendary American bass-baritone Samuel Ramey.",
+    "historicPremieres": [
+      {
+        "title": "Luciano Pavarotti Gala Farewell Tour",
+        "composer": "Various",
+        "premiereYear": 2004,
+        "type": "HISTORIC_STAGING",
+        "details": "Luciano Pavarotti in concert presented by Wichita Grand Opera."
+      }
+    ]
+  },
+  {
+    "id": "brown-grand-theatre-kansas",
+    "name": "Brown Grand Theatre (Concordia Opera House)",
+    "city": "Concordia",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 39.5714,
+    "longitude": -97.6606,
+    "tier": 4,
+    "venueType": "HISTORIC_GEM",
+    "websiteUrl": "https://www.browngrand.org",
+    "description": "Built in 1907 by banker Napoleon Bonaparte Brown as a lavish Victorian opera house in north-central Kansas. Fully restored in 1980, it retains its iconic 1907 drop curtain depicting Napoleon at the Battle of Waterloo.",
+    "inauguratedYear": 1907,
+    "architect": "Carl Boller",
+    "architecturalStyle": "Renaissance Revival / Victorian Opera House with Original Drop Curtain",
+    "capacity": "650 seats",
+    "historicSignificance": "Rural Kansas’s most splendid historic opera house; continuously preserved theatrical landmark on the National Register of Historic Places.",
+    "historicPremieres": [
+      {
+        "title": "The Pink Lady (Inaugural Touring Season)",
+        "composer": "Ivan Caryll",
+        "premiereYear": 1907,
+        "type": "HISTORIC_STAGING",
+        "details": "Touring Broadway light opera company performance during inaugural season."
+      }
+    ]
+  },
+  {
+    "id": "mcpherson-opera-house-kansas",
+    "name": "McPherson Opera House",
+    "city": "McPherson",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 38.3712,
+    "longitude": -97.6644,
+    "tier": 4,
+    "venueType": "HISTORIC_GEM",
+    "websiteUrl": "https://mcphersonoperahouse.org",
+    "description": "Constructed in 1889 during the Kansas boom era, this grand Richardsonian Romanesque opera house was designed by C.W. Terry. Hosted traveling opera troupes, John Philip Sousa, and William Jennings Bryan before being fully restored in 2010.",
+    "inauguratedYear": 1889,
+    "architect": "C.W. Terry",
+    "architecturalStyle": "Richardsonian Romanesque Red Brick & Sandstone Landmark",
+    "capacity": "497 seats",
+    "historicSignificance": "Kansas Gilded Age boomtown opera house; restored to acoustic and architectural perfection as a cultural community hub.",
+    "historicPremieres": [
+      {
+        "title": "The Gypsy Baron (Der Zigeunerbaron)",
+        "composer": "Johann Strauss II",
+        "premiereYear": 1890,
+        "type": "HISTORIC_STAGING",
+        "details": "Touring American opera company staging during the theater’s opening decade."
+      }
+    ]
+  },
+  {
+    "id": "arizona-opera",
+    "name": "Arizona Opera (Phoenix Symphony Hall & Tucson Music Hall)",
+    "city": "Phoenix & Tucson",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 33.4492,
+    "longitude": -112.0699,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://azopera.org",
+    "description": "Founded in 1971, Arizona Opera is one of the nation’s rare dual-city opera companies, producing full seasons across both Phoenix and Tucson. Acclaimed for its Arizona Bold initiative commissioning operas exploring Southwestern heritage.",
+    "inauguratedYear": 1972,
+    "architect": "Charles Luckman Associates",
+    "architecturalStyle": "Desert Mid-Century Modernist Civic Hall",
+    "capacity": "2,312 seats (Phoenix) / 2,277 seats (Tucson)",
+    "historicSignificance": "Southwest America’s primary dual-city grand opera company; commissioner of Craig Bohmler’s Riders of the Purple Sage.",
+    "historicPremieres": [
+      {
+        "title": "Riders of the Purple Sage",
+        "composer": "Craig Bohmler / Steven Mark Kohn",
+        "premiereYear": 2017,
+        "type": "WORLD_PREMIERE",
+        "details": "Blockbuster world premiere adapted from Zane Grey’s Western classic."
+      },
+      {
+        "title": "The Copper Queen",
+        "composer": "Clint Borzoni / Kathleen Kelly",
+        "premiereYear": 2021,
+        "type": "WORLD_PREMIERE",
+        "details": "Award-winning opera set in Bisbee, Arizona."
+      }
+    ]
+  },
+  {
+    "id": "portland-opera-keller-auditorium",
+    "name": "Portland Opera (Keller Auditorium)",
+    "city": "Portland",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 45.5135,
+    "longitude": -122.6781,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://www.portlandopera.org",
+    "description": "Founded in 1964, Portland Opera is Oregon’s flagship lyric company, presenting grand opera at the Keller Auditorium and intimate chamber works at the Hampton Opera Center on the Willamette River.",
+    "inauguratedYear": 1917,
+    "architect": "Joseph Jacobberger / Freedman & White",
+    "architecturalStyle": "Neo-Classical Civic Auditorium with Modernist Renovation",
+    "capacity": "2,992 seats",
+    "historicSignificance": "Pacific Northwest’s second-largest opera company; noted for commissioning American chamber operas and resident artist training.",
+    "historicPremieres": [
+      {
+        "title": "Galileo Galilei (West Coast Premiere)",
+        "composer": "Philip Glass",
+        "premiereYear": 2002,
+        "type": "HISTORIC_STAGING",
+        "details": "Directed by Mary Zimmerman following Chicago world premiere."
+      }
+    ]
+  },
+  {
+    "id": "intermountain-opera-bozeman",
+    "name": "Intermountain Opera Bozeman (The Ellen Theatre)",
+    "city": "Bozeman",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 45.6796,
+    "longitude": -111.0371,
+    "tier": 3,
+    "venueType": "REGIONAL_HOUSE",
+    "websiteUrl": "https://www.intermountainopera.org",
+    "description": "Montana’s oldest professional opera company, founded in 1979 by legendary Metropolitan Opera baritone Pablo Elvira. Staged in the historic 1919 Ellen Theatre, bringing world-class vocalists to the Rocky Mountain West.",
+    "inauguratedYear": 1919,
+    "architect": "Fred F. Willson",
+    "architecturalStyle": "Historic Western Vaudeville Palace with Gilded Ornaments",
+    "capacity": "420 seats",
+    "historicSignificance": "The premier professional opera company in Montana; preserves intimate live grand opera in the Northern Rockies.",
+    "historicPremieres": [
+      {
+        "title": "Rigoletto (Inaugural Production)",
+        "composer": "Giuseppe Verdi",
+        "premiereYear": 1979,
+        "type": "INAUGURAL_OPERA",
+        "details": "Inaugural production starring Met baritone and founder Pablo Elvira."
+      }
+    ]
+  },
+  {
+    "id": "opera-omaha-orpheum-theater",
+    "name": "Opera Omaha (Orpheum Theater)",
+    "city": "Omaha",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 41.2565,
+    "longitude": -95.9372,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://www.operaomaha.org",
+    "description": "Founded in 1958, Opera Omaha is nationally revered as one of America’s most courageous producing companies. Performs in the opulent 1927 French Renaissance Orpheum Theater; creator of the biennial ONE Festival (Opera Omaha Next Experiment).",
+    "inauguratedYear": 1927,
+    "architect": "Rapp & Rapp",
+    "architecturalStyle": "French Renaissance Eclectic Movie Palace with Crystal Chandeliers",
+    "capacity": "2,600 seats",
+    "historicSignificance": "National leader in operatic innovation; commissioner and premiere venue for Philip Glass and Robert Moran’s The Juniper Tree.",
+    "historicPremieres": [
+      {
+        "title": "The Juniper Tree",
+        "composer": "Philip Glass & Robert Moran",
+        "premiereYear": 1985,
+        "type": "WORLD_PREMIERE",
+        "details": "Joint world premiere with American Repertory Theater."
+      },
+      {
+        "title": "Wakonda's Dream",
+        "composer": "Anthony Davis / Yusef Komunyakaa",
+        "premiereYear": 2007,
+        "type": "WORLD_PREMIERE",
+        "details": "Original opera commissioned on contemporary Native American life in Nebraska."
+      }
+    ]
+  },
+  {
+    "id": "the-atlanta-opera",
+    "name": "The Atlanta Opera (Cobb Energy Performing Arts Centre)",
+    "city": "Atlanta",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 33.8828,
+    "longitude": -84.4572,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://www.atlantaopera.org",
+    "description": "The premier opera company of the American Southeast, founded in 1979. Led by artistic director Tomer Zvulun, it is celebrated internationally for cinematic, visually daring productions at the Cobb Energy Centre and innovative circus-tent productions.",
+    "inauguratedYear": 2007,
+    "architect": "Smallwood, Reynolds, Stewart, Stewart",
+    "architecturalStyle": "Contemporary Travertine & Glass Performing Arts Pavilion",
+    "capacity": "2,750 seats",
+    "historicSignificance": "The Southeast’s largest opera company; designated among the Top 10 regional opera companies in the US by OPERA America.",
+    "historicPremieres": [
+      {
+        "title": "Cold Mountain (Co-commission)",
+        "composer": "Jennifer Higdon / Gene Scheer",
+        "premiereYear": 2016,
+        "type": "HISTORIC_STAGING",
+        "details": "Major Southeastern staging of Higdon’s Grammy-winning Civil War opera."
+      }
+    ]
+  },
+  {
+    "id": "florentine-opera-milwaukee",
+    "name": "Florentine Opera (Marcus Performing Arts Center)",
+    "city": "Milwaukee",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 43.0416,
+    "longitude": -87.9109,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://www.florentineopera.org",
+    "description": "The sixth-oldest professional opera company in the United States, founded in 1933 as the Italian Opera Chorus. Performs at Uihlein Hall in the Marcus Performing Arts Center; winner of multiple Grammy Awards for American opera recordings.",
+    "inauguratedYear": 1969,
+    "architect": "Harry Weese",
+    "architecturalStyle": "Brutalist Travertine Arts Complex",
+    "capacity": "2,305 seats",
+    "historicSignificance": "America’s sixth-oldest opera company; triple Grammy Award-winner for world premiere recordings of Elmer Gantry and Rio de Sangre.",
+    "historicPremieres": [
+      {
+        "title": "Rio de Sangre",
+        "composer": "Don Davis",
+        "premiereYear": 2010,
+        "type": "WORLD_PREMIERE",
+        "details": "World premiere opera in Spanish by Matrix film composer Don Davis."
+      },
+      {
+        "title": "Sister Carrie",
+        "composer": "Robert Aldridge / Herschel Garfein",
+        "premiereYear": 2016,
+        "type": "WORLD_PREMIERE",
+        "details": "Adaptation of Theodore Dreiser’s novel."
+      }
+    ]
+  },
+  {
+    "id": "madison-opera-overture-center",
+    "name": "Madison Opera (Overture Center for the Arts)",
+    "city": "Madison",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 43.0735,
+    "longitude": -89.3888,
+    "tier": 3,
+    "venueType": "REGIONAL_HOUSE",
+    "websiteUrl": "https://www.madisonopera.org",
+    "description": "Founded in 1961, Madison Opera performs in Overture Hall within César Pelli’s soaring glass Overture Center. Celebrated in American operatic annals for commissioning Daron Hagen’s Shining Brow about Wisconsin architect Frank Lloyd Wright.",
+    "inauguratedYear": 2004,
+    "architect": "César Pelli",
+    "architecturalStyle": "Contemporary Glass, Wood & Travertine Proscenium Hall",
+    "capacity": "2,251 seats",
+    "historicSignificance": "Upper Midwest regional center for innovative opera; premiere house of Daron Hagen’s Shining Brow.",
+    "historicPremieres": [
+      {
+        "title": "Shining Brow",
+        "composer": "Daron Hagen / Paul Muldoon",
+        "premiereYear": 1993,
+        "type": "WORLD_PREMIERE",
+        "details": "Landmark American opera chronicling Frank Lloyd Wright at Taliesin."
+      }
+    ]
+  },
+  {
+    "id": "opera-carolina-belk-theater",
+    "name": "Opera Carolina (Belk Theater, Blumenthal Performing Arts)",
+    "city": "Charlotte",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 35.2268,
+    "longitude": -80.8427,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://operacarolina.org",
+    "description": "Founded in 1948 as the Charlotte Opera Association, Opera Carolina is the largest and oldest professional opera company in North and South Carolina, staging grand opera at the Belk Theater.",
+    "inauguratedYear": 1992,
+    "architect": "César Pelli",
+    "architecturalStyle": "Contemporary European Horseshoe with Fiber-Optic Ceiling Dome",
+    "capacity": "2,118 seats",
+    "historicSignificance": "The Carolinas’ premier grand opera institution for over 75 years; co-founder of the Carolina Voices and regional lyric education.",
+    "historicPremieres": [
+      {
+        "title": "I Dream",
+        "composer": "Douglas Tappin",
+        "premiereYear": 2018,
+        "type": "WORLD_PREMIERE",
+        "details": "Rhythm and blues opera chronicling the life of Dr. Martin Luther King Jr."
+      }
+    ]
+  },
+  {
+    "id": "hawaii-opera-theatre",
+    "name": "Hawaii Opera Theatre (Neal S. Blaisdell Concert Hall)",
+    "city": "Honolulu",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 21.3005,
+    "longitude": -157.8509,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "websiteUrl": "https://www.hotopera.org",
+    "description": "The only professional grand opera company within a 2,500-mile radius, founded in 1961. Stages grand international productions in Honolulu’s Neal S. Blaisdell Concert Hall, drawing international vocalists to the Hawaiian Islands.",
+    "inauguratedYear": 1964,
+    "architect": "Merrill, Simms & Roehrig",
+    "architecturalStyle": "Mid-Century Modernist Tropical Civic Auditorium",
+    "capacity": "2,157 seats",
+    "historicSignificance": "The lone grand opera producing company of the Central Pacific; bringing world-class opera to Hawaii for over 60 years.",
+    "historicPremieres": [
+      {
+        "title": "Madama Butterfly (Hawaiian Inaugural)",
+        "composer": "Giacomo Puccini",
+        "premiereYear": 1961,
+        "type": "INAUGURAL_OPERA",
+        "details": "Inaugural production of the Honolulu Symphony Opera Festival founding HOT."
+      }
+    ]
+  },
+  {
+    "id": "anchorage-opera",
+    "name": "Anchorage Opera (Discovery Theatre, Alaska Center for the Performing Arts)",
+    "city": "Anchorage",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 61.2173,
+    "longitude": -149.8943,
+    "tier": 3,
+    "venueType": "REGIONAL_HOUSE",
+    "websiteUrl": "https://anchorageopera.org",
+    "description": "Founded in 1962, Anchorage Opera is the northernmost professional opera company in North America. Performs in the Discovery Theatre at the Alaska Center for the Performing Arts, presenting grand opera in the subarctic.",
+    "inauguratedYear": 1988,
+    "architect": "Edward Larrabee Barnes",
+    "architecturalStyle": "Postmodern Aurora-Inspired Performing Arts Center",
+    "capacity": "700 seats",
+    "historicSignificance": "North America’s northernmost professional opera company; brings live lyric theatre to the state of Alaska.",
+    "historicPremieres": [
+      {
+        "title": "The Mikado (Founding Season)",
+        "composer": "Gilbert and Sullivan",
+        "premiereYear": 1962,
+        "type": "INAUGURAL_OPERA",
+        "details": "Inaugural production staged by the Anchorage Lyric Opera Guild."
       }
     ]
   }
