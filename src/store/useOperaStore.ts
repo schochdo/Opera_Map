@@ -120,6 +120,7 @@ export const useOperaStore = create<OperaStore>((set, get) => ({
       }
 
       return true;
-    });
+    })
+    .sort((a, b) => a.name.localeCompare(b.name, undefined, { sensitivity: 'base' }));
   },
 }));

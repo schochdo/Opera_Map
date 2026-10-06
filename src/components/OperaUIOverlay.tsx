@@ -581,7 +581,7 @@ export const OperaUIOverlay: React.FC = () => {
                       </span>
                     </div>
                     <p className="text-base md:text-[17.5px] text-slate-100 leading-relaxed font-garamond">
-                      International A-League institutions with massive global footprints, star rosters, and historic supremacy (e.g. The Met, La Scala, Wiener Staatsoper, Royal Opera House Covent Garden, Opéra Garnier & Bastille, Bayreuth Festspielhaus, Cairo Opera House / Khedivial [Aida premiere 1871], Royal Swedish Opera, Teatro Colón, Theatro Municipal do Rio de Janeiro, Sydney Opera House).
+                      International A-League institutions with massive global footprints, star rosters, and historic supremacy.
                     </p>
                   </div>
 
@@ -596,7 +596,7 @@ export const OperaUIOverlay: React.FC = () => {
                       </span>
                     </div>
                     <p className="text-base md:text-[17.5px] text-slate-100 leading-relaxed font-garamond">
-                      Foremost civic, state, and national opera houses with year-round resident companies and pit orchestras (e.g. Cape Town Opera, Opera Philadelphia, Washington National Opera, Oper Leipzig, Opera Colorado / Ellie Caulkins, Houston, Canadian Opera Company, Gothenburg Opera, Tokyo NNTT, Teatro dell'Opera di Roma).
+                      Foremost civic, state, and national opera houses with year-round resident companies and pit orchestras.
                     </p>
                   </div>
 
@@ -611,7 +611,7 @@ export const OperaUIOverlay: React.FC = () => {
                       </span>
                     </div>
                     <p className="text-base md:text-[17.5px] text-slate-100 leading-relaxed font-garamond">
-                      High-standard professional companies in intimate historic jewel boxes or dedicated seasonal festivals (e.g. Central City Opera, Wheeler / Aspen Opera Theater, Bravo! Vail, Santa Fe Opera, Glimmerglass Festival, Chautauqua Opera, Tanglewood, Wolf Trap, Spoleto Festival USA, Savonlinna Opera Festival, Arena di Verona, Glyndebourne).
+                      High-standard professional companies in intimate historic jewel boxes and dedicated seasonal festivals.
                     </p>
                   </div>
 
@@ -626,7 +626,7 @@ export const OperaUIOverlay: React.FC = () => {
                       </span>
                     </div>
                     <p className="text-base md:text-[17.5px] text-slate-100 leading-relaxed font-garamond">
-                      Intact 16th- to 19th-century royal court theatres and architectural wonders preserved with original historical machinery and imperial provenance (Teatro Olimpico in Vicenza [1585, Palladio], Drottningholms Slottsteater [1766, intact 18th-century wooden stage machinery], Margravial Opera House in Bayreuth [1748, Bibiena], Opéra Royal de Versailles [1770, Gabriel], Teatro Malibran in Venice [1678], Teatro Giuseppe Verdi in Busseto [1868], Teatro Amazonas in Manaus, Theatro da Paz in Belém, Royal Opera House Mumbai).
+                      Intact 16th- to 19th-century royal court theatres and architectural wonders preserved with original historical machinery and imperial provenance.
                     </p>
                   </div>
                 </div>
