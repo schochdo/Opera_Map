@@ -375,7 +375,7 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
                     <span>Summer Classical Festivals ({tierCounts[3]})</span>
                   </div>
                   <p className="text-xs md:text-[13px] text-slate-200 leading-snug font-garamond">
-                    World-renowned seasonal destination festivals and scenic summer orchestral homes—such as Salzburg, Glyndebourne, Santa Fe, Tanglewood (Boston Symphony), Ravinia (Chicago Symphony), Aspen Music Festival, and Bravo! Vail.
+                    World-renowned seasonal destination festivals, scenic open-air amphitheatres, and summer orchestral homes—such as the Salzburg Festival, Glyndebourne, Arena di Verona, Santa Fe Opera, Chorégies d'Orange, Bregenzer Festspiele, and Tanglewood.
                   </p>
                 </div>
 
@@ -386,7 +386,7 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
                     <span>Regional & Boutique Houses ({tierCounts[4]})</span>
                   </div>
                   <p className="text-xs md:text-[13px] text-slate-200 leading-snug font-garamond">
-                    High-standard civic and regional companies in intimate historic jewel boxes and municipal theatres—from historic Victorian stages like Aspen's Wheeler Opera House and Buxton Opera House to beloved regional companies across Europe and the Americas.
+                    High-standard civic and regional companies in intimate historic jewel boxes, municipal theatres, and chamber stages—such as Teatro Amazonas in Manaus, Teatro Giuseppe Verdi in Busseto, Apollon Theatre in Syros, Buxton Opera House, and Warsaw Chamber Opera.
                   </p>
                 </div>
 

@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
-import { OrbitControls } from '@react-three/drei';
+import { OrbitControls, Stars } from '@react-three/drei';
 import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
 import * as THREE from 'three';
 import { Globe } from './components/Globe';
@@ -141,13 +141,13 @@ export const App: React.FC = () => {
   }
 
   return (
-    <div className="relative h-screen w-screen overflow-hidden bg-[#101b2b] font-serif select-none">
-      {/* LUMINOUS, REFINED THEATRICAL GALLERY BACKDROP */}
+    <div className="relative h-screen w-screen overflow-hidden bg-[#090f18] font-serif select-none">
+      {/* LUMINOUS, REFINED THEATRICAL GALLERY BACKDROP (Darker Celestial Midnight Sky) */}
       <div
         className="pointer-events-none absolute inset-0 z-0"
         style={{
           background:
-            'radial-gradient(ellipse 85% 75% at 50% 45%, rgba(45, 72, 110, 0.92) 0%, rgba(18, 30, 48, 0.98) 100%)',
+            'radial-gradient(ellipse 90% 80% at 50% 45%, rgba(18, 32, 54, 0.96) 0%, rgba(9, 16, 28, 0.98) 65%, rgba(4, 7, 13, 1) 100%)',
         }}
       />
 
@@ -160,6 +160,9 @@ export const App: React.FC = () => {
             setSelectedHouse(null);
           }}
         >
+          {/* Subtle distant starlight in deep space */}
+          <Stars radius={55} depth={45} count={1400} factor={2.5} saturation={0} fade speed={0.4} />
+
           {/* RADIANT CARTOGRAPHIC STUDIO LIGHTING RIG — Crisp, Radiant, 100% Even Day Lighting */}
           <ambientLight intensity={1.6} color="#ffffff" />
 
