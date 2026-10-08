@@ -513,10 +513,10 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
                 <div className="bg-[#20324c] border border-purple-500/50 p-3 rounded-lg space-y-1 md:col-span-2 lg:col-span-2 xl:col-span-1">
                   <div className="flex items-center gap-2 font-cinzel font-bold text-xs md:text-sm text-purple-300">
                     <TierPinIcon tier={5} className="w-4 h-4 shrink-0" />
-                    <span>Historic Royal Court Theatres ({tierCounts[5]})</span>
+                    <span>Historic & Royal Court Theatres ({tierCounts[5]})</span>
                   </div>
                   <p className="text-xs md:text-[13px] text-slate-200 leading-snug font-garamond">
-                    Intact 16th- to 18th-century royal, princely, and imperial court theatres and private palaces where opera was born—preserved with original historical stage machinery, wooden fly towers, and magnificent baroque or Renaissance acoustics.
+                    Intact 16th- to 19th-century royal and princely court theatres, sovereign palaces, and foundational historic monuments where opera took root—including fragile museum theatres preserved with original wooden stage machinery (such as Český Krumlov, Drottningholm, and Cuvilliés), royal sanctuaries (Schloss Neuschwanstein, Versailles, Schönbrunn), Renaissance birthplaces (Teatro Olimpico, Palazzo Pitti, Palazzo Ducale di Mantova), and pioneering public monuments (Teatro San Cassiano site, Teatro Malibran).
                   </p>
                 </div>
               </div>

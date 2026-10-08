@@ -166,7 +166,7 @@ export const OperaUIOverlay: React.FC = () => {
     },
     {
       id: 5,
-      label: 'Historic Royal Court',
+      label: 'Historic & Royal Court',
       count: tierCounts[5],
     },
   ];
@@ -289,7 +289,7 @@ export const OperaUIOverlay: React.FC = () => {
       case 4:
         return 'REGIONAL & CHAMBER OPERAS';
       case 5:
-        return 'HISTORIC ROYAL COURT THEATRE';
+        return 'HISTORIC & ROYAL COURT THEATRE';
       default:
         return 'OPERA HOUSE';
     }
@@ -306,7 +306,7 @@ export const OperaUIOverlay: React.FC = () => {
       case 4:
         return 'Regional & Chamber Operas';
       case 5:
-        return 'Royal Court';
+        return 'Historic & Royal Court';
       default:
         return '';
     }

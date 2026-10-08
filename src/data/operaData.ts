@@ -4,9 +4,9 @@
 // Categorized by OPERA America & International Standards:
 // • Tier 1: Global Premier Houses (46 venues)
 // • Tier 2: Major Metropolitan & National Houses (166 venues)
-// • Tier 3: Summer Classical Festivals (99 venues)
+// • Tier 3: Summer Classical Festivals (98 venues)
 // • Tier 4: Regional & Chamber Operas (40 venues)
-// • Tier 5: Historic Royal Court & Princely Theatres (28 venues)
+// • Tier 5: Historic & Royal Court Theatres (29 venues)
 // ═══════════════════════════════════════════════════════════════════════
 
 import { OperaHouse } from '../types/opera';
@@ -9193,22 +9193,22 @@ export const OPERA_HOUSES: OperaHouse[] = [
   },
   {
     "id": "schloss-neuschwanstein-saengersaal",
-    "name": "Neuschwanstein Castle Concerts",
+    "name": "Schloss Neuschwanstein (Sängersaal)",
     "city": "Schwangau (Füssen)",
     "country": "Germany",
     "region": "Europe",
     "latitude": 47.5576,
     "longitude": 10.7498,
-    "tier": 3,
-    "venueType": "FESTIVAL",
+    "tier": 5,
+    "venueType": "HISTORIC_GEM",
     "seasonalOnly": true,
     "websiteUrl": "https://www.neuschwanstein.de/englisch/tourist/index.htm",
-    "description": "The fabled Minstrels' Hall on the 4th floor of King Ludwig II's fairytale castle, modeled after the Wartburg of Wagner's Tannhäuser with wall-sized frescoes of the Parzival legend.",
+    "description": "The fabled Minstrels' Hall (Sängersaal) on the 4th floor of King Ludwig II's fairytale palace, modeled directly after the Wartburg from Wagner's Tannhäuser with wall frescoes depicting the Parzival legend.",
     "inauguratedYear": 1884,
     "architect": "Eduard Riedel & Christian Jank",
     "architecturalStyle": "High Romantic Neo-Romanesque Gilded Palace Hall",
     "capacity": "400 seats",
-    "historicSignificance": "Built by Ludwig II in homage to Richard Wagner; host of the annual Neuschwanstein Castle Concerts featuring chamber music and Wagnerian vocal recitals.",
+    "historicSignificance": "Commissioned by King Ludwig II of Bavaria as a personal royal court sanctuary and monument to Richard Wagner; today hosts the exclusive Neuschwanstein Castle Concerts with chamber music and Wagnerian vocal recitals.",
     "historicPremieres": []
   },
   {

@@ -162,7 +162,7 @@ export const GlobeLandmark: React.FC<LandmarkProps> = ({
       ? (isSelected ? '#22c55e' : isHovered ? '#4ade80' : '#16a34a') // Emerald Green (Summer Festivals)
       : house.tier === 4
       ? (isSelected ? '#38bdf8' : isHovered ? '#7dd3fc' : '#0284c7') // Cerulean Steel (Regional & Chamber Operas)
-      : (isSelected ? '#a855f7' : isHovered ? '#c084fc' : '#9333ea'); // Imperial Purple (Historic Royal Court)
+      : (isSelected ? '#a855f7' : isHovered ? '#c084fc' : '#9333ea'); // Imperial Purple (Historic & Royal Court)
 
   // Distinctive emissive glow that stays vibrant and never bleaches into white
   const headEmissive = isSelected
