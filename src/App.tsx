@@ -22,6 +22,7 @@ const CameraRig: React.FC<{ controlsRef: React.RefObject<OrbitControlsImpl> }> =
       (window as any).__threeCamera = camera;
       (window as any).__threeScene = scene;
       (window as any).__controls = controlsRef.current;
+      (window as any).__useOperaStore = useOperaStore;
     }
     // Keep headlight strictly locked to camera position pointing at the globe center:
     // Guarantees whatever country or hemisphere the user is viewing is ALWAYS in 100% full, radiant daylight

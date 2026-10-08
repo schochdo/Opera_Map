@@ -386,7 +386,7 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
                     <span>Regional & Boutique Houses ({tierCounts[4]})</span>
                   </div>
                   <p className="text-xs md:text-[13px] text-slate-200 leading-snug font-garamond">
-                    High-standard civic and regional companies in intimate historic jewel boxes and municipal theatres—from historic Victorian mountain stages like Aspen's Wheeler Opera House and Central City Opera to beloved regional companies across Europe and the Americas.
+                    High-standard civic and regional companies in intimate historic jewel boxes and municipal theatres—from historic Victorian stages like Aspen's Wheeler Opera House and Buxton Opera House to beloved regional companies across Europe and the Americas.
                   </p>
                 </div>
 

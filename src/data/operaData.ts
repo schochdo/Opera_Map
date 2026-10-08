@@ -248,8 +248,8 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "region": "Americas",
     "latitude": 40.7651,
     "longitude": -73.9799,
-    "tier": 4,
-    "venueType": "HISTORIC_GEM",
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
     "websiteUrl": "https://www.carnegiehall.org",
     "description": "One of the most prestigious venues in the world for classical music and opera in concert. Since 1891, Carnegie Hall has hosted legendary opera stagings, historic concert performances by the world's greatest singers, and landmark opera broadcasts under Arturo Toscanini.",
     "inauguratedYear": 1891,
@@ -439,7 +439,7 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "inauguratedYear": 1878,
     "architect": "Samuel Hannaford",
     "architecturalStyle": "High Victorian Gothic Red Brick & Carved Sandstone",
-    "capacity": "3,518 seats",
+    "capacity": "2,289 seats (Springer Auditorium; historic 3,518)",
     "historicSignificance": "America’s second-oldest opera institution; pioneer of American summer opera seasons with the Cincinnati Symphony.",
     "historicPremieres": [
       {
@@ -2317,11 +2317,11 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "venueType": "FESTIVAL",
     "seasonalOnly": true,
     "websiteUrl": "https://www.bso.org/tanglewood",
-    "description": "The famed summer home of the Boston Symphony Orchestra in the Berkshire Hills since 1937. Anchored by the Serge Koussevitzky Music Shed (5,100 seats and 10,000 lawn) and Seiji Ozawa Hall, hosting monumental orchestral concerts, operas in concert, and the Tanglewood Music Center fellows.",
+    "description": "The famed summer home of the Boston Symphony Orchestra in the Berkshire Hills since 1937. Anchored by the Serge Koussevitzky Music Shed (5,121 pavilion seats plus extensive lawn) and Seiji Ozawa Hall (1,200 seats), hosting monumental orchestral concerts, operas in concert, and the Tanglewood Music Center fellows.",
     "inauguratedYear": 1938,
     "architect": "Eliel Saarinen (Shed 1938) & William Rawn (Ozawa Hall 1994)",
     "architecturalStyle": "Acoustic Steel Fan-Vaulted Open Pavilion & Timber Hall",
-    "capacity": "5,100 seats (Shed) + 1,200 (Ozawa Hall)",
+    "capacity": "5,121 Pavilion (plus ~15,000 Lawn) / 1,200 (Ozawa Hall)",
     "historicSignificance": "Site of the historic American premiere of Britten’s Peter Grimes (1946) under Leonard Bernstein; premier summer training ground for vocal masters."
   },
   {
@@ -2336,11 +2336,11 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "venueType": "FESTIVAL",
     "seasonalOnly": true,
     "websiteUrl": "https://www.wolftrap.org/opera",
-    "description": "The only National Park for the Performing Arts in the United States. Wolf Trap Opera is one of America’s premier young artist resident companies, staging rare and grand opera at the Filene Center and historic 18th-century Barns.",
+    "description": "The only National Park for the Performing Arts in the United States. Wolf Trap Opera is one of America’s premier young artist resident companies, staging rare and grand opera at the Filene Center (7,023 total: 3,802 covered pavilion + 3,221 lawn) and historic 18th-century Barns (382 seats).",
     "inauguratedYear": 1971,
     "architect": "MacFadyen & DeVido (Filene Center) / Historic 1720s Barns",
     "architecturalStyle": "Cathedral Douglas Fir Wood Amphitheatre & Restored German Barns",
-    "capacity": "7,000 seats (Filene) + 382 seats (The Barns)",
+    "capacity": "7,023 total (3,802 pavilion + 3,221 lawn) / 382 (The Barns)",
     "historicSignificance": "America’s official National Park for the Performing Arts; elite national proving ground for top-tier vocal artists.",
     "historicPremieres": [
       {
@@ -2497,8 +2497,8 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "region": "Americas",
     "latitude": 39.3047,
     "longitude": -76.6189,
-    "tier": 4,
-    "venueType": "REGIONAL_HOUSE",
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
     "websiteUrl": "https://www.lyricbaltimore.com",
     "description": "Opened on Mount Royal Avenue in 1894, modeled directly on the acoustic proportions of the Neues Gewandhaus in Leipzig, Germany. Longtime Maryland home to the touring Metropolitan Opera and Enrico Caruso.",
     "inauguratedYear": 1894,
@@ -3568,11 +3568,11 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "venueType": "FESTIVAL",
     "seasonalOnly": true,
     "websiteUrl": "https://www.bravovail.org",
-    "description": "Set dramatically against the Colorado Rocky Mountains at 8,150 feet, Bravo! Vail hosts major international orchestras annually, staging grand symphonic opera performances and masterworks with world-class summer residencies including The Philadelphia Orchestra, the New York Philharmonic, Dallas Symphony, and Academy of St Martin in the Fields at the Gerald R. Ford Amphitheater (2,800 seats & lawn) and valley-wide venues.",
+    "description": "Set dramatically against the Colorado Rocky Mountains at 8,150 feet, Bravo! Vail hosts major international orchestras annually, staging grand symphonic opera performances and masterworks with world-class summer residencies including The Philadelphia Orchestra, the New York Philharmonic, Dallas Symphony, and Academy of St Martin in the Fields at the Gerald R. Ford Amphitheater (2,800 capacity: 1,260 pavilion seats + 1,540 lawn) and valley-wide venues.",
     "inauguratedYear": 1987,
     "architect": "Gerald R. Ford Amphitheater Pavilion Design",
     "architecturalStyle": "Open-Air Mountain Alpine Amphitheater",
-    "capacity": "2,800 seats & lawn",
+    "capacity": "2,800 total (1,260 pavilion seats + 1,540 lawn)",
     "historicSignificance": "Renowned American high-altitude summer festival hosting full-scale concert opera with premier world orchestras under Yannick Nézet-Séguin."
   },
   {
@@ -7585,7 +7585,9 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "websiteUrl": "https://www.staatstheater-karlsruhe.de/",
     "description": "The historic Grand Ducal Court Theatre (Großherzogliches Hoftheater) of Baden. Renowned for its Badische Staatskapelle (founded in 1662) and as the host of the prestigious International Handel Festival (Internationale Händel-Festspiele).",
     "inauguratedYear": 1808,
-    "historicSignificance": "Grand Ducal Court Theatre of Baden; historic home of Hermann Levi and Felix Mottl; international Handel Festival venue."
+    "historicSignificance": "Grand Ducal Court Theatre of Baden; historic home of Hermann Levi and Felix Mottl; international Handel Festival venue.",
+    "capacity": "1,002 seats (Großes Haus) / 330 (Kleines Haus)",
+    "architecturalStyle": "Post-War Modernist Dual Theatre Complex"
   },
   {
     "id": "staatstheater-darmstadt",
@@ -7600,7 +7602,9 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "websiteUrl": "https://www.staatstheater-darmstadt.de/",
     "description": "The historic Grand Ducal Court Theatre of Hesse-Darmstadt. Promoted by Grand Duke Ludewig I, a passionate musician whose court was an incubator for Carl Maria von Weber and Giacomo Meyerbeer under Abbé Vogler.",
     "inauguratedYear": 1711,
-    "historicSignificance": "Grand Ducal Court Theatre of Hesse; early artistic home of Weber and Meyerbeer; landmark institution of post-war modernist architecture."
+    "historicSignificance": "Grand Ducal Court Theatre of Hesse; early artistic home of Weber and Meyerbeer; landmark institution of post-war modernist architecture.",
+    "capacity": "956 seats (Großes Haus) / 482 (Kleines Haus)",
+    "architecturalStyle": "Modernist Brutalist Theatrical Complex"
   },
   {
     "id": "staatstheater-kassel",
@@ -7615,7 +7619,9 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "websiteUrl": "https://www.staatstheater-kassel.de/",
     "description": "Heir to one of Germany's oldest theatrical traditions, originating with the Ottoneum in 1603. In the 19th century it was the Kurfürstliches Hoftheater (Electoral Court Theatre) where composer and violinist Louis Spohr served as Generalmusikdirektor for 37 years, turning Kassel into a European musical capital.",
     "inauguratedYear": 1568,
-    "historicSignificance": "Court theatre of Hesse-Kassel; center of Louis Spohr's pioneering orchestral conducting with baton and score."
+    "historicSignificance": "Court theatre of Hesse-Kassel; center of Louis Spohr's pioneering orchestral conducting with baton and score.",
+    "capacity": "953 seats (Opernhaus) / 540 (Schauspielhaus)",
+    "architecturalStyle": "Post-War Modernist Asymmetric Theatre"
   },
   {
     "id": "hessisches-staatstheater-wiesbaden",
@@ -7675,7 +7681,9 @@ export const OPERA_HOUSES: OperaHouse[] = [
         "type": "WORLD_PREMIERE",
         "details": "Historic first theatrical staging of Goethe's tragedy directed by August Klingemann."
       }
-    ]
+    ],
+    "capacity": "896 seats (Großes Haus) / 297 (Kleines Haus)",
+    "architecturalStyle": "Neoclassical Ducal Theatre / Post-War Rebuild"
   },
   {
     "id": "national-opera-of-ukraine-kyiv",
@@ -8054,11 +8062,11 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "venueType": "FESTIVAL",
     "seasonalOnly": true,
     "websiteUrl": "https://www.aspenmusicfestival.com/",
-    "description": "Founded in 1949, one of the premier classical music festivals in the world, set dramatically in the Colorado Rockies. Main performances take place at the 2,050-seat Michael Klein Music Tent (inaugurated 2000, dedicated in 2024 to honor Michael Klein; featuring curved birch acoustic reflectors and open sides spilling onto mountain lawns) and the Joan and Irving Harris Concert Hall. Summer home to the Aspen Festival Orchestra, major concert operas, and international symphonic summits.",
+    "description": "Founded in 1949, one of the premier classical music festivals in the world, set dramatically in the Colorado Rockies. Main performances take place at the 2,050-seat Michael Klein Music Tent (inaugurated 2000, dedicated in 2024 to honor Michael Klein; featuring curved birch acoustic reflectors and open sides spilling onto mountain lawns) and the 500-seat Joan and Irving Harris Concert Hall. Summer home to the Aspen Festival Orchestra, major concert operas, and international symphonic summits.",
     "inauguratedYear": 2000,
     "architect": "Harry Weese (1965) / Cottle Carr Yaw Architects (2000)",
     "architecturalStyle": "Open-Air Tensile Acoustic Fabric Tent (Michael Klein Music Tent)",
-    "capacity": "2,050 seats",
+    "capacity": "2,050 Pavilion seats (plus lawn) / 500 (Harris Hall)",
     "historicSignificance": "Summer home to the Aspen Festival Orchestra; venue for monumental concert operas, vocal masterworks, and international symphonic summits in the Colorado Rockies.",
     "historicPremieres": [
       {
