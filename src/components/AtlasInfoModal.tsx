@@ -300,11 +300,15 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
                 <p>
                   <strong className="text-amber-300">The German Lands & Richard Wagner:</strong> Much like Italy, the political fragmentation of the German lands into hundreds of sovereign principalities heavily fueled musical patronage. Independent courts competed with dedicated Kapellen and opera troupes. The tradition expanded from early bourgeois public opera at the <strong className="text-amber-200">Hamburgische Staatsoper</strong> (1678) and Mozart's Viennese <em>Singspiel</em>, culminating in Richard Wagner's revolutionary festival house, the <strong className="text-amber-200">Bayreuther Festspielhaus</strong> (1876), realizing his visionary ideal of the unified music drama (<em>Gesamtkunstwerk</em>).
                 </p>
+                <p>
+                  <strong className="text-amber-300">London: Commercial Enterprise & The Royal Patent Houses:</strong> Diverging sharply from continental absolutism, England developed opera not through sovereign palace departments, but through commercial joint-stock ventures under Royal Charter. At <strong className="text-amber-200">The King's Theatre in the Haymarket</strong> (now His Majesty's Theatre, inaugurated 1705 by Sir John Vanbrugh as London's dedicated Italian opera house), <strong className="text-amber-200">George Frideric Handel</strong> reigned for over three decades, premiering masterpieces like <em>Rinaldo</em> (1711) and <em>Giulio Cesare</em> (1724) for paying aristocratic subscribers. London's public stages later introduced Mozart's masterworks to English audiences (the 1817 British premiere of <em>Don Giovanni</em>) and hosted Giuseppe Verdi conducting the 1847 world premiere of <em>I masnadieri</em> for Queen Victoria.
+                </p>
               </div>
 
               <div className="pt-2 border-t border-slate-700/60 flex flex-wrap items-center gap-2">
                 <span className="text-xs font-cinzel text-amber-300 uppercase tracking-wider mr-1">Landmark European Houses:</span>
                 <LandmarkJumpButton venueId="opera-royal-versailles" label="Opéra Royal de Versailles" city="Versailles" year="1770" />
+                <LandmarkJumpButton venueId="his-majestys-theatre-london" label="His Majesty's Theatre (King's Theatre)" city="London" year="1705" />
                 <LandmarkJumpButton venueId="teatro-di-san-carlo" label="Teatro di San Carlo" city="Naples" year="1737" />
                 <LandmarkJumpButton venueId="hamburgische-staatsoper" label="Hamburgische Staatsoper" city="Hamburg" year="1678" />
                 <LandmarkJumpButton venueId="bayreuther-festspielhaus" label="Bayreuther Festspielhaus" city="Bayreuth" year="1876" />
@@ -432,7 +436,7 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
                   <Landmark className="h-4 w-4 text-amber-400" /> About The World of Opera
                 </h3>
                 <p className="text-xs md:text-sm text-slate-200 leading-relaxed font-garamond">
-                  An illustrated cartography of historical opera houses, landmark world premieres, and international summer classical festivals spanning antiquity to the modern era across 96 countries and 379 world stages and landmark sites. Every venue is located at its verified geographic coordinates and classified into five distinct architectural and curatorial categories.
+                  An illustrated cartography of historical opera houses, landmark world premieres, and international summer classical festivals spanning antiquity to the modern era across 96 countries and 380 world stages and landmark sites. Every venue is located at its verified geographic coordinates and classified into five distinct architectural and curatorial categories.
                 </p>
               </div>
 

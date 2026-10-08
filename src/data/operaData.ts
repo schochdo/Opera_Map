@@ -1,12 +1,12 @@
 // ═══════════════════════════════════════════════════════════════════════
-// MASTER COMPREHENSIVE WORLD OPERA & FESTIVAL ATLAS DATASET (379 VERIFIED VENUES ACROSS 96 COUNTRIES)
+// MASTER COMPREHENSIVE WORLD OPERA & FESTIVAL ATLAS DATASET (380 VERIFIED VENUES ACROSS 96 COUNTRIES)
 // Grounded in Global Historical Directories, International Opera Archives & Classical Festivals
 // Categorized by OPERA America & International Standards:
 // • Tier 1: Global Premier Houses (46 venues)
 // • Tier 2: Major Metropolitan & National Houses (166 venues)
 // • Tier 3: Summer Classical Festivals (98 venues)
 // • Tier 4: Regional & Chamber Operas (40 venues)
-// • Tier 5: Historic & Royal Court Theatres (29 venues)
+// • Tier 5: Historic & Royal Court Theatres (30 venues)
 // ═══════════════════════════════════════════════════════════════════════
 
 import { OperaHouse } from '../types/opera';
@@ -10002,6 +10002,63 @@ export const OPERA_HOUSES: OperaHouse[] = [
         "patronageType": "COMMERCIAL_IMPRESARIO",
         "details": "World premiere following fierce censorship clashes after the Felice Orsini assassination attempt on Napoleon III.",
         "commissionContext": "Papal censors in Rome barred depicting the regicide of King Gustav III of Sweden on stage. Verdi and impresario Jacovacci relocated the action from Stockholm to colonial Boston, Massachusetts, transforming the monarch into the British governor Riccardo."
+      }
+    ]
+  },
+  {
+    "id": "his-majestys-theatre-london",
+    "name": "His Majesty's Theatre (Historic King's Theatre)",
+    "city": "London",
+    "country": "United Kingdom",
+    "region": "Europe",
+    "latitude": 51.5082,
+    "longitude": -0.1317,
+    "tier": 5,
+    "venueType": "HISTORIC_GEM",
+    "websiteUrl": "https://lwtheatres.co.uk/venues/his-majestys-theatre/",
+    "description": "Founded in 1705 by architect and dramatist Sir John Vanbrugh as London’s dedicated Italian Opera House (The Queen's / King's Theatre in the Haymarket). For over a century, it stood as the undisputed capital of Italian opera in Great Britain, where Handel reigned as resident composer and director, where Mozart's masterworks received their British debuts, and where Verdi conducted his only London world premiere.",
+    "inauguratedYear": 1705,
+    "architect": "Sir John Vanbrugh (1705) / C. J. Phipps (1897)",
+    "architecturalStyle": "French Renaissance Revival Proscenium on Historic Baroque Site",
+    "capacity": "1,216 seats",
+    "historicSignificance": "London’s preeminent 18th- and 19th-century Italian opera house; historic cradle of Handel's operatic triumphs (Rinaldo, Giulio Cesare), the world premiere of Verdi’s I masnadieri conducted by the composer for Queen Victoria, the British premieres of Mozart's Don Giovanni and The Magic Flute, and the first complete London Ring cycle (1882).",
+    "historicPremieres": [
+      {
+        "title": "Rinaldo",
+        "composer": "George Frideric Handel",
+        "premiereYear": 1711,
+        "type": "WORLD_PREMIERE",
+        "conductor": "George Frideric Handel",
+        "patronageType": "ROYAL_COURT",
+        "details": "Handel's sensational London operatic debut; the first Italian opera composed specifically for the London stage, featuring the immortal aria 'Lascia ch'io pianga'.",
+        "commissionContext": "Staged under Queen Anne's reign at the Queen's Theatre by impresario Aaron Hill and Handel, launching London's enduring 18th-century craze for Italian opera."
+      },
+      {
+        "title": "Giulio Cesare in Egitto",
+        "composer": "George Frideric Handel",
+        "premiereYear": 1724,
+        "type": "WORLD_PREMIERE",
+        "conductor": "George Frideric Handel",
+        "patronageType": "ROYAL_COURT",
+        "details": "Handel's crowning heroic masterpiece starring the legendary castrato Senesino as Cesare and Francesca Cuzzoni as Cleopatra.",
+        "commissionContext": "Composed for the Royal Academy of Music, a joint-stock operatic venture supported by British aristocratic subscribers and King George I."
+      },
+      {
+        "title": "I masnadieri",
+        "composer": "Giuseppe Verdi",
+        "premiereYear": 1847,
+        "type": "WORLD_PREMIERE",
+        "conductor": "Giuseppe Verdi",
+        "patronageType": "COMMERCIAL_IMPRESARIO",
+        "details": "World premiere conducted personally by Giuseppe Verdi, starring Jenny Lind as Amalia, with Queen Victoria and Prince Albert in the royal box.",
+        "commissionContext": "Commissioned by theatrical impresario Benjamin Lumley for Her Majesty's Theatre; the only opera Verdi ever composed specifically for London."
+      },
+      {
+        "title": "Don Giovanni",
+        "composer": "Wolfgang Amadeus Mozart",
+        "premiereYear": 1817,
+        "type": "NATIONAL_PREMIERE",
+        "details": "Historic British premiere conducted by Michael Kelly; ignited a sensation that dominated London's 1817 musical season."
       }
     ]
   }
