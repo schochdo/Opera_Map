@@ -893,8 +893,8 @@ export const OperaUIOverlay: React.FC = () => {
               <div className="flex-1 space-y-3 overflow-y-auto pr-1 min-h-0">
                 {/* Description */}
                 <div className="bg-[#1c2c44] border border-slate-700/80 p-3.5 md:p-4 rounded-lg shadow-sm">
-                  <p className="text-[15px] md:text-base text-slate-100 leading-relaxed font-garamond italic">
-                    "{selectedHouse.description}"
+                  <p className="text-[15px] md:text-base text-slate-100 leading-relaxed font-garamond">
+                    {selectedHouse.description}
                   </p>
                 </div>
 
@@ -1003,8 +1003,8 @@ export const OperaUIOverlay: React.FC = () => {
                                 <div className="font-cinzel text-[10px] md:text-[11px] font-bold text-amber-300 uppercase tracking-wider">
                                   Historical Commission & Economic Context:
                                 </div>
-                                <p className="text-slate-200 italic leading-relaxed">
-                                  "{premiere.commissionContext}"
+                                <p className="text-slate-200 leading-relaxed font-garamond text-xs md:text-sm">
+                                  {premiere.commissionContext}
                                 </p>
                               </div>
                             )}
