@@ -1,4 +1,4 @@
-import React, { useRef, useMemo } from 'react';
+import React, { useRef, useMemo, useState, useEffect } from 'react';
 import type { ThreeEvent } from '@react-three/fiber';
 import * as THREE from 'three';
 import { useOperaStore } from '../store/useOperaStore';
@@ -12,6 +12,7 @@ const GLOBE_RADIUS = 3.2;
 
 export const Globe: React.FC = () => {
   const globeGroupRef = useRef<THREE.Group>(null);
+  const isLandLoaded = useOperaStore((state) => state.isLandLoaded);
   const selectedTiers = useOperaStore((state) => state.selectedTiers);
   const selectedEra = useOperaStore((state) => state.selectedEra);
   const selectedStyle = useOperaStore((state) => state.selectedStyle);
@@ -131,9 +132,23 @@ export const Globe: React.FC = () => {
     return new THREE.BufferGeometry().setFromPoints(points);
   }, []);
 
+  // Ensure land masses render on screen FIRST before pins appear, completely preventing pins in the ocean
+  const [pinsReady, setPinsReady] = useState(false);
+
+  useEffect(() => {
+    if (isLandLoaded) {
+      const timer = setTimeout(() => {
+        setPinsReady(true);
+      }, 160);
+      return () => clearTimeout(timer);
+    } else {
+      setPinsReady(false);
+    }
+  }, [isLandLoaded]);
+
   return (
     <group ref={globeGroupRef}>
-      {/* 3D Globe Sphere with Textured Continents (256x256 segments, evenly illuminated) */}
+      {/* 3D Globe Sphere with Textured Continents (128x128 segments, high performance & smooth surface) */}
       <mesh
         onPointerDown={handleGlobePointerDown}
         onPointerUp={handleGlobePointerUp}
@@ -146,7 +161,7 @@ export const Globe: React.FC = () => {
           document.body.style.cursor = 'auto';
         }}
       >
-        <sphereGeometry args={[GLOBE_RADIUS, 256, 256]} />
+        <sphereGeometry args={[GLOBE_RADIUS, 128, 128]} />
         <meshStandardMaterial
           map={globeTexture}
           roughness={0.65}
@@ -165,15 +180,16 @@ export const Globe: React.FC = () => {
       {/* 3D Vector Country Borders (Razor-sharp country outlines) */}
       <CountryBorders globeRadius={GLOBE_RADIUS} />
 
-      {/* Render Opera House Landmarks on Globe */}
-      {filteredHouses.map((house) => (
-        <GlobeLandmark
-          key={house.id}
-          house={house}
-          globeRadius={GLOBE_RADIUS}
-          positionOverride={landmarkPositions.get(house.id)}
-        />
-      ))}
+      {/* Render Opera House Landmarks on Globe ONLY after land is loaded and rendered */}
+      {pinsReady &&
+        filteredHouses.map((house) => (
+          <GlobeLandmark
+            key={house.id}
+            house={house}
+            globeRadius={GLOBE_RADIUS}
+            positionOverride={landmarkPositions.get(house.id)}
+          />
+        ))}
     </group>
   );
 };

@@ -10,6 +10,11 @@ import {
   getMajorLakesRings,
   isPointInsideAnyMajorLake,
 } from '../utils/globeVectorGeometry';
+import {
+  fetchCountriesGeoJSON,
+  fetchLakesGeoJSON,
+  fetchStatesGeoJSON,
+} from '../utils/globeGeoJsonLoader';
 
 interface CountryBordersProps {
   globeRadius: number;
@@ -47,8 +52,8 @@ export const CountryBorders: React.FC<CountryBordersProps> = ({ globeRadius }) =
     // Both land borders and water boundaries use the EXACT SAME crisp vector line
     // ─────────────────────────────────────────────────────────────
     Promise.all([
-      fetch('/data/ne_50m_countries.geojson').then((res) => res.json()).catch(() => null),
-      fetch('/data/ne_50m_lakes.geojson').then((res) => res.json()).catch(() => null),
+      fetchCountriesGeoJSON(),
+      fetchLakesGeoJSON(),
     ])
       .then(([countriesGeojson, lakesGeojson]) => {
         if (!isMounted) return;
@@ -160,8 +165,7 @@ export const CountryBorders: React.FC<CountryBordersProps> = ({ globeRadius }) =
         setBoundaryMesh(new LineSegments2(geoDark, matDark));
 
         // 2. STATE & PROVINCIAL BOUNDARIES (United States & Canada Only)
-        fetch('/data/ne_50m_admin_1_states_provinces_lines.geojson')
-          .then((res) => res.json())
+        fetchStatesGeoJSON()
           .then((geojson) => {
             if (!isMounted) return;
             const segmentSet = new Set<string>();

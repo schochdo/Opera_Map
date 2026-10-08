@@ -128,7 +128,7 @@ export const GlobeLandmark: React.FC<LandmarkProps> = ({
     return { shadowQuaternion: shadowQ, normal: norm, pinQuaternion: pinQ };
   }, [basePosition]);
 
-  // Dynamic camera distance-scaled sizing and smooth in-place hover feedback (zero jumping)
+  // Dynamic camera distance-scaled sizing and smooth in-place hover feedback (zero heap allocation)
   useFrame(({ camera, clock }) => {
     if (!groupRef.current) return;
 
@@ -139,11 +139,11 @@ export const GlobeLandmark: React.FC<LandmarkProps> = ({
       const pulse = 1.25 + Math.sin(clock.getElapsedTime() * 4) * 0.08;
       const s = zoomFactor * pulse;
       groupRef.current.scale.set(s, s, s);
-    } else if (isHovered) {
-      const s = zoomFactor * 1.18;
-      groupRef.current.scale.lerp(new THREE.Vector3(s, s, s), 0.25);
     } else {
-      groupRef.current.scale.lerp(new THREE.Vector3(zoomFactor, zoomFactor, zoomFactor), 0.25);
+      const targetS = isHovered ? zoomFactor * 1.18 : zoomFactor;
+      const currentS = groupRef.current.scale.x;
+      const nextS = THREE.MathUtils.lerp(currentS, targetS, 0.25);
+      groupRef.current.scale.set(nextS, nextS, nextS);
     }
   });
 
@@ -217,20 +217,9 @@ export const GlobeLandmark: React.FC<LandmarkProps> = ({
 
       {/* 2. Upright Pin assembly: projects directly outward from surface */}
       <group ref={pinGroupRef} quaternion={pinQuaternion}>
-        {/* Generous invisible raycast pick-target: forgiving buffer within a few pixels */}
-        {/* Generous cylinder around stem and pin body */}
-        <mesh position={[0, tipY * 0.5, 0]}>
-          <cylinderGeometry args={[headRadius * 2.2, headRadius * 2.4, tipY * 1.35, 12]} />
-          <meshBasicMaterial transparent opacity={0} depthWrite={false} />
-        </mesh>
-        {/* Generous sphere around pearl head */}
-        <mesh position={[0, tipY, 0]}>
-          <sphereGeometry args={[headRadius * 2.5, 16, 16]} />
-          <meshBasicMaterial transparent opacity={0} depthWrite={false} />
-        </mesh>
-        {/* Generous base disc on globe surface */}
-        <mesh position={[0, 0.001, 0]} rotation={[-Math.PI / 2, 0, 0]}>
-          <circleGeometry args={[headRadius * 2.0, 16]} />
+        {/* Generous unified invisible raycast pick-target */}
+        <mesh position={[0, tipY * 0.6, 0]}>
+          <cylinderGeometry args={[headRadius * 2.2, headRadius * 2.2, tipY * 1.35, 8]} />
           <meshBasicMaterial transparent opacity={0} depthWrite={false} />
         </mesh>
 

@@ -135,6 +135,7 @@ export const App: React.FC = () => {
   const stopAutoRotate = useOperaStore((state) => state.stopAutoRotate);
   const isAutoRotating = useOperaStore((state) => state.isAutoRotating);
   const setSelectedHouse = useOperaStore((state) => state.setSelectedHouse);
+  const isLandLoaded = useOperaStore((state) => state.isLandLoaded);
 
   if (typeof window !== 'undefined') {
     (window as any).__operaStore = useOperaStore;
@@ -142,6 +143,17 @@ export const App: React.FC = () => {
 
   return (
     <div className="relative h-screen w-screen overflow-hidden bg-[#090f18] font-serif select-none">
+      {/* INITIAL ATLAS MATERIALIZATION INDICATOR */}
+      {!isLandLoaded && (
+        <div className="pointer-events-none absolute inset-0 z-30 flex items-center justify-center transition-opacity duration-500">
+          <div className="flex items-center gap-3 px-5 py-2.5 rounded-full bg-[#0a121e]/90 border border-amber-500/50 shadow-2xl backdrop-blur-md">
+            <span className="inline-block w-3.5 h-3.5 rounded-full border-2 border-amber-400 border-t-transparent animate-spin" />
+            <span className="font-cinzel text-xs tracking-wider text-amber-200 uppercase font-semibold">
+              Illuminating Global Theatres & Cartography...
+            </span>
+          </div>
+        </div>
+      )}
       {/* LUMINOUS, REFINED THEATRICAL GALLERY BACKDROP (Darker Celestial Midnight Sky) */}
       <div
         className="pointer-events-none absolute inset-0 z-0"

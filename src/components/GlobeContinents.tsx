@@ -5,6 +5,7 @@ import {
   buildContinentsGeometry,
   buildLakesGeometry,
 } from '../utils/globeVectorGeometry';
+import { fetchCountriesGeoJSON, fetchLakesGeoJSON } from '../utils/globeGeoJsonLoader';
 
 interface GlobeContinentsProps {
   globeRadius: number;
@@ -12,6 +13,7 @@ interface GlobeContinentsProps {
 
 export const GlobeContinents: React.FC<GlobeContinentsProps> = ({ globeRadius }) => {
   const houses = useOperaStore((state) => state.houses);
+  const setIsLandLoaded = useOperaStore((state) => state.setIsLandLoaded);
   const [continentsGeo, setContinentsGeo] = useState<THREE.BufferGeometry | null>(null);
   const [lakesGeo, setLakesGeo] = useState<THREE.BufferGeometry | null>(null);
 
@@ -21,14 +23,15 @@ export const GlobeContinents: React.FC<GlobeContinentsProps> = ({ globeRadius })
     const rLake = globeRadius + 0.0022;
 
     Promise.all([
-      fetch('/data/ne_50m_countries.geojson').then((res) => res.json()).catch(() => null),
-      fetch('/data/ne_50m_lakes.geojson').then((res) => res.json()).catch(() => null),
+      fetchCountriesGeoJSON(),
+      fetchLakesGeoJSON(),
     ]).then(([countriesGeojson, lakesGeojson]) => {
       if (!isMounted) return;
 
       if (countriesGeojson) {
         const geo = buildContinentsGeometry(countriesGeojson, houses, rContinent);
         setContinentsGeo(geo);
+        setIsLandLoaded(true);
       }
 
       if (lakesGeojson) {
@@ -42,7 +45,7 @@ export const GlobeContinents: React.FC<GlobeContinentsProps> = ({ globeRadius })
       if (continentsGeo) continentsGeo.dispose();
       if (lakesGeo) lakesGeo.dispose();
     };
-  }, [globeRadius, houses]);
+  }, [globeRadius, houses, setIsLandLoaded]);
 
   return (
     <group>

@@ -25,6 +25,7 @@ interface OperaStore {
   selectedComposer: string;
   selectedPatronage: string;
   searchQuery: string;
+  isLandLoaded: boolean;
 
   // Camera Target Lat/Long (Default centered on Europe)
   cameraTarget: { lat: number; lng: number; zoom: number };
@@ -35,6 +36,7 @@ interface OperaStore {
   // Actions
   setSelectedHouse: (houseId: string | null) => void;
   setHoveredHouse: (houseId: string | null) => void;
+  setIsLandLoaded: (loaded: boolean) => void;
   toggleTier: (tier: number) => void;
   selectAllTiers: () => void;
   clearAllTiers: () => void;
@@ -93,6 +95,7 @@ export const useOperaStore = create<OperaStore>((set, get) => ({
   selectedComposer: 'ALL',
   selectedPatronage: 'ALL',
   searchQuery: '',
+  isLandLoaded: false,
 
   // Default camera targets Europe on start (lat 48°N, lng 14°E)
   cameraTarget: { lat: 48, lng: 14, zoom: 4.8 },
@@ -101,6 +104,7 @@ export const useOperaStore = create<OperaStore>((set, get) => ({
   isAutoRotating: true,
 
   setHoveredHouse: (houseId) => set({ hoveredHouseId: houseId }),
+  setIsLandLoaded: (loaded) => set({ isLandLoaded: loaded }),
 
   stopAutoRotate: () => set({ isAutoRotating: false }),
   toggleAutoRotate: () => set((state) => ({ isAutoRotating: !state.isAutoRotating })),
