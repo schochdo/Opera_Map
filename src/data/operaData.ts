@@ -3357,7 +3357,7 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "longitude": 10.0417,
     "tier": 4,
     "venueType": "HISTORIC_GEM",
-    "websiteUrl": "https://bussetolive.com/",
+    "websiteUrl": "https://teatroregioparma.it/luogo/teatro-giuseppe-verdi-di-busseto/",
     "description": "Built in the 1860s right inside the medieval Rocca castle in Giuseppe Verdi’s hometown village of Busseto. Despite donating 10,000 lire for its construction, Verdi famously boycotted the grand opening and never stepped foot inside because he thought it was an extravagant waste of money for a small town!",
     "inauguratedYear": 1868,
     "architect": "Pier Luigi Montecchini",
