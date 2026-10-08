@@ -360,7 +360,7 @@ export function houseHasComposerPremiere(house: OperaHouse, composerId: string):
       case 'MOZART':
         return c.includes('mozart');
       case 'VERDI':
-        return c.includes('verdi');
+        return /\bverdi\b/i.test(c) && !c.includes('monteverdi');
       case 'PUCCINI':
         return c.includes('puccini');
       case 'WAGNER':
