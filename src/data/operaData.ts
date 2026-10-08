@@ -2,11 +2,11 @@
 // MASTER COMPREHENSIVE WORLD OPERA & FESTIVAL ATLAS DATASET (390 VERIFIED VENUES ACROSS 96 COUNTRIES)
 // Grounded in Global Historical Directories, International Opera Archives & Classical Festivals
 // Categorized by OPERA America & International Standards:
-// • Tier 1: Global Premier Houses (46 venues)
-// • Tier 2: Major Metropolitan & National Houses (166 venues)
-// • Tier 3: Summer Classical Festivals (98 venues)
-// • Tier 4: Regional & Chamber Operas (40 venues)
-// • Tier 5: Historic & Royal Court Theatres (31 venues)
+// • Tier 1: Global Premier Houses (47 venues)
+// • Tier 2: Major Metropolitan & National Houses (168 venues)
+// • Tier 3: Summer Classical Festivals (100 venues)
+// • Tier 4: Regional & Chamber Operas (39 venues)
+// • Tier 5: Historic & Royal Court Theatres (36 venues)
 // ═══════════════════════════════════════════════════════════════════════
 
 import { OperaHouse } from '../types/opera';
@@ -6657,14 +6657,15 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "region": "Middle East & Africa",
     "latitude": 15.3375,
     "longitude": 38.9372,
-    "tier": 2,
+    "tier": 5,
     "venueType": "HISTORIC_GEM",
+    "buildingStatus": "HISTORIC_MONUMENT",
     "description": "Completed in 1918 by Italian architect Odoardo Cavagnari on Harnet Avenue, the Asmara Opera House is one of the most remarkable Art Nouveau buildings in Africa. Combining Romanesque revival arcades with an Italian horseshoe lyric hall and ceiling frescoes by Saverio Fresa depicting scenes from Puccini and Verdi.",
     "inauguratedYear": 1918,
     "architect": "Odoardo Cavagnari",
     "architecturalStyle": "Italian Art Nouveau & Neo-Romanesque with Painted Gilded Proscenium and Loggias",
     "capacity": "750 seats",
-    "historicSignificance": "The jewel of UNESCO World Heritage-listed Asmara ('Piccola Roma'), where Italian opera companies performed throughout the early 20th century.",
+    "historicSignificance": "The jewel of UNESCO World Heritage-listed Asmara ('Piccola Roma'); a preserved Italian colonial Art Nouveau monument where touring Italian companies performed in the 1920s–30s.",
     "historicPremieres": [
       {
         "title": "Il Giuramento di Pontida (Asmara Gala Staging)",
@@ -6691,13 +6692,13 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "latitude": -22.5647,
     "longitude": 17.0858,
     "tier": 4,
-    "venueType": "MAJOR_OPERA_HOUSE",
-    "description": "Originally founded in 1960 as the Windhoek Theatre (Arts Association Theatre) on Robert Mugabe Avenue, the NTN is the premier lyric and performing arts institution of Namibia. It hosts symphonic concerts, indigenous musical plays, and collaborative operatic works.",
+    "venueType": "REGIONAL_HOUSE",
+    "description": "Originally founded in 1960 on Robert Mugabe Avenue, the NTN is Namibia’s premier multi-purpose civic performing arts center. While primarily staging spoken drama, choral festivals, and cultural assemblies, it has hosted pioneering cross-cultural Namibian operatic works such as Chief Hosea Kutako and Chief Hijangua.",
     "inauguratedYear": 1960,
     "architect": "Windhoek Civic Municipal Architects",
     "architecturalStyle": "Modernist African Civic Theatre with Proscenium Arch and Acoustic Shell",
     "capacity": "470 seats",
-    "historicSignificance": "The primary lyric stage of Namibia; has pioneered African operatic storytelling blending indigenous Khoisan and Bantu vocal traditions with classical orchestral score.",
+    "historicSignificance": "Namibia’s primary civic performing arts stage; host venue for pioneering indigenous operatic collaborations.",
     "historicPremieres": [
       {
         "title": "Chief Hosea Kutako Opera",
@@ -6723,15 +6724,15 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "region": "Middle East & Africa",
     "latitude": 14.6853,
     "longitude": -17.4339,
-    "tier": 2,
-    "venueType": "MAJOR_OPERA_HOUSE",
+    "tier": 4,
+    "venueType": "REGIONAL_HOUSE",
     "websiteUrl": "https://culture.gouv.sn",
-    "description": "Opened in 2011 near the historic Dakar railway station, this monumental 1,800-seat theater is the largest lyric and dramatic arts venue in West Africa. Built with modern acoustic technology across six stories, it is named after master drummer Doudou Ndiaye Rose.",
+    "description": "Opened in 2011 near the historic Dakar railway station with Chinese architectural partnership, this monumental 1,800-seat theater is West Africa’s flagship multi-purpose national performing arts center. Named after master drummer Doudou Ndiaye Rose, it primarily hosts Senegalese music, national dance, and cultural assemblies, while serving as a host venue for pan-African musical drama and initiatives like the Opéra du Sahel.",
     "inauguratedYear": 2011,
     "architect": "Beijing Institute of Architectural Design (BIAD)",
     "architecturalStyle": "Contemporary Monumentalism with Sahelian Motifs and Panoramic Glass Atrium",
     "capacity": "1,800 seats",
-    "historicSignificance": "West Africa's flagship lyric palace, dedicated to pan-African musical drama, contemporary opera, and national lyric productions.",
+    "historicSignificance": "West Africa’s flagship national multi-purpose performing arts center; host venue for pan-African musical drama.",
     "historicPremieres": [
       {
         "title": "Opéra du Sahel (Bintou Were)",
