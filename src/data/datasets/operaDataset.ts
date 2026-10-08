@@ -60,10 +60,10 @@ export const OPERA_DATASET: AtlasDataset = {
         icon: 'pin',
       },
       tier3: {
-        label: 'Summer Festivals & Residencies',
+        label: 'Summer Classical Festivals',
         short: 'T3',
-        badge: 'Summer Festival & Orchestral Residency',
-        desc: 'World-renowned seasonal classical festivals, acoustic pavilions, and scenic summer homes of premier international orchestras.',
+        badge: 'Summer Festival Venue',
+        desc: 'World-renowned seasonal classical festivals, scenic open-air amphitheatres, and summer opera pavilions across the globe.',
         color: '#16a34a',
         icon: 'pin',
       },

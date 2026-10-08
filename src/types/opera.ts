@@ -43,6 +43,9 @@ export interface OperaHouse {
   websiteUrl?: string;
   description: string;
 
+  // Verified Summer Orchestral Residency (if hosting an official residency by a major symphony)
+  summerOrchestralResidency?: string;
+
   // Heritage & Succession Context
   buildingStatus?: BuildingStatus;
   demolishedYear?: number;

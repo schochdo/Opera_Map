@@ -494,7 +494,7 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
                     <span>Summer Classical Festivals ({tierCounts[3]})</span>
                   </div>
                   <p className="text-xs md:text-[13px] text-slate-200 leading-snug font-garamond">
-                    World-renowned seasonal destination festivals, scenic open-air amphitheatres, and summer orchestral homes—such as the Salzburg Festival, Glyndebourne, Arena di Verona, Santa Fe Opera, Chorégies d'Orange, Bregenzer Festspiele, and Tanglewood.
+                    World-renowned seasonal destination festivals, scenic open-air amphitheatres, and summer opera pavilions—such as the Salzburg Festival, Glyndebourne, Arena di Verona, Santa Fe Opera, Chorégies d'Orange, Bregenzer Festspiele, and Tanglewood.
                   </p>
                 </div>
 

@@ -212,6 +212,7 @@ export const useOperaStore = create<OperaStore>((set, get) => ({
           const matchesLineage = matchesSearchField(house.historicalLineage, q, true);
           const matchesPredecessor = matchesSearchField(house.predecessorVenue, q);
           const matchesSuccessor = matchesSearchField(house.successorVenue, q);
+          const matchesResidency = matchesSearchField(house.summerOrchestralResidency, q, true);
           const matchesPremieres = house.historicPremieres?.some(
             (p) =>
               matchesSearchField(p.title, q) ||
@@ -231,6 +232,7 @@ export const useOperaStore = create<OperaStore>((set, get) => ({
             !matchesLineage &&
             !matchesPredecessor &&
             !matchesSuccessor &&
+            !matchesResidency &&
             !matchesPremieres
           ) {
             return false;

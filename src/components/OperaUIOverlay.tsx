@@ -285,7 +285,7 @@ export const OperaUIOverlay: React.FC = () => {
       case 2:
         return 'MAJOR METROPOLITAN & NATIONAL HOUSE';
       case 3:
-        return 'SUMMER FESTIVAL & ORCHESTRAL RESIDENCY';
+        return 'SUMMER FESTIVAL VENUE';
       case 4:
         return 'REGIONAL & CHAMBER OPERAS';
       case 5:
@@ -881,6 +881,19 @@ export const OperaUIOverlay: React.FC = () => {
                           </div>
                           <div className="font-semibold text-xs md:text-sm text-slate-100 leading-snug break-words">
                             {[selectedHouse.architect, selectedHouse.architecturalStyle].filter(Boolean).join(' • ')}
+                          </div>
+                        </div>
+                      </div>
+                    )}
+                    {selectedHouse.summerOrchestralResidency && (
+                      <div className="bg-[#152a28]/95 border border-emerald-500/60 px-3 py-2 rounded-lg flex items-start gap-2.5 col-span-2 shadow-sm">
+                        <Music className="h-4 w-4 text-emerald-400 shrink-0 mt-0.5" />
+                        <div className="min-w-0 flex-1">
+                          <div className="text-[10px] md:text-[11px] font-cinzel font-bold text-emerald-300 uppercase tracking-wider">
+                            Summer Orchestral Residency
+                          </div>
+                          <div className="font-semibold text-xs md:text-sm text-emerald-100 leading-snug break-words">
+                            {selectedHouse.summerOrchestralResidency}
                           </div>
                         </div>
                       </div>
