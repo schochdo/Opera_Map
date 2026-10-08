@@ -68,10 +68,10 @@ export const OPERA_DATASET: AtlasDataset = {
         icon: 'pin',
       },
       tier4: {
-        label: 'Regional & Boutique Opera Houses',
+        label: 'Regional & Chamber Operas',
         short: 'T4',
-        badge: 'Regional & Boutique Opera House',
-        desc: 'High-standard civic and regional companies in intimate historic jewel boxes, municipal theatres, and community cultural anchors.',
+        badge: 'Regional & Chamber Opera House',
+        desc: 'High-standard civic and regional companies in intimate historic jewel boxes, municipal theatres, and chamber opera stages.',
         color: '#0284c7',
         icon: 'pin',
       },
@@ -105,9 +105,9 @@ export const OPERA_DATASET: AtlasDataset = {
       },
       {
         icon: 'pin',
-        title: 'Regional & Boutique Opera Houses',
+        title: 'Regional & Chamber Operas',
         color: 'text-sky-400',
-        description: 'High-standard civic and regional companies in intimate historic jewel boxes, municipal theatres, and community cultural anchors.',
+        description: 'High-standard civic and regional companies in intimate historic jewel boxes, municipal theatres, and chamber opera stages.',
       },
       {
         icon: 'pin',

@@ -383,7 +383,7 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
                 <div className="bg-[#20324c] border border-sky-500/50 p-3 rounded-lg space-y-1">
                   <div className="flex items-center gap-2 font-cinzel font-bold text-xs md:text-sm text-sky-300">
                     <TierPinIcon tier={4} className="w-4 h-4 shrink-0" />
-                    <span>Regional & Boutique Houses ({tierCounts[4]})</span>
+                    <span>Regional & Chamber Operas ({tierCounts[4]})</span>
                   </div>
                   <p className="text-xs md:text-[13px] text-slate-200 leading-snug font-garamond">
                     High-standard civic and regional companies in intimate historic jewel boxes, municipal theatres, and chamber stages—such as Teatro Amazonas in Manaus, Teatro Giuseppe Verdi in Busseto, Apollon Theatre in Syros, Buxton Opera House, and Warsaw Chamber Opera.

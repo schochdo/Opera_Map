@@ -161,7 +161,7 @@ export const OperaUIOverlay: React.FC = () => {
     },
     {
       id: 4,
-      label: 'Regional & Boutique',
+      label: 'Regional & Chamber Operas',
       count: tierCounts[4],
     },
     {
@@ -287,7 +287,7 @@ export const OperaUIOverlay: React.FC = () => {
       case 3:
         return 'SUMMER FESTIVAL & ORCHESTRAL RESIDENCY';
       case 4:
-        return 'REGIONAL & BOUTIQUE OPERA HOUSE';
+        return 'REGIONAL & CHAMBER OPERAS';
       case 5:
         return 'HISTORIC ROYAL COURT THEATRE';
       default:
@@ -304,7 +304,7 @@ export const OperaUIOverlay: React.FC = () => {
       case 3:
         return 'Summer Festival';
       case 4:
-        return 'Regional & Boutique';
+        return 'Regional & Chamber Operas';
       case 5:
         return 'Royal Court';
       default:
@@ -507,7 +507,7 @@ export const OperaUIOverlay: React.FC = () => {
                     >
                       <div className="flex items-center gap-2.5 min-w-0">
                         <TierPinIcon tier={id} className="w-5 h-5 shrink-0" />
-                        <span className={`text-sm md:text-[15px] font-cinzel font-bold truncate ${isChecked ? 'text-amber-100' : 'text-slate-300'}`}>
+                        <span className={`text-sm md:text-[15px] font-cinzel font-bold leading-snug break-words ${isChecked ? 'text-amber-100' : 'text-slate-300'}`}>
                           {label}
                         </span>
                       </div>
@@ -834,47 +834,60 @@ export const OperaUIOverlay: React.FC = () => {
               )}
 
               {/* Compact Architectural & Structural Specs */}
-              <div className="grid grid-cols-2 gap-2 text-xs shrink-0">
-                {selectedHouse.inauguratedYear && (
-                  <div className="bg-[#1c2c44]/90 border border-slate-700/80 px-3 py-2 rounded-lg flex items-center gap-2.5">
-                    <Calendar className="h-4 w-4 text-amber-400 shrink-0" />
-                    <div className="min-w-0">
-                      <div className="text-[10px] md:text-[11px] font-cinzel font-bold text-amber-300/80 uppercase tracking-wider">
-                        Inaugurated
+              {(() => {
+                const isLongCapacity = Boolean(selectedHouse.capacity && selectedHouse.capacity.length > 18);
+                return (
+                  <div className="grid grid-cols-2 gap-2 text-xs shrink-0">
+                    {selectedHouse.inauguratedYear && (
+                      <div
+                        className={`bg-[#1c2c44]/90 border border-slate-700/80 px-3 py-2 rounded-lg flex items-center gap-2.5 ${
+                          isLongCapacity || !selectedHouse.capacity ? 'col-span-2' : 'col-span-1'
+                        }`}
+                      >
+                        <Calendar className="h-4 w-4 text-amber-400 shrink-0" />
+                        <div className="min-w-0">
+                          <div className="text-[10px] md:text-[11px] font-cinzel font-bold text-amber-300/80 uppercase tracking-wider">
+                            Inaugurated
+                          </div>
+                          <div className="font-bold text-sm md:text-base text-white">
+                            {selectedHouse.inauguratedYear}
+                          </div>
+                        </div>
                       </div>
-                      <div className="font-bold text-sm md:text-base text-white">
-                        {selectedHouse.inauguratedYear}
+                    )}
+                    {selectedHouse.capacity && (
+                      <div
+                        className={`bg-[#1c2c44]/90 border border-slate-700/80 px-3 py-2 rounded-lg flex items-start gap-2.5 ${
+                          isLongCapacity || !selectedHouse.inauguratedYear ? 'col-span-2' : 'col-span-1'
+                        }`}
+                      >
+                        <Users className="h-4 w-4 text-amber-400 shrink-0 mt-0.5" />
+                        <div className="min-w-0 flex-1">
+                          <div className="text-[10px] md:text-[11px] font-cinzel font-bold text-amber-300/80 uppercase tracking-wider">
+                            Capacity
+                          </div>
+                          <div className="font-bold text-xs md:text-sm text-white leading-snug break-words">
+                            {selectedHouse.capacity}
+                          </div>
+                        </div>
                       </div>
-                    </div>
+                    )}
+                    {(selectedHouse.architect || selectedHouse.architecturalStyle) && (
+                      <div className="bg-[#1c2c44]/90 border border-slate-700/80 px-3 py-2 rounded-lg flex items-start gap-2.5 col-span-2">
+                        <Landmark className="h-4 w-4 text-amber-400 shrink-0 mt-0.5" />
+                        <div className="min-w-0 flex-1">
+                          <div className="text-[10px] md:text-[11px] font-cinzel font-bold text-amber-300/80 uppercase tracking-wider">
+                            Architect & Style
+                          </div>
+                          <div className="font-semibold text-xs md:text-sm text-slate-100 leading-snug break-words">
+                            {[selectedHouse.architect, selectedHouse.architecturalStyle].filter(Boolean).join(' • ')}
+                          </div>
+                        </div>
+                      </div>
+                    )}
                   </div>
-                )}
-                {selectedHouse.capacity && (
-                  <div className="bg-[#1c2c44]/90 border border-slate-700/80 px-3 py-2 rounded-lg flex items-center gap-2.5">
-                    <Users className="h-4 w-4 text-amber-400 shrink-0" />
-                    <div className="min-w-0">
-                      <div className="text-[10px] md:text-[11px] font-cinzel font-bold text-amber-300/80 uppercase tracking-wider">
-                        Capacity
-                      </div>
-                      <div className="font-bold text-sm md:text-base text-white truncate">
-                        {selectedHouse.capacity}
-                      </div>
-                    </div>
-                  </div>
-                )}
-                {selectedHouse.architect && (
-                  <div className="bg-[#1c2c44]/90 border border-slate-700/80 px-3 py-2 rounded-lg flex items-start gap-2.5 col-span-2">
-                    <Landmark className="h-4 w-4 text-amber-400 shrink-0 mt-0.5" />
-                    <div className="min-w-0 flex-1">
-                      <div className="text-[10px] md:text-[11px] font-cinzel font-bold text-amber-300/80 uppercase tracking-wider">
-                        Architect & Style
-                      </div>
-                      <div className="font-semibold text-xs md:text-sm text-slate-100 leading-snug break-words">
-                        {selectedHouse.architect} {selectedHouse.architecturalStyle ? `• ${selectedHouse.architecturalStyle}` : ''}
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
+                );
+              })()}
 
               {/* Scrollable Content: Description, Lineage & Verified World Premieres */}
               <div className="flex-1 space-y-3 overflow-y-auto pr-1 min-h-0">

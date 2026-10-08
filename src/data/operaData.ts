@@ -5,7 +5,7 @@
 // • Tier 1: Global Premier Houses (46 venues)
 // • Tier 2: Major Metropolitan & National Houses (166 venues)
 // • Tier 3: Summer Classical Festivals & Orchestral Residencies (99 venues)
-// • Tier 4: Regional & Boutique Opera Houses (40 venues)
+// • Tier 4: Regional & Chamber Operas (40 venues)
 // • Tier 5: Historic Royal Court & Princely Theatres (28 venues)
 // ═══════════════════════════════════════════════════════════════════════
 
