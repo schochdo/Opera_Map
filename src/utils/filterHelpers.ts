@@ -385,7 +385,13 @@ export function houseHasComposerPremiere(house: OperaHouse, composerId: string):
     }
   };
 
-  return house.historicPremieres.some((p) => matchTarget(p.composer));
+  return house.historicPremieres.some((p) => {
+    const isActualPremiere =
+      p.type === 'WORLD_PREMIERE' ||
+      p.type === 'CONTINENTAL_PREMIERE' ||
+      p.type === 'NATIONAL_PREMIERE';
+    return isActualPremiere && matchTarget(p.composer);
+  });
 }
 
 export function getComposerFilter(id: string): ComposerFilter | undefined {

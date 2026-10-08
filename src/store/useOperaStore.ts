@@ -200,36 +200,43 @@ export const useOperaStore = create<OperaStore>((set, get) => ({
           return false;
         }
 
-        // 7. Real-time Search: searches Venue name, City, Country, Architect, Style, Historic Lineage, Premieres, Conductors, Commission Context
+        // 7. Real-time Search: Tightened criteria based on user requirements
+        // Searches Venue name, City, Country, Architect, Predecessor/Successor, Orchestral Residency,
+        // and verified Premieres (Title, and word-boundary Composer & Conductor of World/Continental/National Premieres).
+        // Deliberately EXCLUDES generic prose (description, historic significance, historical lineage,
+        // commission context, details, and raw architectural materials like glass) to prevent false-positive text matches.
         if (searchQuery.trim()) {
           const q = searchQuery.trim();
           const matchesName = matchesSearchField(house.name, q);
           const matchesCity = matchesSearchField(house.city, q);
           const matchesCountry = matchesSearchField(house.country, q);
           const matchesArchitect = matchesSearchField(house.architect, q);
-          const matchesArch = matchesSearchField(house.architecturalStyle, q);
-          const matchesSignificance = matchesSearchField(house.historicSignificance, q, true);
-          const matchesLineage = matchesSearchField(house.historicalLineage, q, true);
           const matchesPredecessor = matchesSearchField(house.predecessorVenue, q);
           const matchesSuccessor = matchesSearchField(house.successorVenue, q);
           const matchesResidency = matchesSearchField(house.summerOrchestralResidency, q, true);
-          const matchesPremieres = house.historicPremieres?.some(
-            (p) =>
-              matchesSearchField(p.title, q) ||
-              matchesSearchField(p.composer, q) ||
-              matchesSearchField(p.conductor, q) ||
-              matchesSearchField(p.commissionContext, q, true) ||
-              matchesSearchField(p.details, q, true)
-          );
+
+          const matchesPremieres = house.historicPremieres?.some((p) => {
+            // Only genuine World, Continental, or National Premieres qualify
+            // (strictly excludes generic inaugural stagings of pre-existing repertoire, festival cycles, or revivals)
+            const isActualPremiere =
+              p.type === 'WORLD_PREMIERE' ||
+              p.type === 'CONTINENTAL_PREMIERE' ||
+              p.type === 'NATIONAL_PREMIERE';
+
+            if (!isActualPremiere) return false;
+
+            const matchesTitle = matchesSearchField(p.title, q);
+            const matchesComposer = matchesSearchField(p.composer, q, true);
+            const matchesConductor = matchesSearchField(p.conductor, q, true);
+
+            return matchesTitle || matchesComposer || matchesConductor;
+          });
 
           if (
             !matchesName &&
             !matchesCity &&
             !matchesCountry &&
             !matchesArchitect &&
-            !matchesArch &&
-            !matchesSignificance &&
-            !matchesLineage &&
             !matchesPredecessor &&
             !matchesSuccessor &&
             !matchesResidency &&
