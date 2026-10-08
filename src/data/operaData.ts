@@ -1,12 +1,12 @@
 // ═══════════════════════════════════════════════════════════════════════
-// MASTER COMPREHENSIVE WORLD OPERA & FESTIVAL ATLAS DATASET (380 VERIFIED VENUES ACROSS 96 COUNTRIES)
+// MASTER COMPREHENSIVE WORLD OPERA & FESTIVAL ATLAS DATASET (381 VERIFIED VENUES ACROSS 96 COUNTRIES)
 // Grounded in Global Historical Directories, International Opera Archives & Classical Festivals
 // Categorized by OPERA America & International Standards:
 // • Tier 1: Global Premier Houses (46 venues)
 // • Tier 2: Major Metropolitan & National Houses (166 venues)
 // • Tier 3: Summer Classical Festivals (98 venues)
 // • Tier 4: Regional & Chamber Operas (40 venues)
-// • Tier 5: Historic & Royal Court Theatres (30 venues)
+// • Tier 5: Historic & Royal Court Theatres (31 venues)
 // ═══════════════════════════════════════════════════════════════════════
 
 import { OperaHouse } from '../types/opera';
@@ -10059,6 +10059,88 @@ export const OPERA_HOUSES: OperaHouse[] = [
         "premiereYear": 1817,
         "type": "NATIONAL_PREMIERE",
         "details": "Historic British premiere conducted by Michael Kelly; ignited a sensation that dominated London's 1817 musical season."
+      }
+    ]
+  },
+  {
+    "id": "opernhaus-eszterhaza",
+    "name": "Eszterháza Palace Court Opera House (Opernhaus Eszterháza)",
+    "city": "Fertőd",
+    "country": "Hungary",
+    "region": "Europe",
+    "latitude": 47.6206,
+    "longitude": 16.8719,
+    "tier": 5,
+    "venueType": "HISTORIC_GEM",
+    "buildingStatus": "DEMOLISHED_LOST_SITE",
+    "websiteUrl": "https://eszterhaza.hu/en",
+    "description": "The fabled 400-seat private court opera house constructed by Prince Nikolaus 'the Magnificent' Esterházy at his lavish palace, celebrated across 18th-century Europe as the 'Hungarian Versailles'. For nearly three decades, Joseph Haydn served here as resident court Kapellmeister, conducting over a thousand operatic performances and premiering virtually his entire output of Italian operas.",
+    "inauguratedYear": 1768,
+    "architect": "Melchior Hefele & Prince Nikolaus Esterházy I",
+    "architecturalStyle": "Late Baroque & Rococo Princely Court Opera House",
+    "capacity": "400 seats",
+    "historicSignificance": "The supreme private court opera laboratory of the Classical era; venue of Joseph Haydn's operatic world premieres (Lo speziale, L'infedeltà delusa, Il mondo della luna, Armida, Orlando paladino). Prompted Empress Maria Theresa's famous declaration: 'If I want to hear good opera, I go to Eszterháza.'",
+    "historicalLineage": "Inaugurated in 1768 with Haydn's Lo speziale. After a devastating fire in November 1779, Prince Nikolaus rebuilt the theatre even more sumptuously, reopening in 1781 with La fedeltà premiata. Following Prince Nikolaus's death in 1790, the resident opera company was disbanded, and the freestanding theatre building was eventually demolished in the 19th century. The surrounding Eszterháza Palace complex survives as a magnificent UNESCO World Heritage museum and concert venue.",
+    "historicPremieres": [
+      {
+        "title": "Lo speziale (The Apothecary)",
+        "composer": "Joseph Haydn",
+        "premiereYear": 1768,
+        "type": "WORLD_PREMIERE",
+        "conductor": "Joseph Haydn",
+        "patronageType": "ROYAL_COURT",
+        "details": "Inaugural opera buffa premiere opening the new Eszterháza Opera House in autumn 1768, with libretto by Carlo Goldoni.",
+        "commissionContext": "Commissioned by Prince Nikolaus Esterházy to inaugurate his newly constructed 400-seat court opera house at Eszterháza Palace."
+      },
+      {
+        "title": "L'infedeltà delusa",
+        "composer": "Joseph Haydn",
+        "premiereYear": 1773,
+        "type": "WORLD_PREMIERE",
+        "conductor": "Joseph Haydn",
+        "patronageType": "ROYAL_COURT",
+        "details": "Staged on 1 September 1773 for the imperial visit of Holy Roman Empress Maria Theresa, who declared: 'If I want to hear good opera, I go to Eszterháza.'",
+        "commissionContext": "Commissioned by Prince Nikolaus Esterházy for the state visit of Empress Maria Theresa to Eszterháza Palace."
+      },
+      {
+        "title": "Il mondo della luna (The World on the Moon)",
+        "composer": "Joseph Haydn",
+        "premiereYear": 1777,
+        "type": "WORLD_PREMIERE",
+        "conductor": "Joseph Haydn",
+        "patronageType": "ROYAL_COURT",
+        "details": "Dramma giocoso premiere with libretto by Carlo Goldoni, composed for the wedding celebrations of Count Peter Esterházy.",
+        "commissionContext": "Commissioned by Prince Nikolaus Esterházy for aristocratic wedding festivities at the court theatre."
+      },
+      {
+        "title": "La fedeltà premiata",
+        "composer": "Joseph Haydn",
+        "premiereYear": 1781,
+        "type": "WORLD_PREMIERE",
+        "conductor": "Joseph Haydn",
+        "patronageType": "ROYAL_COURT",
+        "details": "Inaugural gala premiere of the rebuilt Eszterháza Opera House on 25 February 1781 following the devastating 1779 fire.",
+        "commissionContext": "Composed by Haydn to celebrate the grand reopening of the newly reconstructed Eszterháza Opera House."
+      },
+      {
+        "title": "Orlando paladino",
+        "composer": "Joseph Haydn",
+        "premiereYear": 1782,
+        "type": "WORLD_PREMIERE",
+        "conductor": "Joseph Haydn",
+        "patronageType": "ROYAL_COURT",
+        "details": "Haydn's most widely performed opera during his lifetime, receiving dozens of productions across Europe.",
+        "commissionContext": "Commissioned by Prince Nikolaus Esterházy for the expected visit of Archduke Paul of Russia and Maria Feodorovna."
+      },
+      {
+        "title": "Armida",
+        "composer": "Joseph Haydn",
+        "premiereYear": 1784,
+        "type": "WORLD_PREMIERE",
+        "conductor": "Joseph Haydn",
+        "patronageType": "ROYAL_COURT",
+        "details": "Haydn's supreme heroic opera seria based on Tasso's Jerusalem Delivered, performed 54 times at Eszterháza between 1784 and 1788.",
+        "commissionContext": "Commissioned by Prince Nikolaus Esterházy as the centerpiece of the court's 1784 operatic season."
       }
     ]
   }
