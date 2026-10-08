@@ -32,19 +32,6 @@ export const TierPinIcon: React.FC<TierPinIconProps> = ({
       case 2:
         return {
           id: 'tier2',
-          name: 'Sterling Silver Pin',
-          stop0: '#ffffff',
-          stop1: '#e2e8f0',
-          stop2: '#cbd5e1',
-          stop3: '#475569',
-          outline: '#334155',
-          collarFill: '#94a3b8',
-          collarStroke: '#334155',
-          specularOpacity: 0.9,
-        };
-      case 3:
-        return {
-          id: 'tier3',
           name: 'Crimson Ruby Pin',
           stop0: '#fee2e2',
           stop1: '#f87171',
@@ -53,21 +40,47 @@ export const TierPinIcon: React.FC<TierPinIconProps> = ({
           outline: '#450a0a',
           collarFill: '#b91c1c',
           collarStroke: '#450a0a',
-          specularOpacity: 0.75,
+          specularOpacity: 0.8,
+        };
+      case 3:
+        return {
+          id: 'tier3',
+          name: 'Emerald Green Pin',
+          stop0: '#f0fdf4',
+          stop1: '#86efac',
+          stop2: '#16a34a',
+          stop3: '#14532d',
+          outline: '#052e16',
+          collarFill: '#15803d',
+          collarStroke: '#052e16',
+          specularOpacity: 0.8,
         };
       case 4:
-      default:
         return {
           id: 'tier4',
-          name: 'Royal Sapphire Pin',
-          stop0: '#dbeafe',
-          stop1: '#60a5fa',
-          stop2: '#2563eb',
-          stop3: '#1e3a8a',
-          outline: '#0f172a',
-          collarFill: '#1d4ed8',
-          collarStroke: '#0f172a',
-          specularOpacity: 0.75,
+          name: 'Cerulean Steel Pin',
+          stop0: '#f0f9ff',
+          stop1: '#7dd3fc',
+          stop2: '#0284c7',
+          stop3: '#075985',
+          outline: '#0c4a6e',
+          collarFill: '#0369a1',
+          collarStroke: '#0c4a6e',
+          specularOpacity: 0.8,
+        };
+      case 5:
+      default:
+        return {
+          id: 'tier5',
+          name: 'Imperial Purple Pin',
+          stop0: '#faf5ff',
+          stop1: '#d8b4fe',
+          stop2: '#9333ea',
+          stop3: '#581c87',
+          outline: '#3b0764',
+          collarFill: '#7e22ce',
+          collarStroke: '#3b0764',
+          specularOpacity: 0.8,
         };
     }
   };

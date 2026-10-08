@@ -18,6 +18,8 @@ dist-ssr
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.server.log
+.server.pid
 
 # Editor / OS files
 .DS_Store

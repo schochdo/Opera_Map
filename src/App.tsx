@@ -3,23 +3,62 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import type { OrbitControls as OrbitControlsImpl } from 'three-stdlib';
 import * as THREE from 'three';
-import { PapercraftGlobe } from './components/PapercraftGlobe';
+import { Globe } from './components/Globe';
 import { OperaUIOverlay } from './components/OperaUIOverlay';
 import { useOperaStore } from './store/useOperaStore';
-import { latLongToVector3 } from './components/PapercraftLandmark';
+import { latLongToVector3 } from './components/GlobeLandmark';
 
 const CameraRig: React.FC<{ controlsRef: React.RefObject<OrbitControlsImpl> }> = ({ controlsRef }) => {
   const cameraTarget = useOperaStore((state) => state.cameraTarget);
   const isAnimating = useOperaStore((state) => state.isAnimatingCamera);
   const stopCameraAnimation = useOperaStore((state) => state.stopCameraAnimation);
+  const selectedHouseId = useOperaStore((state) => state.selectedHouseId);
   const headlightRef = useRef<THREE.DirectionalLight>(null);
+  const currentOffsetRef = useRef(0);
+  const isInitializedRef = useRef(false);
 
-  useFrame(({ camera }) => {
+  useFrame(({ camera, scene, size }) => {
+    if (typeof window !== 'undefined') {
+      (window as any).__threeCamera = camera;
+      (window as any).__threeScene = scene;
+      (window as any).__controls = controlsRef.current;
+    }
     // Keep headlight strictly locked to camera position pointing at the globe center:
     // Guarantees whatever country or hemisphere the user is viewing is ALWAYS in 100% full, radiant daylight
     // Completely eliminates any dark side or "night mode" on the Earth
     if (headlightRef.current) {
       headlightRef.current.position.copy(camera.position);
+    }
+
+    // Centering the Globe in Available Visible Viewport:
+    // When the right dossier panel is open, both panels flank the screen, so the globe centers in the middle of the screen (offset = 0).
+    // When the dossier is closed, the globe centers in the right ~2/3 of the screen.
+    const isRightPanelOpen = Boolean(selectedHouseId);
+    const leftPanelWidth = Math.min(size.width * 0.28, 420);
+    const targetOffset = isRightPanelOpen ? 0 : -Math.round(leftPanelWidth * 0.5);
+
+    if (!isInitializedRef.current) {
+      // Immediately set the offset on initial page load (prevents the globe from flying in / swooping across the screen)
+      currentOffsetRef.current = targetOffset;
+      isInitializedRef.current = true;
+    } else {
+      // Smoothly glide only when opening or closing the dossier
+      currentOffsetRef.current = THREE.MathUtils.lerp(currentOffsetRef.current, targetOffset, 0.08);
+    }
+
+    if (camera instanceof THREE.PerspectiveCamera) {
+      if (Math.abs(currentOffsetRef.current) > 0.5) {
+        camera.setViewOffset(
+          size.width,
+          size.height,
+          currentOffsetRef.current,
+          0,
+          size.width,
+          size.height
+        );
+      } else if (camera.view !== null && camera.view.enabled) {
+        camera.clearViewOffset();
+      }
     }
 
     // Dynamically scale rotation/pan speed based on zoom distance to prevent high speed when zoomed in
@@ -94,15 +133,20 @@ export const App: React.FC = () => {
   const stopCameraAnimation = useOperaStore((state) => state.stopCameraAnimation);
   const stopAutoRotate = useOperaStore((state) => state.stopAutoRotate);
   const isAutoRotating = useOperaStore((state) => state.isAutoRotating);
+  const setSelectedHouse = useOperaStore((state) => state.setSelectedHouse);
+
+  if (typeof window !== 'undefined') {
+    (window as any).__operaStore = useOperaStore;
+  }
 
   return (
-    <div className="relative h-screen w-screen overflow-hidden bg-[#0a101a] font-serif select-none">
+    <div className="relative h-screen w-screen overflow-hidden bg-[#101b2b] font-serif select-none">
       {/* LUMINOUS, REFINED THEATRICAL GALLERY BACKDROP */}
       <div
         className="pointer-events-none absolute inset-0 z-0"
         style={{
           background:
-            'radial-gradient(ellipse 85% 75% at 50% 45%, rgba(32, 50, 78, 0.85) 0%, rgba(13, 20, 32, 0.98) 100%)',
+            'radial-gradient(ellipse 85% 75% at 50% 45%, rgba(45, 72, 110, 0.92) 0%, rgba(18, 30, 48, 0.98) 100%)',
         }}
       />
 
@@ -111,6 +155,9 @@ export const App: React.FC = () => {
         <Canvas
           camera={{ position: [4.54, 5.20, -1.13], fov: 42 }}
           gl={{ antialias: true, alpha: true }}
+          onPointerMissed={() => {
+            setSelectedHouse(null);
+          }}
         >
           {/* RADIANT CARTOGRAPHIC STUDIO LIGHTING RIG — Crisp, Radiant, 100% Even Day Lighting */}
           <ambientLight intensity={1.6} color="#ffffff" />
@@ -141,8 +188,8 @@ export const App: React.FC = () => {
             color="#ffffff"
           />
 
-          {/* 3D Papercraft Globe */}
-          <PapercraftGlobe />
+          {/* 3D Globe */}
+          <Globe />
 
           {/* Orbit Controls (Smooth inertia, distance-scaled speed) */}
           <OrbitControls

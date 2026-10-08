@@ -23,8 +23,8 @@ export interface AtlasItem {
   region: 'Europe' | 'Americas' | 'Asia-Pacific' | 'Middle East & Africa';
   latitude: number;
   longitude: number;
-  tier: 1 | 2 | 3 | 4;
-  websiteUrl: string;
+  tier: 1 | 2 | 3 | 4 | 5;
+  websiteUrl?: string;
   description: string;
 
   // Thematic metadata labels and values
@@ -54,6 +54,7 @@ export interface DatasetThemeConfig {
     tier2: { label: string; short: string; badge: string; desc: string; color: string; icon: string };
     tier3: { label: string; short: string; badge: string; desc: string; color: string; icon: string };
     tier4: { label: string; short: string; badge: string; desc: string; color: string; icon: string };
+    tier5?: { label: string; short: string; badge: string; desc: string; color: string; icon: string };
   };
   overviewCards: {
     icon: string;
