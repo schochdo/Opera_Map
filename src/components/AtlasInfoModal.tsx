@@ -269,13 +269,15 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
                   <strong className="text-amber-300">Teatro delle Quattro Fontane & Palazzo Barberini:</strong> Cardinal Francesco Barberini constructed a lavish 3,000-seat theatre inside <strong className="text-amber-200">Palazzo Barberini</strong>. In 1632, Stefano Landi's <em>Il Sant'Alessio</em> (libretto by future Pope Clement IX Giulio Rospigliosi) inaugurated the hall with jaw-dropping stage machinery engineered by <strong className="text-amber-200">Gian Lorenzo Bernini</strong>, featuring flying angels, descending cloud apparitions, and fiery underworlds.
                 </p>
                 <p>
-                  <strong className="text-amber-300">Hagiography, Castrati, and Moral Censorship:</strong> Roman opera favored lives of the saints (hagiographies) and allegorical moral dramas, performed by all-male casts with virtuosic castrati. Under strict popes, secular theatre was periodically condemned as decadent or outlawed entirely, forcing opera to navigate ecclesiastical oversight and moral censorship until the late 19th-century public stages of Rome.
+                  <strong className="text-amber-300">The Enlightenment & Bel Canto Public Theatres (Argentina & Valle):</strong> As papal prohibitions relaxed in the 18th century, noble families erected grand public stages. <strong className="text-amber-200">Teatro Valle</strong> (1726) became Rome's intimate temple of <em>opera buffa</em>, premiering Rossini's <em>La Cenerentola</em> (1817). Concurrently, <strong className="text-amber-200">Teatro Argentina</strong> (1732) achieved world immortality with the premiere of Rossini's <em>Il barbiere di Siviglia</em> (1816) and Giuseppe Verdi's patriotic Risorgimento anthems <em>I due Foscari</em> (1844) and <em>La battaglia di Legnano</em> (1849).
                 </p>
               </div>
 
               <div className="pt-2 border-t border-slate-700/60 flex flex-wrap items-center gap-2">
                 <span className="text-xs font-cinzel text-amber-300 uppercase tracking-wider mr-1">Historic Roman Stages:</span>
-                <LandmarkJumpButton venueId="teatro-delle-quattro-fontane-barberini" label="Palazzo Barberini (Quattro Fontane)" city="Rome" year="1632" />
+                <LandmarkJumpButton venueId="teatro-delle-quattro-fontane-barberini" label="Palazzo Barberini" city="Rome" year="1632" />
+                <LandmarkJumpButton venueId="teatro-valle-rome" label="Teatro Valle" city="Rome" year="1726" />
+                <LandmarkJumpButton venueId="teatro-argentina-rome" label="Teatro Argentina" city="Rome" year="1732" />
                 <LandmarkJumpButton venueId="teatro-apollo-rome" label="Teatro Apollo" city="Rome" year="1795" />
               </div>
             </div>
@@ -354,6 +356,7 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
                 <LandmarkJumpButton venueId="teatro-colon" label="Teatro Colón" city="Buenos Aires" year="1908" />
                 <LandmarkJumpButton venueId="wiener-staatsoper" label="Wiener Staatsoper" city="Vienna" year="1869" />
                 <LandmarkJumpButton venueId="royal-opera-house-covent-garden" label="Royal Opera House (Covent Garden)" city="London" year="1858" />
+                <LandmarkJumpButton venueId="teatro-dal-verme-milan" label="Teatro Dal Verme (Pagliacci)" city="Milan" year="1872" />
               </div>
             </div>
 
@@ -372,7 +375,7 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
                   Throughout the 18th and 19th centuries, opera was an indoor winter ritual for urban society. The 20th century radically expanded this paradigm through the <strong className="text-amber-200">destination summer festival</strong>, uniting operatic drama with open-air ruins, alpine lakes, and pastoral estates.
                 </p>
                 <p>
-                  <strong className="text-amber-300">European Pioneers (Verona, Salzburg, Glyndebourne, Bregenz):</strong> In 1913, tenor Giovanni Zenatello staged Verdi's <em>Aida</em> inside the 1st-century Roman amphitheatre of <strong className="text-amber-200">Arena di Verona</strong>, inaugurating the world's premier open-air festival before 15,000 nightly spectators. Following the devastation of World War I, Max Reinhardt, Hugo von Hofmannsthal, and Richard Strauss founded the <strong className="text-amber-200">Salzburger Festspiele</strong> (1920) as an intentional cultural pilgrimage of European peace. In England, John Christie and soprano Audrey Mildmay launched <strong className="text-amber-200">Glyndebourne</strong> (1934) on their Sussex estate, blending pristine Mozartian ensemble standards with black-tie countryside picnics. In Austria, the post-war <strong className="text-amber-200">Bregenzer Festspiele</strong> (1946) pioneered the monumental floating stage (<em>Seebühne</em>) anchored directly in Lake Constance.
+                  <strong className="text-amber-300">European Pioneers (Verona, Salzburg, Glyndebourne, Bregenz, Caracalla):</strong> In 1913, tenor Giovanni Zenatello staged Verdi's <em>Aida</em> inside the 1st-century Roman amphitheatre of <strong className="text-amber-200">Arena di Verona</strong>, inaugurating the world's premier open-air festival before 15,000 nightly spectators. In Rome, the colossal ancient ruins of the <strong className="text-amber-200">Terme di Caracalla</strong> (1937) became the fabled open-air summer home for the Rome Opera and the site of the legendary 1990 original Three Tenors concert. Following the devastation of World War I, Max Reinhardt, Hugo von Hofmannsthal, and Richard Strauss founded the <strong className="text-amber-200">Salzburger Festspiele</strong> (1920) as an intentional cultural pilgrimage of European peace. In England, John Christie and soprano Audrey Mildmay launched <strong className="text-amber-200">Glyndebourne</strong> (1934) on their Sussex estate, blending pristine Mozartian ensemble standards with black-tie countryside picnics. In Austria, the post-war <strong className="text-amber-200">Bregenzer Festspiele</strong> (1946) pioneered the monumental floating stage (<em>Seebühne</em>) anchored directly in Lake Constance.
                 </p>
                 <p>
                   <strong className="text-amber-300">American Festivals & The Tanglewood Revolution:</strong> In North America, summer festivals became essential incubators for modern opera and premier orchestral residencies. In Massachusetts, conductor Serge Koussevitzky and the Boston Symphony Orchestra established <strong className="text-amber-200">Tanglewood</strong> (1937/1940); in August 1946, a 27-year-old Leonard Bernstein conducted the historic American premiere of Benjamin Britten's <em>Peter Grimes</em> in the Tanglewood Shed, establishing Britten as a master of post-war English opera. In the high desert of New Mexico, John Crosby founded <strong className="text-amber-200">Santa Fe Opera</strong> (1957), building an iconic open-air pavilion framed by mountain sunsets, championing emerging talent, American premieres, and the stage works of Igor Stravinsky.
@@ -383,6 +386,7 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
                 <span className="text-xs font-cinzel text-amber-300 uppercase tracking-wider mr-1">Historic Summer Stages:</span>
                 <LandmarkJumpButton venueId="salzburg-festival" label="Salzburg Festival" city="Salzburg" year="1920" />
                 <LandmarkJumpButton venueId="arena-di-verona" label="Arena di Verona" city="Verona" year="1913" />
+                <LandmarkJumpButton venueId="terme-di-caracalla-rome" label="Terme di Caracalla" city="Rome" year="1937" />
                 <LandmarkJumpButton venueId="glyndebourne-festival" label="Glyndebourne" city="Sussex" year="1934" />
                 <LandmarkJumpButton venueId="tanglewood-music-center" label="Tanglewood" city="Lenox" year="1937" />
                 <LandmarkJumpButton venueId="santa-fe-opera" label="Santa Fe Opera" city="Santa Fe" year="1957" />
@@ -440,7 +444,7 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
                   <Landmark className="h-4 w-4 text-amber-400" /> About The World of Opera
                 </h3>
                 <p className="text-xs md:text-sm text-slate-200 leading-relaxed font-garamond">
-                  An illustrated cartography of historical opera houses, landmark world premieres, and international summer classical festivals spanning antiquity to the modern era across 96 countries and 381 world stages and landmark sites. Every venue is located at its verified geographic coordinates and classified into five distinct architectural and curatorial categories.
+                  An illustrated cartography of historical opera houses, landmark world premieres, and international summer classical festivals spanning antiquity to the modern era across 96 countries and 390 world stages and landmark sites. Every venue is located at its verified geographic coordinates and classified into five distinct architectural and curatorial categories.
                 </p>
               </div>
 

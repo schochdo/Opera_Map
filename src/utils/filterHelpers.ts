@@ -347,6 +347,7 @@ export const MAJOR_COMPOSERS: ComposerFilter[] = [
   { id: 'TCHAIKOVSKY', name: 'Pyotr Ilyich Tchaikovsky', displayName: 'P. I. Tchaikovsky (Eugene Onegin, Queen of Spades)', era: 'Romantic' },
   { id: 'HAYDN', name: 'Joseph Haydn', displayName: 'Joseph Haydn (Lo speziale, Il mondo della luna, Armida)', era: 'Classical' },
   { id: 'HANDEL', name: 'George Frideric Handel', displayName: 'G. F. Handel (Rinaldo, Giulio Cesare, Rodelinda)', era: 'Baroque' },
+  { id: 'LEONCAVALLO', name: 'Ruggero Leoncavallo', displayName: 'Ruggero Leoncavallo (Pagliacci)', era: 'Verismo' },
 ];
 
 export function houseHasComposerPremiere(house: OperaHouse, composerId: string): boolean {

@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════════════════════════════════
-// MASTER COMPREHENSIVE WORLD OPERA & FESTIVAL ATLAS DATASET (381 VERIFIED VENUES ACROSS 96 COUNTRIES)
+// MASTER COMPREHENSIVE WORLD OPERA & FESTIVAL ATLAS DATASET (390 VERIFIED VENUES ACROSS 96 COUNTRIES)
 // Grounded in Global Historical Directories, International Opera Archives & Classical Festivals
 // Categorized by OPERA America & International Standards:
 // • Tier 1: Global Premier Houses (46 venues)
@@ -10144,4 +10144,327 @@ export const OPERA_HOUSES: OperaHouse[] = [
       }
     ]
   }
+,
+  {
+    "id": "teatro-argentina-rome",
+    "name": "Teatro Argentina",
+    "city": "Rome",
+    "country": "Italy",
+    "region": "Europe",
+    "latitude": 41.8958,
+    "longitude": 12.4764,
+    "tier": 5,
+    "venueType": "HISTORIC_GEM",
+    "capacity": "696",
+    "inauguratedYear": 1732,
+    "architect": "Gerolamo Theodoli",
+    "websiteUrl": "https://teatrodiroma.net",
+    "buildingStatus": "HISTORIC_MONUMENT",
+    "historicSignificance": "Rome’s most celebrated 18th-century opera house; fabled site of the world premiere of Rossini’s Il barbiere di Siviglia (1816) and Verdi’s I due Foscari (1844) and La battaglia di Legnano (1849).",
+    "description": "Inaugurated on 31 January 1732 with Domenico Sarro’s Berenice, Teatro Argentina was commissioned by Duke Giuseppe Sforza Cesarini on the ancient site of the Curia of Pompey in Largo di Torre Argentina. Throughout the 18th and 19th centuries, it stood at the pinnacle of Roman lyric drama. It achieved immortality on 20 February 1816 when Gioachino Rossini premiered Il barbiere di Siviglia—a tumultuous opening night that swiftly became the most beloved comic opera in history. Giuseppe Verdi chose the Argentina for the world premieres of I due Foscari (1844) and his fiery patriotic anthem La battaglia di Legnano (1849) during the Roman Republic.",
+    "historicPremieres": [
+      {
+        "title": "Il barbiere di Siviglia (Almaviva, o sia L’inutile precauzione)",
+        "composer": "Gioachino Rossini",
+        "premiereYear": 1816,
+        "type": "WORLD_PREMIERE",
+        "conductor": "Gioachino Rossini",
+        "patronageType": "COMMERCIAL_IMPRESARIO",
+        "details": "Historic world premiere of the supreme masterpiece of Italian opera buffa."
+      },
+      {
+        "title": "I due Foscari",
+        "composer": "Giuseppe Verdi",
+        "premiereYear": 1844,
+        "type": "WORLD_PREMIERE",
+        "patronageType": "COMMERCIAL_IMPRESARIO",
+        "details": "Verdi’s Venetian tragic masterwork based on Lord Byron’s historical drama."
+      },
+      {
+        "title": "La battaglia di Legnano",
+        "composer": "Giuseppe Verdi",
+        "premiereYear": 1849,
+        "type": "WORLD_PREMIERE",
+        "patronageType": "CIVIC_STATE",
+        "details": "Incendiary patriotic opera premiered during the 1849 Roman Republic, inciting mass chants of Viva Verdi!"
+      },
+      {
+        "title": "L’Olimpiade",
+        "composer": "Giovanni Battista Pergolesi",
+        "premiereYear": 1735,
+        "type": "WORLD_PREMIERE",
+        "patronageType": "PRIVATE_BENEFACTOR",
+        "details": "Landmark 18th-century opera seria based on Metastasio’s celebrated libretto."
+      }
+    ]
+  },
+  {
+    "id": "teatro-valle-rome",
+    "name": "Teatro Valle",
+    "city": "Rome",
+    "country": "Italy",
+    "region": "Europe",
+    "latitude": 41.8978,
+    "longitude": 12.4744,
+    "tier": 5,
+    "venueType": "HISTORIC_GEM",
+    "capacity": "500",
+    "inauguratedYear": 1727,
+    "architect": "Tommaso Morelli / Francesco Salvi",
+    "websiteUrl": "https://teatrodiroma.net",
+    "buildingStatus": "HISTORIC_MONUMENT",
+    "historicSignificance": "Rome’s oldest surviving theatre building; legendary birthplace of Rossini’s La Cenerentola (1817) and major Bel Canto premieres.",
+    "description": "Commissioned in 1726 by Count Camillo Capranica and designed by Tommaso Morelli, Teatro Valle is Rome’s oldest surviving theatre hall, situated between the Pantheon and Piazza Navona. Rebuilt in brick and stone with neoclassical elegance by Francesco Salvi in 1791, the intimate wooden horseshoe auditorium became Rome’s undisputed temple for opera buffa and dramma giocoso. On 25 January 1817, Gioachino Rossini unveiled La Cenerentola (Cinderella) here, composed in just three weeks. The theatre also fostered Gaetano Donizetti with premieres of Torquato Tasso (1833) and Il furioso all’isola di San Domingo (1833).",
+    "historicPremieres": [
+      {
+        "title": "La Cenerentola (Ossia La bontà in trionfo)",
+        "composer": "Gioachino Rossini",
+        "premiereYear": 1817,
+        "type": "WORLD_PREMIERE",
+        "conductor": "Gioachino Rossini",
+        "patronageType": "COMMERCIAL_IMPRESARIO",
+        "details": "World premiere of Rossini’s beloved Cinderella masterpiece."
+      },
+      {
+        "title": "Torvaldo e Dorliska",
+        "composer": "Gioachino Rossini",
+        "premiereYear": 1815,
+        "type": "WORLD_PREMIERE",
+        "patronageType": "COMMERCIAL_IMPRESARIO",
+        "details": "Dramma semiserio composed for the opening of the 1815 Roman carnival season."
+      },
+      {
+        "title": "Torquato Tasso",
+        "composer": "Gaetano Donizetti",
+        "premiereYear": 1833,
+        "type": "WORLD_PREMIERE",
+        "patronageType": "COMMERCIAL_IMPRESARIO",
+        "details": "Bel canto melodramma based on the tragic life of Renaissance poet Torquato Tasso."
+      }
+    ]
+  },
+  {
+    "id": "terme-di-caracalla-rome",
+    "name": "Terme di Caracalla (Teatro dell’Opera di Roma Summer Season)",
+    "city": "Rome",
+    "country": "Italy",
+    "region": "Europe",
+    "latitude": 41.8790,
+    "longitude": 12.4925,
+    "tier": 3,
+    "venueType": "FESTIVAL",
+    "seasonalOnly": true,
+    "capacity": "4,500",
+    "inauguratedYear": 1937,
+    "architect": "Imperial Roman Ruins (Emperor Caracalla, 216 AD)",
+    "websiteUrl": "https://operaroma.it/caracalla-festival",
+    "buildingStatus": "ACTIVE_OPERA_HOUSE",
+    "historicSignificance": "Legendary open-air summer opera stage of Teatro dell’Opera di Roma set against ancient Roman ruins; site of the historic original Three Tenors Concert (1990).",
+    "description": "Since 1937, the colossal ruins of the 3rd-century imperial Baths of Caracalla have served as the summer stage for Teatro dell’Opera di Roma. With the ancient red-brick caldarium walls providing a dramatic 30-meter backdrop under the Roman night sky, Caracalla is world-renowned for monumental productions of Verdi’s Aida, Nabucco, and Puccini’s Madama Butterfly. On 7 July 1990, on the eve of the FIFA World Cup Final, it gained global immortality when Luciano Pavarotti, Plácido Domingo, and José Carreras joined conductor Zubin Mehta for the first-ever Three Tenors concert—a broadcast heard by 800 million people that became the best-selling classical album of all time.",
+    "historicPremieres": [
+      {
+        "title": "The Original Three Tenors Concert",
+        "composer": "Carreras, Domingo, Pavarotti (Conducted by Zubin Mehta)",
+        "premiereYear": 1990,
+        "type": "HISTORIC_STAGING",
+        "conductor": "Zubin Mehta",
+        "patronageType": "FESTIVAL_COMMISSION",
+        "details": "Historic 1990 inaugural Three Tenors concert watched live by 800 million global viewers."
+      }
+    ]
+  },
+  {
+    "id": "teatro-dal-verme-milan",
+    "name": "Teatro Dal Verme",
+    "city": "Milan",
+    "country": "Italy",
+    "region": "Europe",
+    "latitude": 45.4674,
+    "longitude": 9.1806,
+    "tier": 5,
+    "venueType": "HISTORIC_GEM",
+    "capacity": "1,420",
+    "inauguratedYear": 1872,
+    "architect": "Giuseppe Pestagalli",
+    "websiteUrl": "https://dalverme.org",
+    "buildingStatus": "HISTORIC_MONUMENT",
+    "historicSignificance": "Milanese lyric monument; fabled birthplace of Leoncavallo’s Pagliacci (1892, conducted by Arturo Toscanini) and Giacomo Puccini’s debut opera Le Villi (1884).",
+    "description": "Commissioned by Count Francesco Dal Verme and opened in 1872 on the site of the former Politeama Ciniselli, Teatro Dal Verme served as Milan’s premier alternative lyric stage to Teatro alla Scala. Designed as a grand horseshoe opera house with exceptional acoustics, it was the proving ground for the Italian Giovane Scuola and Verismo movement. On 21 May 1892, Ruggero Leoncavallo’s Pagliacci received its historic world premiere here under the baton of a 25-year-old Arturo Toscanini. Eight years earlier, on 31 May 1884, an unknown Giacomo Puccini saw his operatic debut Le Villi premiere here, financed by subscriptions organized by Arrigo Boito, which immediately earned him his legendary contract with publisher Giulio Ricordi.",
+    "historicPremieres": [
+      {
+        "title": "Pagliacci",
+        "composer": "Ruggero Leoncavallo",
+        "premiereYear": 1892,
+        "type": "WORLD_PREMIERE",
+        "conductor": "Arturo Toscanini",
+        "patronageType": "COMMERCIAL_IMPRESARIO",
+        "details": "Sensational world premiere of the supreme verismo double-bill masterwork, conducting debut for 25-year-old Toscanini."
+      },
+      {
+        "title": "Le Villi",
+        "composer": "Giacomo Puccini",
+        "premiereYear": 1884,
+        "type": "WORLD_PREMIERE",
+        "patronageType": "COMMERCIAL_IMPRESARIO",
+        "details": "World premiere of Puccini’s debut opera, launching his legendary lifelong contract with Casa Ricordi."
+      }
+    ]
+  },
+  {
+    "id": "teatro-de-la-zarzuela-madrid",
+    "name": "Teatro de la Zarzuela",
+    "city": "Madrid",
+    "country": "Spain",
+    "region": "Europe",
+    "latitude": 40.4168,
+    "longitude": -3.6975,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "capacity": "1,242",
+    "inauguratedYear": 1856,
+    "architect": "Jerónimo de la Gándara",
+    "websiteUrl": "https://teatrodelazarzuela.mcu.es",
+    "buildingStatus": "ACTIVE_OPERA_HOUSE",
+    "historicSignificance": "Spain’s national theatre for Spanish lyric opera and zarzuela; founded in 1856 to celebrate indigenous musical heritage.",
+    "description": "Inaugurated on 10 October 1856 (the birthday of Queen Isabel II), Teatro de la Zarzuela was founded by composer Francisco Asenjo Barbieri, the Gaztambide brothers, and a society of Spanish lyric authors to establish a permanent grand home for Spain’s national musical theatre against the aristocratic monopoly of Italian opera at the Teatro Real. Modelled on La Scala in an Italian horseshoe plan, the theatre was declared a National Monument of Spain. It has witnessed the world premieres of virtually all masterworks of the zarzuela repertoire, including Barbieri’s Pan y toros (1864) and El barberillo de Lavapiés (1874), Chapí’s La revoltosa (1897), and Bretón’s La verbena de la Paloma (1894).",
+    "historicPremieres": [
+      {
+        "title": "El barberillo de Lavapiés",
+        "composer": "Francisco Asenjo Barbieri",
+        "premiereYear": 1874,
+        "type": "WORLD_PREMIERE",
+        "patronageType": "COMMERCIAL_IMPRESARIO",
+        "details": "The pinnacle masterpiece of Spanish zarzuela grande."
+      },
+      {
+        "title": "Pan y toros",
+        "composer": "Francisco Asenjo Barbieri",
+        "premiereYear": 1864,
+        "type": "WORLD_PREMIERE",
+        "patronageType": "COMMERCIAL_IMPRESARIO",
+        "details": "Epic three-act historical zarzuela set in Goya-era Madrid."
+      },
+      {
+        "title": "La verbena de la Paloma",
+        "composer": "Tomás Bretón",
+        "premiereYear": 1894,
+        "type": "WORLD_PREMIERE",
+        "patronageType": "COMMERCIAL_IMPRESARIO",
+        "details": "Spain’s most beloved sainete lírico celebrating Madrid popular life."
+      }
+    ]
+  },
+  {
+    "id": "teatro-de-la-maestranza-seville",
+    "name": "Teatro de la Maestranza",
+    "city": "Seville",
+    "country": "Spain",
+    "region": "Europe",
+    "latitude": 37.3853,
+    "longitude": -5.9986,
+    "tier": 2,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "capacity": "1,800",
+    "inauguratedYear": 1991,
+    "architect": "Aurelio del Pozo / Luis Navalón",
+    "websiteUrl": "https://teatrodelamaestranza.es",
+    "buildingStatus": "ACTIVE_OPERA_HOUSE",
+    "historicSignificance": "Andalusia’s premier opera house located on the banks of the Guadalquivir in Seville—the legendary setting of over 100 classic operas.",
+    "description": "Inaugurated in 1991 for the Seville Expo ’92, Teatro de la Maestranza stands opposite the iconic Torre del Oro on the banks of the Guadalquivir River. Built behind the neoclassical 1854 artillery barracks facade (Real Maestranza de Artillería), this magnificent 1,800-seat lyric theatre finally gave Seville—the setting for more than 100 of history’s greatest operas, including Mozart’s Don Giovanni and Le nozze di Figaro, Bizet’s Carmen, Rossini’s Il barbiere di Siviglia, and Beethoven’s Fidelio—its own world-class opera house. Today, it hosts full operatic seasons, international co-productions, and the Real Orquesta Sinfónica de Sevilla.",
+    "historicPremieres": [
+      {
+        "title": "Inaugural Gala: Plácido Domingo & Victoria de los Ángeles",
+        "composer": "Mozart, Bizet, Rossini, Verdi",
+        "premiereYear": 1991,
+        "type": "INAUGURAL_STAGING",
+        "details": "Gala opening celebrating Seville’s incomparable status as opera’s favorite dramatic backdrop."
+      }
+    ]
+  },
+  {
+    "id": "real-coliseo-de-carlos-iii-escorial",
+    "name": "Real Coliseo de Carlos III",
+    "city": "San Lorenzo de El Escorial (Madrid)",
+    "country": "Spain",
+    "region": "Europe",
+    "latitude": 40.5894,
+    "longitude": -4.1478,
+    "tier": 5,
+    "venueType": "HISTORIC_GEM",
+    "capacity": "292",
+    "inauguratedYear": 1771,
+    "architect": "Jaime Marquet",
+    "websiteUrl": "https://comunidad.madrid/actividades/2017/real-coliseo-carlos-iii",
+    "buildingStatus": "HISTORIC_MONUMENT",
+    "historicSignificance": "The oldest covered royal court theatre in Spain (1771); designed for the Bourbon Court of King Charles III.",
+    "description": "Commissioned in 1770 by King Charles III of Spain and designed by French architect Jaime Marquet, the Real Coliseo de Carlos III in San Lorenzo de El Escorial opened in 1771 as Spain’s first enclosed, purpose-built royal court playhouse. Built to entertain the Spanish royal family and diplomatic corps during their autumn residencies at the Escorial Monastery, the theatre combines Bourbon neoclassical symmetry with an intimate, horseshoe Italianate interior with painted wooden ceilings. Restored in the 20th century, it is the only surviving 18th-century royal court theatre in Spain, hosting early music, baroque opera, and chamber recitals.",
+    "historicPremieres": [
+      {
+        "title": "La Briseida",
+        "composer": "Antonio Rodríguez de Hita",
+        "premiereYear": 1771,
+        "type": "WORLD_PREMIERE",
+        "patronageType": "ROYAL_COURT",
+        "details": "Royal court production staged for King Charles III and the royal household."
+      }
+    ]
+  },
+  {
+    "id": "grand-theatre-de-geneve",
+    "name": "Grand Théâtre de Genève",
+    "city": "Geneva",
+    "country": "Switzerland",
+    "region": "Europe",
+    "latitude": 46.2017,
+    "longitude": 6.1425,
+    "tier": 1,
+    "venueType": "MAJOR_OPERA_HOUSE",
+    "capacity": "1,488",
+    "inauguratedYear": 1879,
+    "architect": "Jacques-Élysée Goss",
+    "websiteUrl": "https://gtg.ch/en",
+    "buildingStatus": "ACTIVE_OPERA_HOUSE",
+    "historicSignificance": "French-speaking Switzerland’s premier Class-A opera house; fabled 19th-century Beaux-Arts temple of lyric drama.",
+    "description": "Inaugurated in 1879 with Rossini’s Guillaume Tell, the Grand Théâtre de Genève is French-speaking Switzerland’s largest and most prestigious opera house. Facing the Place Neuve with an opulent Beaux-Arts facade inspired by the Palais Garnier, the theatre was rebuilt after a devastating 1951 stage fire and reopened in 1962. Renowned for its world-class resident chorus, the Orchestre de la Suisse Romande in the pit, and daring international stage directors, it has hosted landmark productions and world premieres, including Frank Martin’s Monsieur de Pourceaugnac (1963) and major modern commissions.",
+    "historicPremieres": [
+      {
+        "title": "Monsieur de Pourceaugnac",
+        "composer": "Frank Martin",
+        "premiereYear": 1963,
+        "type": "WORLD_PREMIERE",
+        "patronageType": "CIVIC_STATE",
+        "details": "World premiere of the Swiss master’s comic opera based on Molière."
+      }
+    ]
+  },
+  {
+    "id": "holland-festival-amsterdam",
+    "name": "Holland Festival",
+    "city": "Amsterdam",
+    "country": "Netherlands",
+    "region": "Europe",
+    "latitude": 52.3762,
+    "longitude": 4.9080,
+    "tier": 3,
+    "venueType": "FESTIVAL",
+    "seasonalOnly": true,
+    "capacity": "2,000",
+    "inauguratedYear": 1947,
+    "architect": "Citywide (Muziekgebouw aan ’t IJ, Gashouder, ITA)",
+    "websiteUrl": "https://www.hollandfestival.nl/en",
+    "buildingStatus": "ACTIVE_OPERA_HOUSE",
+    "historicSignificance": "The Netherlands’ foremost international performing arts festival since 1947; landmark presenter of monumental avant-garde and contemporary opera.",
+    "description": "Founded in 1947, the Holland Festival is the oldest and largest performing arts festival in the Netherlands. Each June, Amsterdam transforms into a world hub for international opera, music theatre, and groundbreaking contemporary productions across landmark venues including the Muziekgebouw aan ’t IJ, the Gashouder, and ITA. The festival has premiered and presented legendary operatic masterworks by Pierre Boulez, Karlheinz Stockhausen (including aus LICHT), and John Adams, serving as the progressive artistic pulse of the Low Countries.",
+    "historicPremieres": [
+      {
+        "title": "aus LICHT (Stockhausen Cycle Staging)",
+        "composer": "Karlheinz Stockhausen",
+        "premiereYear": 2019,
+        "type": "HISTORIC_STAGING",
+        "patronageType": "FESTIVAL_COMMISSION",
+        "details": "Monumental 3-day marathon staging of Stockhausen’s operatic epic at the Gashouder."
+      }
+    ]
+  }
+
 ];
