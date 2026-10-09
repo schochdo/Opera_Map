@@ -159,28 +159,28 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
         {/* TAB 1: HISTORICAL CHRONICLE */}
         {activeTab === 'history' && (
           <div className="space-y-5 text-left font-garamond text-slate-200 leading-relaxed overflow-y-auto pr-1">
-            {/* Section 1: Florence & Greek Reboot */}
+            {/* Section 1: Florence & Renaissance Revival of Antiquity */}
             <div className="bg-[#20324c] border border-amber-500/40 rounded-xl p-4 md:p-5 space-y-3 shadow-md">
               <div className="flex items-center justify-between border-b border-amber-500/30 pb-2">
                 <h3 className="font-cinzel text-base md:text-lg font-bold text-amber-300 flex items-center gap-2">
                   <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/50 text-xs font-bold">1</span>
-                  Where It All Began: Florence and the Ancient Greek "Reboot"
+                  Renaissance Genesis: Florence and the Revival of Greek Drama
                 </h3>
                 <span className="text-xs font-cinzel text-amber-200/80 uppercase tracking-widest hidden sm:inline">Late 16th Century</span>
               </div>
 
               <div className="space-y-2.5 text-sm md:text-[15px]">
                 <p>
-                  While Claudio Monteverdi created opera's first enduring masterpiece in Mantua, the true birthplace of opera as an intellectual concept and experimental art form was <strong className="text-amber-200">Florence</strong>.
+                  Opera did not begin as commercial popular entertainment; it originated in late 16th-century <strong className="text-amber-200">Florence</strong> as an intellectual and aesthetic experiment among Renaissance humanists seeking to reconstruct the lost dramatic performance practices of ancient Greece. While Claudio Monteverdi's <em>L'Orfeo</em> (premiered in Mantua in 1607) is celebrated today as the earliest opera to achieve lasting dramatic mastery and remain continuously in the active international repertoire, the theoretical foundations and musical techniques that made it possible were forged decades earlier in the private intellectual circles of Florence.
                 </p>
                 <p>
-                  <strong className="text-amber-300">The Florentine Camerata (Late 1500s):</strong> A circle of humanists, poets, and musicians began gathering at the palazzo of Count Giovanni de' Bardi. Their objective was not to invent modern commercial musical theatre; their goal was to <em className="text-amber-100">recreate Ancient Greek tragedy</em>.
+                  <strong className="text-amber-300">The Florentine Camerata (c. 1573–1587):</strong> An informal academy of humanist scholars, poets, and musicians began gathering at the palace of Count Giovanni de' Bardi. Known as the <em className="text-amber-100">Camerata de' Bardi</em>, their goal was not to invent an entirely new genre, but to recover the emotional catharsis of classical Greek tragedy, which ancient treatises documented had been sung or intoned rather than spoken.
                 </p>
                 <p>
-                  <strong className="text-amber-300">The Classical Theory & Musical Invention:</strong> Because ancient Greek musical notation was largely indecipherable from surviving fragments, the Florentines relied on philosophical treatises by Plato, Aristotle, and Aristoxenus, which documented that Greek drama had been sung or chanted with natural speech inflections. Convinced that dense Renaissance polyphony (where multiple overlapping voices sang differing words at the same time) rendered poetry unintelligible, <strong className="text-amber-200">Vincenzo Galilei</strong> (lutenist, theorist, and father of astronomer Galileo Galilei) championed <em className="text-amber-100">monody</em>: a single melodic vocal line declaimed over simple chordal accompaniment. In 1582 at Palazzo Bardi, Galilei performed his monodic setting of Dante's <em>Il Conte Ugolino</em>, providing the aesthetic blueprint for operatic recitative.
+                  <strong className="text-amber-300">Classical Theory & The Invention of Monody:</strong> Because surviving ancient Greek musical notation was fragmentary and indecipherable, the Florentines studied philosophical texts by Plato, Aristotle, and musical theorist Aristoxenus. Convinced that dense Renaissance polyphony—where multiple vocal lines overlapped simultaneously—muddled poetic text and obscured its meaning, lutenist and theorist <strong className="text-amber-200">Vincenzo Galilei</strong> (father of astronomer Galileo Galilei) championed <em className="text-amber-100">monody</em>: a single singing voice declaiming verse with natural speech inflections over simple chordal accompaniment. By mirroring the natural contours of speech, monody established the foundational aesthetic for operatic <em className="text-amber-100">recitative</em>.
                 </p>
                 <p>
-                  <strong className="text-amber-300">The First Staged Operas:</strong> When Count Bardi relocated to Rome in 1592, leadership transitioned to wealthy nobleman Jacopo Corsi. At <strong className="text-amber-200">Palazzo Corsi-Tornabuoni</strong> during Carnival 1598, Corsi, composer Jacopo Peri, and poet Ottavio Rinuccini staged <em>Dafne</em>—the first opera (<em>favola in musica</em>) in world history. Two years later, on 6 October 1600 at the Medici grand ducal <strong className="text-amber-200">Palazzo Pitti</strong>, Peri unveiled <em>Euridice</em> for the royal wedding of Marie de' Medici to King Henry IV of France, leaving us the earliest complete surviving opera score.
+                  <strong className="text-amber-300">The First Staged Operas (Dafne & Euridice):</strong> When Count Bardi relocated to Rome in 1592, leadership transitioned to wealthy nobleman Jacopo Corsi. At <strong className="text-amber-200">Palazzo Corsi-Tornabuoni</strong> during Carnival 1598, Corsi, composer Jacopo Peri, and poet Ottavio Rinuccini staged <em>Dafne</em>—the first sung dramatic play (<em>favola in musica</em>) in world history. While <em>Dafne</em>'s score is largely lost, Peri and Rinuccini followed it on 6 October 1600 at the Medici grand ducal <strong className="text-amber-200">Palazzo Pitti</strong> with <em>Euridice</em>, composed for the royal wedding of Marie de' Medici to King Henry IV of France. <em>Euridice</em> survives as the world's earliest complete operatic score, demonstrating to visiting European courts the immense artistic and dynastic prestige of continuous musical drama.
                 </p>
               </div>
 
@@ -192,28 +192,28 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
               </div>
             </div>
 
-            {/* Section 2: Mantua & Political Fragmentation */}
+            {/* Section 2: Mantua & Princely Rivalry */}
             <div className="bg-[#20324c] border border-amber-500/40 rounded-xl p-4 md:p-5 space-y-3 shadow-md">
               <div className="flex items-center justify-between border-b border-amber-500/30 pb-2">
                 <h3 className="font-cinzel text-base md:text-lg font-bold text-amber-300 flex items-center gap-2">
                   <span className="flex h-6 w-6 items-center justify-center rounded-full bg-amber-500/20 text-amber-300 border border-amber-500/50 text-xs font-bold">2</span>
-                  Mantua and the Role of Political Fragmentation
+                  From Experiment to Masterpiece: Mantua, Princely Rivalry, and Monteverdi
                 </h3>
                 <span className="text-xs font-cinzel text-amber-200/80 uppercase tracking-widest hidden sm:inline">1600s–1610s</span>
               </div>
 
               <div className="space-y-2.5 text-sm md:text-[15px]">
                 <p>
-                  Political fragmentation—specifically the <strong className="text-amber-200">disunity of Italy</strong>—served as the primary competitive engine of early opera.
+                  Following the Medici wedding spectacles in Florence, opera quickly transformed from an academic curiosity into the premier instrument of cultural competition among Italy's fragmented northern courts.
                 </p>
                 <p>
-                  <strong className="text-amber-300">The Court Prestige Race:</strong> Italy was not a unified nation; it was a fragmented patchwork of independent duchies, republics, and papal territories (Mantua, Florence, Ferrara, Milan, Modena). Because regional sovereigns could not match vast continental powers in military size, they competed aggressively for international prestige through <em className="text-amber-100">culture, architectural splendor, and theatrical spectacle</em>.
+                  <strong className="text-amber-300">The Court Prestige Race:</strong> In the early 17th century, Italy was not a unified nation, but a patchwork of competing independent duchies, republics, and papal territories (such as Mantua, Florence, Ferrara, Milan, and Modena). Unable to match vast European empires in military size, regional princes competed aggressively for continental prestige through architectural splendor, humanist culture, and theatrical display.
                 </p>
                 <p>
-                  <strong className="text-amber-300">Mantua and the Gonzaga Dynasty:</strong> Duke Vincenzo I Gonzaga and his sons (Prince Francesco and Cardinal Ferdinando) resolved to eclipse the Medici of Florence and the Este of Ferrara. On 24 February 1607, inside the ducal chambers of <strong className="text-amber-200">Palazzo Ducale di Mantova</strong> for the noble Accademia degli Invaghiti, court maestro <strong className="text-amber-200">Claudio Monteverdi</strong> premiered <em>L'Orfeo</em>. Monteverdi transformed intellectual recitative into fully developed theatrical drama with rich orchestral colors, expressive madrigalian choruses, and psychological depth.
+                  <strong className="text-amber-300">Mantua and Claudio Monteverdi's L'Orfeo (1607):</strong> Determined to eclipse the Medici of Florence and the Este of Ferrara, Duke Vincenzo I Gonzaga of Mantua and his sons commissioned their court maestro, <strong className="text-amber-200">Claudio Monteverdi</strong>, to compose a musical drama for the noble Accademia degli Invaghiti. On 24 February 1607, inside the ducal apartments of <strong className="text-amber-200">Palazzo Ducale di Mantova</strong>, Monteverdi premiered <em>L'Orfeo</em>. Where Florence's earlier experiments had relied on austere, speech-like recitation, Monteverdi expanded the musical canvas: he marshaled a colorful 40-piece instrumental ensemble, integrated rich madrigalian choruses and dynamic ritornellos, and infused the characters with genuine psychological depth. <em>L'Orfeo</em> became opera's first enduring, fully realized masterwork—transforming an intellectual experiment into a thrilling, complete theatrical art form.
                 </p>
                 <p>
-                  <strong className="text-amber-300">Strict Aristocratic Exclusivity:</strong> Early court operas were private, invite-only spectacles funded entirely by the sovereign's treasury. Staged in palace chambers for invited aristocrats, resident scholars, and visiting ambassadors, the general public was strictly excluded.
+                  <strong className="text-amber-300">Strict Aristocratic Exclusivity:</strong> At this foundational stage, opera remained an aristocratic court monopoly funded entirely by the sovereign's treasury. Staged in private palace chambers exclusively for invited nobility, visiting ambassadors, and resident intellectuals, the general public had no access to these performances.
                 </p>
               </div>
 
@@ -235,7 +235,7 @@ export const AtlasInfoModal: React.FC<AtlasInfoModalProps> = ({
 
               <div className="space-y-2.5 text-sm md:text-[15px]">
                 <p>
-                  While court opera was an exclusive loss-leader funded by dynastic treasuries, <strong className="text-amber-200">Venice</strong> radically revolutionized the institution.
+                  While early court opera was a private, deficit-funded spectacle maintained for dynastic prestige, <strong className="text-amber-200">Venice</strong> fundamentally revolutionized the art form by turning it into a public commercial enterprise.
                 </p>
                 <p>
                   <strong className="text-amber-300">Teatro San Cassiano (1637):</strong> In 1637, the patrician Tron family opened <strong className="text-amber-200">Teatro San Cassiano</strong> as the world's first public opera house where anyone who could purchase an admission ticket could enter.
