@@ -70,6 +70,8 @@ export const HISTORICAL_ERAS: EraDefinition[] = [
 ];
 
 export function getHouseEra(house: OperaHouse): HistoricalEra {
+  // Always prefer an explicit override — never guess if the curator has already decided
+  if (house.buildingEra && house.buildingEra !== 'ALL') return house.buildingEra;
   const y = house.inauguratedYear;
   if (!y) return 'ALL';
   if (y < 500) return 'ANTIQUITY';
@@ -87,7 +89,8 @@ export type StyleCategory =
   | 'NEOCLASSICAL_BEAUXARTS'
   | 'ART_NOUVEAU_DECO'
   | 'MODERNIST_POSTWAR'
-  | 'CONTEMPORARY_TENTS';
+  | 'CONTEMPORARY_TENTS'
+  | 'FRONTIER_LEGACY_HOUSE';
 
 export interface StyleDefinition {
   id: StyleCategory;
@@ -100,12 +103,12 @@ export const ARCHITECTURAL_STYLES: StyleDefinition[] = [
   {
     id: 'ANCIENT_AMPHITHEATER',
     label: 'Ancient Roman & Greek Amphitheaters',
-    description: 'Preserved classical stone amphitheatres & outdoor antiquities',
+    description: 'Preserved classical stone amphitheatres & outdoor antiquities (Verona, Orange, Taormina, Jerash)',
   },
   {
     id: 'BAROQUE_ROCOCO',
     label: 'Renaissance, Baroque & Rococo',
-    description: 'Intact court theatres, gilded horseshoe boxes & trompe-l’œil',
+    description: "Intact court theatres, gilded horseshoe boxes & trompe-l'œil",
   },
   {
     id: 'NEOCLASSICAL_BEAUXARTS',
@@ -127,15 +130,26 @@ export const ARCHITECTURAL_STYLES: StyleDefinition[] = [
     label: 'Contemporary Tents, Pavilions & Quarries',
     description: 'Acoustic fabric tents, open-air summer sheds & landscape arenas',
   },
+  {
+    id: 'FRONTIER_LEGACY_HOUSE',
+    label: 'Frontier & Boomtown Opera Houses',
+    description: 'Mining-era and boomtown opera houses built to bring culture to the frontier — from Colorado silver towns to the Amazon rubber boom',
+  },
 ];
 
 export function getHouseStyleCategory(house: OperaHouse): StyleCategory {
+  // Always prefer an explicit override — never guess if the curator has already decided
+  if (house.venueCategory && house.venueCategory !== 'ALL') return house.venueCategory;
+
   const s = (house.architecturalStyle || '').toLowerCase();
   const y = house.inauguratedYear || 2000;
 
-  if (y < 500 || ['roman', 'greek', 'amphitheater', 'amphitheatre', 'hellenistic', 'scaenae'].some(k => s.includes(k))) {
+  // Only classify as ancient amphitheater if actually built in antiquity
+  if (y < 500 || (y < 600 && ['roman', 'greek', 'hellenistic', 'scaenae'].some(k => s.includes(k)))) {
     return 'ANCIENT_AMPHITHEATER';
   }
+  // Note: 'amphitheater'/'amphitheatre' alone is NOT sufficient — many modern venues use
+  // amphitheater-style seating without being ancient structures.
   if (['art nouveau', 'art deco', 'jugendstil', 'modernisme', 'liberty', 'prairie-style', 'mission'].some(k => s.includes(k))) {
     return 'ART_NOUVEAU_DECO';
   }
@@ -145,12 +159,13 @@ export function getHouseStyleCategory(house: OperaHouse): StyleCategory {
   if (['neoclassical', 'beaux-arts', 'beaux arts', 'neo-renaissance', 'neo-baroque', 'eclectic', 'historicist', 'victorian', 'gothic', 'moorish', 'italianate', 'gilded'].some(k => s.includes(k))) {
     return 'NEOCLASSICAL_BEAUXARTS';
   }
-  if (['tensile', 'tent', 'canopy', 'quarry', 'timber', 'contemporary', 'deconstructivist', 'high-tech', 'variable-acoustic'].some(k => s.includes(k))) {
+  if (['tensile', 'tent', 'canopy', 'quarry', 'contemporary', 'deconstructivist', 'high-tech', 'variable-acoustic'].some(k => s.includes(k))) {
     return 'CONTEMPORARY_TENTS';
   }
   if (['modernist', 'brutalist', 'structuralist', 'mid-century', 'post-war', 'functionalist', 'postmodern'].some(k => s.includes(k))) {
     return 'MODERNIST_POSTWAR';
   }
+  // timber alone used to trigger CONTEMPORARY_TENTS but timber-frame is used on many historic houses — remove it
   return 'NEOCLASSICAL_BEAUXARTS';
 }
 

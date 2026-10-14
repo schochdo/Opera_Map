@@ -53,6 +53,11 @@ export interface OperaHouse {
   predecessorVenue?: string;  // Predecessor theatre (e.g. "Khedivial Opera House (1869–1971)")
   successorVenue?: string;    // Successor venue if demolished (e.g. "Burgtheater on the Ringstraße (1888)")
 
+  // Explicit classification overrides — always win over inferred values.
+  // Set these to prevent misclassification from keyword-matching on prose text.
+  venueCategory?: import('../utils/filterHelpers').StyleCategory;
+  buildingEra?: import('../utils/filterHelpers').HistoricalEra;
+
   // Verified Architectural & Structural Specs
   inauguratedYear?: number;
   architect?: string;

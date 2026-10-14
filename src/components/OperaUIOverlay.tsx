@@ -198,6 +198,7 @@ export const OperaUIOverlay: React.FC = () => {
       ART_NOUVEAU_DECO: 0,
       MODERNIST_POSTWAR: 0,
       CONTEMPORARY_TENTS: 0,
+      FRONTIER_LEGACY_HOUSE: 0,
     };
     houses.forEach((h) => {
       if (!h) return;

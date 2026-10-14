@@ -30,67 +30,67 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,030 seats",
     "historicSignificance": "Birthplace of Italian grand opera tradition; premiere venue for Verdi and Puccini masterpieces.",
     "historicPremieres": [
-      {
-        "title": "Nabucco",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1842,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Eugenio Cavallini",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Verdi’s breakthrough triumph; ignited the Italian Risorgimento movement with 'Va, pensiero'.",
-        "commissionContext": "Impresario Bartolomeo Merelli convinced Verdi to compose the libretto after personal family tragedy. Ignited the Italian Risorgimento with 'Va, pensiero'."
-      },
-      {
-        "title": "Otello",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1887,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Franco Faccio",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Verdi’s late Shakespearean masterpiece, conducted by Franco Faccio with young Arturo Toscanini in the cello section.",
-        "commissionContext": "Engineered by music publisher Giulio Ricordi and librettist Arrigo Boito, luring Verdi out of retirement for a monumental commercial and artistic triumph."
-      },
-      {
-        "title": "Falstaff",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1893,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Edoardo Mascheroni",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Verdi’s crowning comic testament, starring Victor Maurel in the title role.",
-        "commissionContext": "Verdi's comic farewell to the stage, produced with publisher Giulio Ricordi."
-      },
-      {
-        "title": "Madama Butterfly",
-        "composer": "Giacomo Puccini",
-        "premiereYear": 1904,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Cleofonte Campanini",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Famed stormy premiere starring Rosina Storchio, conducted by Cleofonte Campanini.",
-        "commissionContext": "Premiered under publisher Ricordi's management; rival factions staged an opening-night fiasco, prompting Puccini to withdraw and revise it for Brescia."
-      },
-      {
-        "title": "Turandot",
-        "composer": "Giacomo Puccini",
-        "premiereYear": 1926,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Arturo Toscanini",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Conducted by Arturo Toscanini, who lowered his baton where Puccini ceased writing before his death.",
-        "commissionContext": "Arturo Toscanini famously halted the premiere after Liù's death scene, turning to the audience: 'Here the opera ends, because at this point the Maestro died.' Posthumously finished by Franco Alfano."
-      },
-      {
-        "title": "Norma",
-        "composer": "Vincenzo Bellini",
-        "premiereYear": 1831,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Alessandro Rolla",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Bel Canto tragic masterpiece featuring the immortal 'Casta diva'.",
-        "commissionContext": "Commissioned by the box office administration of La Scala for the 1831–1832 Carnival season starring Giuditta Pasta."
-      }
-    ]
+            {
+                  "title": "Norma",
+                  "composer": "Vincenzo Bellini",
+                  "premiereYear": 1831,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Alessandro Rolla",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Bel Canto tragic masterpiece featuring the immortal 'Casta diva'.",
+                  "commissionContext": "Commissioned by the box office administration of La Scala for the 1831–1832 Carnival season starring Giuditta Pasta."
+            },
+            {
+                  "title": "Nabucco",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1842,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Eugenio Cavallini",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Verdi’s breakthrough triumph; ignited the Italian Risorgimento movement with 'Va, pensiero'.",
+                  "commissionContext": "Impresario Bartolomeo Merelli convinced Verdi to compose the libretto after personal family tragedy. Ignited the Italian Risorgimento with 'Va, pensiero'."
+            },
+            {
+                  "title": "Otello",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1887,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Franco Faccio",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Verdi’s late Shakespearean masterpiece, conducted by Franco Faccio with young Arturo Toscanini in the cello section.",
+                  "commissionContext": "Engineered by music publisher Giulio Ricordi and librettist Arrigo Boito, luring Verdi out of retirement for a monumental commercial and artistic triumph."
+            },
+            {
+                  "title": "Falstaff",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1893,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Edoardo Mascheroni",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Verdi’s crowning comic testament, starring Victor Maurel in the title role.",
+                  "commissionContext": "Verdi's comic farewell to the stage, produced with publisher Giulio Ricordi."
+            },
+            {
+                  "title": "Madama Butterfly",
+                  "composer": "Giacomo Puccini",
+                  "premiereYear": 1904,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Cleofonte Campanini",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Famed stormy premiere starring Rosina Storchio, conducted by Cleofonte Campanini.",
+                  "commissionContext": "Premiered under publisher Ricordi's management; rival factions staged an opening-night fiasco, prompting Puccini to withdraw and revise it for Brescia."
+            },
+            {
+                  "title": "Turandot",
+                  "composer": "Giacomo Puccini",
+                  "premiereYear": 1926,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Arturo Toscanini",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Conducted by Arturo Toscanini, who lowered his baton where Puccini ceased writing before his death.",
+                  "commissionContext": "Arturo Toscanini famously halted the premiere after Liù's death scene, turning to the audience: 'Here the opera ends, because at this point the Maestro died.' Posthumously finished by Franco Alfano."
+            }
+      ]
   },
   {
     "id": "bayreuther-festspielhaus",
@@ -108,30 +108,31 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "inauguratedYear": 1876,
     "architect": "Otto Brückwald & Richard Wagner",
     "architecturalStyle": "Greco-Roman Amphitheatre with Timber Acoustic Resonators",
+    "venueCategory": "MODERNIST_POSTWAR",
     "capacity": "1,937 seats",
     "historicSignificance": "Sacred pilgrimage site of the operatic world; the only theatre consecrated to a single composer’s canon.",
     "historicPremieres": [
-      {
-        "title": "Der Ring des Nibelungen (Complete Cycle)",
-        "composer": "Richard Wagner",
-        "premiereYear": 1876,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Hans Richter",
-        "patronageType": "PRIVATE_BENEFACTOR",
-        "details": "Inaugural festival attended by Franz Liszt, Pyotr Tchaikovsky, Edvard Grieg, and Friedrich Nietzsche.",
-        "commissionContext": "Wagner's revolutionary conception of an autonomous festival free from commercial repertoire; funded by private subscription certificates from Wagner Societies worldwide and backed by a royal credit guarantee from King Ludwig II of Bavaria."
-      },
-      {
-        "title": "Parsifal",
-        "composer": "Richard Wagner",
-        "premiereYear": 1882,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Hermann Levi",
-        "patronageType": "PRIVATE_BENEFACTOR",
-        "details": "Wagner’s final stage work, composed explicitly for the acoustic resonance of the Bayreuth auditorium.",
-        "commissionContext": "Wagner's final masterpiece ('A Festival Play for the Consecration of the Stage'), composed exclusively for the unique acoustic architecture of Bayreuth."
-      }
-    ]
+            {
+                  "title": "Der Ring des Nibelungen (Complete Cycle)",
+                  "composer": "Richard Wagner",
+                  "premiereYear": 1876,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Hans Richter",
+                  "patronageType": "PRIVATE_BENEFACTOR",
+                  "details": "Inaugural festival attended by Franz Liszt, Pyotr Tchaikovsky, Edvard Grieg, and Friedrich Nietzsche.",
+                  "commissionContext": "Wagner's revolutionary conception of an autonomous festival free from commercial repertoire; funded by private subscription certificates from Wagner Societies worldwide and backed by a royal credit guarantee from King Ludwig II of Bavaria."
+            },
+            {
+                  "title": "Parsifal",
+                  "composer": "Richard Wagner",
+                  "premiereYear": 1882,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Hermann Levi",
+                  "patronageType": "PRIVATE_BENEFACTOR",
+                  "details": "Wagner’s final stage work, composed explicitly for the acoustic resonance of the Bayreuth auditorium.",
+                  "commissionContext": "Wagner's final masterpiece ('A Festival Play for the Consecration of the Stage'), composed exclusively for the unique acoustic architecture of Bayreuth."
+            }
+      ]
   },
   {
     "id": "wiener-staatsoper",
@@ -151,27 +152,27 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,709 seats (+567 standing)",
     "historicSignificance": "Heart of Central European music; led historically by Gustav Mahler, Richard Strauss, and Herbert von Karajan.",
     "historicPremieres": [
-      {
-        "title": "Werther",
-        "composer": "Jules Massenet",
-        "premiereYear": 1892,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Wilhelm Jahn",
-        "patronageType": "ROYAL_COURT",
-        "details": "World premiere performed in German translation (Werther) starring Ernest van Dyck.",
-        "commissionContext": "Produced at the Imperial Court Opera (K.K. Hofoper) after the Paris Opéra-Comique rejected it as too gloomy."
-      },
-      {
-        "title": "Die Frau ohne Schatten",
-        "composer": "Richard Strauss",
-        "premiereYear": 1919,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Franz Schalk",
-        "patronageType": "CIVIC_STATE",
-        "details": "Conducted by Franz Schalk, starring Lotte Lehmann as the Dyer’s Wife.",
-        "commissionContext": "First major premiere at the Vienna State Opera after the fall of the Habsburg Monarchy, under the First Austrian Republic."
-      }
-    ]
+            {
+                  "title": "Werther",
+                  "composer": "Jules Massenet",
+                  "premiereYear": 1892,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Wilhelm Jahn",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "World premiere performed in German translation (Werther) starring Ernest van Dyck.",
+                  "commissionContext": "Produced at the Imperial Court Opera (K.K. Hofoper) after the Paris Opéra-Comique rejected it as too gloomy."
+            },
+            {
+                  "title": "Die Frau ohne Schatten",
+                  "composer": "Richard Strauss",
+                  "premiereYear": 1919,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Franz Schalk",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "Conducted by Franz Schalk, starring Lotte Lehmann as the Dyer’s Wife.",
+                  "commissionContext": "First major premiere at the Vienna State Opera after the fall of the Habsburg Monarchy, under the First Austrian Republic."
+            }
+      ]
   },
   {
     "id": "metropolitan-opera",
@@ -191,27 +192,27 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "3,850 seats",
     "historicSignificance": "Premier opera institution of the Americas; budget of ~$300M, home to the greatest vocal stars for over a century.",
     "historicPremieres": [
-      {
-        "title": "La Fanciulla del West",
-        "composer": "Giacomo Puccini",
-        "premiereYear": 1910,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Arturo Toscanini",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Conducted by Arturo Toscanini, starring Enrico Caruso and Emmy Destinn.",
-        "commissionContext": "Commissioned directly by Met General Manager Giulio Gatti-Casazza for the Met subscription audience; Puccini supervised rehearsals in New York starring Enrico Caruso."
-      },
-      {
-        "title": "Il trittico (Il tabarro, Suor Angelica, Gianni Schicchi)",
-        "composer": "Giacomo Puccini",
-        "premiereYear": 1918,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Roberto Moranzoni",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "World premiere of Puccini's three one-act operas.",
-        "commissionContext": "World premiere of Puccini's triptych under Met box-office contract during wartime European travel restrictions."
-      }
-    ]
+            {
+                  "title": "La Fanciulla del West",
+                  "composer": "Giacomo Puccini",
+                  "premiereYear": 1910,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Arturo Toscanini",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Conducted by Arturo Toscanini, starring Enrico Caruso and Emmy Destinn.",
+                  "commissionContext": "Commissioned directly by Met General Manager Giulio Gatti-Casazza for the Met subscription audience; Puccini supervised rehearsals in New York starring Enrico Caruso."
+            },
+            {
+                  "title": "Il trittico (Il tabarro, Suor Angelica, Gianni Schicchi)",
+                  "composer": "Giacomo Puccini",
+                  "premiereYear": 1918,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Roberto Moranzoni",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "World premiere of Puccini's three one-act operas.",
+                  "commissionContext": "World premiere of Puccini's triptych under Met box-office contract during wartime European travel restrictions."
+            }
+      ]
   },
   {
     "id": "new-york-city-opera",
@@ -231,14 +232,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,586 seats",
     "historicSignificance": "America's premier laboratory for American opera and emerging talent; launched Beverly Sills into global superstardom and gave world premieres to dozens of American masterworks.",
     "historicPremieres": [
-      {
-        "title": "The Crucible",
-        "composer": "Robert Ward",
-        "premiereYear": 1961,
-        "type": "WORLD_PREMIERE",
-        "details": "Based on Arthur Miller's play; won the 1962 Pulitzer Prize for Music."
-      }
-    ]
+            {
+                  "title": "The Crucible",
+                  "composer": "Robert Ward",
+                  "premiereYear": 1961,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Based on Arthur Miller's play; won the 1962 Pulitzer Prize for Music."
+            }
+      ]
   },
   {
     "id": "carnegie-hall-opera",
@@ -255,24 +256,25 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "inauguratedYear": 1891,
     "architect": "William Burnet Tuthill",
     "architecturalStyle": "Italian Renaissance Revival in Roman Brick and Terracotta",
+    "venueCategory": "MODERNIST_POSTWAR",
     "capacity": "2,804 seats",
     "historicSignificance": "World benchmark for vocal and orchestral acoustics; site of legendary opera debuts and Toscanini's landmark NBC opera recordings.",
     "historicPremieres": [
-      {
-        "title": "The Medium & The Telephone",
-        "composer": "Gian Carlo Menotti",
-        "premiereYear": 1947,
-        "type": "WORLD_PREMIERE",
-        "details": "Chamber opera world premiere sensation staged at Carnegie Hall (Weill Recital Hall)."
-      },
-      {
-        "title": "The Good Soldier Schweik",
-        "composer": "Robert Kurka",
-        "premiereYear": 1958,
-        "type": "WORLD_PREMIERE",
-        "details": "Satirical anti-war opera world premiere presented by New York City Opera at Carnegie Hall."
-      }
-    ]
+            {
+                  "title": "The Medium & The Telephone",
+                  "composer": "Gian Carlo Menotti",
+                  "premiereYear": 1947,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Chamber opera world premiere sensation staged at Carnegie Hall (Weill Recital Hall)."
+            },
+            {
+                  "title": "The Good Soldier Schweik",
+                  "composer": "Robert Kurka",
+                  "premiereYear": 1958,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Satirical anti-war opera world premiere presented by New York City Opera at Carnegie Hall."
+            }
+      ]
   },
   {
     "id": "royal-opera-house",
@@ -292,21 +294,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,256 seats",
     "historicSignificance": "National opera theatre of Great Britain; historic site of Handel’s earliest London opera seasons and modern world premieres.",
     "historicPremieres": [
-      {
-        "title": "Billy Budd",
-        "composer": "Benjamin Britten",
-        "premiereYear": 1951,
-        "type": "WORLD_PREMIERE",
-        "details": "Conducted by Benjamin Britten, libretto by E.M. Forster and Eric Crozier starring Peter Pears."
-      },
-      {
-        "title": "The Midsummer Marriage",
-        "composer": "Michael Tippett",
-        "premiereYear": 1955,
-        "type": "WORLD_PREMIERE",
-        "details": "Conducted by John Pritchard with set designs by Barbara Hepworth starring Joan Sutherland."
-      }
-    ]
+            {
+                  "title": "Billy Budd",
+                  "composer": "Benjamin Britten",
+                  "premiereYear": 1951,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Conducted by Benjamin Britten, libretto by E.M. Forster and Eric Crozier starring Peter Pears."
+            },
+            {
+                  "title": "The Midsummer Marriage",
+                  "composer": "Michael Tippett",
+                  "premiereYear": 1955,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Conducted by John Pritchard with set designs by Barbara Hepworth starring Joan Sutherland."
+            }
+      ]
   },
   {
     "id": "palais-garnier",
@@ -326,47 +328,47 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,979 seats",
     "historicSignificance": "The ultimate symbol of Parisian Belle Époque grandeur and historical seat of the Académie Royale de Musique.",
     "historicPremieres": [
-      {
-        "title": "Don Carlos",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1867,
-        "type": "WORLD_PREMIERE",
-        "conductor": "François George-Hainl",
-        "patronageType": "ROYAL_COURT",
-        "details": "Monumental 5-act French Grand Opera premiere at the Paris Opéra (Salle Le Peletier) with ballet.",
-        "commissionContext": "Commissioned by the Paris Opéra under the imperial patronage of Emperor Napoleon III for the 1867 Paris Universal Exposition, demanding an immense grand opera with five acts, massive choruses, and an obligatory third-act ballet."
-      },
-      {
-        "title": "Guillaume Tell",
-        "composer": "Gioachino Rossini",
-        "premiereYear": 1829,
-        "type": "WORLD_PREMIERE",
-        "conductor": "François-Antoine Habeneck",
-        "patronageType": "ROYAL_COURT",
-        "details": "Rossini's final operatic masterpiece and the founding pinnacle of French Grand Opera.",
-        "commissionContext": "Commissioned under the royal Bourbon Restoration court of King Charles X of France with a lifelong royal pension granted to Rossini."
-      },
-      {
-        "title": "Le Cid",
-        "composer": "Jules Massenet",
-        "premiereYear": 1885,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Ernest Altès",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Grand opera spectacle starring Jean de Reszke in the title role.",
-        "commissionContext": "State-subsidized commercial production produced by the Paris Opéra national theatre administration."
-      },
-      {
-        "title": "Thaïs",
-        "composer": "Jules Massenet",
-        "premiereYear": 1894,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Paul Taffanel",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Composed for and starring American soprano Sybil Sanderson; featuring the famous 'Méditation'.",
-        "commissionContext": "Commissioned for the Paris Opéra starring American soprano Sybil Sanderson."
-      }
-    ],
+            {
+                  "title": "Guillaume Tell",
+                  "composer": "Gioachino Rossini",
+                  "premiereYear": 1829,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "François-Antoine Habeneck",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Rossini's final operatic masterpiece and the founding pinnacle of French Grand Opera.",
+                  "commissionContext": "Commissioned under the royal Bourbon Restoration court of King Charles X of France with a lifelong royal pension granted to Rossini."
+            },
+            {
+                  "title": "Don Carlos",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1867,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "François George-Hainl",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Monumental 5-act French Grand Opera premiere at the Paris Opéra (Salle Le Peletier) with ballet.",
+                  "commissionContext": "Commissioned by the Paris Opéra under the imperial patronage of Emperor Napoleon III for the 1867 Paris Universal Exposition, demanding an immense grand opera with five acts, massive choruses, and an obligatory third-act ballet."
+            },
+            {
+                  "title": "Le Cid",
+                  "composer": "Jules Massenet",
+                  "premiereYear": 1885,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Ernest Altès",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Grand opera spectacle starring Jean de Reszke in the title role.",
+                  "commissionContext": "State-subsidized commercial production produced by the Paris Opéra national theatre administration."
+            },
+            {
+                  "title": "Thaïs",
+                  "composer": "Jules Massenet",
+                  "premiereYear": 1894,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Paul Taffanel",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Composed for and starring American soprano Sybil Sanderson; featuring the famous 'Méditation'.",
+                  "commissionContext": "Commissioned for the Paris Opéra starring American soprano Sybil Sanderson."
+            }
+      ],
     "predecessorVenue": "Salle Le Peletier (Paris Opéra 1821–1873)",
     "historicalLineage": "Direct successor to the Salle Le Peletier, the Paris Opéra's main home from 1821 until destroyed by fire in October 1873. Following the 1858 assassination attempt against Emperor Napoleon III outside the Salle Le Peletier, the Emperor commissioned Charles Garnier to design the monumentally secure and opulent Palais Garnier."
   },
@@ -442,14 +444,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,289 seats (Springer Auditorium; historic 3,518)",
     "historicSignificance": "America’s second-oldest opera institution; pioneer of American summer opera seasons with the Cincinnati Symphony.",
     "historicPremieres": [
-      {
-        "title": "Fellow Travelers",
-        "composer": "Gregory Spears",
-        "premiereYear": 2016,
-        "type": "WORLD_PREMIERE",
-        "details": "Critically acclaimed world premiere opera based on Thomas Mallon’s novel on the 1950s Lavender Scare."
-      }
-    ]
+            {
+                  "title": "Fellow Travelers",
+                  "composer": "Gregory Spears",
+                  "premiereYear": 2016,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Critically acclaimed world premiere opera based on Thomas Mallon’s novel on the 1950s Lavender Scare."
+            }
+      ]
   },
   {
     "id": "lyric-opera-chicago",
@@ -469,14 +471,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "3,563 seats",
     "historicSignificance": "One of the powerhouse Big Three opera companies of the United States alongside the Met and San Francisco.",
     "historicPremieres": [
-      {
-        "title": "A Streetcar Named Desire",
-        "composer": "André Previn",
-        "premiereYear": 1998,
-        "type": "WORLD_PREMIERE",
-        "details": "Historic world premiere starring Renée Fleming as Blanche DuBois and Rodney Gilfry as Stanley Kowalski."
-      }
-    ]
+            {
+                  "title": "A Streetcar Named Desire",
+                  "composer": "André Previn",
+                  "premiereYear": 1998,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Historic world premiere starring Renée Fleming as Blanche DuBois and Rodney Gilfry as Stanley Kowalski."
+            }
+      ]
   },
   {
     "id": "san-francisco-opera",
@@ -496,21 +498,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "3,146 seats",
     "historicSignificance": "Third oldest major opera company in the US; premier American gateway for European stars and new American masterworks.",
     "historicPremieres": [
-      {
-        "title": "Appomattox",
-        "composer": "Philip Glass",
-        "premiereYear": 2007,
-        "type": "WORLD_PREMIERE",
-        "details": "Civil War opera commissioned by SFO, conducted by Dennis Russell Davies."
-      },
-      {
-        "title": "Doctor Atomic",
-        "composer": "John Adams",
-        "premiereYear": 2005,
-        "type": "WORLD_PREMIERE",
-        "details": "Historical drama on J. Robert Oppenheimer and the Manhattan Project, directed by Peter Sellars."
-      }
-    ]
+            {
+                  "title": "Doctor Atomic",
+                  "composer": "John Adams",
+                  "premiereYear": 2005,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Historical drama on J. Robert Oppenheimer and the Manhattan Project, directed by Peter Sellars."
+            },
+            {
+                  "title": "Appomattox",
+                  "composer": "Philip Glass",
+                  "premiereYear": 2007,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Civil War opera commissioned by SFO, conducted by Dennis Russell Davies."
+            }
+      ]
   },
   {
     "id": "bayerische-staatsoper",
@@ -530,47 +532,47 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,101 seats",
     "historicSignificance": "Premier German opera palace; premiered four fundamental Wagner masterworks commissioned by King Ludwig II.",
     "historicPremieres": [
-      {
-        "title": "Tristan und Isolde",
-        "composer": "Richard Wagner",
-        "premiereYear": 1865,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Hans von Bülow",
-        "patronageType": "ROYAL_COURT",
-        "details": "Conducted by Hans von Bülow, starring Ludwig Schnorr von Carolsfeld and Malvina Garrigues.",
-        "commissionContext": "Personally commissioned, financed, and championed by King Ludwig II of Bavaria when all other German opera houses deemed it unplayable."
-      },
-      {
-        "title": "Die Meistersinger von Nürnberg",
-        "composer": "Richard Wagner",
-        "premiereYear": 1868,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Hans von Bülow",
-        "patronageType": "ROYAL_COURT",
-        "details": "Conducted by Hans von Bülow in the presence of King Ludwig II and Richard Wagner.",
-        "commissionContext": "Lavishly underwritten by King Ludwig II for the Royal Court and National Theatre in Munich."
-      },
-      {
-        "title": "Das Rheingold",
-        "composer": "Richard Wagner",
-        "premiereYear": 1869,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Franz Wüllner",
-        "patronageType": "ROYAL_COURT",
-        "details": "First staged performance of the Ring cycle prologue, conducted by Franz Wüllner.",
-        "commissionContext": "Ordered directly by King Ludwig II against Wagner's wishes, who wanted the Ring performed only as a complete cycle."
-      },
-      {
-        "title": "Die Walküre",
-        "composer": "Richard Wagner",
-        "premiereYear": 1870,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Franz Wüllner",
-        "patronageType": "ROYAL_COURT",
-        "details": "First staged performance of Die Walküre, conducted by Franz Wüllner.",
-        "commissionContext": "Ordered directly by King Ludwig II at the Munich Court Theatre."
-      }
-    ]
+            {
+                  "title": "Tristan und Isolde",
+                  "composer": "Richard Wagner",
+                  "premiereYear": 1865,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Hans von Bülow",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Conducted by Hans von Bülow, starring Ludwig Schnorr von Carolsfeld and Malvina Garrigues.",
+                  "commissionContext": "Personally commissioned, financed, and championed by King Ludwig II of Bavaria when all other German opera houses deemed it unplayable."
+            },
+            {
+                  "title": "Die Meistersinger von Nürnberg",
+                  "composer": "Richard Wagner",
+                  "premiereYear": 1868,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Hans von Bülow",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Conducted by Hans von Bülow in the presence of King Ludwig II and Richard Wagner.",
+                  "commissionContext": "Lavishly underwritten by King Ludwig II for the Royal Court and National Theatre in Munich."
+            },
+            {
+                  "title": "Das Rheingold",
+                  "composer": "Richard Wagner",
+                  "premiereYear": 1869,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Franz Wüllner",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "First staged performance of the Ring cycle prologue, conducted by Franz Wüllner.",
+                  "commissionContext": "Ordered directly by King Ludwig II against Wagner's wishes, who wanted the Ring performed only as a complete cycle."
+            },
+            {
+                  "title": "Die Walküre",
+                  "composer": "Richard Wagner",
+                  "premiereYear": 1870,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Franz Wüllner",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "First staged performance of Die Walküre, conducted by Franz Wüllner.",
+                  "commissionContext": "Ordered directly by King Ludwig II at the Munich Court Theatre."
+            }
+      ]
   },
   {
     "id": "staatsoper-unter-den-linden",
@@ -590,21 +592,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,396 seats",
     "historicSignificance": "Germany’s premier royal music institution; birthplace of modern German romantic opera.",
     "historicPremieres": [
-      {
-        "title": "Der Freischütz",
-        "composer": "Carl Maria von Weber",
-        "premiereYear": 1821,
-        "type": "WORLD_PREMIERE",
-        "details": "Foundational masterpiece of German Romantic Opera; sparked national sensation."
-      },
-      {
-        "title": "Wozzeck",
-        "composer": "Alban Berg",
-        "premiereYear": 1925,
-        "type": "WORLD_PREMIERE",
-        "details": "Conducted by Erich Kleiber after 137 rehearsals; landmark of 20th-century modernist expressionism."
-      }
-    ]
+            {
+                  "title": "Der Freischütz",
+                  "composer": "Carl Maria von Weber",
+                  "premiereYear": 1821,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Foundational masterpiece of German Romantic Opera; sparked national sensation."
+            },
+            {
+                  "title": "Wozzeck",
+                  "composer": "Alban Berg",
+                  "premiereYear": 1925,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Conducted by Erich Kleiber after 137 rehearsals; landmark of 20th-century modernist expressionism."
+            }
+      ]
   },
   {
     "id": "semperoper-dresden",
@@ -624,67 +626,67 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,300 seats",
     "historicSignificance": "Primary historical premiere venue for Richard Wagner’s early operas and nine operas by Richard Strauss.",
     "historicPremieres": [
-      {
-        "title": "Rienzi",
-        "composer": "Richard Wagner",
-        "premiereYear": 1842,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Carl Gottlieb Reissiger",
-        "patronageType": "ROYAL_COURT",
-        "details": "Wagner’s first monumental success; led immediately to his appointment as Royal Saxon Kapellmeister.",
-        "commissionContext": "Royal Court Theatre of Saxony; Wagner's breakthrough success that secured his royal appointment as Royal Saxon Kapellmeister."
-      },
-      {
-        "title": "Der fliegende Holländer",
-        "composer": "Richard Wagner",
-        "premiereYear": 1843,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Richard Wagner",
-        "patronageType": "ROYAL_COURT",
-        "details": "Wagner’s ghostly romantic sea legend conducted by the composer.",
-        "commissionContext": "Produced under Wagner's direction as Royal Saxon Kapellmeister to King Frederick Augustus II."
-      },
-      {
-        "title": "Tannhäuser",
-        "composer": "Richard Wagner",
-        "premiereYear": 1845,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Richard Wagner",
-        "patronageType": "ROYAL_COURT",
-        "details": "Original Dresden version conducted by Richard Wagner.",
-        "commissionContext": "Produced at the Royal Court Theatre with royal court budget under Wagner's baton."
-      },
-      {
-        "title": "Salome",
-        "composer": "Richard Strauss",
-        "premiereYear": 1905,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Ernst von Schuch",
-        "patronageType": "ROYAL_COURT",
-        "details": "Conducted by Ernst von Schuch, starring Marie Wittich; shocked and revolutionized modern opera.",
-        "commissionContext": "Royal Opera of Saxony; revolutionary modernist shockwave, rejected by Vienna censors but championed in Dresden by Ernst von Schuch."
-      },
-      {
-        "title": "Elektra",
-        "composer": "Richard Strauss",
-        "premiereYear": 1909,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Ernst von Schuch",
-        "patronageType": "ROYAL_COURT",
-        "details": "First collaboration between Richard Strauss and librettist Hugo von Hofmannsthal.",
-        "commissionContext": "First collaboration between Strauss and Hugo von Hofmannsthal; pushed tonality to the brink of modern expressionism."
-      },
-      {
-        "title": "Der Rosenkavalier",
-        "composer": "Richard Strauss",
-        "premiereYear": 1911,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Ernst von Schuch",
-        "patronageType": "ROYAL_COURT",
-        "details": "Strauss’s supreme comedy; special trains were chartered from Berlin to Dresden for performances.",
-        "commissionContext": "Sensational international triumph; special 'Rosenkavalier express trains' were arranged from Berlin to Dresden to satisfy ticket demand."
-      }
-    ]
+            {
+                  "title": "Rienzi",
+                  "composer": "Richard Wagner",
+                  "premiereYear": 1842,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Carl Gottlieb Reissiger",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Wagner’s first monumental success; led immediately to his appointment as Royal Saxon Kapellmeister.",
+                  "commissionContext": "Royal Court Theatre of Saxony; Wagner's breakthrough success that secured his royal appointment as Royal Saxon Kapellmeister."
+            },
+            {
+                  "title": "Der fliegende Holländer",
+                  "composer": "Richard Wagner",
+                  "premiereYear": 1843,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Richard Wagner",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Wagner’s ghostly romantic sea legend conducted by the composer.",
+                  "commissionContext": "Produced under Wagner's direction as Royal Saxon Kapellmeister to King Frederick Augustus II."
+            },
+            {
+                  "title": "Tannhäuser",
+                  "composer": "Richard Wagner",
+                  "premiereYear": 1845,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Richard Wagner",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Original Dresden version conducted by Richard Wagner.",
+                  "commissionContext": "Produced at the Royal Court Theatre with royal court budget under Wagner's baton."
+            },
+            {
+                  "title": "Salome",
+                  "composer": "Richard Strauss",
+                  "premiereYear": 1905,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Ernst von Schuch",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Conducted by Ernst von Schuch, starring Marie Wittich; shocked and revolutionized modern opera.",
+                  "commissionContext": "Royal Opera of Saxony; revolutionary modernist shockwave, rejected by Vienna censors but championed in Dresden by Ernst von Schuch."
+            },
+            {
+                  "title": "Elektra",
+                  "composer": "Richard Strauss",
+                  "premiereYear": 1909,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Ernst von Schuch",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "First collaboration between Richard Strauss and librettist Hugo von Hofmannsthal.",
+                  "commissionContext": "First collaboration between Strauss and Hugo von Hofmannsthal; pushed tonality to the brink of modern expressionism."
+            },
+            {
+                  "title": "Der Rosenkavalier",
+                  "composer": "Richard Strauss",
+                  "premiereYear": 1911,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Ernst von Schuch",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Strauss’s supreme comedy; special trains were chartered from Berlin to Dresden for performances.",
+                  "commissionContext": "Sensational international triumph; special 'Rosenkavalier express trains' were arranged from Berlin to Dresden to satisfy ticket demand."
+            }
+      ]
   },
   {
     "id": "opernhaus-zurich",
@@ -704,21 +706,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,100 seats",
     "historicSignificance": "Sanctuary for exiled 20th-century composers during wartime; premier venue for Alban Berg and Paul Hindemith.",
     "historicPremieres": [
-      {
-        "title": "Lulu",
-        "composer": "Alban Berg",
-        "premiereYear": 1937,
-        "type": "WORLD_PREMIERE",
-        "details": "World premiere of the two-act version, conducted by Robert Denzler after Berg’s death."
-      },
-      {
-        "title": "Mathis der Maler",
-        "composer": "Paul Hindemith",
-        "premiereYear": 1938,
-        "type": "WORLD_PREMIERE",
-        "details": "Premiered in neutral Zurich after being banned by the Nazi regime in Germany."
-      }
-    ]
+            {
+                  "title": "Lulu",
+                  "composer": "Alban Berg",
+                  "premiereYear": 1937,
+                  "type": "WORLD_PREMIERE",
+                  "details": "World premiere of the two-act version, conducted by Robert Denzler after Berg’s death."
+            },
+            {
+                  "title": "Mathis der Maler",
+                  "composer": "Paul Hindemith",
+                  "premiereYear": 1938,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Premiered in neutral Zurich after being banned by the Nazi regime in Germany."
+            }
+      ]
   },
   {
     "id": "teatro-real-madrid",
@@ -774,37 +776,37 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,386 seats",
     "historicSignificance": "Oldest opera house in continuous existence; home to the Golden Age of Neapolitan opera, Rossini, and Donizetti.",
     "historicPremieres": [
-      {
-        "title": "Lucia di Lammermoor",
-        "composer": "Gaetano Donizetti",
-        "premiereYear": 1835,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Gaetano Donizetti",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Donizetti’s Scottish Bel Canto tragedy; starred Fanny Tacchinardi Persiani in the famous Mad Scene.",
-        "commissionContext": "Commissioned by the royal theatrical concession of San Carlo under Domenico Barbaja's successor management."
-      },
-      {
-        "title": "Mosè in Egitto",
-        "composer": "Gioachino Rossini",
-        "premiereYear": 1818,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Gioachino Rossini",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Sacred opera featuring the celebrated choral prayer 'Dal tuo stellato soglio'.",
-        "commissionContext": "Commissioned by legendary impresario Domenico Barbaja during Rossini's celebrated tenure as music director of the Royal Neapolitan Theatres."
-      },
-      {
-        "title": "Alzira",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1845,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Giuseppe Verdi",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Verdi’s opera based on Voltaire’s play, conducted by the composer.",
-        "commissionContext": "Commissioned by the San Carlo management during Verdi's prolific 'galley years' ('anni di galera')."
-      }
-    ]
+            {
+                  "title": "Mosè in Egitto",
+                  "composer": "Gioachino Rossini",
+                  "premiereYear": 1818,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Gioachino Rossini",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Sacred opera featuring the celebrated choral prayer 'Dal tuo stellato soglio'.",
+                  "commissionContext": "Commissioned by legendary impresario Domenico Barbaja during Rossini's celebrated tenure as music director of the Royal Neapolitan Theatres."
+            },
+            {
+                  "title": "Lucia di Lammermoor",
+                  "composer": "Gaetano Donizetti",
+                  "premiereYear": 1835,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Gaetano Donizetti",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Donizetti’s Scottish Bel Canto tragedy; starred Fanny Tacchinardi Persiani in the famous Mad Scene.",
+                  "commissionContext": "Commissioned by the royal theatrical concession of San Carlo under Domenico Barbaja's successor management."
+            },
+            {
+                  "title": "Alzira",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1845,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Giuseppe Verdi",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Verdi’s opera based on Voltaire’s play, conducted by the composer.",
+                  "commissionContext": "Commissioned by the San Carlo management during Verdi's prolific 'galley years' ('anni di galera')."
+            }
+      ]
   },
   {
     "id": "teatro-la-fenice",
@@ -824,67 +826,67 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,000 seats",
     "historicSignificance": "Birthplace of five of Giuseppe Verdi’s greatest masterworks, including Rigoletto and La Traviata.",
     "historicPremieres": [
-      {
-        "title": "Rigoletto",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1851,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Giuseppe Verdi",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Triumphant world premiere; Verdi kept 'La donna è mobile' top-secret until the final rehearsal.",
-        "commissionContext": "Commissioned by the management of La Fenice; Verdi battled Austrian military censors who objected to depicting a licentious monarch and an assassination attempt."
-      },
-      {
-        "title": "La Traviata",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1853,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Gaetano Mares",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Controversial premiere starring Fanny Salvini-Donatelli as Violetta.",
-        "commissionContext": "Commissioned by La Fenice for the Carnival season; opening night was controversial due to cast mismatches, but quickly became one of the greatest box-office triumphs in opera history."
-      },
-      {
-        "title": "Simon Boccanegra",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1857,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Giuseppe Verdi",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Original version premiered at La Fenice on 12 March 1857.",
-        "commissionContext": "Commissioned for La Fenice's spring 1857 season."
-      },
-      {
-        "title": "Tancredi",
-        "composer": "Gioachino Rossini",
-        "premiereYear": 1813,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Gioachino Rossini",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Rossini's international breakthrough at age 20, containing the sensational hit aria 'Di tanti palpiti'.",
-        "commissionContext": "Commissioned by Teatro La Fenice for the Carnival season; launched Rossini's pan-European celebrity."
-      },
-      {
-        "title": "The Turn of the Screw",
-        "composer": "Benjamin Britten",
-        "premiereYear": 1954,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Benjamin Britten",
-        "patronageType": "FESTIVAL_COMMISSION",
-        "details": "Britten's chilling chamber opera masterpiece starring Peter Pears as Peter Quint.",
-        "commissionContext": "Commissioned by the Venice Biennale International Festival of Contemporary Music for the English Opera Group."
-      },
-      {
-        "title": "I Capuleti e i Montecchi",
-        "composer": "Vincenzo Bellini",
-        "premiereYear": 1830,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Gaetano Mares",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Bellini’s Romeo and Juliet Bel Canto masterpiece, written in 45 days.",
-        "commissionContext": "Commissioned in emergency by La Fenice after another composer failed to deliver; composed by Bellini in only 45 days."
-      }
-    ]
+            {
+                  "title": "Tancredi",
+                  "composer": "Gioachino Rossini",
+                  "premiereYear": 1813,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Gioachino Rossini",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Rossini's international breakthrough at age 20, containing the sensational hit aria 'Di tanti palpiti'.",
+                  "commissionContext": "Commissioned by Teatro La Fenice for the Carnival season; launched Rossini's pan-European celebrity."
+            },
+            {
+                  "title": "I Capuleti e i Montecchi",
+                  "composer": "Vincenzo Bellini",
+                  "premiereYear": 1830,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Gaetano Mares",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Bellini’s Romeo and Juliet Bel Canto masterpiece, written in 45 days.",
+                  "commissionContext": "Commissioned in emergency by La Fenice after another composer failed to deliver; composed by Bellini in only 45 days."
+            },
+            {
+                  "title": "Rigoletto",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1851,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Giuseppe Verdi",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Triumphant world premiere; Verdi kept 'La donna è mobile' top-secret until the final rehearsal.",
+                  "commissionContext": "Commissioned by the management of La Fenice; Verdi battled Austrian military censors who objected to depicting a licentious monarch and an assassination attempt."
+            },
+            {
+                  "title": "La Traviata",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1853,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Gaetano Mares",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Controversial premiere starring Fanny Salvini-Donatelli as Violetta.",
+                  "commissionContext": "Commissioned by La Fenice for the Carnival season; opening night was controversial due to cast mismatches, but quickly became one of the greatest box-office triumphs in opera history."
+            },
+            {
+                  "title": "Simon Boccanegra",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1857,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Giuseppe Verdi",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Original version premiered at La Fenice on 12 March 1857.",
+                  "commissionContext": "Commissioned for La Fenice's spring 1857 season."
+            },
+            {
+                  "title": "The Turn of the Screw",
+                  "composer": "Benjamin Britten",
+                  "premiereYear": 1954,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Benjamin Britten",
+                  "patronageType": "FESTIVAL_COMMISSION",
+                  "details": "Britten's chilling chamber opera masterpiece starring Peter Pears as Peter Quint.",
+                  "commissionContext": "Commissioned by the Venice Biennale International Festival of Contemporary Music for the English Opera Group."
+            }
+      ]
   },
   {
     "id": "teatro-dell-opera-roma",
@@ -904,27 +906,27 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,600 seats",
     "historicSignificance": "Rome’s national opera house; cradle of Italian Verismo opera.",
     "historicPremieres": [
-      {
-        "title": "Cavalleria Rusticana",
-        "composer": "Pietro Mascagni",
-        "premiereYear": 1890,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Leopoldo Mugnone",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Sensational overnight triumph that launched the Verismo (realism) movement in opera.",
-        "commissionContext": "Won publisher Edoardo Sonzogno's national one-act opera competition, catapulting the unknown Mascagni to overnight world fame and launching the Verismo movement."
-      },
-      {
-        "title": "Tosca",
-        "composer": "Giacomo Puccini",
-        "premiereYear": 1900,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Leopoldo Mugnone",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Conducted by Leopoldo Mugnone amid political tension and bomb threats in Rome.",
-        "commissionContext": "Produced by publisher Ricordi amidst political turbulence and false bomb threats in Rome; sensational Verismo box-office success."
-      }
-    ]
+            {
+                  "title": "Cavalleria Rusticana",
+                  "composer": "Pietro Mascagni",
+                  "premiereYear": 1890,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Leopoldo Mugnone",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Sensational overnight triumph that launched the Verismo (realism) movement in opera.",
+                  "commissionContext": "Won publisher Edoardo Sonzogno's national one-act opera competition, catapulting the unknown Mascagni to overnight world fame and launching the Verismo movement."
+            },
+            {
+                  "title": "Tosca",
+                  "composer": "Giacomo Puccini",
+                  "premiereYear": 1900,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Leopoldo Mugnone",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Conducted by Leopoldo Mugnone amid political tension and bomb threats in Rome.",
+                  "commissionContext": "Produced by publisher Ricordi amidst political turbulence and false bomb threats in Rome; sensational Verismo box-office success."
+            }
+      ]
   },
   {
     "id": "teatr-wielki-warsaw",
@@ -944,21 +946,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,828 seats (Moniuszko Auditorium)",
     "historicSignificance": "National opera house of Poland; historical home of Stanisław Moniuszko’s national operas.",
     "historicPremieres": [
-      {
-        "title": "Halka",
-        "composer": "Stanisław Moniuszko",
-        "premiereYear": 1858,
-        "type": "WORLD_PREMIERE",
-        "details": "Premiere of the definitive four-act version; recognized as Poland’s national opera."
-      },
-      {
-        "title": "The Haunted Manor (Straszny Dwór)",
-        "composer": "Stanisław Moniuszko",
-        "premiereYear": 1865,
-        "type": "WORLD_PREMIERE",
-        "details": "Patriotic masterwork premiered following the January Uprising."
-      }
-    ]
+            {
+                  "title": "Halka",
+                  "composer": "Stanisław Moniuszko",
+                  "premiereYear": 1858,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Premiere of the definitive four-act version; recognized as Poland’s national opera."
+            },
+            {
+                  "title": "The Haunted Manor (Straszny Dwór)",
+                  "composer": "Stanisław Moniuszko",
+                  "premiereYear": 1865,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Patriotic masterwork premiered following the January Uprising."
+            }
+      ]
   },
   {
     "id": "hungarian-state-opera",
@@ -978,14 +980,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,261 seats",
     "historicSignificance": "Crown jewel of Hungarian performing arts; historical proving ground for Gustav Mahler’s visionary operatic reforms.",
     "historicPremieres": [
-      {
-        "title": "Bluebeard’s Castle",
-        "composer": "Béla Bartók",
-        "premiereYear": 1918,
-        "type": "WORLD_PREMIERE",
-        "details": "Bartók’s single psychological opera, conducted by Egisto Tango."
-      }
-    ]
+            {
+                  "title": "Bluebeard’s Castle",
+                  "composer": "Béla Bartók",
+                  "premiereYear": 1918,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Bartók’s single psychological opera, conducted by Egisto Tango."
+            }
+      ]
   },
   {
     "id": "oper-leipzig",
@@ -1005,21 +1007,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,267 seats",
     "historicSignificance": "Birthplace of Richard Wagner; 330+ years of uninterrupted operatic tradition with the Gewandhausorchester in the pit.",
     "historicPremieres": [
-      {
-        "title": "Genoveva",
-        "composer": "Robert Schumann",
-        "premiereYear": 1850,
-        "type": "WORLD_PREMIERE",
-        "details": "Schumann’s only completed opera, conducted by the composer at the historic Leipzig theatre."
-      },
-      {
-        "title": "Rise and Fall of the City of Mahagonny",
-        "composer": "Kurt Weill",
-        "premiereYear": 1930,
-        "type": "WORLD_PREMIERE",
-        "details": "Weill & Brecht’s political satirical masterpiece; premiere caused major cultural uproar."
-      }
-    ]
+            {
+                  "title": "Genoveva",
+                  "composer": "Robert Schumann",
+                  "premiereYear": 1850,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Schumann’s only completed opera, conducted by the composer at the historic Leipzig theatre."
+            },
+            {
+                  "title": "Rise and Fall of the City of Mahagonny",
+                  "composer": "Kurt Weill",
+                  "premiereYear": 1930,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Weill & Brecht’s political satirical masterpiece; premiere caused major cultural uproar."
+            }
+      ]
   },
   {
     "id": "opera-philadelphia",
@@ -1039,14 +1041,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,507 seats",
     "historicSignificance": "Oldest active grand opera house in the United States; National Historic Landmark.",
     "historicPremieres": [
-      {
-        "title": "Breaking the Waves",
-        "composer": "Missy Mazzoli",
-        "premiereYear": 2016,
-        "type": "WORLD_PREMIERE",
-        "details": "Opera Philadelphia commission; named Best New Opera by Music Critics Association of North America."
-      }
-    ]
+            {
+                  "title": "Breaking the Waves",
+                  "composer": "Missy Mazzoli",
+                  "premiereYear": 2016,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Opera Philadelphia commission; named Best New Opera by Music Critics Association of North America."
+            }
+      ]
   },
   {
     "id": "washington-national-opera",
@@ -1066,14 +1068,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,362 seats",
     "historicSignificance": "National opera company of the United States capital; official national memorial to President John F. Kennedy.",
     "historicPremieres": [
-      {
-        "title": "Beatrix Cenci",
-        "composer": "Alberto Ginastera",
-        "premiereYear": 1971,
-        "type": "WORLD_PREMIERE",
-        "details": "Inaugural commission for the opening of the Kennedy Center Opera House."
-      }
-    ]
+            {
+                  "title": "Beatrix Cenci",
+                  "composer": "Alberto Ginastera",
+                  "premiereYear": 1971,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Inaugural commission for the opening of the Kennedy Center Opera House."
+            }
+      ]
   },
   {
     "id": "opera-colorado",
@@ -1093,14 +1095,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,225 seats",
     "historicSignificance": "Flagship professional grand opera company of Colorado; acclaimed acoustic brilliance and custom seatback subtitles.",
     "historicPremieres": [
-      {
-        "title": "Scarlet Letter",
-        "composer": "Lori Laitman",
-        "premiereYear": 2016,
-        "type": "WORLD_PREMIERE",
-        "details": "Full professional grand opera world premiere commissioned by Opera Colorado."
-      }
-    ]
+            {
+                  "title": "Scarlet Letter",
+                  "composer": "Lori Laitman",
+                  "premiereYear": 2016,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Full professional grand opera world premiere commissioned by Opera Colorado."
+            }
+      ]
   },
   {
     "id": "minnesota-opera",
@@ -1120,21 +1122,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,900 seats",
     "historicSignificance": "Pioneer of the New Works Initiative; commissioner of multiple Pulitzer Prize-winning American masterworks.",
     "historicPremieres": [
-      {
-        "title": "Silent Night",
-        "composer": "Kevin Puts",
-        "premiereYear": 2011,
-        "type": "WORLD_PREMIERE",
-        "details": "Based on the 1914 World War I Christmas Truce; won the 2012 Pulitzer Prize for Music."
-      },
-      {
-        "title": "The Shining",
-        "composer": "Paul Moravec",
-        "premiereYear": 2016,
-        "type": "WORLD_PREMIERE",
-        "details": "Record-breaking sellout world premiere based on Stephen King’s novel."
-      }
-    ]
+            {
+                  "title": "Silent Night",
+                  "composer": "Kevin Puts",
+                  "premiereYear": 2011,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Based on the 1914 World War I Christmas Truce; won the 2012 Pulitzer Prize for Music."
+            },
+            {
+                  "title": "The Shining",
+                  "composer": "Paul Moravec",
+                  "premiereYear": 2016,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Record-breaking sellout world premiere based on Stephen King’s novel."
+            }
+      ]
   },
   {
     "id": "houston-grand-opera",
@@ -1154,21 +1156,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,405 seats (Brown Theater)",
     "historicSignificance": "World-renowned for championing modern American opera; has commissioned over 75 world premieres.",
     "historicPremieres": [
-      {
-        "title": "Nixon in China",
-        "composer": "John Adams",
-        "premiereYear": 1987,
-        "type": "WORLD_PREMIERE",
-        "details": "Landmark American opera directed by Peter Sellars; revolutionized contemporary opera history."
-      },
-      {
-        "title": "Florencia en el Amazonas",
-        "composer": "Daniel Catán",
-        "premiereYear": 1996,
-        "type": "WORLD_PREMIERE",
-        "details": "First Spanish-language opera commissioned by major US companies, inspired by Gabriel García Márquez."
-      }
-    ]
+            {
+                  "title": "Nixon in China",
+                  "composer": "John Adams",
+                  "premiereYear": 1987,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Landmark American opera directed by Peter Sellars; revolutionized contemporary opera history."
+            },
+            {
+                  "title": "Florencia en el Amazonas",
+                  "composer": "Daniel Catán",
+                  "premiereYear": 1996,
+                  "type": "WORLD_PREMIERE",
+                  "details": "First Spanish-language opera commissioned by major US companies, inspired by Gabriel García Márquez."
+            }
+      ]
   },
   {
     "id": "seattle-opera",
@@ -1188,14 +1190,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,967 seats",
     "historicSignificance": "America’s premier pilgrimage house for Wagner’s Ring cycle under Speight Jenkins.",
     "historicPremieres": [
-      {
-        "title": "Amelia",
-        "composer": "Daron Hagen",
-        "premiereYear": 2010,
-        "type": "WORLD_PREMIERE",
-        "details": "Major full-scale grand opera world premiere commissioned and staged by Seattle Opera."
-      }
-    ]
+            {
+                  "title": "Amelia",
+                  "composer": "Daron Hagen",
+                  "premiereYear": 2010,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Major full-scale grand opera world premiere commissioned and staged by Seattle Opera."
+            }
+      ]
   },
   {
     "id": "florida-grand-opera",
@@ -1233,14 +1235,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,800 seats",
     "historicSignificance": "Historic anchor of Pennsylvania classical performance; major training ground for American resident artists.",
     "historicPremieres": [
-      {
-        "title": "The Summer King",
-        "composer": "Daniel Sonenberg",
-        "premiereYear": 2017,
-        "type": "WORLD_PREMIERE",
-        "details": "World premiere opera on the life of legendary Negro League baseball star Josh Gibson."
-      }
-    ]
+            {
+                  "title": "The Summer King",
+                  "composer": "Daniel Sonenberg",
+                  "premiereYear": 2017,
+                  "type": "WORLD_PREMIERE",
+                  "details": "World premiere opera on the life of legendary Negro League baseball star Josh Gibson."
+            }
+      ]
   },
   {
     "id": "los-angeles-opera",
@@ -1260,21 +1262,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "3,197 seats",
     "historicSignificance": "Premier opera company of Southern California; multiple Grammy Award-winning productions.",
     "historicPremieres": [
-      {
-        "title": "Grendel",
-        "composer": "Elliot Goldenthal",
-        "premiereYear": 2006,
-        "type": "WORLD_PREMIERE",
-        "details": "Directed by Julie Taymor, starring Eric Owens in the title role."
-      },
-      {
-        "title": "Il Postino",
-        "composer": "Daniel Catán",
-        "premiereYear": 2010,
-        "type": "WORLD_PREMIERE",
-        "details": "Starring Plácido Domingo as poet Pablo Neruda."
-      }
-    ]
+            {
+                  "title": "Grendel",
+                  "composer": "Elliot Goldenthal",
+                  "premiereYear": 2006,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Directed by Julie Taymor, starring Eric Owens in the title role."
+            },
+            {
+                  "title": "Il Postino",
+                  "composer": "Daniel Catán",
+                  "premiereYear": 2010,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Starring Plácido Domingo as poet Pablo Neruda."
+            }
+      ]
   },
   {
     "id": "long-beach-opera",
@@ -1294,14 +1296,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "3,056 seats (Terrace Theater) & 825 seats (Beverly O'Neill)",
     "historicSignificance": "Southern California's artistic vanguard; renowned for fearless site-specific productions and landmark contemporary premieres.",
     "historicPremieres": [
-      {
-        "title": "The Central Park Five",
-        "composer": "Anthony Davis",
-        "premiereYear": 2019,
-        "type": "WORLD_PREMIERE",
-        "details": "Commissioned and premiered by LBO; won the 2020 Pulitzer Prize for Music."
-      }
-    ]
+            {
+                  "title": "The Central Park Five",
+                  "composer": "Anthony Davis",
+                  "premiereYear": 2019,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Commissioned and premiered by LBO; won the 2020 Pulitzer Prize for Music."
+            }
+      ]
   },
   {
     "id": "pacific-opera-project",
@@ -1321,14 +1323,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "880 seats (Aratani) & 360 seats (El Portal)",
     "historicSignificance": "Lauded by the LA Times and Opera News for redefining accessible opera in America; celebrated for groundbreaking cross-cultural productions.",
     "historicPremieres": [
-      {
-        "title": "Madama Butterfly (Bilingual Japanese/English Premiere)",
-        "composer": "Giacomo Puccini",
-        "premiereYear": 2019,
-        "type": "HISTORIC_STAGING",
-        "details": "Groundbreaking bilingual adaptation performed with Japanese-American artists at the Aratani Theatre in Little Tokyo."
-      }
-    ]
+            {
+                  "title": "Madama Butterfly (Bilingual Japanese/English Premiere)",
+                  "composer": "Giacomo Puccini",
+                  "premiereYear": 2019,
+                  "type": "HISTORIC_STAGING",
+                  "details": "Groundbreaking bilingual adaptation performed with Japanese-American artists at the Aratani Theatre in Little Tokyo."
+            }
+      ]
   },
   {
     "id": "dallas-opera",
@@ -1348,14 +1350,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,200 seats",
     "historicSignificance": "Legendary historical venue where Maria Callas gave her famed 1957 Dallas concerts; host to the Hart Institute for Women Conductors.",
     "historicPremieres": [
-      {
-        "title": "Moby-Dick",
-        "composer": "Jake Heggie",
-        "premiereYear": 2010,
-        "type": "WORLD_PREMIERE",
-        "details": "Spectacular world premiere based on Herman Melville’s novel, starring Ben Heppner and Stephen Costello."
-      }
-    ]
+            {
+                  "title": "Moby-Dick",
+                  "composer": "Jake Heggie",
+                  "premiereYear": 2010,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Spectacular world premiere based on Herman Melville’s novel, starring Ben Heppner and Stephen Costello."
+            }
+      ]
   },
   {
     "id": "new-orleans-opera",
@@ -1393,14 +1395,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,700 seats",
     "historicSignificance": "Midwest opera powerhouse and national pioneer of radical site-specific and accessible staging.",
     "historicPremieres": [
-      {
-        "title": "Cyrano",
-        "composer": "David DiChiera",
-        "premiereYear": 2007,
-        "type": "WORLD_PREMIERE",
-        "details": "Romantic grand opera composed by the company’s founder, libretto by Bernard Uzan."
-      }
-    ]
+            {
+                  "title": "Cyrano",
+                  "composer": "David DiChiera",
+                  "premiereYear": 2007,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Romantic grand opera composed by the company’s founder, libretto by Bernard Uzan."
+            }
+      ]
   },
   {
     "id": "teatro-regio-torino",
@@ -1420,27 +1422,27 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,592 seats",
     "historicSignificance": "Birthplace of Puccini’s La Bohème and Manon Lescaut; one of Italy’s premier recording houses.",
     "historicPremieres": [
-      {
-        "title": "Manon Lescaut",
-        "composer": "Giacomo Puccini",
-        "premiereYear": 1893,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Alessandro Pomé",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Puccini's breakthrough international success.",
-        "commissionContext": "Puccini's first undisputed masterwork, restoring the house's fortunes and establishing Puccini as Verdi's true heir."
-      },
-      {
-        "title": "La Bohème",
-        "composer": "Giacomo Puccini",
-        "premiereYear": 1896,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Arturo Toscanini",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Conducted by 28-year-old Arturo Toscanini, starring Cesira Ferrani and Evan Gorga.",
-        "commissionContext": "Conducted by 28-year-old Arturo Toscanini; initially met with mixed reviews by local critics before becoming the most beloved opera in the worldwide repertoire."
-      }
-    ]
+            {
+                  "title": "Manon Lescaut",
+                  "composer": "Giacomo Puccini",
+                  "premiereYear": 1893,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Alessandro Pomé",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Puccini's breakthrough international success.",
+                  "commissionContext": "Puccini's first undisputed masterwork, restoring the house's fortunes and establishing Puccini as Verdi's true heir."
+            },
+            {
+                  "title": "La Bohème",
+                  "composer": "Giacomo Puccini",
+                  "premiereYear": 1896,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Arturo Toscanini",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Conducted by 28-year-old Arturo Toscanini, starring Cesira Ferrani and Evan Gorga.",
+                  "commissionContext": "Conducted by 28-year-old Arturo Toscanini; initially met with mixed reviews by local critics before becoming the most beloved opera in the worldwide repertoire."
+            }
+      ]
   },
   {
     "id": "teatro-regio-parma",
@@ -1460,14 +1462,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,200 seats",
     "historicSignificance": "Home of the annual Festival Verdi; international benchmark for authentic Verdi vocal interpretation.",
     "historicPremieres": [
-      {
-        "title": "Zaira",
-        "composer": "Vincenzo Bellini",
-        "premiereYear": 1829,
-        "type": "WORLD_PREMIERE",
-        "details": "Inaugural opera composed by Bellini explicitly to open the new ducal theatre."
-      }
-    ]
+            {
+                  "title": "Zaira",
+                  "composer": "Vincenzo Bellini",
+                  "premiereYear": 1829,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Inaugural opera composed by Bellini explicitly to open the new ducal theatre."
+            }
+      ]
   },
   {
     "id": "teatro-carlo-felice",
@@ -1559,21 +1561,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,300 seats",
     "historicSignificance": "Habsburg Adriatic cultural gateway; site of two Verdi world premieres.",
     "historicPremieres": [
-      {
-        "title": "Il corsaro",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1848,
-        "type": "WORLD_PREMIERE",
-        "details": "Verdi’s Byron-inspired opera premiered on 25 October 1848."
-      },
-      {
-        "title": "Stiffelio",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1850,
-        "type": "WORLD_PREMIERE",
-        "details": "Verdi’s daring psychological drama on Protestant marital forgiveness."
-      }
-    ]
+            {
+                  "title": "Il corsaro",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1848,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Verdi’s Byron-inspired opera premiered on 25 October 1848."
+            },
+            {
+                  "title": "Stiffelio",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1850,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Verdi’s daring psychological drama on Protestant marital forgiveness."
+            }
+      ]
   },
   {
     "id": "teatro-massimo-bellini",
@@ -1629,14 +1631,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,369 seats",
     "historicSignificance": "One of Europe’s most critically acclaimed modern opera houses; led historically by Solti and Gielen.",
     "historicPremieres": [
-      {
-        "title": "Carmina Burana",
-        "composer": "Carl Orff",
-        "premiereYear": 1937,
-        "type": "WORLD_PREMIERE",
-        "details": "Premiered at the Old Frankfurt Opera house, conducted by Bertil Wetzelsberger."
-      }
-    ]
+            {
+                  "title": "Carmina Burana",
+                  "composer": "Carl Orff",
+                  "premiereYear": 1937,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Premiered at the Old Frankfurt Opera house, conducted by Bertil Wetzelsberger."
+            }
+      ]
   },
   {
     "id": "hamburgische-staatsoper",
@@ -1656,14 +1658,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,690 seats",
     "historicSignificance": "Germany’s oldest civic opera tradition; premier launchpad of Handel and Telemann operas.",
     "historicPremieres": [
-      {
-        "title": "Almira",
-        "composer": "George Frideric Handel",
-        "premiereYear": 1705,
-        "type": "WORLD_PREMIERE",
-        "details": "Handel’s very first opera, composed in Hamburg at age 19."
-      }
-    ]
+            {
+                  "title": "Almira",
+                  "composer": "George Frideric Handel",
+                  "premiereYear": 1705,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Handel’s very first opera, composed in Hamburg at age 19."
+            }
+      ]
   },
   {
     "id": "staatsoper-stuttgart",
@@ -1683,14 +1685,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,404 seats",
     "historicSignificance": "One of Europe’s most decorated opera houses for innovative stage direction and resident choral power.",
     "historicPremieres": [
-      {
-        "title": "Ariadne auf Naxos",
-        "composer": "Richard Strauss",
-        "premiereYear": 1912,
-        "type": "WORLD_PREMIERE",
-        "details": "Original version conducted by Richard Strauss, directed by Max Reinhardt."
-      }
-    ]
+            {
+                  "title": "Ariadne auf Naxos",
+                  "composer": "Richard Strauss",
+                  "premiereYear": 1912,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Original version conducted by Richard Strauss, directed by Max Reinhardt."
+            }
+      ]
   },
   {
     "id": "deutsche-oper-berlin",
@@ -1728,37 +1730,37 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,129 seats",
     "historicSignificance": "Birthplace of Beethoven’s Fidelio and legendary 19th-century operetta; today Vienna’s premier Stagione opera house.",
     "historicPremieres": [
-      {
-        "title": "Die Zauberflöte (The Magic Flute)",
-        "composer": "Wolfgang Amadeus Mozart",
-        "premiereYear": 1791,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Wolfgang Amadeus Mozart",
-        "patronageType": "SUBURBAN_POPULAR",
-        "details": "Premiered at the Freihaustheater auf der Wieden with Emanuel Schikaneder creating the role of Papageno.",
-        "commissionContext": "Commissioned and produced by actor-impresario Emanuel Schikaneder for his popular suburban theatre troupe. Unlike court operas, this was an entrepreneurial commercial venture for everyday Viennese citizens, blending accessible fairy-tale Singspiel comedy with profound Enlightenment Masonic allegory."
-      },
-      {
-        "title": "Fidelio (Leonore)",
-        "composer": "Ludwig van Beethoven",
-        "premiereYear": 1805,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Ignaz von Seyfried",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Beethoven's only opera premiered during French military occupation of Vienna.",
-        "commissionContext": "Commissioned by Baron Peter von Braun and Emanuel Schikaneder for Theater an der Wien; Beethoven was resident composer living inside the theatre."
-      },
-      {
-        "title": "Die Fledermaus",
-        "composer": "Johann Strauss II",
-        "premiereYear": 1874,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Johann Strauss II",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "The crowning golden age Viennese operetta masterpiece.",
-        "commissionContext": "Golden Age Viennese commercial operetta production produced by theatre director Maximilian Steiner."
-      }
-    ],
+            {
+                  "title": "Die Zauberflöte (The Magic Flute)",
+                  "composer": "Wolfgang Amadeus Mozart",
+                  "premiereYear": 1791,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Wolfgang Amadeus Mozart",
+                  "patronageType": "SUBURBAN_POPULAR",
+                  "details": "Premiered at the Freihaustheater auf der Wieden with Emanuel Schikaneder creating the role of Papageno.",
+                  "commissionContext": "Commissioned and produced by actor-impresario Emanuel Schikaneder for his popular suburban theatre troupe. Unlike court operas, this was an entrepreneurial commercial venture for everyday Viennese citizens, blending accessible fairy-tale Singspiel comedy with profound Enlightenment Masonic allegory."
+            },
+            {
+                  "title": "Fidelio (Leonore)",
+                  "composer": "Ludwig van Beethoven",
+                  "premiereYear": 1805,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Ignaz von Seyfried",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Beethoven's only opera premiered during French military occupation of Vienna.",
+                  "commissionContext": "Commissioned by Baron Peter von Braun and Emanuel Schikaneder for Theater an der Wien; Beethoven was resident composer living inside the theatre."
+            },
+            {
+                  "title": "Die Fledermaus",
+                  "composer": "Johann Strauss II",
+                  "premiereYear": 1874,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Johann Strauss II",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "The crowning golden age Viennese operetta masterpiece.",
+                  "commissionContext": "Golden Age Viennese commercial operetta production produced by theatre director Maximilian Steiner."
+            }
+      ],
     "predecessorVenue": "Freihaustheater auf der Wieden (1787–1801)",
     "historicalLineage": "Direct artistic successor to Emanuel Schikaneder's suburban Freihaustheater auf der Wieden, where Mozart's Die Zauberflöte premiered in 1791. Impresario Schikaneder built the Theater an der Wien across the Wien River in 1801 as a grand permanent successor, where Beethoven subsequently premiered Fidelio."
   },
@@ -1780,27 +1782,27 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "659 seats",
     "historicSignificance": "Where Mozart personally conducted the world premiere of Don Giovanni and La clemenza di Tito; filming location of Miloš Forman’s Amadeus.",
     "historicPremieres": [
-      {
-        "title": "Don Giovanni",
-        "composer": "Wolfgang Amadeus Mozart",
-        "premiereYear": 1787,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Wolfgang Amadeus Mozart",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Conducted by Mozart on 29 October 1787; Prague's beloved masterpiece.",
-        "commissionContext": "Commissioned by Italian theatre impresario Pasquale Bondini following Prague's ecstatic public reception of Figaro: 'Meine Prager verstehen mich' ('My Praguers understand me')."
-      },
-      {
-        "title": "La clemenza di Tito",
-        "composer": "Wolfgang Amadeus Mozart",
-        "premiereYear": 1791,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Wolfgang Amadeus Mozart",
-        "patronageType": "ROYAL_COURT",
-        "details": "Mozart's final opera seria, premiered for the royal coronation of Emperor Leopold II.",
-        "commissionContext": "Commissioned by the Estates of Bohemia to celebrate the royal coronation of Emperor Leopold II as King of Bohemia."
-      }
-    ]
+            {
+                  "title": "Don Giovanni",
+                  "composer": "Wolfgang Amadeus Mozart",
+                  "premiereYear": 1787,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Wolfgang Amadeus Mozart",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Conducted by Mozart on 29 October 1787; Prague's beloved masterpiece.",
+                  "commissionContext": "Commissioned by Italian theatre impresario Pasquale Bondini following Prague's ecstatic public reception of Figaro: 'Meine Prager verstehen mich' ('My Praguers understand me')."
+            },
+            {
+                  "title": "La clemenza di Tito",
+                  "composer": "Wolfgang Amadeus Mozart",
+                  "premiereYear": 1791,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Wolfgang Amadeus Mozart",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Mozart's final opera seria, premiered for the royal coronation of Emperor Leopold II.",
+                  "commissionContext": "Commissioned by the Estates of Bohemia to celebrate the royal coronation of Emperor Leopold II as King of Bohemia."
+            }
+      ]
   },
   {
     "id": "opera-national-lyon",
@@ -1820,14 +1822,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,100 seats",
     "historicSignificance": "One of the most daring and critically rewarded opera houses in France.",
     "historicPremieres": [
-      {
-        "title": "Rodrigue et Chimène",
-        "composer": "Claude Debussy",
-        "premiereYear": 1993,
-        "type": "WORLD_PREMIERE",
-        "details": "Completed by Edison Denisov; inaugurating the newly reconstructed Jean Nouvel opera house."
-      }
-    ]
+            {
+                  "title": "Rodrigue et Chimène",
+                  "composer": "Claude Debussy",
+                  "premiereYear": 1993,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Completed by Edison Denisov; inaugurating the newly reconstructed Jean Nouvel opera house."
+            }
+      ]
   },
   {
     "id": "grand-theatre-bordeaux",
@@ -1865,21 +1867,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "524 seats",
     "historicSignificance": "Premier venue of the French Riviera; historical premiere site of 45 world premieres by Massenet and Ravel.",
     "historicPremieres": [
-      {
-        "title": "Le jongleur de Notre-Dame",
-        "composer": "Jules Massenet",
-        "premiereYear": 1902,
-        "type": "WORLD_PREMIERE",
-        "details": "Miracle opera world premiere starring Lucien Fugère."
-      },
-      {
-        "title": "L’enfant et les sortilèges",
-        "composer": "Maurice Ravel",
-        "premiereYear": 1925,
-        "type": "WORLD_PREMIERE",
-        "details": "Choreographed by George Balanchine with libretto by Colette; conducted by Victor de Sabata."
-      }
-    ]
+            {
+                  "title": "Le jongleur de Notre-Dame",
+                  "composer": "Jules Massenet",
+                  "premiereYear": 1902,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Miracle opera world premiere starring Lucien Fugère."
+            },
+            {
+                  "title": "L’enfant et les sortilèges",
+                  "composer": "Maurice Ravel",
+                  "premiereYear": 1925,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Choreographed by George Balanchine with libretto by Colette; conducted by Victor de Sabata."
+            }
+      ]
   },
   {
     "id": "palau-les-arts-valencia",
@@ -1917,14 +1919,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,200 seats",
     "historicSignificance": "Where King Gustav III was fatally shot at a masquerade ball in 1792 (the real-life inspiration for Verdi’s Un ballo in maschera).",
     "historicPremieres": [
-      {
-        "title": "Aniara",
-        "composer": "Karl-Birger Blomdahl",
-        "premiereYear": 1959,
-        "type": "WORLD_PREMIERE",
-        "details": "Famed Swedish science-fiction space opera based on the epic poem by Nobel laureate Harry Martinson."
-      }
-    ]
+            {
+                  "title": "Aniara",
+                  "composer": "Karl-Birger Blomdahl",
+                  "premiereYear": 1959,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Famed Swedish science-fiction space opera based on the epic poem by Nobel laureate Harry Martinson."
+            }
+      ]
   },
   {
     "id": "oslo-opera-house",
@@ -1944,14 +1946,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,364 seats (Main Auditorium)",
     "historicSignificance": "Winner of the World Architecture Festival and Mies van der Rohe Prize; revolutionized democratic opera architecture.",
     "historicPremieres": [
-      {
-        "title": "Jorden rundt på 80 dager",
-        "composer": "Gisle Kverndokk",
-        "premiereYear": 2008,
-        "type": "WORLD_PREMIERE",
-        "details": "Inaugural commission for the opening of the new waterfront opera house."
-      }
-    ]
+            {
+                  "title": "Jorden rundt på 80 dager",
+                  "composer": "Gisle Kverndokk",
+                  "premiereYear": 2008,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Inaugural commission for the opening of the new waterfront opera house."
+            }
+      ]
   },
   {
     "id": "copenhagen-opera-house",
@@ -1989,14 +1991,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,359 seats",
     "historicSignificance": "Largest theatre in London’s West End; historical home of opera in English and groundbreaking accessible productions.",
     "historicPremieres": [
-      {
-        "title": "The Mask of Orpheus",
-        "composer": "Harrison Birtwistle",
-        "premiereYear": 1986,
-        "type": "WORLD_PREMIERE",
-        "details": "Monumental contemporary British opera conducted by Elgar Howarth."
-      }
-    ]
+            {
+                  "title": "The Mask of Orpheus",
+                  "composer": "Harrison Birtwistle",
+                  "premiereYear": 1986,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Monumental contemporary British opera conducted by Elgar Howarth."
+            }
+      ]
   },
   {
     "id": "welsh-national-opera",
@@ -2016,14 +2018,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,897 seats (Donald Gordon Theatre)",
     "historicSignificance": "Home of one of the greatest touring opera choruses in the world; Wales’s national cultural flagship.",
     "historicPremieres": [
-      {
-        "title": "The Doctor of Myddfai",
-        "composer": "Peter Maxwell Davies",
-        "premiereYear": 1996,
-        "type": "WORLD_PREMIERE",
-        "details": "Welsh mythological opera commissioned for the 50th anniversary of WNO."
-      }
-    ]
+            {
+                  "title": "The Doctor of Myddfai",
+                  "composer": "Peter Maxwell Davies",
+                  "premiereYear": 1996,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Welsh mythological opera commissioned for the 50th anniversary of WNO."
+            }
+      ]
   },
   {
     "id": "scottish-opera",
@@ -2043,14 +2045,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,541 seats",
     "historicSignificance": "National opera company of Scotland, founded in 1962 by Sir Alexander Gibson.",
     "historicPremieres": [
-      {
-        "title": "Mary, Queen of Scots",
-        "composer": "Thea Musgrave",
-        "premiereYear": 1977,
-        "type": "WORLD_PREMIERE",
-        "details": "Commissioned for the Edinburgh International Festival and Scottish Opera, conducted by the composer."
-      }
-    ]
+            {
+                  "title": "Mary, Queen of Scots",
+                  "composer": "Thea Musgrave",
+                  "premiereYear": 1977,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Commissioned for the Edinburgh International Festival and Scottish Opera, conducted by the composer."
+            }
+      ]
   },
   {
     "id": "new-national-theatre-tokyo",
@@ -2070,14 +2072,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,814 seats (Opera Palace)",
     "historicSignificance": "Supreme temple of Western grand opera in Japan; inaugurating modern Japanese classical production.",
     "historicPremieres": [
-      {
-        "title": "Takeru",
-        "composer": "Ikuma Dan",
-        "premiereYear": 1997,
-        "type": "WORLD_PREMIERE",
-        "details": "Grand inaugural opera based on Japanese mythological history opening the new national house."
-      }
-    ]
+            {
+                  "title": "Takeru",
+                  "composer": "Ikuma Dan",
+                  "premiereYear": 1997,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Grand inaugural opera based on Japanese mythological history opening the new national house."
+            }
+      ]
   },
   {
     "id": "national-centre-performing-arts-beijing",
@@ -2097,14 +2099,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,207 seats (Opera Hall)",
     "historicSignificance": "China’s flagship national opera house; commissioner of major grand-scale Western and historical operas.",
     "historicPremieres": [
-      {
-        "title": "Rickshaw Boy (Luotuo Xiangzi)",
-        "composer": "Guo Wenjing",
-        "premiereYear": 2014,
-        "type": "WORLD_PREMIERE",
-        "details": "Acclaimed modern opera based on Lao She’s classic Beijing novel, which toured major Italian opera houses."
-      }
-    ]
+            {
+                  "title": "Rickshaw Boy (Luotuo Xiangzi)",
+                  "composer": "Guo Wenjing",
+                  "premiereYear": 2014,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Acclaimed modern opera based on Lao She’s classic Beijing novel, which toured major Italian opera houses."
+            }
+      ]
   },
   {
     "id": "seoul-arts-center",
@@ -2211,17 +2213,18 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "inauguratedYear": 1878,
     "architect": "Robert S. Roeschlaub",
     "architecturalStyle": "Victorian Stone Jewel Box with Trompe-l’œil Ceiling",
+    "venueCategory": "FRONTIER_LEGACY_HOUSE",
     "capacity": "550 seats",
     "historicSignificance": "America’s 5th-oldest opera company (founded 1932); site of the world premiere of Douglas Moore’s The Ballad of Baby Doe (1956).",
     "historicPremieres": [
-      {
-        "title": "The Ballad of Baby Doe",
-        "composer": "Douglas Moore",
-        "premiereYear": 1956,
-        "type": "WORLD_PREMIERE",
-        "details": "Beloved American folk opera commissioned by Central City Opera, telling the Colorado silver boom true story of Horace Tabor and Baby Doe."
-      }
-    ]
+            {
+                  "title": "The Ballad of Baby Doe",
+                  "composer": "Douglas Moore",
+                  "premiereYear": 1956,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Beloved American folk opera commissioned by Central City Opera, telling the Colorado silver boom true story of Horace Tabor and Baby Doe."
+            }
+      ]
   },
   {
     "id": "wheeler-opera-house",
@@ -2239,17 +2242,123 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "inauguratedYear": 1889,
     "architect": "Willis A. Barnes",
     "architecturalStyle": "Romanesque Revival Peachblow Sandstone Gem",
+    "venueCategory": "FRONTIER_LEGACY_HOUSE",
     "capacity": "503 seats",
     "historicSignificance": "Historic 1889 mountain opera house; year-round civic and performing arts anchor of Aspen, Colorado.",
     "historicPremieres": [
-      {
-        "title": "The King and the Duke",
-        "composer": "Jack Gottlieb",
-        "premiereYear": 1968,
-        "type": "WORLD_PREMIERE",
-        "details": "Aspen Music Festival opera commission based on Mark Twain’s Adventures of Huckleberry Finn."
-      }
-    ]
+            {
+                  "title": "The King and the Duke",
+                  "composer": "Jack Gottlieb",
+                  "premiereYear": 1968,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Aspen Music Festival opera commission based on Mark Twain’s Adventures of Huckleberry Finn."
+            }
+      ]
+  },
+  {
+    "id": "leadville-tabor-opera",
+    "name": "Tabor Opera House",
+    "city": "Leadville",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 39.2503,
+    "longitude": -106.2925,
+    "tier": 4,
+    "venueType": "HISTORIC_GEM",
+    "seasonalOnly": false,
+    "websiteUrl": "https://taboroperahouse.org",
+    "description": "Built in 1879 by silver-mining tycoon Horace Tabor in just 100 days, this National Historic Landmark was once considered the finest theatre between St. Louis and San Francisco. At its peak it hosted major touring opera companies and the leading performers of the era. Tabor himself is the tragic romantic subject of Douglas Moore's opera The Ballad of Baby Doe, premiered at nearby Central City Opera in 1956.",
+    "inauguratedYear": 1879,
+    "architect": "Unknown (construction supervised by Horace Tabor)",
+    "architecturalStyle": "Victorian Italianate Brick with Ornate Pressed-Metal Facade",
+    "venueCategory": "FRONTIER_LEGACY_HOUSE",
+    "buildingEra": "19TH_CENTURY",
+    "capacity": "880 seats (historic)",
+    "historicSignificance": "National Historic Landmark; the finest frontier opera house of the Colorado silver boom; Horace Tabor's personal monument to cultural ambition in the Rocky Mountains."
+  },
+  {
+    "id": "pipers-opera-house-virginia-city",
+    "name": "Piper's Opera House",
+    "city": "Virginia City",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 39.3097,
+    "longitude": -119.6483,
+    "tier": 4,
+    "venueType": "HISTORIC_GEM",
+    "seasonalOnly": false,
+    "websiteUrl": "https://www.pipersoperahouse.com",
+    "description": "Built in Virginia City during the Comstock Lode silver boom — the largest silver discovery in United States history — Piper's Opera House (current building 1885) was a premier cultural institution of the frontier American West. The house attracted celebrated touring opera companies and artists of the era. Today it operates as a historic venue for concerts and public tours.",
+    "inauguratedYear": 1885,
+    "architect": "John Piper",
+    "architecturalStyle": "Victorian Wood-Frame Theatre with Ornate Interior Balconies",
+    "venueCategory": "FRONTIER_LEGACY_HOUSE",
+    "buildingEra": "19TH_CENTURY",
+    "capacity": "800 seats (historic)",
+    "historicSignificance": "The preeminent opera house of the Comstock Lode era; one of the most historically significant surviving frontier opera houses in the American West."
+  },
+  {
+    "id": "homestake-opera-house",
+    "name": "Homestake Opera House",
+    "city": "Lead",
+    "country": "USA",
+    "region": "Americas",
+    "latitude": 44.3522,
+    "longitude": -103.7654,
+    "tier": 4,
+    "venueType": "HISTORIC_GEM",
+    "seasonalOnly": false,
+    "websiteUrl": "https://homestakeoperahouse.org",
+    "description": "Built in 1914 by Phoebe Apperson Hearst and the Homestake Mining Company — operators of the largest and deepest gold mine in North America — as a cultural gift to the mining community of Lead, South Dakota. The building featured a 1,000-seat theatre, library, and bowling alley. Currently undergoing active restoration as a performing arts venue.",
+    "inauguratedYear": 1914,
+    "architect": "Hearst / Homestake Mining Company",
+    "architecturalStyle": "Mission Revival Civic Auditorium",
+    "venueCategory": "FRONTIER_LEGACY_HOUSE",
+    "buildingEra": "20TH_CENTURY",
+    "capacity": "1,000 seats (historic)",
+    "historicSignificance": "Built by Phoebe Hearst as a philanthropic cultural center for the Homestake gold mine community; currently under restoration."
+  },
+  {
+    "id": "her-majestys-theatre-ballarat",
+    "name": "Her Majesty's Theatre",
+    "city": "Ballarat",
+    "country": "Australia",
+    "region": "Asia-Pacific",
+    "latitude": -37.5622,
+    "longitude": 143.8503,
+    "tier": 4,
+    "venueType": "HISTORIC_GEM",
+    "seasonalOnly": false,
+    "websiteUrl": "https://www.hmtballarat.com.au",
+    "description": "One of Australia's oldest continuously operating theatres, built during the Victorian gold rush that transformed Ballarat from a mining camp into a prosperous city. Throughout the 19th century the theatre hosted major international touring opera companies. A rare living monument to the cultural aspirations of the gold rush era.",
+    "inauguratedYear": 1875,
+    "architect": "Unknown (extensively restored)",
+    "architecturalStyle": "Victorian Civic Theatre with Classical Facade",
+    "venueCategory": "FRONTIER_LEGACY_HOUSE",
+    "buildingEra": "19TH_CENTURY",
+    "capacity": "900 seats (approximate)",
+    "historicSignificance": "One of the oldest continuously operating theatres in Australia; testament to the cultural aspirations of the Victorian gold rush era."
+  },
+  {
+    "id": "port-elizabeth-opera-house",
+    "name": "Port Elizabeth Opera House",
+    "city": "Gqeberha",
+    "country": "South Africa",
+    "region": "Middle East & Africa",
+    "latitude": -33.9608,
+    "longitude": 25.6022,
+    "tier": 4,
+    "venueType": "HISTORIC_GEM",
+    "seasonalOnly": false,
+    "websiteUrl": "https://www.artscape.co.za",
+    "description": "Opened in 1892, the oldest operating theatre in Africa. Built during the era of colonial prosperity in the Cape Colony, it is a rare surviving Victorian-era theatre designated as a South African National Monument. Throughout its history it has hosted opera, classical music, and dramatic productions.",
+    "inauguratedYear": 1892,
+    "architect": "Unknown (Victorian era)",
+    "architecturalStyle": "Victorian Colonial Theatre",
+    "venueCategory": "FRONTIER_LEGACY_HOUSE",
+    "buildingEra": "19TH_CENTURY",
+    "capacity": "550 seats (approximate)",
+    "historicSignificance": "Oldest operating theatre in Africa; South African National Monument."
   },
   {
     "id": "santa-fe-opera",
@@ -2270,21 +2379,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,126 seats",
     "historicSignificance": "One of the world’s most celebrated summer opera festivals; pioneer of American and Richard Strauss premieres.",
     "historicPremieres": [
-      {
-        "title": "The (R)evolution of Steve Jobs",
-        "composer": "Mason Bates",
-        "premiereYear": 2017,
-        "type": "WORLD_PREMIERE",
-        "details": "Grammy Award-winning world premiere opera on the life and philosophy of Apple co-founder Steve Jobs."
-      },
-      {
-        "title": "Madame Mao",
-        "composer": "Bright Sheng",
-        "premiereYear": 2003,
-        "type": "WORLD_PREMIERE",
-        "details": "Critically acclaimed commission exploring Jiang Qing and the Cultural Revolution."
-      }
-    ]
+            {
+                  "title": "Madame Mao",
+                  "composer": "Bright Sheng",
+                  "premiereYear": 2003,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Critically acclaimed commission exploring Jiang Qing and the Cultural Revolution."
+            },
+            {
+                  "title": "The (R)evolution of Steve Jobs",
+                  "composer": "Mason Bates",
+                  "premiereYear": 2017,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Grammy Award-winning world premiere opera on the life and philosophy of Apple co-founder Steve Jobs."
+            }
+      ]
   },
   {
     "id": "chautauqua-opera",
@@ -2345,14 +2454,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "7,023 total (3,802 pavilion + 3,221 lawn) / 382 (The Barns)",
     "historicSignificance": "America’s official National Park for the Performing Arts; elite national proving ground for top-tier vocal artists.",
     "historicPremieres": [
-      {
-        "title": "Ghost Café",
-        "composer": "Various / Commissioned",
-        "premiereYear": 2021,
-        "type": "WORLD_PREMIERE",
-        "details": "Commissioned multi-part contemporary vocal chamber opera for national broadcast."
-      }
-    ]
+            {
+                  "title": "Ghost Café",
+                  "composer": "Various / Commissioned",
+                  "premiereYear": 2021,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Commissioned multi-part contemporary vocal chamber opera for national broadcast."
+            }
+      ]
   },
   {
     "id": "spoleto-festival-usa",
@@ -2373,14 +2482,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,800 seats (Gaillard) / 463 seats (Dock Street)",
     "historicSignificance": "America’s premier comprehensive international arts festival; historic champion of rare operatic masterworks.",
     "historicPremieres": [
-      {
-        "title": "Omar",
-        "composer": "Rhiannon Giddens & Michael Abels",
-        "premiereYear": 2022,
-        "type": "WORLD_PREMIERE",
-        "details": "Pulitzer Prize-winning opera based on the 1831 autobiography of enslaved Muslim scholar Omar ibn Said."
-      }
-    ]
+            {
+                  "title": "Omar",
+                  "composer": "Rhiannon Giddens & Michael Abels",
+                  "premiereYear": 2022,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Pulitzer Prize-winning opera based on the 1831 autobiography of enslaved Muslim scholar Omar ibn Said."
+            }
+      ]
   },
   {
     "id": "glimmerglass-festival",
@@ -2401,14 +2510,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "914 seats",
     "historicSignificance": "Celebrated American summer proving ground for major international opera stars and creative American premieres.",
     "historicPremieres": [
-      {
-        "title": "The Gilded Cage",
-        "composer": "Various",
-        "premiereYear": 2015,
-        "type": "WORLD_PREMIERE",
-        "details": "Critically acclaimed festival staging directed by Francesca Zambello."
-      }
-    ]
+            {
+                  "title": "The Gilded Cage",
+                  "composer": "Various",
+                  "premiereYear": 2015,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Critically acclaimed festival staging directed by Francesca Zambello."
+            }
+      ]
   },
   {
     "id": "sarasota-opera",
@@ -2448,21 +2557,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "987 seats",
     "historicSignificance": "National leader in fostering young American singers and premiering groundbreaking contemporary operas.",
     "historicPremieres": [
-      {
-        "title": "Champion",
-        "composer": "Terence Blanchard",
-        "premiereYear": 2013,
-        "type": "WORLD_PREMIERE",
-        "details": "World premiere \"opera in jazz\" on the tragic life of boxer Emile Griffith."
-      },
-      {
-        "title": "Fire Shut Up in My Bones",
-        "composer": "Terence Blanchard",
-        "premiereYear": 2019,
-        "type": "WORLD_PREMIERE",
-        "details": "World premiere; later chosen to reopen the Metropolitan Opera in 2021."
-      }
-    ]
+            {
+                  "title": "Champion",
+                  "composer": "Terence Blanchard",
+                  "premiereYear": 2013,
+                  "type": "WORLD_PREMIERE",
+                  "details": "World premiere \"opera in jazz\" on the tragic life of boxer Emile Griffith."
+            },
+            {
+                  "title": "Fire Shut Up in My Bones",
+                  "composer": "Terence Blanchard",
+                  "premiereYear": 2019,
+                  "type": "WORLD_PREMIERE",
+                  "details": "World premiere; later chosen to reopen the Metropolitan Opera in 2021."
+            }
+      ]
   },
   {
     "id": "des-moines-metro-opera",
@@ -2483,14 +2592,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "467 seats",
     "historicSignificance": "One of the Midwest’s premier summer opera destinations; national reputation for high-octane casting.",
     "historicPremieres": [
-      {
-        "title": "A Thousand Acres",
-        "composer": "Kristin Kuster",
-        "premiereYear": 2022,
-        "type": "WORLD_PREMIERE",
-        "details": "Commissioned world premiere based on Jane Smiley’s Pulitzer Prize-winning Iowa novel."
-      }
-    ]
+            {
+                  "title": "A Thousand Acres",
+                  "composer": "Kristin Kuster",
+                  "premiereYear": 2022,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Commissioned world premiere based on Jane Smiley’s Pulitzer Prize-winning Iowa novel."
+            }
+      ]
   },
   {
     "id": "modell-lyric-baltimore",
@@ -2625,17 +2734,17 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,200 seats",
     "historicSignificance": "Pioneer of perfectionist rehearsal standards and Mozart renaissance; launched careers of Janet Baker and Felicity Lott.",
     "historicPremieres": [
-      {
-        "title": "The Rape of Lucretia",
-        "composer": "Benjamin Britten",
-        "premiereYear": 1946,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Ernest Ansermet",
-        "patronageType": "PRIVATE_BENEFACTOR",
-        "details": "Britten’s chamber opera world premiere conducted by Ernest Ansermet starring Kathleen Ferrier.",
-        "commissionContext": "Founded by John Christie and Audrey Mildmay; premiere marked the launch of Britten's English Opera Group for chamber opera."
-      }
-    ]
+            {
+                  "title": "The Rape of Lucretia",
+                  "composer": "Benjamin Britten",
+                  "premiereYear": 1946,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Ernest Ansermet",
+                  "patronageType": "PRIVATE_BENEFACTOR",
+                  "details": "Britten’s chamber opera world premiere conducted by Ernest Ansermet starring Kathleen Ferrier.",
+                  "commissionContext": "Founded by John Christie and Audrey Mildmay; premiere marked the launch of Britten's English Opera Group for chamber opera."
+            }
+      ]
   },
   {
     "id": "bregenzer-festspiele",
@@ -2677,14 +2786,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,350 seats",
     "historicSignificance": "France’s premier international opera festival; international summit for visionary stage directors and premier Mozart casts.",
     "historicPremieres": [
-      {
-        "title": "Written on Skin",
-        "composer": "George Benjamin",
-        "premiereYear": 2012,
-        "type": "WORLD_PREMIERE",
-        "details": "Celebrated contemporary masterwork with libretto by Martin Crimp, conducted by the composer."
-      }
-    ]
+            {
+                  "title": "Written on Skin",
+                  "composer": "George Benjamin",
+                  "premiereYear": 2012,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Celebrated contemporary masterwork with libretto by Martin Crimp, conducted by the composer."
+            }
+      ]
   },
   {
     "id": "warsaw-chamber-opera",
@@ -2742,14 +2851,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,264 seats",
     "historicSignificance": "Founded by Finnish soprano Aino Ackté; Finland’s most famous international cultural festival.",
     "historicPremieres": [
-      {
-        "title": "The Horseman (Ratsumies)",
-        "composer": "Aulis Sallinen",
-        "premiereYear": 1975,
-        "type": "WORLD_PREMIERE",
-        "details": "Commissioned for the 500th anniversary of Olavinlinna Castle; launched modern Finnish opera internationally."
-      }
-    ]
+            {
+                  "title": "The Horseman (Ratsumies)",
+                  "composer": "Aulis Sallinen",
+                  "premiereYear": 1975,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Commissioned for the 500th anniversary of Olavinlinna Castle; launched modern Finnish opera internationally."
+            }
+      ]
   },
   {
     "id": "drottningholm-court-theatre",
@@ -2860,14 +2969,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "900 seats",
     "historicSignificance": "The biggest and most luxurious Venetian theatre of the 17th century; second stage of Teatro La Fenice.",
     "historicPremieres": [
-      {
-        "title": "Agrippina",
-        "composer": "George Frideric Handel",
-        "premiereYear": 1709,
-        "type": "WORLD_PREMIERE",
-        "details": "Handel’s triumphant breakthrough Italian opera, running for an unprecedented 27 consecutive nights."
-      }
-    ]
+            {
+                  "title": "Agrippina",
+                  "composer": "George Frideric Handel",
+                  "premiereYear": 1709,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Handel’s triumphant breakthrough Italian opera, running for an unprecedented 27 consecutive nights."
+            }
+      ]
   },
   {
     "id": "la-monnaie-de-munt",
@@ -2887,21 +2996,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,152 seats",
     "historicSignificance": "Where the Belgian Revolution was sparked in 1830; European center for daring contemporary stage directing under Gerard Mortier and Bernard Foccroulle.",
     "historicPremieres": [
-      {
-        "title": "Hérodiade",
-        "composer": "Jules Massenet",
-        "premiereYear": 1881,
-        "type": "WORLD_PREMIERE",
-        "details": "Massenet’s grand opera world premiere after rejection by the Paris Opéra."
-      },
-      {
-        "title": "Gwendoline",
-        "composer": "Emmanuel Chabrier",
-        "premiereYear": 1886,
-        "type": "WORLD_PREMIERE",
-        "details": "French Wagnerian opera premiered on 10 April 1886."
-      }
-    ]
+            {
+                  "title": "Hérodiade",
+                  "composer": "Jules Massenet",
+                  "premiereYear": 1881,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Massenet’s grand opera world premiere after rejection by the Paris Opéra."
+            },
+            {
+                  "title": "Gwendoline",
+                  "composer": "Emmanuel Chabrier",
+                  "premiereYear": 1886,
+                  "type": "WORLD_PREMIERE",
+                  "details": "French Wagnerian opera premiered on 10 April 1886."
+            }
+      ]
   },
   {
     "id": "opera-ballet-vlaanderen",
@@ -2939,21 +3048,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,633 seats",
     "historicSignificance": "Voted Opera Company of the Year by the International Opera Awards; premier opera institution of the Low Countries.",
     "historicPremieres": [
-      {
-        "title": "Waiting for Godot",
-        "composer": "Roman Haubenstock-Ramati",
-        "premiereYear": 1988,
-        "type": "WORLD_PREMIERE",
-        "details": "Operatic adaptation of Samuel Beckett’s drama, conducted by Michael Gielen."
-      },
-      {
-        "title": "Life with an Idiot",
-        "composer": "Alfred Schnittke",
-        "premiereYear": 1992,
-        "type": "WORLD_PREMIERE",
-        "details": "Conducted by Mstislav Rostropovich, directed by Boris Pokrovsky."
-      }
-    ]
+            {
+                  "title": "Waiting for Godot",
+                  "composer": "Roman Haubenstock-Ramati",
+                  "premiereYear": 1988,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Operatic adaptation of Samuel Beckett’s drama, conducted by Michael Gielen."
+            },
+            {
+                  "title": "Life with an Idiot",
+                  "composer": "Alfred Schnittke",
+                  "premiereYear": 1992,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Conducted by Mstislav Rostropovich, directed by Boris Pokrovsky."
+            }
+      ]
   },
   {
     "id": "croatian-national-theatre-zagreb",
@@ -2973,14 +3082,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "809 seats",
     "historicSignificance": "National opera and ballet theatre of Croatia; center of South Slavic classical opera tradition.",
     "historicPremieres": [
-      {
-        "title": "Nikola Šubić Zrinski",
-        "composer": "Ivan Zajc",
-        "premiereYear": 1876,
-        "type": "WORLD_PREMIERE",
-        "details": "Croatia’s definitive national opera, featuring the patriotic anthem \"U boj, u boj!\"."
-      }
-    ]
+            {
+                  "title": "Nikola Šubić Zrinski",
+                  "composer": "Ivan Zajc",
+                  "premiereYear": 1876,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Croatia’s definitive national opera, featuring the patriotic anthem \"U boj, u boj!\"."
+            }
+      ]
   },
   {
     "id": "national-theatre-brno",
@@ -3000,35 +3109,35 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,055 seats",
     "historicSignificance": "Global home of Leoš Janáček’s operas; premiere venue for nearly all of Janáček’s late masterworks.",
     "historicPremieres": [
-      {
-        "title": "Jenůfa",
-        "composer": "Leoš Janáček",
-        "premiereYear": 1904,
-        "type": "WORLD_PREMIERE",
-        "details": "Janáček’s breakthrough realist Moravian tragedy premiered in Brno on 21 January 1904."
-      },
-      {
-        "title": "Káťa Kabanová",
-        "composer": "Leoš Janáček",
-        "premiereYear": 1921,
-        "type": "WORLD_PREMIERE",
-        "details": "Conducted by František Neumann, starring Marie Veselá."
-      },
-      {
-        "title": "The Cunning Little Vixen",
-        "composer": "Leoš Janáček",
-        "premiereYear": 1924,
-        "type": "WORLD_PREMIERE",
-        "details": "Janáček’s philosophical woodland opera based on the newspaper comic strip."
-      },
-      {
-        "title": "The Makropulos Affair",
-        "composer": "Leoš Janáček",
-        "premiereYear": 1926,
-        "type": "WORLD_PREMIERE",
-        "details": "Karel Čapek’s longevity drama set to music by Janáček."
-      }
-    ]
+            {
+                  "title": "Jenůfa",
+                  "composer": "Leoš Janáček",
+                  "premiereYear": 1904,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Janáček’s breakthrough realist Moravian tragedy premiered in Brno on 21 January 1904."
+            },
+            {
+                  "title": "Káťa Kabanová",
+                  "composer": "Leoš Janáček",
+                  "premiereYear": 1921,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Conducted by František Neumann, starring Marie Veselá."
+            },
+            {
+                  "title": "The Cunning Little Vixen",
+                  "composer": "Leoš Janáček",
+                  "premiereYear": 1924,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Janáček’s philosophical woodland opera based on the newspaper comic strip."
+            },
+            {
+                  "title": "The Makropulos Affair",
+                  "composer": "Leoš Janáček",
+                  "premiereYear": 1926,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Karel Čapek’s longevity drama set to music by Janáček."
+            }
+      ]
   },
   {
     "id": "national-theatre-prague",
@@ -3048,14 +3157,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "986 seats",
     "historicSignificance": "The supreme symbol of Czech national revival; cradle of Bedřich Smetana and Antonín Dvořák’s operas.",
     "historicPremieres": [
-      {
-        "title": "Rusalka",
-        "composer": "Antonín Dvořák",
-        "premiereYear": 1901,
-        "type": "WORLD_PREMIERE",
-        "details": "Dvořák’s fairy-tale masterpiece featuring the famous \"Song to the Moon\", conducted by Karel Kovařovic."
-      }
-    ]
+            {
+                  "title": "Rusalka",
+                  "composer": "Antonín Dvořák",
+                  "premiereYear": 1901,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Dvořák’s fairy-tale masterpiece featuring the famous \"Song to the Moon\", conducted by Karel Kovařovic."
+            }
+      ]
   },
   {
     "id": "finnish-national-opera",
@@ -3075,14 +3184,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,350 seats (Main Auditorium)",
     "historicSignificance": "National opera house of Finland; launchpad for Finland’s internationally dominant conductors and vocalists.",
     "historicPremieres": [
-      {
-        "title": "Kullervo",
-        "composer": "Aulis Sallinen",
-        "premiereYear": 1992,
-        "type": "WORLD_PREMIERE",
-        "details": "Monumental opera based on the Finnish national epic Kalevala."
-      }
-    ]
+            {
+                  "title": "Kullervo",
+                  "composer": "Aulis Sallinen",
+                  "premiereYear": 1992,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Monumental opera based on the Finnish national epic Kalevala."
+            }
+      ]
   },
   {
     "id": "opera-comique-paris",
@@ -3102,47 +3211,47 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,248 seats",
     "historicSignificance": "Birthplace of Carmen and Pelléas et Mélisande; pioneer of the French opéra-comique genre.",
     "historicPremieres": [
-      {
-        "title": "Carmen",
-        "composer": "Georges Bizet",
-        "premiereYear": 1875,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Adolphe Deloffre",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "World premiere on 3 March 1875 starring Célestine Galli-Marié; shocked early audiences before conquering the world.",
-        "commissionContext": "Commissioned by Opéra-Comique co-directors Camille du Locle and Adolphe de Leuven; challenged conventional 19th-century bourgeois moral standards with raw realism and violence on stage, defying box-office expectations."
-      },
-      {
-        "title": "Pelléas et Mélisande",
-        "composer": "Claude Debussy",
-        "premiereYear": 1902,
-        "type": "WORLD_PREMIERE",
-        "conductor": "André Messager",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Conducted by André Messager, starring Mary Garden; revolutionized 20th-century music drama.",
-        "commissionContext": "Championed and conducted by André Messager at the Salle Favart, establishing Impressionism in opera."
-      },
-      {
-        "title": "Les contes d’Hoffmann",
-        "composer": "Jacques Offenbach",
-        "premiereYear": 1881,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Jules Danbé",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Offenbach’s supreme posthumous masterpiece premiered on 10 February 1881.",
-        "commissionContext": "Posthumous premiere produced by Léon Carvalho at the Opéra-Comique."
-      },
-      {
-        "title": "La damnation de Faust",
-        "composer": "Hector Berlioz",
-        "premiereYear": 1846,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Hector Berlioz",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Dramatic legend in concert form conducted by Hector Berlioz.",
-        "commissionContext": "Self-financed concert-opera production by Berlioz that caused him severe financial distress due to low box-office turnout."
-      }
-    ]
+            {
+                  "title": "La damnation de Faust",
+                  "composer": "Hector Berlioz",
+                  "premiereYear": 1846,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Hector Berlioz",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Dramatic legend in concert form conducted by Hector Berlioz.",
+                  "commissionContext": "Self-financed concert-opera production by Berlioz that caused him severe financial distress due to low box-office turnout."
+            },
+            {
+                  "title": "Carmen",
+                  "composer": "Georges Bizet",
+                  "premiereYear": 1875,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Adolphe Deloffre",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "World premiere on 3 March 1875 starring Célestine Galli-Marié; shocked early audiences before conquering the world.",
+                  "commissionContext": "Commissioned by Opéra-Comique co-directors Camille du Locle and Adolphe de Leuven; challenged conventional 19th-century bourgeois moral standards with raw realism and violence on stage, defying box-office expectations."
+            },
+            {
+                  "title": "Les contes d’Hoffmann",
+                  "composer": "Jacques Offenbach",
+                  "premiereYear": 1881,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Jules Danbé",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Offenbach’s supreme posthumous masterpiece premiered on 10 February 1881.",
+                  "commissionContext": "Posthumous premiere produced by Léon Carvalho at the Opéra-Comique."
+            },
+            {
+                  "title": "Pelléas et Mélisande",
+                  "composer": "Claude Debussy",
+                  "premiereYear": 1902,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "André Messager",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Conducted by André Messager, starring Mary Garden; revolutionized 20th-century music drama.",
+                  "commissionContext": "Championed and conducted by André Messager at the Salle Favart, establishing Impressionism in opera."
+            }
+      ]
   },
   {
     "id": "opera-montpellier",
@@ -3252,14 +3361,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,207 seats",
     "historicSignificance": "Voted Opera Company of the Year in 2020; pioneer in contemporary community engagement.",
     "historicPremieres": [
-      {
-        "title": "Der Traumgörge",
-        "composer": "Alexander Zemlinsky",
-        "premiereYear": 1980,
-        "type": "WORLD_PREMIERE",
-        "details": "Posthumous world premiere of Zemlinsky’s romantic masterwork."
-      }
-    ]
+            {
+                  "title": "Der Traumgörge",
+                  "composer": "Alexander Zemlinsky",
+                  "premiereYear": 1980,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Posthumous world premiere of Zemlinsky’s romantic masterwork."
+            }
+      ]
   },
   {
     "id": "deutsches-nationaltheater-weimar",
@@ -3279,21 +3388,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "865 seats",
     "historicSignificance": "Birthplace of the Weimar Republic (1919); site where Franz Liszt premiered Wagner’s Lohengrin and Humperdinck’s Hänsel und Gretel.",
     "historicPremieres": [
-      {
-        "title": "Lohengrin",
-        "composer": "Richard Wagner",
-        "premiereYear": 1850,
-        "type": "WORLD_PREMIERE",
-        "details": "World premiere conducted by Franz Liszt on 28 August 1850 while Wagner was in political exile in Switzerland."
-      },
-      {
-        "title": "Hänsel und Gretel",
-        "composer": "Engelbert Humperdinck",
-        "premiereYear": 1893,
-        "type": "WORLD_PREMIERE",
-        "details": "Conducted by a young Richard Strauss on 23 December 1893 to international acclaim."
-      }
-    ]
+            {
+                  "title": "Lohengrin",
+                  "composer": "Richard Wagner",
+                  "premiereYear": 1850,
+                  "type": "WORLD_PREMIERE",
+                  "details": "World premiere conducted by Franz Liszt on 28 August 1850 while Wagner was in political exile in Switzerland."
+            },
+            {
+                  "title": "Hänsel und Gretel",
+                  "composer": "Engelbert Humperdinck",
+                  "premiereYear": 1893,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Conducted by a young Richard Strauss on 23 December 1893 to international acclaim."
+            }
+      ]
   },
   {
     "id": "teatro-della-pergola",
@@ -3313,21 +3422,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,000 seats",
     "historicSignificance": "The world’s first horseshoe-box theatre architecture; site of the world premiere of Verdi’s Macbeth (1847) and Bellini’s I Capuleti e i Montecchi.",
     "historicPremieres": [
-      {
-        "title": "Macbeth",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1847,
-        "type": "WORLD_PREMIERE",
-        "details": "Verdi’s groundbreaking Shakespearean opera premiered on 14 March 1847 starring Felice Varesi."
-      },
-      {
-        "title": "Parisina",
-        "composer": "Gaetano Donizetti",
-        "premiereYear": 1833,
-        "type": "WORLD_PREMIERE",
-        "details": "Premiered on 17 March 1833 starring Gilbert Duprez."
-      }
-    ]
+            {
+                  "title": "Parisina",
+                  "composer": "Gaetano Donizetti",
+                  "premiereYear": 1833,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Premiered on 17 March 1833 starring Gilbert Duprez."
+            },
+            {
+                  "title": "Macbeth",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1847,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Verdi’s groundbreaking Shakespearean opera premiered on 14 March 1847 starring Felice Varesi."
+            }
+      ]
   },
   {
     "id": "teatro-comunale-modena",
@@ -3419,14 +3528,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,145 seats (Gaiety) / 2,111 seats (Bord Gáis)",
     "historicSignificance": "National opera company of Ireland, producing major seasons across Dublin and touring nationally.",
     "historicPremieres": [
-      {
-        "title": "The Second Violinist",
-        "composer": "Donnacha Dennehy",
-        "premiereYear": 2017,
-        "type": "WORLD_PREMIERE",
-        "details": "Winner of the Fedora General Opera Prize, staged internationally in London and Amsterdam."
-      }
-    ]
+            {
+                  "title": "The Second Violinist",
+                  "composer": "Donnacha Dennehy",
+                  "premiereYear": 2017,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Winner of the Fedora General Opera Prize, staged internationally in London and Amsterdam."
+            }
+      ]
   },
   {
     "id": "bass-performance-hall-fort-worth",
@@ -3446,14 +3555,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,056 seats",
     "historicSignificance": "Oldest opera company in Texas; celebrated for pioneering contemporary bilingual and American operas.",
     "historicPremieres": [
-      {
-        "title": "JFK",
-        "composer": "David T. Little",
-        "premiereYear": 2016,
-        "type": "WORLD_PREMIERE",
-        "details": "World premiere opera capturing John F. Kennedy’s final night spent in Fort Worth before Dallas."
-      }
-    ]
+            {
+                  "title": "JFK",
+                  "composer": "David T. Little",
+                  "premiereYear": 2016,
+                  "type": "WORLD_PREMIERE",
+                  "details": "World premiere opera capturing John F. Kennedy’s final night spent in Fort Worth before Dallas."
+            }
+      ]
   },
   {
     "id": "virginia-opera-norfolk",
@@ -3473,14 +3582,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,632 seats",
     "historicSignificance": "Official Opera Company of the Commonwealth of Virginia, founded in 1974.",
     "historicPremieres": [
-      {
-        "title": "A Christmas Carol",
-        "composer": "Thea Musgrave",
-        "premiereYear": 1979,
-        "type": "WORLD_PREMIERE",
-        "details": "Commissioned world premiere conducted by the composer; broadcast on NPR."
-      }
-    ]
+            {
+                  "title": "A Christmas Carol",
+                  "composer": "Thea Musgrave",
+                  "premiereYear": 1979,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Commissioned world premiere conducted by the composer; broadcast on NPR."
+            }
+      ]
   },
   {
     "id": "kentucky-opera-louisville",
@@ -3500,14 +3609,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,400 seats",
     "historicSignificance": "One of the oldest civic opera companies in the American South; National Historic landmark stage.",
     "historicPremieres": [
-      {
-        "title": "The Transposed Heads",
-        "composer": "Peggy Glanville-Hicks",
-        "premiereYear": 1954,
-        "type": "WORLD_PREMIERE",
-        "details": "Historic Louisville Orchestra commission conducted by Moritz von Bomhard."
-      }
-    ]
+            {
+                  "title": "The Transposed Heads",
+                  "composer": "Peggy Glanville-Hicks",
+                  "premiereYear": 1954,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Historic Louisville Orchestra commission conducted by Moritz von Bomhard."
+            }
+      ]
   },
   {
     "id": "opera-san-jose",
@@ -3527,14 +3636,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,122 seats",
     "historicSignificance": "Founded by Irene Dalis; renowned resident artist incubator for top American operatic talent in Silicon Valley.",
     "historicPremieres": [
-      {
-        "title": "Alma Deutscher’s Cinderella",
-        "composer": "Alma Deutscher",
-        "premiereYear": 2017,
-        "type": "CONTINENTAL_PREMIERE",
-        "details": "American premiere of 12-year-old child prodigy Alma Deutscher’s full-length opera; international sensation."
-      }
-    ]
+            {
+                  "title": "Alma Deutscher’s Cinderella",
+                  "composer": "Alma Deutscher",
+                  "premiereYear": 2017,
+                  "type": "CONTINENTAL_PREMIERE",
+                  "details": "American premiere of 12-year-old child prodigy Alma Deutscher’s full-length opera; international sensation."
+            }
+      ]
   },
   {
     "id": "brooklyn-academy-of-music",
@@ -3554,14 +3663,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,090 seats",
     "historicSignificance": "Epicentre of avant-garde and progressive American opera; historic home to Enrico Caruso, Geraldine Farrar, and Philip Glass.",
     "historicPremieres": [
-      {
-        "title": "Songs and Stories from Moby Dick",
-        "composer": "Laurie Anderson",
-        "premiereYear": 1999,
-        "type": "WORLD_PREMIERE",
-        "details": "Groundbreaking multimedia opera world premiere commissioned and staged by BAM Next Wave Festival."
-      }
-    ]
+            {
+                  "title": "Songs and Stories from Moby Dick",
+                  "composer": "Laurie Anderson",
+                  "premiereYear": 1999,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Groundbreaking multimedia opera world premiere commissioned and staged by BAM Next Wave Festival."
+            }
+      ]
   },
   {
     "id": "bravo-vail-music-festival",
@@ -3601,21 +3710,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,152 seats",
     "historicSignificance": "Birthplace of German civic theatre; historical crucible for Schiller and Mozart; major four-division stage.",
     "historicPremieres": [
-      {
-        "title": "Die Räuber",
-        "composer": "Friedrich Schiller (Play with music)",
-        "premiereYear": 1782,
-        "type": "WORLD_PREMIERE",
-        "details": "Epochal premiere establishing German national drama."
-      },
-      {
-        "title": "Gunther von Schwarzburg",
-        "composer": "Ignaz Holzbauer",
-        "premiereYear": 1777,
-        "type": "WORLD_PREMIERE",
-        "details": "German opera praised profusely by Wolfgang Amadeus Mozart."
-      }
-    ]
+            {
+                  "title": "Gunther von Schwarzburg",
+                  "composer": "Ignaz Holzbauer",
+                  "premiereYear": 1777,
+                  "type": "WORLD_PREMIERE",
+                  "details": "German opera praised profusely by Wolfgang Amadeus Mozart."
+            },
+            {
+                  "title": "Die Räuber",
+                  "composer": "Friedrich Schiller (Play with music)",
+                  "premiereYear": 1782,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Epochal premiere establishing German national drama."
+            }
+      ]
   },
   {
     "id": "garsington-opera",
@@ -3654,14 +3763,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "611 seats",
     "historicSignificance": "National lyric stage of Slovakia; cradle of Slovak vocal artists including Peter Dvorský and Edita Gruberová.",
     "historicPremieres": [
-      {
-        "title": "Krútňava (The Whirlpool)",
-        "composer": "Eugen Suchoň",
-        "premiereYear": 1949,
-        "type": "WORLD_PREMIERE",
-        "details": "The national opera of Slovakia, premiering on 10 December 1949."
-      }
-    ]
+            {
+                  "title": "Krútňava (The Whirlpool)",
+                  "composer": "Eugen Suchoň",
+                  "premiereYear": 1949,
+                  "type": "WORLD_PREMIERE",
+                  "details": "The national opera of Slovakia, premiering on 10 December 1949."
+            }
+      ]
   },
   {
     "id": "teatr-wielki-poznan",
@@ -3789,21 +3898,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,071 seats",
     "historicSignificance": "Canada’s flagship opera house; acclaimed for international co-productions and landmark complete Ring Cycle cycles directed by François Girard and Robert Lepage.",
     "historicPremieres": [
-      {
-        "title": "The Golden Ass",
-        "composer": "Randolph Peters / Robertson Davies",
-        "premiereYear": 1999,
-        "type": "WORLD_PREMIERE",
-        "details": "Davies’ final libretto premiered with Canadian soprano Maureen Forrester."
-      },
-      {
-        "title": "Louis Riel",
-        "composer": "Harry Somers",
-        "premiereYear": 1967,
-        "type": "WORLD_PREMIERE",
-        "details": "Canada’s Centennial grand opera masterwork."
-      }
-    ]
+            {
+                  "title": "Louis Riel",
+                  "composer": "Harry Somers",
+                  "premiereYear": 1967,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Canada’s Centennial grand opera masterwork."
+            },
+            {
+                  "title": "The Golden Ass",
+                  "composer": "Randolph Peters / Robertson Davies",
+                  "premiereYear": 1999,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Davies’ final libretto premiered with Canadian soprano Maureen Forrester."
+            }
+      ]
   },
   {
     "id": "opera-de-montreal",
@@ -3823,21 +3932,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,982 seats",
     "historicSignificance": "Quebec’s national lyric institution; famed for world premiere of Pink Floyd’s operatic adaptation Another Brick in the Wall.",
     "historicPremieres": [
-      {
-        "title": "Another Brick in the Wall: The Opera",
-        "composer": "Julien Bilodeau / Roger Waters",
-        "premiereYear": 2017,
-        "type": "WORLD_PREMIERE",
-        "details": "Epochal operatic transformation of Roger Waters’ legendary concept album."
-      },
-      {
-        "title": "Nelligan",
-        "composer": "André Gagnon / Michel Tremblay",
-        "premiereYear": 1990,
-        "type": "WORLD_PREMIERE",
-        "details": "Romantic Quebecois opera celebrating poet Émile Nelligan."
-      }
-    ]
+            {
+                  "title": "Nelligan",
+                  "composer": "André Gagnon / Michel Tremblay",
+                  "premiereYear": 1990,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Romantic Quebecois opera celebrating poet Émile Nelligan."
+            },
+            {
+                  "title": "Another Brick in the Wall: The Opera",
+                  "composer": "Julien Bilodeau / Roger Waters",
+                  "premiereYear": 2017,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Epochal operatic transformation of Roger Waters’ legendary concept album."
+            }
+      ]
   },
   {
     "id": "vancouver-opera",
@@ -3857,14 +3966,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,765 seats",
     "historicSignificance": "Pacific Canada’s leading opera producer; catalyst for Joan Sutherland’s legendary North American triumphs.",
     "historicPremieres": [
-      {
-        "title": "The Overcoat",
-        "composer": "James Rolfe / Morris Panych",
-        "premiereYear": 2018,
-        "type": "WORLD_PREMIERE",
-        "details": "Acclaimed modern Canadian adaptation of Gogol’s story."
-      }
-    ]
+            {
+                  "title": "The Overcoat",
+                  "composer": "James Rolfe / Morris Panych",
+                  "premiereYear": 2018,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Acclaimed modern Canadian adaptation of Gogol’s story."
+            }
+      ]
   },
   {
     "id": "calgary-opera",
@@ -3884,21 +3993,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,538 seats",
     "historicSignificance": "Pioneered original Canadian full-scale operas including John Estacio’s Filumena and Bramwell Tovey’s The Inventor.",
     "historicPremieres": [
-      {
-        "title": "Filumena",
-        "composer": "John Estacio / John Murrell",
-        "premiereYear": 2003,
-        "type": "WORLD_PREMIERE",
-        "details": "One of the most performed Canadian operas in history, based on the life of Florence Losandro."
-      },
-      {
-        "title": "The Inventor",
-        "composer": "Bramwell Tovey / John Murrell",
-        "premiereYear": 2011,
-        "type": "WORLD_PREMIERE",
-        "details": "Original opera commissioned and premiered in Calgary."
-      }
-    ]
+            {
+                  "title": "Filumena",
+                  "composer": "John Estacio / John Murrell",
+                  "premiereYear": 2003,
+                  "type": "WORLD_PREMIERE",
+                  "details": "One of the most performed Canadian operas in history, based on the life of Florence Losandro."
+            },
+            {
+                  "title": "The Inventor",
+                  "composer": "Bramwell Tovey / John Murrell",
+                  "premiereYear": 2011,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Original opera commissioned and premiered in Calgary."
+            }
+      ]
   },
   {
     "id": "edmonton-opera",
@@ -3936,14 +4045,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,416 seats",
     "historicSignificance": "Premier boutique opera company of Western Canada; celebrated for commissioning Canadian chamber operas.",
     "historicPremieres": [
-      {
-        "title": "Missing",
-        "composer": "Brian Current / Marie Clements",
-        "premiereYear": 2017,
-        "type": "WORLD_PREMIERE",
-        "details": "Poignant co-commission giving voice to missing and murdered Indigenous women in Canada."
-      }
-    ]
+            {
+                  "title": "Missing",
+                  "composer": "Brian Current / Marie Clements",
+                  "premiereYear": 2017,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Poignant co-commission giving voice to missing and murdered Indigenous women in Canada."
+            }
+      ]
   },
   {
     "id": "theatro-municipal-rio-de-janeiro",
@@ -3963,14 +4072,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,252 seats",
     "historicSignificance": "Brazil’s supreme Belle Époque opera palace; historic stage of Maria Callas, Enrico Caruso, Arturo Toscanini, and Heitor Villa-Lobos.",
     "historicPremieres": [
-      {
-        "title": "Izaht",
-        "composer": "Heitor Villa-Lobos",
-        "premiereYear": 1958,
-        "type": "WORLD_PREMIERE",
-        "details": "Villa-Lobos’ dramatic opera premiered under his own direction."
-      }
-    ]
+            {
+                  "title": "Izaht",
+                  "composer": "Heitor Villa-Lobos",
+                  "premiereYear": 1958,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Villa-Lobos’ dramatic opera premiered under his own direction."
+            }
+      ]
   },
   {
     "id": "theatro-da-paz",
@@ -4009,14 +4118,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,250 seats",
     "historicSignificance": "Oldest major opera house in South America; host to Enrico Caruso, Arturo Toscanini, Anna Pavlova, and Arthur Rubinstein.",
     "historicPremieres": [
-      {
-        "title": "La Parisina",
-        "composer": "Tomás Giribaldi",
-        "premiereYear": 1878,
-        "type": "WORLD_PREMIERE",
-        "details": "The first Uruguayan national opera in history, premiered on 14 September 1878 to wild acclaim."
-      }
-    ]
+            {
+                  "title": "La Parisina",
+                  "composer": "Tomás Giribaldi",
+                  "premiereYear": 1878,
+                  "type": "WORLD_PREMIERE",
+                  "details": "The first Uruguayan national opera in history, premiered on 14 September 1878 to wild acclaim."
+            }
+      ]
   },
   {
     "id": "teatro-colon-bogota",
@@ -4107,14 +4216,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,876 seats",
     "historicSignificance": "Flagship opera institution of the Great Basin and Intermountain West; nationally recognized for its resident artist studio and set construction shop.",
     "historicPremieres": [
-      {
-        "title": "The Invention of Morel",
-        "composer": "Stewart Copeland",
-        "premiereYear": 2017,
-        "type": "WORLD_PREMIERE",
-        "details": "Sci-fi chamber opera world premiere composed by The Police drummer Stewart Copeland, co-produced with Chicago Opera Theater."
-      }
-    ]
+            {
+                  "title": "The Invention of Morel",
+                  "composer": "Stewart Copeland",
+                  "premiereYear": 2017,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Sci-fi chamber opera world premiere composed by The Police drummer Stewart Copeland, co-produced with Chicago Opera Theater."
+            }
+      ]
   },
   {
     "id": "lyric-opera-of-kansas-city",
@@ -4134,14 +4243,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,800 seats",
     "historicSignificance": "Heartland opera powerhouse; world premiere venue for Carlisle Floyd’s The Passion of Jonathan Wade and Mark Campbell’s The Shining.",
     "historicPremieres": [
-      {
-        "title": "The Passion of Jonathan Wade",
-        "composer": "Carlisle Floyd",
-        "premiereYear": 1991,
-        "type": "WORLD_PREMIERE",
-        "details": "Major revised world premiere of Floyd’s Civil War opera."
-      }
-    ]
+            {
+                  "title": "The Passion of Jonathan Wade",
+                  "composer": "Carlisle Floyd",
+                  "premiereYear": 1991,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Major revised world premiere of Floyd’s Civil War opera."
+            }
+      ]
   },
   {
     "id": "wichita-grand-opera",
@@ -4179,21 +4288,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,312 seats (Phoenix) / 2,277 seats (Tucson)",
     "historicSignificance": "Southwest America’s primary dual-city grand opera company; commissioner of Craig Bohmler’s Riders of the Purple Sage.",
     "historicPremieres": [
-      {
-        "title": "Riders of the Purple Sage",
-        "composer": "Craig Bohmler / Steven Mark Kohn",
-        "premiereYear": 2017,
-        "type": "WORLD_PREMIERE",
-        "details": "Blockbuster world premiere adapted from Zane Grey’s Western classic."
-      },
-      {
-        "title": "The Copper Queen",
-        "composer": "Clint Borzoni / Kathleen Kelly",
-        "premiereYear": 2021,
-        "type": "WORLD_PREMIERE",
-        "details": "Award-winning opera set in Bisbee, Arizona."
-      }
-    ]
+            {
+                  "title": "Riders of the Purple Sage",
+                  "composer": "Craig Bohmler / Steven Mark Kohn",
+                  "premiereYear": 2017,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Blockbuster world premiere adapted from Zane Grey’s Western classic."
+            },
+            {
+                  "title": "The Copper Queen",
+                  "composer": "Clint Borzoni / Kathleen Kelly",
+                  "premiereYear": 2021,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Award-winning opera set in Bisbee, Arizona."
+            }
+      ]
   },
   {
     "id": "portland-opera-keller-auditorium",
@@ -4249,21 +4358,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,600 seats",
     "historicSignificance": "National leader in operatic innovation; commissioner and premiere venue for Philip Glass and Robert Moran’s The Juniper Tree.",
     "historicPremieres": [
-      {
-        "title": "The Juniper Tree",
-        "composer": "Philip Glass & Robert Moran",
-        "premiereYear": 1985,
-        "type": "WORLD_PREMIERE",
-        "details": "Joint world premiere with American Repertory Theater."
-      },
-      {
-        "title": "Wakonda's Dream",
-        "composer": "Anthony Davis / Yusef Komunyakaa",
-        "premiereYear": 2007,
-        "type": "WORLD_PREMIERE",
-        "details": "Original opera commissioned on contemporary Native American life in Nebraska."
-      }
-    ]
+            {
+                  "title": "The Juniper Tree",
+                  "composer": "Philip Glass & Robert Moran",
+                  "premiereYear": 1985,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Joint world premiere with American Repertory Theater."
+            },
+            {
+                  "title": "Wakonda's Dream",
+                  "composer": "Anthony Davis / Yusef Komunyakaa",
+                  "premiereYear": 2007,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Original opera commissioned on contemporary Native American life in Nebraska."
+            }
+      ]
   },
   {
     "id": "the-atlanta-opera",
@@ -4301,21 +4410,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,305 seats",
     "historicSignificance": "America’s sixth-oldest opera company; triple Grammy Award-winner for world premiere recordings of Elmer Gantry and Rio de Sangre.",
     "historicPremieres": [
-      {
-        "title": "Rio de Sangre",
-        "composer": "Don Davis",
-        "premiereYear": 2010,
-        "type": "WORLD_PREMIERE",
-        "details": "World premiere opera in Spanish by Matrix film composer Don Davis."
-      },
-      {
-        "title": "Sister Carrie",
-        "composer": "Robert Aldridge / Herschel Garfein",
-        "premiereYear": 2016,
-        "type": "WORLD_PREMIERE",
-        "details": "Adaptation of Theodore Dreiser’s novel."
-      }
-    ]
+            {
+                  "title": "Rio de Sangre",
+                  "composer": "Don Davis",
+                  "premiereYear": 2010,
+                  "type": "WORLD_PREMIERE",
+                  "details": "World premiere opera in Spanish by Matrix film composer Don Davis."
+            },
+            {
+                  "title": "Sister Carrie",
+                  "composer": "Robert Aldridge / Herschel Garfein",
+                  "premiereYear": 2016,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Adaptation of Theodore Dreiser’s novel."
+            }
+      ]
   },
   {
     "id": "madison-opera-overture-center",
@@ -4335,14 +4444,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,251 seats",
     "historicSignificance": "Upper Midwest regional center for innovative opera; premiere house of Daron Hagen’s Shining Brow.",
     "historicPremieres": [
-      {
-        "title": "Shining Brow",
-        "composer": "Daron Hagen / Paul Muldoon",
-        "premiereYear": 1993,
-        "type": "WORLD_PREMIERE",
-        "details": "Landmark American opera chronicling Frank Lloyd Wright at Taliesin."
-      }
-    ]
+            {
+                  "title": "Shining Brow",
+                  "composer": "Daron Hagen / Paul Muldoon",
+                  "premiereYear": 1993,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Landmark American opera chronicling Frank Lloyd Wright at Taliesin."
+            }
+      ]
   },
   {
     "id": "opera-carolina-belk-theater",
@@ -4362,14 +4471,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,118 seats",
     "historicSignificance": "The Carolinas’ premier grand opera institution for over 75 years; co-founder of the Carolina Voices and regional lyric education.",
     "historicPremieres": [
-      {
-        "title": "I Dream",
-        "composer": "Douglas Tappin",
-        "premiereYear": 2018,
-        "type": "WORLD_PREMIERE",
-        "details": "Rhythm and blues opera chronicling the life of Dr. Martin Luther King Jr."
-      }
-    ]
+            {
+                  "title": "I Dream",
+                  "composer": "Douglas Tappin",
+                  "premiereYear": 2018,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Rhythm and blues opera chronicling the life of Dr. Martin Luther King Jr."
+            }
+      ]
   },
   {
     "id": "hawaii-opera-theatre",
@@ -4425,17 +4534,17 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,200 seats (Main Hall)",
     "historicSignificance": "The fabled site of the world premiere of Giuseppe Verdi’s Aida (1871); the primary opera house in Africa and the Arab world.",
     "historicPremieres": [
-      {
-        "title": "Aida",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1871,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Giovanni Bottesini",
-        "patronageType": "ROYAL_COURT",
-        "details": "World premiere on 24 December 1871 conducted by famed virtuoso Giovanni Bottesini.",
-        "commissionContext": "Commissioned directly by Khedive Ismail Pasha of Egypt for 150,000 francs in gold to inaugurate the Khedivial Opera's world prestige and celebrate Egypt's modern emergence alongside the Suez Canal. Conducted by double-bass virtuoso and maestro Giovanni Bottesini; costumed with authentic antiquities curated by Egyptologist Auguste Mariette."
-      }
-    ],
+            {
+                  "title": "Aida",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1871,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Giovanni Bottesini",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "World premiere on 24 December 1871 conducted by famed virtuoso Giovanni Bottesini.",
+                  "commissionContext": "Commissioned directly by Khedive Ismail Pasha of Egypt for 150,000 francs in gold to inaugurate the Khedivial Opera's world prestige and celebrate Egypt's modern emergence alongside the Suez Canal. Conducted by double-bass virtuoso and maestro Giovanni Bottesini; costumed with authentic antiquities curated by Egyptologist Auguste Mariette."
+            }
+      ],
     "predecessorVenue": "Khedivial Opera House (1869–1971)",
     "historicalLineage": "Predecessor venue was the historic wooden Khedivial Opera House (Royal Opera House), constructed in 1869 by Khedive Ismail Pasha in Opera Square to celebrate the opening of the Suez Canal. Destroyed by catastrophic fire in October 1971; the current Cairo Opera House opened in 1988 on Gezira Island with Japanese cultural cooperation."
   },
@@ -4475,14 +4584,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,487 seats",
     "historicSignificance": "Sub-Saharan Africa’s premier opera company; creator of the globally toured Mandela Trilogy and renowned trainer of international Bel Canto stars.",
     "historicPremieres": [
-      {
-        "title": "Mandela Trilogy",
-        "composer": "Peter Louis van Dijk & Mike Campbell",
-        "premiereYear": 2010,
-        "type": "WORLD_PREMIERE",
-        "details": "Critically acclaimed biographical operatic tribute to Nelson Mandela; toured to the London Coliseum, Ravenna Festival, and Dubai Opera."
-      }
-    ]
+            {
+                  "title": "Mandela Trilogy",
+                  "composer": "Peter Louis van Dijk & Mike Campbell",
+                  "premiereYear": 2010,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Critically acclaimed biographical operatic tribute to Nelson Mandela; toured to the London Coliseum, Ravenna Festival, and Dubai Opera."
+            }
+      ]
   },
   {
     "id": "theatre-municipal-de-tunis",
@@ -4609,14 +4718,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,000 seats",
     "historicSignificance": "The United Arab Emirates’ premier lyric theatre; central cultural hub for touring international opera in the Persian Gulf.",
     "historicPremieres": [
-      {
-        "title": "Al Wasl",
-        "composer": "Mohammed Fairouz",
-        "premiereYear": 2022,
-        "type": "WORLD_PREMIERE",
-        "details": "First grand opera composed in the UAE, commissioned for Expo 2020 Dubai and staged at Dubai Opera."
-      }
-    ]
+            {
+                  "title": "Al Wasl",
+                  "composer": "Mohammed Fairouz",
+                  "premiereYear": 2022,
+                  "type": "WORLD_PREMIERE",
+                  "details": "First grand opera composed in the UAE, commissioned for Expo 2020 Dubai and staged at Dubai Opera."
+            }
+      ]
   },
   {
     "id": "katara-opera-house-doha",
@@ -4653,14 +4762,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,750 seats",
     "historicSignificance": "Site of the historic premiere of Zarqa Al Yamama (2024), inaugurating Saudi Arabia’s national grand opera tradition.",
     "historicPremieres": [
-      {
-        "title": "Zarqa Al Yamama",
-        "composer": "Lee Bradshaw / Saleh Zamanan",
-        "premiereYear": 2024,
-        "type": "WORLD_PREMIERE",
-        "details": "The historic first-ever grand opera produced in Saudi Arabia, conducted by Pablo González with Dame Sarah Connolly and the Dresdner Sinfoniker."
-      }
-    ]
+            {
+                  "title": "Zarqa Al Yamama",
+                  "composer": "Lee Bradshaw / Saleh Zamanan",
+                  "premiereYear": 2024,
+                  "type": "WORLD_PREMIERE",
+                  "details": "The historic first-ever grand opera produced in Saudi Arabia, conducted by Pablo González with Dame Sarah Connolly and the Dresdner Sinfoniker."
+            }
+      ]
   },
   {
     "id": "kuwait-opera-house-jacc",
@@ -4698,14 +4807,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,040 seats",
     "historicSignificance": "Turkey’s premier lyrical stage on the Bosphorus; home of the Istanbul State Opera and Ballet.",
     "historicPremieres": [
-      {
-        "title": "Sinan",
-        "composer": "Hasan Uçarsu",
-        "premiereYear": 2021,
-        "type": "WORLD_PREMIERE",
-        "details": "Commissioned for the reopening of AKM celebrating the Ottoman imperial architect Mimar Sinan on Republic Day 2021."
-      }
-    ]
+            {
+                  "title": "Sinan",
+                  "composer": "Hasan Uçarsu",
+                  "premiereYear": 2021,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Commissioned for the reopening of AKM celebrating the Ottoman imperial architect Mimar Sinan on Republic Day 2021."
+            }
+      ]
   },
   {
     "id": "opera-north-leeds-grand-theatre",
@@ -4725,14 +4834,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,500 seats",
     "historicSignificance": "England’s premier provincial opera company; acclaimed for landmark complete Ring cycles and modern commissions.",
     "historicPremieres": [
-      {
-        "title": "Skin Deep",
-        "composer": "David Sawer / Armando Iannucci",
-        "premiereYear": 2009,
-        "type": "WORLD_PREMIERE",
-        "details": "Satirical contemporary British operatic comedy."
-      }
-    ]
+            {
+                  "title": "Skin Deep",
+                  "composer": "David Sawer / Armando Iannucci",
+                  "premiereYear": 2009,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Satirical contemporary British operatic comedy."
+            }
+      ]
   },
   {
     "id": "sadlers-wells-theatre-london",
@@ -4752,17 +4861,17 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,500 seats",
     "historicSignificance": "Birthplace of English National Opera and The Royal Ballet; fabled site of the world premiere of Benjamin Britten’s Peter Grimes (1945).",
     "historicPremieres": [
-      {
-        "title": "Peter Grimes",
-        "composer": "Benjamin Britten",
-        "premiereYear": 1945,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Reginald Goodall",
-        "patronageType": "CIVIC_STATE",
-        "details": "Historic premiere on 7 June 1945 starring Peter Pears; marked the triumphant post-war rebirth of English opera.",
-        "commissionContext": "Staged for the historic post-WWII reopening of Sadler's Wells Theatre in London; heralded as the rebirth of English opera with Peter Pears in the title role."
-      }
-    ]
+            {
+                  "title": "Peter Grimes",
+                  "composer": "Benjamin Britten",
+                  "premiereYear": 1945,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Reginald Goodall",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "Historic premiere on 7 June 1945 starring Peter Pears; marked the triumphant post-war rebirth of English opera.",
+                  "commissionContext": "Staged for the historic post-WWII reopening of Sadler's Wells Theatre in London; heralded as the rebirth of English opera with Peter Pears in the title role."
+            }
+      ]
   },
   {
     "id": "buxton-opera-house",
@@ -4783,14 +4892,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "902 seats",
     "historicSignificance": "Regarded as one of Frank Matcham’s finest surviving opera houses; annual host of the Buxton International Festival.",
     "historicPremieres": [
-      {
-        "title": "Georgiana",
-        "composer": "Mark Tatlow / Michael Williams",
-        "premiereYear": 2019,
-        "type": "WORLD_PREMIERE",
-        "details": "Pastiche opera celebrating Georgiana, Duchess of Devonshire, commissioned for the festival’s 40th anniversary."
-      }
-    ]
+            {
+                  "title": "Georgiana",
+                  "composer": "Mark Tatlow / Michael Williams",
+                  "premiereYear": 2019,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Pastiche opera celebrating Georgiana, Duchess of Devonshire, commissioned for the festival’s 40th anniversary."
+            }
+      ]
   },
   {
     "id": "grand-opera-house-belfast",
@@ -4828,14 +4937,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,915 seats",
     "historicSignificance": "The operatic heart of the Edinburgh International Festival; Scotland’s largest lyric stage hosting international productions from Milan, Paris, and Vienna.",
     "historicPremieres": [
-      {
-        "title": "Inés de Castro",
-        "composer": "James MacMillan",
-        "premiereYear": 1996,
-        "type": "WORLD_PREMIERE",
-        "details": "Acclaimed Scottish Opera world premiere commissioned for the Edinburgh International Festival."
-      }
-    ]
+            {
+                  "title": "Inés de Castro",
+                  "composer": "James MacMillan",
+                  "premiereYear": 1996,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Acclaimed Scottish Opera world premiere commissioned for the Edinburgh International Festival."
+            }
+      ]
   },
   {
     "id": "the-grange-festival-hampshire",
@@ -4874,28 +4983,28 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,740 seats (Historic Stage)",
     "historicSignificance": "One of the world’s most famous opera theatres; premier proving ground for Tchaikovsky, Mussorgsky, and Rachmaninoff; fabled home of the Bolshoi Opera.",
     "historicPremieres": [
-      {
-        "title": "Swan Lake (Lebedinoye ozero)",
-        "composer": "Pyotr Ilyich Tchaikovsky",
-        "premiereYear": 1877,
-        "type": "WORLD_PREMIERE",
-        "details": "World premiere of Tchaikovsky’s immortal masterwork on 4 March 1877."
-      },
-      {
-        "title": "Mazeppa",
-        "composer": "Pyotr Ilyich Tchaikovsky",
-        "premiereYear": 1884,
-        "type": "WORLD_PREMIERE",
-        "details": "Grand opera premiere conducted by Ippolit Altani on 15 February 1884."
-      },
-      {
-        "title": "Aleko",
-        "composer": "Sergei Rachmaninoff",
-        "premiereYear": 1893,
-        "type": "WORLD_PREMIERE",
-        "details": "Rachmaninoff’s graduation opera premiere, praised and attended by Tchaikovsky."
-      }
-    ]
+            {
+                  "title": "Swan Lake (Lebedinoye ozero)",
+                  "composer": "Pyotr Ilyich Tchaikovsky",
+                  "premiereYear": 1877,
+                  "type": "WORLD_PREMIERE",
+                  "details": "World premiere of Tchaikovsky’s immortal masterwork on 4 March 1877."
+            },
+            {
+                  "title": "Mazeppa",
+                  "composer": "Pyotr Ilyich Tchaikovsky",
+                  "premiereYear": 1884,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Grand opera premiere conducted by Ippolit Altani on 15 February 1884."
+            },
+            {
+                  "title": "Aleko",
+                  "composer": "Sergei Rachmaninoff",
+                  "premiereYear": 1893,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Rachmaninoff’s graduation opera premiere, praised and attended by Tchaikovsky."
+            }
+      ]
   },
   {
     "id": "mariinsky-theatre-st-petersburg",
@@ -4915,35 +5024,35 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,625 seats (Historic) / 1,830 seats (Mariinsky II)",
     "historicSignificance": "The supreme creative cradle of Russian grand opera; premiere venue for Boris Godunov, Eugene Onegin, and The Queen of Spades.",
     "historicPremieres": [
-      {
-        "title": "Boris Godunov",
-        "composer": "Modest Mussorgsky",
-        "premiereYear": 1874,
-        "type": "WORLD_PREMIERE",
-        "details": "Revolutionary Russian folk opera masterwork premiered on 8 February 1874."
-      },
-      {
-        "title": "The Queen of Spades (Pikovaya Dama)",
-        "composer": "Pyotr Ilyich Tchaikovsky",
-        "premiereYear": 1890,
-        "type": "WORLD_PREMIERE",
-        "details": "Tchaikovsky’s tragic masterpiece premiered on 19 December 1890."
-      },
-      {
-        "title": "Prince Igor (Knyaz Igor)",
-        "composer": "Alexander Borodin",
-        "premiereYear": 1890,
-        "type": "WORLD_PREMIERE",
-        "details": "Posthumous premiere completed by Rimsky-Korsakov and Glazunov."
-      },
-      {
-        "title": "La forza del destino",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1862,
-        "type": "WORLD_PREMIERE",
-        "details": "Commissioned by the Imperial Italian Opera of St. Petersburg; conducted by Verdi in person on 10 November 1862."
-      }
-    ]
+            {
+                  "title": "La forza del destino",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1862,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Commissioned by the Imperial Italian Opera of St. Petersburg; conducted by Verdi in person on 10 November 1862."
+            },
+            {
+                  "title": "Boris Godunov",
+                  "composer": "Modest Mussorgsky",
+                  "premiereYear": 1874,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Revolutionary Russian folk opera masterwork premiered on 8 February 1874."
+            },
+            {
+                  "title": "The Queen of Spades (Pikovaya Dama)",
+                  "composer": "Pyotr Ilyich Tchaikovsky",
+                  "premiereYear": 1890,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Tchaikovsky’s tragic masterpiece premiered on 19 December 1890."
+            },
+            {
+                  "title": "Prince Igor (Knyaz Igor)",
+                  "composer": "Alexander Borodin",
+                  "premiereYear": 1890,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Posthumous premiere completed by Rimsky-Korsakov and Glazunov."
+            }
+      ]
   },
   {
     "id": "state-theatre-arts-centre-melbourne",
@@ -4981,14 +5090,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,139 seats",
     "historicSignificance": "New Zealand’s national lyric company; honored by Dame Kiri Te Kanawa; commissioner of original Pacific and Māori operatic repertoire.",
     "historicPremieres": [
-      {
-        "title": "The Bone Feeder",
-        "composer": "Gareth Farr / Renee Liang",
-        "premiereYear": 2017,
-        "type": "WORLD_PREMIERE",
-        "details": "Cross-cultural opera exploring Chinese-Māori immigrant history in New Zealand."
-      }
-    ]
+            {
+                  "title": "The Bone Feeder",
+                  "composer": "Gareth Farr / Renee Liang",
+                  "premiereYear": 2017,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Cross-cultural opera exploring Chinese-Māori immigrant history in New Zealand."
+            }
+      ]
   },
   {
     "id": "opera-las-vegas",
@@ -5008,21 +5117,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,050 seats",
     "historicSignificance": "Premier professional opera company of Nevada; official member of OPERA America.",
     "historicPremieres": [
-      {
-        "title": "The Copper Queen",
-        "composer": "Clint Borzoni",
-        "premiereYear": 2021,
-        "type": "WORLD_PREMIERE",
-        "details": "Arizona/Nevada frontier opera world premiere presented in association with Opera Las Vegas."
-      },
-      {
-        "title": "Behold the Man",
-        "composer": "Paul Fowler",
-        "premiereYear": 2023,
-        "type": "WORLD_PREMIERE",
-        "details": "Comic opera world premiere based on the viral Ecce Homo restoration."
-      }
-    ]
+            {
+                  "title": "The Copper Queen",
+                  "composer": "Clint Borzoni",
+                  "premiereYear": 2021,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Arizona/Nevada frontier opera world premiere presented in association with Opera Las Vegas."
+            },
+            {
+                  "title": "Behold the Man",
+                  "composer": "Paul Fowler",
+                  "premiereYear": 2023,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Comic opera world premiere based on the viral Ecce Homo restoration."
+            }
+      ]
   },
   {
     "id": "opera-hong-kong",
@@ -5042,21 +5151,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,734 seats",
     "historicSignificance": "Premier opera institution of Hong Kong and South China; cultural bridge connecting European grand opera and East Asian talent.",
     "historicPremieres": [
-      {
-        "title": "Legend of the White Snake",
-        "composer": "Law Wing-fai",
-        "premiereYear": 2014,
-        "type": "WORLD_PREMIERE",
-        "details": "Major cross-cultural grand opera world premiere combining Western operatic orchestration and Chinese myth."
-      },
-      {
-        "title": "Datong: The Chinese Utopia",
-        "composer": "Chan Hing-yan",
-        "premiereYear": 2015,
-        "type": "WORLD_PREMIERE",
-        "details": "Original Cantonese and English grand opera commissioned for the Hong Kong Arts Festival."
-      }
-    ]
+            {
+                  "title": "Legend of the White Snake",
+                  "composer": "Law Wing-fai",
+                  "premiereYear": 2014,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Major cross-cultural grand opera world premiere combining Western operatic orchestration and Chinese myth."
+            },
+            {
+                  "title": "Datong: The Chinese Utopia",
+                  "composer": "Chan Hing-yan",
+                  "premiereYear": 2015,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Original Cantonese and English grand opera commissioned for the Hong Kong Arts Festival."
+            }
+      ]
   },
   {
     "id": "guangzhou-opera-house",
@@ -5076,14 +5185,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,804 seats",
     "historicSignificance": "Premier opera house of Southern China; lauded globally by architectural and musical critics as a modern wonder.",
     "historicPremieres": [
-      {
-        "title": "Marco Polo",
-        "composer": "Enjott Schneider",
-        "premiereYear": 2018,
-        "type": "WORLD_PREMIERE",
-        "details": "Original grand opera world premiere sung in Chinese with international cast; toured to Genoa and Milan."
-      }
-    ]
+            {
+                  "title": "Marco Polo",
+                  "composer": "Enjott Schneider",
+                  "premiereYear": 2018,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Original grand opera world premiere sung in Chinese with international cast; toured to Genoa and Milan."
+            }
+      ]
   },
   {
     "id": "shanghai-grand-theatre",
@@ -5103,21 +5212,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,800 seats",
     "historicSignificance": "Epicenter of Western and modern opera in mainland China since 1998.",
     "historicPremieres": [
-      {
-        "title": "Thunderstorm (Leiyu)",
-        "composer": "Mo Fan",
-        "premiereYear": 2001,
-        "type": "WORLD_PREMIERE",
-        "details": "World premiere operatic adaptation of Cao Yu’s landmark 20th-century Chinese drama."
-      },
-      {
-        "title": "The Morning Sun (Chenxi)",
-        "composer": "Hao Weiya",
-        "premiereYear": 2019,
-        "type": "WORLD_PREMIERE",
-        "details": "Grand opera world premiere celebrating Shanghai’s modern history."
-      }
-    ]
+            {
+                  "title": "Thunderstorm (Leiyu)",
+                  "composer": "Mo Fan",
+                  "premiereYear": 2001,
+                  "type": "WORLD_PREMIERE",
+                  "details": "World premiere operatic adaptation of Cao Yu’s landmark 20th-century Chinese drama."
+            },
+            {
+                  "title": "The Morning Sun (Chenxi)",
+                  "composer": "Hao Weiya",
+                  "premiereYear": 2019,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Grand opera world premiere celebrating Shanghai’s modern history."
+            }
+      ]
   },
   {
     "id": "singapore-lyric-opera",
@@ -5137,14 +5246,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,948 seats",
     "historicSignificance": "Premier opera and performing arts center of Southeast Asia.",
     "historicPremieres": [
-      {
-        "title": "Fences (Lin Ju)",
-        "composer": "John Sharpley",
-        "premiereYear": 2012,
-        "type": "WORLD_PREMIERE",
-        "details": "Original Singapore chamber opera world premiere exploring Southeast Asian migrant identities."
-      }
-    ]
+            {
+                  "title": "Fences (Lin Ju)",
+                  "composer": "John Sharpley",
+                  "premiereYear": 2012,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Original Singapore chamber opera world premiere exploring Southeast Asian migrant identities."
+            }
+      ]
   },
   {
     "id": "national-taichung-theater",
@@ -5164,14 +5273,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,007 seats",
     "historicSignificance": "Internationally renowned acoustic and architectural landmark of East Asia.",
     "historicPremieres": [
-      {
-        "title": "Somnium",
-        "composer": "Chien Nan-chang",
-        "premiereYear": 2017,
-        "type": "WORLD_PREMIERE",
-        "details": "Spectacular Taiwanese grand opera world premiere staging utilizing the curved acoustic caves."
-      }
-    ]
+            {
+                  "title": "Somnium",
+                  "composer": "Chien Nan-chang",
+                  "premiereYear": 2017,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Spectacular Taiwanese grand opera world premiere staging utilizing the curved acoustic caves."
+            }
+      ]
   },
   {
     "id": "san-diego-opera",
@@ -5191,21 +5300,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,967 seats",
     "historicSignificance": "Major cultural powerhouse of the American Southwest; commissioner of landmark bilingual operas.",
     "historicPremieres": [
-      {
-        "title": "La Loca",
-        "composer": "Gian Carlo Menotti",
-        "premiereYear": 1979,
-        "type": "WORLD_PREMIERE",
-        "details": "World premiere written specifically for legendary soprano Beverly Sills for her 50th birthday farewell tour."
-      },
-      {
-        "title": "El último sueño de Frida y Diego",
-        "composer": "Gabriela Lena Frank",
-        "premiereYear": 2022,
-        "type": "WORLD_PREMIERE",
-        "details": "Grammy-nominated world premiere opera on the love and afterlife of Frida Kahlo and Diego Rivera."
-      }
-    ]
+            {
+                  "title": "La Loca",
+                  "composer": "Gian Carlo Menotti",
+                  "premiereYear": 1979,
+                  "type": "WORLD_PREMIERE",
+                  "details": "World premiere written specifically for legendary soprano Beverly Sills for her 50th birthday farewell tour."
+            },
+            {
+                  "title": "El último sueño de Frida y Diego",
+                  "composer": "Gabriela Lena Frank",
+                  "premiereYear": 2022,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Grammy-nominated world premiere opera on the love and afterlife of Frida Kahlo and Diego Rivera."
+            }
+      ]
   },
   {
     "id": "austin-opera",
@@ -5225,14 +5334,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,442 seats",
     "historicSignificance": "Premier grand opera producer of Central Texas; co-commissioner of modern American opera.",
     "historicPremieres": [
-      {
-        "title": "Cruzar la Cara de la Luna",
-        "composer": "José \"Pepe\" Martínez",
-        "premiereYear": 2013,
-        "type": "HISTORIC_STAGING",
-        "details": "Landmark mariachi opera co-commissioned and presented in Austin."
-      }
-    ]
+            {
+                  "title": "Cruzar la Cara de la Luna",
+                  "composer": "José \"Pepe\" Martínez",
+                  "premiereYear": 2013,
+                  "type": "HISTORIC_STAGING",
+                  "details": "Landmark mariachi opera co-commissioned and presented in Austin."
+            }
+      ]
   },
   {
     "id": "tokyo-bunka-kaikan",
@@ -5252,14 +5361,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,303 seats",
     "historicSignificance": "Historic crucible of Western grand opera in modern Japan; acoustic benchmark for orchestral and vocal clarity in East Asia.",
     "historicPremieres": [
-      {
-        "title": "The Tale of the White Fox (Haku-ko)",
-        "composer": "Teizo Matsumura",
-        "premiereYear": 1999,
-        "type": "WORLD_PREMIERE",
-        "details": "Landmark Japanese grand opera world premiere based on Kabuki folk legend."
-      }
-    ]
+            {
+                  "title": "The Tale of the White Fox (Haku-ko)",
+                  "composer": "Teizo Matsumura",
+                  "premiereYear": 1999,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Landmark Japanese grand opera world premiere based on Kabuki folk legend."
+            }
+      ]
   },
   {
     "id": "hanoi-opera-house",
@@ -5279,14 +5388,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "598 seats",
     "historicSignificance": "Historical crown jewel of Southeast Asian operatic architecture; site of historic Vietnamese independence rallies in 1945.",
     "historicPremieres": [
-      {
-        "title": "Cô Sao",
-        "composer": "Đỗ Nhuận",
-        "premiereYear": 1965,
-        "type": "WORLD_PREMIERE",
-        "details": "Groundbreaking world premiere establishing Vietnamese national grand opera."
-      }
-    ]
+            {
+                  "title": "Cô Sao",
+                  "composer": "Đỗ Nhuận",
+                  "premiereYear": 1965,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Groundbreaking world premiere establishing Vietnamese national grand opera."
+            }
+      ]
   },
   {
     "id": "mikhailovsky-theatre-st-petersburg",
@@ -5306,21 +5415,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "890 seats",
     "historicSignificance": "Imperial Russian stage that revolutionized 20th-century operatic modernism with landmark premieres under legendary conductor Samuil Samosud.",
     "historicPremieres": [
-      {
-        "title": "Lady Macbeth of Mtsensk",
-        "composer": "Dmitri Shostakovich",
-        "premiereYear": 1934,
-        "type": "WORLD_PREMIERE",
-        "details": "Landmark world premiere conducted by Samuil Samosud; revolutionized 20th-century operatic modernism."
-      },
-      {
-        "title": "War and Peace (Part 1)",
-        "composer": "Sergei Prokofiev",
-        "premiereYear": 1946,
-        "type": "WORLD_PREMIERE",
-        "details": "Historic world premiere of Prokofiev's monumental Tolstoy adaptation, conducted by Samuil Samosud."
-      }
-    ]
+            {
+                  "title": "Lady Macbeth of Mtsensk",
+                  "composer": "Dmitri Shostakovich",
+                  "premiereYear": 1934,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Landmark world premiere conducted by Samuil Samosud; revolutionized 20th-century operatic modernism."
+            },
+            {
+                  "title": "War and Peace (Part 1)",
+                  "composer": "Sergei Prokofiev",
+                  "premiereYear": 1946,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Historic world premiere of Prokofiev's monumental Tolstoy adaptation, conducted by Samuil Samosud."
+            }
+      ]
   },
   {
     "id": "stanislavski-nemirovich-theatre-moscow",
@@ -5340,21 +5449,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,032 seats",
     "historicSignificance": "Birthplace of Stanislavskian realism in opera; bridged dramatic acting theory directly with vocal art.",
     "historicPremieres": [
-      {
-        "title": "Katerina Ismailova (Revised Lady Macbeth)",
-        "composer": "Dmitri Shostakovich",
-        "premiereYear": 1962,
-        "type": "WORLD_PREMIERE",
-        "details": "Triumphant official world premiere of Shostakovich's revised masterpiece following years of Soviet censorship."
-      },
-      {
-        "title": "Colas Breugnon",
-        "composer": "Dmitri Kabalevsky",
-        "premiereYear": 1938,
-        "type": "WORLD_PREMIERE",
-        "details": "World premiere based on Romain Rolland's novel, conducted by Mikhail Yurovsky."
-      }
-    ]
+            {
+                  "title": "Colas Breugnon",
+                  "composer": "Dmitri Kabalevsky",
+                  "premiereYear": 1938,
+                  "type": "WORLD_PREMIERE",
+                  "details": "World premiere based on Romain Rolland's novel, conducted by Mikhail Yurovsky."
+            },
+            {
+                  "title": "Katerina Ismailova (Revised Lady Macbeth)",
+                  "composer": "Dmitri Shostakovich",
+                  "premiereYear": 1962,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Triumphant official world premiere of Shostakovich's revised masterpiece following years of Soviet censorship."
+            }
+      ]
   },
   {
     "id": "novosibirsk-opera-theatre",
@@ -5374,14 +5483,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,774 seats",
     "historicSignificance": "The architectural and acoustic giant of Siberia; largest stage complex in the Russian Federation.",
     "historicPremieres": [
-      {
-        "title": "The Great Friendship",
-        "composer": "Vano Muradeli",
-        "premiereYear": 1947,
-        "type": "WORLD_PREMIERE",
-        "details": "Historic Soviet opera world premiere composed for the 30th anniversary of the October Revolution."
-      }
-    ]
+            {
+                  "title": "The Great Friendship",
+                  "composer": "Vano Muradeli",
+                  "premiereYear": 1947,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Historic Soviet opera world premiere composed for the 30th anniversary of the October Revolution."
+            }
+      ]
   },
   {
     "id": "ural-opera-ballet-ekaterinburg",
@@ -5401,14 +5510,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "906 seats",
     "historicSignificance": "Historical operatic anchor of the Urals and Siberia; training ground for vocal icons Ivan Kozlovsky and Boris Shtokolov.",
     "historicPremieres": [
-      {
-        "title": "The Decembrists",
-        "composer": "Vasily Zolotarev",
-        "premiereYear": 1925,
-        "type": "WORLD_PREMIERE",
-        "details": "Groundbreaking early Soviet historical opera world premiere."
-      }
-    ]
+            {
+                  "title": "The Decembrists",
+                  "composer": "Vasily Zolotarev",
+                  "premiereYear": 1925,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Groundbreaking early Soviet historical opera world premiere."
+            }
+      ]
   },
   {
     "id": "kazan-opera-theatre",
@@ -5428,21 +5537,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "974 seats",
     "historicSignificance": "Epicenter of Tatar musical drama and international festival opera in the Volga region.",
     "historicPremieres": [
-      {
-        "title": "Altynchach (The Golden-Haired Girl)",
-        "composer": "Nazib Zhiganov",
-        "premiereYear": 1941,
-        "type": "WORLD_PREMIERE",
-        "details": "National epic Tatar opera world premiere based on traditional folklore."
-      },
-      {
-        "title": "Jalil",
-        "composer": "Nazib Zhiganov",
-        "premiereYear": 1957,
-        "type": "WORLD_PREMIERE",
-        "details": "World premiere honoring Soviet Tatar poet and anti-fascist resistance hero Musa Cälil."
-      }
-    ]
+            {
+                  "title": "Altynchach (The Golden-Haired Girl)",
+                  "composer": "Nazib Zhiganov",
+                  "premiereYear": 1941,
+                  "type": "WORLD_PREMIERE",
+                  "details": "National epic Tatar opera world premiere based on traditional folklore."
+            },
+            {
+                  "title": "Jalil",
+                  "composer": "Nazib Zhiganov",
+                  "premiereYear": 1957,
+                  "type": "WORLD_PREMIERE",
+                  "details": "World premiere honoring Soviet Tatar poet and anti-fascist resistance hero Musa Cälil."
+            }
+      ]
   },
   {
     "id": "perm-opera-ballet-theatre",
@@ -5462,14 +5571,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "843 seats",
     "historicSignificance": "Renowned internationally for Diaghilev's heritage and its comprehensive stagings of the complete Tchaikovsky stage canon.",
     "historicPremieres": [
-      {
-        "title": "The Complete Tchaikovsky Operatic Cycle",
-        "composer": "Pyotr Ilyich Tchaikovsky",
-        "premiereYear": 1969,
-        "type": "HISTORIC_STAGING",
-        "details": "First theatre in world history to stage all ten Tchaikovsky operas and three ballets in continuous repertory."
-      }
-    ]
+            {
+                  "title": "The Complete Tchaikovsky Operatic Cycle",
+                  "composer": "Pyotr Ilyich Tchaikovsky",
+                  "premiereYear": 1969,
+                  "type": "HISTORIC_STAGING",
+                  "details": "First theatre in world history to stage all ten Tchaikovsky operas and three ballets in continuous repertory."
+            }
+      ]
   },
   {
     "id": "samara-opera-ballet-theatre",
@@ -5489,14 +5598,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,184 seats",
     "historicSignificance": "Wartime cultural sanctuary where the evacuated Bolshoi Theatre company and Shostakovich produced historic masterworks during the Siege of Leningrad.",
     "historicPremieres": [
-      {
-        "title": "Leningrad Symphony (Symphony No. 7)",
-        "composer": "Dmitri Shostakovich",
-        "premiereYear": 1942,
-        "type": "WORLD_PREMIERE",
-        "details": "Historic world premiere broadcast worldwide across Allied airwaves during the height of World War II."
-      }
-    ]
+            {
+                  "title": "Leningrad Symphony (Symphony No. 7)",
+                  "composer": "Dmitri Shostakovich",
+                  "premiereYear": 1942,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Historic world premiere broadcast worldwide across Allied airwaves during the height of World War II."
+            }
+      ]
   },
   {
     "id": "greek-national-opera-athens",
@@ -5516,21 +5625,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,400 seats",
     "historicSignificance": "The sole national opera company of Greece; professional launching pad of Maria Callas and home of the modern Greek lyric repertory.",
     "historicPremieres": [
-      {
-        "title": "The Mother's Ring (To dachtylidi tis manas)",
-        "composer": "Manolis Kalomiris",
-        "premiereYear": 1943,
-        "type": "WORLD_PREMIERE",
-        "details": "Foundational masterpiece of modern Greek national opera."
-      },
-      {
-        "title": "Kostas Karyotakis",
-        "composer": "Mikis Theodorakis",
-        "premiereYear": 1987,
-        "type": "WORLD_PREMIERE",
-        "details": "Modern Greek grand opera world premiere by legendary composer Mikis Theodorakis."
-      }
-    ]
+            {
+                  "title": "The Mother's Ring (To dachtylidi tis manas)",
+                  "composer": "Manolis Kalomiris",
+                  "premiereYear": 1943,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Foundational masterpiece of modern Greek national opera."
+            },
+            {
+                  "title": "Kostas Karyotakis",
+                  "composer": "Mikis Theodorakis",
+                  "premiereYear": 1987,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Modern Greek grand opera world premiere by legendary composer Mikis Theodorakis."
+            }
+      ]
   },
   {
     "id": "apollon-theatre-syros",
@@ -5550,14 +5659,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "350 seats",
     "historicSignificance": "Symbol of the 19th-century Aegean cultural renaissance; celebrated as the premier historic jewel box theatre of the Greek islands.",
     "historicPremieres": [
-      {
-        "title": "Rigoletto (Historic Aegean Premiere)",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1864,
-        "type": "INAUGURAL_STAGING",
-        "details": "Historic island inauguration staging igniting Italian opera tradition across the Aegean archipelago."
-      }
-    ]
+            {
+                  "title": "Rigoletto (Historic Aegean Premiere)",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1864,
+                  "type": "INAUGURAL_STAGING",
+                  "details": "Historic island inauguration staging igniting Italian opera tradition across the Aegean archipelago."
+            }
+      ]
   },
   {
     "id": "municipal-theatre-piraeus",
@@ -5577,14 +5686,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "600 seats",
     "historicSignificance": "Architectural landmark of maritime Greece; historic venue for Hellenic lyric premieres.",
     "historicPremieres": [
-      {
-        "title": "Perouze",
-        "composer": "Theophilus Sakellaridis",
-        "premiereYear": 1911,
-        "type": "WORLD_PREMIERE",
-        "details": "Foundational Greek lyric drama premiere exploring rural Greek folklore and romance."
-      }
-    ]
+            {
+                  "title": "Perouze",
+                  "composer": "Theophilus Sakellaridis",
+                  "premiereYear": 1911,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Foundational Greek lyric drama premiere exploring rural Greek folklore and romance."
+            }
+      ]
   },
   {
     "id": "odeon-herodes-atticus-athens",
@@ -5604,21 +5713,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "5,000 seats",
     "historicSignificance": "Incomparable open-air theatrical setting in the shadow of the Parthenon; historic venue for landmark summer operatic festivals.",
     "historicPremieres": [
-      {
-        "title": "Antigone",
-        "composer": "Manolis Kalomiris",
-        "premiereYear": 1957,
-        "type": "WORLD_PREMIERE",
-        "details": "Monumental outdoor premiere celebrating ancient Athenian drama beneath the Acropolis."
-      },
-      {
-        "title": "Medea",
-        "composer": "Mikis Theodorakis",
-        "premiereYear": 1991,
-        "type": "WORLD_PREMIERE",
-        "details": "Monumental open-air world premiere under the Parthenon, conducted by the composer."
-      }
-    ]
+            {
+                  "title": "Antigone",
+                  "composer": "Manolis Kalomiris",
+                  "premiereYear": 1957,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Monumental outdoor premiere celebrating ancient Athenian drama beneath the Acropolis."
+            },
+            {
+                  "title": "Medea",
+                  "composer": "Mikis Theodorakis",
+                  "premiereYear": 1991,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Monumental open-air world premiere under the Parthenon, conducted by the composer."
+            }
+      ]
   },
   {
     "id": "national-theatre-belgrade",
@@ -5638,21 +5747,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "944 seats",
     "historicSignificance": "The primary national opera house of Serbia; birthplace of Serbian grand opera.",
     "historicPremieres": [
-      {
-        "title": "Na uranku (At Dawn)",
-        "composer": "Stanislav Binički",
-        "premiereYear": 1903,
-        "type": "WORLD_PREMIERE",
-        "details": "The first Serbian opera in history, setting a libretto by Branislav Nušić."
-      },
-      {
-        "title": "Koštana",
-        "composer": "Petar Konjović",
-        "premiereYear": 1931,
-        "type": "WORLD_PREMIERE",
-        "details": "Masterpiece of Serbian musical verismo based on Borisav Stanković’s play."
-      }
-    ]
+            {
+                  "title": "Na uranku (At Dawn)",
+                  "composer": "Stanislav Binički",
+                  "premiereYear": 1903,
+                  "type": "WORLD_PREMIERE",
+                  "details": "The first Serbian opera in history, setting a libretto by Branislav Nušić."
+            },
+            {
+                  "title": "Koštana",
+                  "composer": "Petar Konjović",
+                  "premiereYear": 1931,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Masterpiece of Serbian musical verismo based on Borisav Stanković’s play."
+            }
+      ]
   },
   {
     "id": "serbian-national-theatre-novi-sad",
@@ -5672,21 +5781,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "940 seats",
     "historicSignificance": "Oldest institutional theatre in Serbia; crucial guardian of national lyric heritage.",
     "historicPremieres": [
-      {
-        "title": "Knez Ivo od Semberije",
-        "composer": "Isidor Bajić",
-        "premiereYear": 1911,
-        "type": "WORLD_PREMIERE",
-        "details": "Historic Serbian heroic opera world premiere celebrating Balkan liberation."
-      },
-      {
-        "title": "Suton (Dusk)",
-        "composer": "Stevan Hristić",
-        "premiereYear": 1925,
-        "type": "WORLD_PREMIERE",
-        "details": "Lyrical verismo opera premiere based on Ivo Vojnović."
-      }
-    ]
+            {
+                  "title": "Knez Ivo od Semberije",
+                  "composer": "Isidor Bajić",
+                  "premiereYear": 1911,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Historic Serbian heroic opera world premiere celebrating Balkan liberation."
+            },
+            {
+                  "title": "Suton (Dusk)",
+                  "composer": "Stevan Hristić",
+                  "premiereYear": 1925,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Lyrical verismo opera premiere based on Ivo Vojnović."
+            }
+      ]
   },
   {
     "id": "sofia-national-opera-ballet",
@@ -5706,21 +5815,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "948 seats",
     "historicSignificance": "The supreme vocal cradle of Bulgarian grand opera and home to the Bulgarian national operatic repertoire.",
     "historicPremieres": [
-      {
-        "title": "Borislav",
-        "composer": "Georgi Atanasov",
-        "premiereYear": 1911,
-        "type": "WORLD_PREMIERE",
-        "details": "Foundational Bulgarian historical national opera world premiere."
-      },
-      {
-        "title": "Tsar Kaloyan",
-        "composer": "Pancho Vladigerov",
-        "premiereYear": 1936,
-        "type": "WORLD_PREMIERE",
-        "details": "Bulgaria’s greatest 20th-century opera masterpiece world premiere."
-      }
-    ]
+            {
+                  "title": "Borislav",
+                  "composer": "Georgi Atanasov",
+                  "premiereYear": 1911,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Foundational Bulgarian historical national opera world premiere."
+            },
+            {
+                  "title": "Tsar Kaloyan",
+                  "composer": "Pancho Vladigerov",
+                  "premiereYear": 1936,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Bulgaria’s greatest 20th-century opera masterpiece world premiere."
+            }
+      ]
   },
   {
     "id": "romanian-national-opera-bucharest",
@@ -5740,21 +5849,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "952 seats",
     "historicSignificance": "The foremost operatic stage of Romania; home to the Enescu Festival's flagship productions.",
     "historicPremieres": [
-      {
-        "title": "Oedipe (Romanian Premiere Production)",
-        "composer": "George Enescu",
-        "premiereYear": 1958,
-        "type": "NATIONAL_PREMIERE",
-        "details": "Historic national stage premiere of Enescu’s supreme operatic masterwork."
-      },
-      {
-        "title": "Hamlet",
-        "composer": "Pascal Bentoiu",
-        "premiereYear": 1969,
-        "type": "WORLD_PREMIERE",
-        "details": "Major modern Romanian Shakespearean opera premiere."
-      }
-    ]
+            {
+                  "title": "Oedipe (Romanian Premiere Production)",
+                  "composer": "George Enescu",
+                  "premiereYear": 1958,
+                  "type": "NATIONAL_PREMIERE",
+                  "details": "Historic national stage premiere of Enescu’s supreme operatic masterwork."
+            },
+            {
+                  "title": "Hamlet",
+                  "composer": "Pascal Bentoiu",
+                  "premiereYear": 1969,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Major modern Romanian Shakespearean opera premiere."
+            }
+      ]
   },
   {
     "id": "cluj-napoca-romanian-national-opera",
@@ -5774,21 +5883,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "928 seats",
     "historicSignificance": "Pivotal cultural institution in the history of Romanian Transylvania, producing historic folkloric operas.",
     "historicPremieres": [
-      {
-        "title": "La Șezătoare",
-        "composer": "Tiberiu Brediceanu",
-        "premiereYear": 1920,
-        "type": "WORLD_PREMIERE",
-        "details": "First Romanian national opera presented in Transylvania."
-      },
-      {
-        "title": "Năpasta",
-        "composer": "Sabin Drăgoi",
-        "premiereYear": 1928,
-        "type": "WORLD_PREMIERE",
-        "details": "Masterpiece of Romanian musical drama based on Caragiale."
-      }
-    ]
+            {
+                  "title": "La Șezătoare",
+                  "composer": "Tiberiu Brediceanu",
+                  "premiereYear": 1920,
+                  "type": "WORLD_PREMIERE",
+                  "details": "First Romanian national opera presented in Transylvania."
+            },
+            {
+                  "title": "Năpasta",
+                  "composer": "Sabin Drăgoi",
+                  "premiereYear": 1928,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Masterpiece of Romanian musical drama based on Caragiale."
+            }
+      ]
   },
   {
     "id": "slovenian-national-opera-ljubljana",
@@ -5808,21 +5917,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "550 seats",
     "historicSignificance": "The primary national lyric institution of Slovenia; home to the Slovenian operatic canon.",
     "historicPremieres": [
-      {
-        "title": "Gorenjski slavček (The Nightingale of Gorenjska)",
-        "composer": "Anton Foerster",
-        "premiereYear": 1896,
-        "type": "WORLD_PREMIERE",
-        "details": "Beloved national comic opera world premiere based on Gorenjska folk life."
-      },
-      {
-        "title": "Črne maske (Black Masks)",
-        "composer": "Marij Kogoj",
-        "premiereYear": 1929,
-        "type": "WORLD_PREMIERE",
-        "details": "Groundbreaking Slovenian expressionist opera masterpiece."
-      }
-    ]
+            {
+                  "title": "Gorenjski slavček (The Nightingale of Gorenjska)",
+                  "composer": "Anton Foerster",
+                  "premiereYear": 1896,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Beloved national comic opera world premiere based on Gorenjska folk life."
+            },
+            {
+                  "title": "Črne maske (Black Masks)",
+                  "composer": "Marij Kogoj",
+                  "premiereYear": 1929,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Groundbreaking Slovenian expressionist opera masterpiece."
+            }
+      ]
   },
   {
     "id": "croatian-national-theatre-split",
@@ -5841,21 +5950,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "660 seats",
     "historicSignificance": "The cultural capital of Dalmatia; celebrated for historic open-air Roman palace opera stagings.",
     "historicPremieres": [
-      {
-        "title": "Povratak (The Return)",
-        "composer": "Josip Hatze",
-        "premiereYear": 1911,
-        "type": "WORLD_PREMIERE",
-        "details": "First Dalmatian verismo opera world premiere."
-      },
-      {
-        "title": "Adel i Mara",
-        "composer": "Josip Hatze",
-        "premiereYear": 1932,
-        "type": "WORLD_PREMIERE",
-        "details": "Epic Croatian national opera premiere set in historic Split and Klis."
-      }
-    ]
+            {
+                  "title": "Povratak (The Return)",
+                  "composer": "Josip Hatze",
+                  "premiereYear": 1911,
+                  "type": "WORLD_PREMIERE",
+                  "details": "First Dalmatian verismo opera world premiere."
+            },
+            {
+                  "title": "Adel i Mara",
+                  "composer": "Josip Hatze",
+                  "premiereYear": 1932,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Epic Croatian national opera premiere set in historic Split and Klis."
+            }
+      ]
   },
   {
     "id": "albanian-national-opera-tirana",
@@ -5875,21 +5984,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "800 seats",
     "historicSignificance": "The primary lyric stage of Albania; home to the Albanian national opera and ballet companies.",
     "historicPremieres": [
-      {
-        "title": "Mrika",
-        "composer": "Prenkë Jakova",
-        "premiereYear": 1958,
-        "type": "WORLD_PREMIERE",
-        "details": "The first full-length opera in Albanian history."
-      },
-      {
-        "title": "Skënderbeu",
-        "composer": "Prenkë Jakova",
-        "premiereYear": 1968,
-        "type": "WORLD_PREMIERE",
-        "details": "Epic national opera world premiere celebrating national hero Gjergj Kastrioti Skanderbeg."
-      }
-    ]
+            {
+                  "title": "Mrika",
+                  "composer": "Prenkë Jakova",
+                  "premiereYear": 1958,
+                  "type": "WORLD_PREMIERE",
+                  "details": "The first full-length opera in Albanian history."
+            },
+            {
+                  "title": "Skënderbeu",
+                  "composer": "Prenkë Jakova",
+                  "premiereYear": 1968,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Epic national opera world premiere celebrating national hero Gjergj Kastrioti Skanderbeg."
+            }
+      ]
   },
   {
     "id": "national-opera-north-macedonia",
@@ -5909,21 +6018,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "800 seats",
     "historicSignificance": "Guardian of the Macedonian operatic canon; host to international May Opera Evenings.",
     "historicPremieres": [
-      {
-        "title": "Goce",
-        "composer": "Kiril Makedonski",
-        "premiereYear": 1954,
-        "type": "WORLD_PREMIERE",
-        "details": "The first Macedonian national opera world premiere."
-      },
-      {
-        "title": "Kuzman Kapidan",
-        "composer": "Trajko Prokopiev",
-        "premiereYear": 1954,
-        "type": "WORLD_PREMIERE",
-        "details": "Beloved national opera based on Grigor Prlichev's poem."
-      }
-    ]
+            {
+                  "title": "Goce",
+                  "composer": "Kiril Makedonski",
+                  "premiereYear": 1954,
+                  "type": "WORLD_PREMIERE",
+                  "details": "The first Macedonian national opera world premiere."
+            },
+            {
+                  "title": "Kuzman Kapidan",
+                  "composer": "Trajko Prokopiev",
+                  "premiereYear": 1954,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Beloved national opera based on Grigor Prlichev's poem."
+            }
+      ]
   },
   {
     "id": "ankara-state-opera-ballet",
@@ -5943,21 +6052,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "700 seats",
     "historicSignificance": "The foundational national stage of the Turkish Republic; birthplace of the Turkish grand opera repertoire.",
     "historicPremieres": [
-      {
-        "title": "Özsoy",
-        "composer": "Ahmed Adnan Saygun",
-        "premiereYear": 1934,
-        "type": "WORLD_PREMIERE",
-        "details": "The first Turkish opera in history, commissioned by Atatürk for the state visit of the Shah of Iran."
-      },
-      {
-        "title": "Kerem",
-        "composer": "Ahmed Adnan Saygun",
-        "premiereYear": 1953,
-        "type": "WORLD_PREMIERE",
-        "details": "Major Turkish grand opera premiere based on the epic folk romance of Kerem and Aslı."
-      }
-    ]
+            {
+                  "title": "Özsoy",
+                  "composer": "Ahmed Adnan Saygun",
+                  "premiereYear": 1934,
+                  "type": "WORLD_PREMIERE",
+                  "details": "The first Turkish opera in history, commissioned by Atatürk for the state visit of the Shah of Iran."
+            },
+            {
+                  "title": "Kerem",
+                  "composer": "Ahmed Adnan Saygun",
+                  "premiereYear": 1953,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Major Turkish grand opera premiere based on the epic folk romance of Kerem and Aslı."
+            }
+      ]
   },
   {
     "id": "sureyya-opera-house-istanbul",
@@ -5977,14 +6086,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "570 seats",
     "historicSignificance": "Historic cultural gem of Kadıköy on the Bosphorus Asian shore; premier chamber opera venue of Istanbul.",
     "historicPremieres": [
-      {
-        "title": "Lüküs Hayat (Luxurious Life)",
-        "composer": "Cemal Reşit Rey",
-        "premiereYear": 1933,
-        "type": "WORLD_PREMIERE",
-        "details": "Legendary Turkish operetta world premiere celebrating the transformation of Istanbul society."
-      }
-    ]
+            {
+                  "title": "Lüküs Hayat (Luxurious Life)",
+                  "composer": "Cemal Reşit Rey",
+                  "premiereYear": 1933,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Legendary Turkish operetta world premiere celebrating the transformation of Istanbul society."
+            }
+      ]
   },
   {
     "id": "izmir-state-opera-ballet",
@@ -6004,14 +6113,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "840 seats",
     "historicSignificance": "The primary lyric opera house of the Turkish Aegean coast, active since 1982.",
     "historicPremieres": [
-      {
-        "title": "Yusuf ile Züleyha",
-        "composer": "Okan Demiriş",
-        "premiereYear": 1990,
-        "type": "WORLD_PREMIERE",
-        "details": "Turkish lyric opera world premiere based on traditional poetic legends."
-      }
-    ]
+            {
+                  "title": "Yusuf ile Züleyha",
+                  "composer": "Okan Demiriş",
+                  "premiereYear": 1990,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Turkish lyric opera world premiere based on traditional poetic legends."
+            }
+      ]
   },
   {
     "id": "israeli-opera-tel-aviv",
@@ -6031,21 +6140,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,652 seats",
     "historicSignificance": "National opera house of Israel, hosting leading international vocalists and pioneering Hebrew-language opera premieres.",
     "historicPremieres": [
-      {
-        "title": "Josef",
-        "composer": "Josef Tal",
-        "premiereYear": 1995,
-        "type": "WORLD_PREMIERE",
-        "details": "Major Israeli contemporary opera world premiere conducted by Gary Bertini."
-      },
-      {
-        "title": "The Lady and the Peddler",
-        "composer": "Haim Permont",
-        "premiereYear": 1995,
-        "type": "WORLD_PREMIERE",
-        "details": "Chamber opera world premiere based on S.Y. Agnon’s parable."
-      }
-    ]
+            {
+                  "title": "Josef",
+                  "composer": "Josef Tal",
+                  "premiereYear": 1995,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Major Israeli contemporary opera world premiere conducted by Gary Bertini."
+            },
+            {
+                  "title": "The Lady and the Peddler",
+                  "composer": "Haim Permont",
+                  "premiereYear": 1995,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Chamber opera world premiere based on S.Y. Agnon’s parable."
+            }
+      ]
   },
   {
     "id": "damascus-opera-house",
@@ -6065,21 +6174,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,335 seats",
     "historicSignificance": "The primary lyric opera house of Syria and the Levant, home to the Syrian National Symphony Orchestra.",
     "historicPremieres": [
-      {
-        "title": "Ibn Sina (Avicenna)",
-        "composer": "Nouri Iskandar",
-        "premiereYear": 2004,
-        "type": "WORLD_PREMIERE",
-        "details": "Inaugural Syrian national grand opera world premiere."
-      },
-      {
-        "title": "Gilgamesh",
-        "composer": "Zaid Jabri",
-        "premiereYear": 2008,
-        "type": "WORLD_PREMIERE",
-        "details": "Operatic world premiere based on the Ancient Mesopotamian epic."
-      }
-    ]
+            {
+                  "title": "Ibn Sina (Avicenna)",
+                  "composer": "Nouri Iskandar",
+                  "premiereYear": 2004,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Inaugural Syrian national grand opera world premiere."
+            },
+            {
+                  "title": "Gilgamesh",
+                  "composer": "Zaid Jabri",
+                  "premiereYear": 2008,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Operatic world premiere based on the Ancient Mesopotamian epic."
+            }
+      ]
   },
   {
     "id": "al-bustan-festival-beirut",
@@ -6099,14 +6208,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "450 seats",
     "historicSignificance": "Celebrated international winter festival bringing world-class opera conductors, orchestras, and vocalists to Lebanon.",
     "historicPremieres": [
-      {
-        "title": "Inaugural Festival Opera Series (Mozart Stagings)",
-        "composer": "Wolfgang Amadeus Mozart",
-        "premiereYear": 1994,
-        "type": "HISTORIC_STAGING",
-        "details": "Historic winter festival inaugural opera productions introducing regular international classical seasons to Lebanon."
-      }
-    ]
+            {
+                  "title": "Inaugural Festival Opera Series (Mozart Stagings)",
+                  "composer": "Wolfgang Amadeus Mozart",
+                  "premiereYear": 1994,
+                  "type": "HISTORIC_STAGING",
+                  "details": "Historic winter festival inaugural opera productions introducing regular international classical seasons to Lebanon."
+            }
+      ]
   },
   {
     "id": "astana-opera-kazakhstan",
@@ -6126,21 +6235,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,250 seats",
     "historicSignificance": "The flagship national opera house of Central Asia, established as a modern cultural crossroads between European grand opera traditions and nomadic musical heritage.",
     "historicPremieres": [
-      {
-        "title": "Birzhan and Sara",
-        "composer": "Mukan Tulebayev",
-        "premiereYear": 2013,
-        "type": "WORLD_PREMIERE",
-        "details": "Inaugural national grand opera production celebrating Kazakh classical vocal repertoire."
-      },
-      {
-        "title": "Qalqaman and Mamyr",
-        "composer": "Balnur Kydyrbek",
-        "premiereYear": 2019,
-        "type": "WORLD_PREMIERE",
-        "details": "Epic modern Kazakh opera world premiere based on Shakarim Qudaiberdiuly's poem."
-      }
-    ]
+            {
+                  "title": "Birzhan and Sara",
+                  "composer": "Mukan Tulebayev",
+                  "premiereYear": 2013,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Inaugural national grand opera production celebrating Kazakh classical vocal repertoire."
+            },
+            {
+                  "title": "Qalqaman and Mamyr",
+                  "composer": "Balnur Kydyrbek",
+                  "premiereYear": 2019,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Epic modern Kazakh opera world premiere based on Shakarim Qudaiberdiuly's poem."
+            }
+      ]
   },
   {
     "id": "abay-opera-almaty",
@@ -6160,21 +6269,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "793 seats",
     "historicSignificance": "The historic cradle of Kazakh professional opera and ballet; birthplace of the national operatic repertoire.",
     "historicPremieres": [
-      {
-        "title": "Abai",
-        "composer": "Akhmet Zhubanov & Latif Khamidi",
-        "premiereYear": 1944,
-        "type": "WORLD_PREMIERE",
-        "details": "Foundational masterpiece of Kazakh national opera, celebrating the life of Abay Qunanbayuly."
-      },
-      {
-        "title": "Kyz Zhibek",
-        "composer": "Yevgeny Brusilovsky",
-        "premiereYear": 1934,
-        "type": "WORLD_PREMIERE",
-        "details": "The very first Kazakh national opera in history, setting traditional folk tunes in operatic form."
-      }
-    ]
+            {
+                  "title": "Kyz Zhibek",
+                  "composer": "Yevgeny Brusilovsky",
+                  "premiereYear": 1934,
+                  "type": "WORLD_PREMIERE",
+                  "details": "The very first Kazakh national opera in history, setting traditional folk tunes in operatic form."
+            },
+            {
+                  "title": "Abai",
+                  "composer": "Akhmet Zhubanov & Latif Khamidi",
+                  "premiereYear": 1944,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Foundational masterpiece of Kazakh national opera, celebrating the life of Abay Qunanbayuly."
+            }
+      ]
   },
   {
     "id": "navoi-theater-tashkent",
@@ -6193,21 +6302,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,440 seats",
     "historicSignificance": "The primary national opera house of Uzbekistan and historic lyric flagship of Soviet Central Asia.",
     "historicPremieres": [
-      {
-        "title": "Gulsara",
-        "composer": "Reinhold Glière & Talibjon Sadykov",
-        "premiereYear": 1949,
-        "type": "WORLD_PREMIERE",
-        "details": "Foundational Uzbek musical drama transformed into full grand opera."
-      },
-      {
-        "title": "Maysara's Pranks (Maysaraning ishi)",
-        "composer": "Suleiman Yudakov",
-        "premiereYear": 1959,
-        "type": "WORLD_PREMIERE",
-        "details": "The first Uzbek comic opera world premiere, beloved across Central Asia."
-      }
-    ]
+            {
+                  "title": "Gulsara",
+                  "composer": "Reinhold Glière & Talibjon Sadykov",
+                  "premiereYear": 1949,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Foundational Uzbek musical drama transformed into full grand opera."
+            },
+            {
+                  "title": "Maysara's Pranks (Maysaraning ishi)",
+                  "composer": "Suleiman Yudakov",
+                  "premiereYear": 1959,
+                  "type": "WORLD_PREMIERE",
+                  "details": "The first Uzbek comic opera world premiere, beloved across Central Asia."
+            }
+      ]
   },
   {
     "id": "kyrgyz-national-opera-bishkek",
@@ -6227,21 +6336,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,000 seats",
     "historicSignificance": "The premier lyric stage of Kyrgyzstan; home to the pioneering fusion of Central Asian epic recitation (Manaschi) and symphonic opera.",
     "historicPremieres": [
-      {
-        "title": "Aichurek",
-        "composer": "Abdylas Maldybaev, Vasily Vlasov & Vladimir Fere",
-        "premiereYear": 1939,
-        "type": "WORLD_PREMIERE",
-        "details": "The foundational first Kyrgyz national opera in history, derived from the Epic of Manas."
-      },
-      {
-        "title": "Manas",
-        "composer": "Abdylas Maldybaev & Vladimir Fere",
-        "premiereYear": 1946,
-        "type": "WORLD_PREMIERE",
-        "details": "Monumental Kyrgyz national epic grand opera celebrating the heroic protector of the Kyrgyz nation."
-      }
-    ]
+            {
+                  "title": "Aichurek",
+                  "composer": "Abdylas Maldybaev, Vasily Vlasov & Vladimir Fere",
+                  "premiereYear": 1939,
+                  "type": "WORLD_PREMIERE",
+                  "details": "The foundational first Kyrgyz national opera in history, derived from the Epic of Manas."
+            },
+            {
+                  "title": "Manas",
+                  "composer": "Abdylas Maldybaev & Vladimir Fere",
+                  "premiereYear": 1946,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Monumental Kyrgyz national epic grand opera celebrating the heroic protector of the Kyrgyz nation."
+            }
+      ]
   },
   {
     "id": "ayni-opera-theatre-dushanbe",
@@ -6261,21 +6370,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "800 seats",
     "historicSignificance": "The primary lyric stage of Tajikistan, preserving Tajik classical musical drama and Persian poetic opera.",
     "historicPremieres": [
-      {
-        "title": "The Vose Uprising",
-        "composer": "Sergei Balasanyan",
-        "premiereYear": 1939,
-        "type": "WORLD_PREMIERE",
-        "details": "The very first Tajik national opera in history, depicting the heroic peasant revolt of 1885."
-      },
-      {
-        "title": "Kova the Blacksmith (Kova Ohangar)",
-        "composer": "Sergei Balasanyan & Bobokalonov",
-        "premiereYear": 1941,
-        "type": "WORLD_PREMIERE",
-        "details": "Epic Tajik national opera world premiere based on Ferdowsi's legendary Persian Shahnameh."
-      }
-    ]
+            {
+                  "title": "The Vose Uprising",
+                  "composer": "Sergei Balasanyan",
+                  "premiereYear": 1939,
+                  "type": "WORLD_PREMIERE",
+                  "details": "The very first Tajik national opera in history, depicting the heroic peasant revolt of 1885."
+            },
+            {
+                  "title": "Kova the Blacksmith (Kova Ohangar)",
+                  "composer": "Sergei Balasanyan & Bobokalonov",
+                  "premiereYear": 1941,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Epic Tajik national opera world premiere based on Ferdowsi's legendary Persian Shahnameh."
+            }
+      ]
   },
   {
     "id": "azerbaijan-state-opera-baku",
@@ -6295,21 +6404,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,010 seats",
     "historicSignificance": "Historic cradle of opera in the Muslim world, where Azerbaijani traditional mugham music merged with Western classical opera form.",
     "historicPremieres": [
-      {
-        "title": "Leyli and Majnun",
-        "composer": "Uzeyir Hajibeyov",
-        "premiereYear": 1908,
-        "type": "WORLD_PREMIERE",
-        "details": "The first opera produced in the Islamic and Eastern worlds, pioneering mugham-opera."
-      },
-      {
-        "title": "Koroghlu (The Blind Man's Son)",
-        "composer": "Uzeyir Hajibeyov",
-        "premiereYear": 1937,
-        "type": "WORLD_PREMIERE",
-        "details": "Azerbaijan's greatest national heroic grand opera, awarded the USSR State Prize."
-      }
-    ]
+            {
+                  "title": "Leyli and Majnun",
+                  "composer": "Uzeyir Hajibeyov",
+                  "premiereYear": 1908,
+                  "type": "WORLD_PREMIERE",
+                  "details": "The first opera produced in the Islamic and Eastern worlds, pioneering mugham-opera."
+            },
+            {
+                  "title": "Koroghlu (The Blind Man's Son)",
+                  "composer": "Uzeyir Hajibeyov",
+                  "premiereYear": 1937,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Azerbaijan's greatest national heroic grand opera, awarded the USSR State Prize."
+            }
+      ]
   },
   {
     "id": "yerevan-opera-theatre-armenia",
@@ -6329,21 +6438,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,260 seats",
     "historicSignificance": "The primary lyric stage of Armenia; permanent home to the masterworks of Komitas, Spendiaryan, and Tigranian.",
     "historicPremieres": [
-      {
-        "title": "Anoush",
-        "composer": "Armen Tigranian",
-        "premiereYear": 1935,
-        "type": "WORLD_PREMIERE",
-        "details": "Historic official stage premiere of Armenia's supreme national opera based on Hovhannes Tumanyan's tragedy."
-      },
-      {
-        "title": "Almast",
-        "composer": "Alexander Spendiaryan",
-        "premiereYear": 1933,
-        "type": "WORLD_PREMIERE",
-        "details": "Inaugural operatic production opening the Armenian state opera house."
-      }
-    ]
+            {
+                  "title": "Almast",
+                  "composer": "Alexander Spendiaryan",
+                  "premiereYear": 1933,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Inaugural operatic production opening the Armenian state opera house."
+            },
+            {
+                  "title": "Anoush",
+                  "composer": "Armen Tigranian",
+                  "premiereYear": 1935,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Historic official stage premiere of Armenia's supreme national opera based on Hovhannes Tumanyan's tragedy."
+            }
+      ]
   },
   {
     "id": "tbilisi-opera-theatre-georgia",
@@ -6363,21 +6472,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,065 seats",
     "historicSignificance": "Historic jewel of the Caucasus; celebrated for its unique Moorish architecture and foundational Georgian national opera repertoire.",
     "historicPremieres": [
-      {
-        "title": "Abesalom and Eteri",
-        "composer": "Zakaria Paliashvili",
-        "premiereYear": 1919,
-        "type": "WORLD_PREMIERE",
-        "details": "Foundational masterpiece of Georgian national opera, whose overture serves as the national anthem of Georgia."
-      },
-      {
-        "title": "Daisi (Twilight)",
-        "composer": "Zakaria Paliashvili",
-        "premiereYear": 1923,
-        "type": "WORLD_PREMIERE",
-        "details": "Beloved Georgian lyric-drama world premiere blending Italian bel canto with polyphonic Georgian folk song."
-      }
-    ]
+            {
+                  "title": "Abesalom and Eteri",
+                  "composer": "Zakaria Paliashvili",
+                  "premiereYear": 1919,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Foundational masterpiece of Georgian national opera, whose overture serves as the national anthem of Georgia."
+            },
+            {
+                  "title": "Daisi (Twilight)",
+                  "composer": "Zakaria Paliashvili",
+                  "premiereYear": 1923,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Beloved Georgian lyric-drama world premiere blending Italian bel canto with polyphonic Georgian folk song."
+            }
+      ]
   },
   {
     "id": "bolshoi-theatre-belarus",
@@ -6397,21 +6506,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,200 seats",
     "historicSignificance": "The supreme national opera house of Belarus, recognized with the Grand State Prize and renowned for its grand lyric acoustics.",
     "historicPremieres": [
-      {
-        "title": "Mikhas Padholny",
-        "composer": "Yevgeny Tikotsky",
-        "premiereYear": 1939,
-        "type": "WORLD_PREMIERE",
-        "details": "Historic inaugural Belarusian national opera opening the newly completed Bolshoi theatre in Minsk."
-      },
-      {
-        "title": "Kastus Kalinouski",
-        "composer": "Dzmitry Lukas",
-        "premiereYear": 1947,
-        "type": "WORLD_PREMIERE",
-        "details": "Epic Belarusian historical grand opera commemorating the leader of the 1863 national liberation uprising."
-      }
-    ]
+            {
+                  "title": "Mikhas Padholny",
+                  "composer": "Yevgeny Tikotsky",
+                  "premiereYear": 1939,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Historic inaugural Belarusian national opera opening the newly completed Bolshoi theatre in Minsk."
+            },
+            {
+                  "title": "Kastus Kalinouski",
+                  "composer": "Dzmitry Lukas",
+                  "premiereYear": 1947,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Epic Belarusian historical grand opera commemorating the leader of the 1863 national liberation uprising."
+            }
+      ]
   },
   {
     "id": "gran-teatro-de-la-habana",
@@ -6431,21 +6540,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,500 seats",
     "historicSignificance": "One of the greatest historical opera houses of the New World, renowned for superior acoustic resonance rivaling European imperial theatres.",
     "historicPremieres": [
-      {
-        "title": "La Esclava (The Slave)",
-        "composer": "José Mauri Esteve",
-        "premiereYear": 1921,
-        "type": "WORLD_PREMIERE",
-        "details": "Landmark Cuban grand opera world premiere set during the Cuban independence struggle."
-      },
-      {
-        "title": "El Caminante",
-        "composer": "Eduardo Sánchez de Fuentes",
-        "premiereYear": 1921,
-        "type": "WORLD_PREMIERE",
-        "details": "Historic Cuban lyric opera premiere starring soprano Maria Barrientos."
-      }
-    ]
+            {
+                  "title": "La Esclava (The Slave)",
+                  "composer": "José Mauri Esteve",
+                  "premiereYear": 1921,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Landmark Cuban grand opera world premiere set during the Cuban independence struggle."
+            },
+            {
+                  "title": "El Caminante",
+                  "composer": "Eduardo Sánchez de Fuentes",
+                  "premiereYear": 1921,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Historic Cuban lyric opera premiere starring soprano Maria Barrientos."
+            }
+      ]
   },
   {
     "id": "teatro-tapia-san-juan",
@@ -6465,21 +6574,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "598 seats",
     "historicSignificance": "The cradle of classical performing arts in Puerto Rico, hosting 19th-century Italian bel canto troupes and landmark Puerto Rican zarzuelas and operas.",
     "historicPremieres": [
-      {
-        "title": "El Cuarteto de la Muerte",
-        "composer": "Alejandro Tapia y Rivera",
-        "premiereYear": 1856,
-        "type": "WORLD_PREMIERE",
-        "details": "Foundational Puerto Rican musical drama premiere by the father of Puerto Rican national literature."
-      },
-      {
-        "title": "La Bruja (The Witch)",
-        "composer": "Felipe Gutiérrez y Espinosa",
-        "premiereYear": 1871,
-        "type": "WORLD_PREMIERE",
-        "details": "Historic Puerto Rican lyric premiere by San Juan Cathedral's celebrated maestro de capilla."
-      }
-    ]
+            {
+                  "title": "El Cuarteto de la Muerte",
+                  "composer": "Alejandro Tapia y Rivera",
+                  "premiereYear": 1856,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Foundational Puerto Rican musical drama premiere by the father of Puerto Rican national literature."
+            },
+            {
+                  "title": "La Bruja (The Witch)",
+                  "composer": "Felipe Gutiérrez y Espinosa",
+                  "premiereYear": 1871,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Historic Puerto Rican lyric premiere by San Juan Cathedral's celebrated maestro de capilla."
+            }
+      ]
   },
   {
     "id": "teatro-nacional-eduardo-brito",
@@ -6499,21 +6608,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,589 seats",
     "historicSignificance": "The premier opera and classical stage of the Dominican Republic, home to the National Symphony Orchestra and biennial opera seasons.",
     "historicPremieres": [
-      {
-        "title": "1791",
-        "composer": "Bienvenido Bustamante",
-        "premiereYear": 1992,
-        "type": "WORLD_PREMIERE",
-        "details": "Landmark Dominican national grand opera premiere commemorating the 500th anniversary of the encounter of cultures."
-      },
-      {
-        "title": "Inés",
-        "composer": "Manuel Marino Miniño",
-        "premiereYear": 1975,
-        "type": "WORLD_PREMIERE",
-        "details": "Early Dominican lyric drama premiere staged in the inaugural seasons of the national theatre."
-      }
-    ]
+            {
+                  "title": "Inés",
+                  "composer": "Manuel Marino Miniño",
+                  "premiereYear": 1975,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Early Dominican lyric drama premiere staged in the inaugural seasons of the national theatre."
+            },
+            {
+                  "title": "1791",
+                  "composer": "Bienvenido Bustamante",
+                  "premiereYear": 1992,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Landmark Dominican national grand opera premiere commemorating the 500th anniversary of the encounter of cultures."
+            }
+      ]
   },
   {
     "id": "queens-hall-trinidad",
@@ -6533,21 +6642,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "750 seats",
     "historicSignificance": "The premier lyric stage of the English-speaking Southern Caribbean; home to landmark productions by the Marionettes Chorale and Caribbean steelband-infused operas.",
     "historicPremieres": [
-      {
-        "title": "Spirit of the Nation",
-        "composer": "Pat Castagne & Olive Walke",
-        "premiereYear": 1962,
-        "type": "WORLD_PREMIERE",
-        "details": "Inaugural gala independence musical drama celebrating the independence of Trinidad & Tobago."
-      },
-      {
-        "title": "Mass of the Diaspora",
-        "composer": "Desmond Waithe & Gretta Taylor",
-        "premiereYear": 1999,
-        "type": "WORLD_PREMIERE",
-        "details": "Acclaimed Caribbean choral-operatic world premiere fusing orchestral steelpan polyphony with classical liturgical voice."
-      }
-    ]
+            {
+                  "title": "Spirit of the Nation",
+                  "composer": "Pat Castagne & Olive Walke",
+                  "premiereYear": 1962,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Inaugural gala independence musical drama celebrating the independence of Trinidad & Tobago."
+            },
+            {
+                  "title": "Mass of the Diaspora",
+                  "composer": "Desmond Waithe & Gretta Taylor",
+                  "premiereYear": 1999,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Acclaimed Caribbean choral-operatic world premiere fusing orchestral steelpan polyphony with classical liturgical voice."
+            }
+      ]
   },
   {
     "id": "teatro-nacional-costa-rica",
@@ -6567,21 +6676,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,040 seats",
     "historicSignificance": "The preeminent lyric theatre of Central America; opened with Gounod's Faust performed by the Aubry French Opera Company.",
     "historicPremieres": [
-      {
-        "title": "La Caída de la Inquisición",
-        "composer": "Julio Fonseca",
-        "premiereYear": 1914,
-        "type": "WORLD_PREMIERE",
-        "details": "Historic Costa Rican dramatic opera premiere by the country's celebrated classical composer."
-      },
-      {
-        "title": "Faust (Costa Rican National Gala Premiere)",
-        "composer": "Charles Gounod",
-        "premiereYear": 1897,
-        "type": "INAUGURAL_STAGING",
-        "details": "Gala inaugural production opening the National Theatre of Costa Rica on October 19, 1897."
-      }
-    ]
+            {
+                  "title": "Faust (Costa Rican National Gala Premiere)",
+                  "composer": "Charles Gounod",
+                  "premiereYear": 1897,
+                  "type": "INAUGURAL_STAGING",
+                  "details": "Gala inaugural production opening the National Theatre of Costa Rica on October 19, 1897."
+            },
+            {
+                  "title": "La Caída de la Inquisición",
+                  "composer": "Julio Fonseca",
+                  "premiereYear": 1914,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Historic Costa Rican dramatic opera premiere by the country's celebrated classical composer."
+            }
+      ]
   },
   {
     "id": "teatro-nacional-panama",
@@ -6600,21 +6709,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "853 seats",
     "historicSignificance": "The historic national lyric jewel of the Isthmus of Panama, opened with Verdi's Aida performed by the Mario Lombardi Opera Company.",
     "historicPremieres": [
-      {
-        "title": "La Campesina Panameña",
-        "composer": "Alberto Galimany",
-        "premiereYear": 1916,
-        "type": "WORLD_PREMIERE",
-        "details": "Historic Panamanian lyric premiere celebrating Isthmian folkloric and classical traditions."
-      },
-      {
-        "title": "Aida (Panama Inaugural National Staging)",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1908,
-        "type": "INAUGURAL_STAGING",
-        "details": "Gala opening opera of the Republic of Panama, performed on October 1, 1908."
-      }
-    ]
+            {
+                  "title": "Aida (Panama Inaugural National Staging)",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1908,
+                  "type": "INAUGURAL_STAGING",
+                  "details": "Gala opening opera of the Republic of Panama, performed on October 1, 1908."
+            },
+            {
+                  "title": "La Campesina Panameña",
+                  "composer": "Alberto Galimany",
+                  "premiereYear": 1916,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Historic Panamanian lyric premiere celebrating Isthmian folkloric and classical traditions."
+            }
+      ]
   },
   {
     "id": "teatro-teresa-carreno-caracas",
@@ -6633,21 +6742,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,405 seats (Sala Ríos Reyna)",
     "historicSignificance": "The primary lyric stage of Venezuela, named after legendary Venezuelan pianist and opera composer Teresa Carreño.",
     "historicPremieres": [
-      {
-        "title": "Los Martirios de Colón",
-        "composer": "Federico Ruiz",
-        "premiereYear": 1993,
-        "type": "WORLD_PREMIERE",
-        "details": "Acclaimed Venezuelan satirical grand opera world premiere, celebrated across Latin America."
-      },
-      {
-        "title": "El Empedrado",
-        "composer": "Inocente Carreño",
-        "premiereYear": 1988,
-        "type": "WORLD_PREMIERE",
-        "details": "Venezuelan lyric drama premiere celebrating regional coastal musical traditions."
-      }
-    ]
+            {
+                  "title": "El Empedrado",
+                  "composer": "Inocente Carreño",
+                  "premiereYear": 1988,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Venezuelan lyric drama premiere celebrating regional coastal musical traditions."
+            },
+            {
+                  "title": "Los Martirios de Colón",
+                  "composer": "Federico Ruiz",
+                  "premiereYear": 1993,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Acclaimed Venezuelan satirical grand opera world premiere, celebrated across Latin America."
+            }
+      ]
   },
   {
     "id": "asmara-theatre-eritrea",
@@ -6667,21 +6776,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "750 seats",
     "historicSignificance": "The jewel of UNESCO World Heritage-listed Asmara ('Piccola Roma'); a preserved Italian colonial Art Nouveau monument where touring Italian companies performed in the 1920s–30s.",
     "historicPremieres": [
-      {
-        "title": "Il Giuramento di Pontida (Asmara Gala Staging)",
-        "composer": "Saverio Mercadante",
-        "premiereYear": 1920,
-        "type": "INAUGURAL_STAGING",
-        "details": "Historic colonial era gala staging inaugurating the Italian lyric repertory in the Horn of Africa."
-      },
-      {
-        "title": "Eritrean National Drama of Liberation",
-        "composer": "Solomon Dirar & Traditional Ensembles",
-        "premiereYear": 1993,
-        "type": "WORLD_PREMIERE",
-        "details": "Inaugural post-independence musical drama celebrating Eritrean statehood."
-      }
-    ]
+            {
+                  "title": "Il Giuramento di Pontida (Asmara Gala Staging)",
+                  "composer": "Saverio Mercadante",
+                  "premiereYear": 1920,
+                  "type": "INAUGURAL_STAGING",
+                  "details": "Historic colonial era gala staging inaugurating the Italian lyric repertory in the Horn of Africa."
+            },
+            {
+                  "title": "Eritrean National Drama of Liberation",
+                  "composer": "Solomon Dirar & Traditional Ensembles",
+                  "premiereYear": 1993,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Inaugural post-independence musical drama celebrating Eritrean statehood."
+            }
+      ]
   },
   {
     "id": "national-theatre-of-namibia",
@@ -6700,21 +6809,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "470 seats",
     "historicSignificance": "Namibia’s primary civic performing arts stage; host venue for pioneering indigenous operatic collaborations.",
     "historicPremieres": [
-      {
-        "title": "Chief Hosea Kutako Opera",
-        "composer": "Axali Doëseb & Namibian Composers Guild",
-        "premiereYear": 2010,
-        "type": "WORLD_PREMIERE",
-        "details": "Landmark Namibian biographical grand opera celebrating anti-colonial leader Hosea Kutako."
-      },
-      {
-        "title": "The Namibian Messiah",
-        "composer": "Ernst van Biljon (Arr.)",
-        "premiereYear": 1995,
-        "type": "WORLD_PREMIERE",
-        "details": "Pioneering African choral-operatic fusion work staged at the NTN."
-      }
-    ]
+            {
+                  "title": "The Namibian Messiah",
+                  "composer": "Ernst van Biljon (Arr.)",
+                  "premiereYear": 1995,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Pioneering African choral-operatic fusion work staged at the NTN."
+            },
+            {
+                  "title": "Chief Hosea Kutako Opera",
+                  "composer": "Axali Doëseb & Namibian Composers Guild",
+                  "premiereYear": 2010,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Landmark Namibian biographical grand opera celebrating anti-colonial leader Hosea Kutako."
+            }
+      ]
   },
   {
     "id": "grand-theatre-national-dakar",
@@ -6734,21 +6843,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,800 seats",
     "historicSignificance": "West Africa’s flagship national multi-purpose performing arts center; host venue for pan-African musical drama.",
     "historicPremieres": [
-      {
-        "title": "Opéra du Sahel (Bintou Were)",
-        "composer": "Wasis Diop & Koulsy Lamko",
-        "premiereYear": 2011,
-        "type": "WORLD_PREMIERE",
-        "details": "Landmark pan-African grand opera world premiere recounting the journey of African migration."
-      },
-      {
-        "title": "Chaka Zulu: L'Épopée Africaine",
-        "composer": "Alioune Badara Diagne",
-        "premiereYear": 2014,
-        "type": "WORLD_PREMIERE",
-        "details": "Epic Senegalese lyric drama premiered at the Grand Théâtre."
-      }
-    ]
+            {
+                  "title": "Opéra du Sahel (Bintou Were)",
+                  "composer": "Wasis Diop & Koulsy Lamko",
+                  "premiereYear": 2011,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Landmark pan-African grand opera world premiere recounting the journey of African migration."
+            },
+            {
+                  "title": "Chaka Zulu: L'Épopée Africaine",
+                  "composer": "Alioune Badara Diagne",
+                  "premiereYear": 2014,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Epic Senegalese lyric drama premiered at the Grand Théâtre."
+            }
+      ]
   },
   {
     "id": "grand-theatre-de-rabat",
@@ -6768,21 +6877,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,822 seats",
     "historicSignificance": "The crown jewel of Morocco's cultural renaissance; the most architecturally advanced opera house on the African continent.",
     "historicPremieres": [
-      {
-        "title": "Ibn Battuta: The Great Journey",
-        "composer": "Nabil Benabdeljalil",
-        "premiereYear": 2024,
-        "type": "WORLD_PREMIERE",
-        "details": "Inaugural Moroccan grand opera production celebrating the medieval explorer's travels across the Islamic world."
-      },
-      {
-        "title": "Al-Andalus",
-        "composer": "Ahmed Essyad",
-        "premiereYear": 2024,
-        "type": "WORLD_PREMIERE",
-        "details": "World premiere lyric masterpiece weaving Andalusian classical poetry with contemporary orchestration."
-      }
-    ]
+            {
+                  "title": "Ibn Battuta: The Great Journey",
+                  "composer": "Nabil Benabdeljalil",
+                  "premiereYear": 2024,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Inaugural Moroccan grand opera production celebrating the medieval explorer's travels across the Islamic world."
+            },
+            {
+                  "title": "Al-Andalus",
+                  "composer": "Ahmed Essyad",
+                  "premiereYear": 2024,
+                  "type": "WORLD_PREMIERE",
+                  "details": "World premiere lyric masterpiece weaving Andalusian classical poetry with contemporary orchestration."
+            }
+      ]
   },
   {
     "id": "bahrain-national-theatre",
@@ -6802,21 +6911,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,001 seats",
     "historicSignificance": "The national lyric opera venue of Bahrain and the third-largest performing arts auditorium in the Arabian Gulf.",
     "historicPremieres": [
-      {
-        "title": "Plácido Domingo Inaugural Gala",
-        "composer": "Various (Inaugural Opera Gala)",
-        "premiereYear": 2012,
-        "type": "INAUGURAL_STAGING",
-        "details": "Landmark grand gala opening the Kingdom of Bahrain's national opera house."
-      },
-      {
-        "title": "Gilgamesh: The Epic of Dilmun",
-        "composer": "Mohammed Haddad",
-        "premiereYear": 2016,
-        "type": "WORLD_PREMIERE",
-        "details": "Bahraini national symphonic opera world premiere based on the Ancient Dilmun civilization."
-      }
-    ]
+            {
+                  "title": "Plácido Domingo Inaugural Gala",
+                  "composer": "Various (Inaugural Opera Gala)",
+                  "premiereYear": 2012,
+                  "type": "INAUGURAL_STAGING",
+                  "details": "Landmark grand gala opening the Kingdom of Bahrain's national opera house."
+            },
+            {
+                  "title": "Gilgamesh: The Epic of Dilmun",
+                  "composer": "Mohammed Haddad",
+                  "premiereYear": 2016,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Bahraini national symphonic opera world premiere based on the Ancient Dilmun civilization."
+            }
+      ]
   },
   {
     "id": "vahdat-hall-tehran",
@@ -6836,21 +6945,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "900 seats",
     "historicSignificance": "The historic national opera house of Iran; birthplace of modern Iranian classical opera and ballet.",
     "historicPremieres": [
-      {
-        "title": "Zal and Rudabeh",
-        "composer": "Samin Baghtcheban",
-        "premiereYear": 1967,
-        "type": "WORLD_PREMIERE",
-        "details": "Inaugural Iranian grand opera world premiere based on Ferdowsi's Shahnameh, opening Roudaki Hall."
-      },
-      {
-        "title": "Khosrow and Shirin",
-        "composer": "Hossein Dehlavi",
-        "premiereYear": 1970,
-        "type": "WORLD_PREMIERE",
-        "details": "Landmark Persian classical opera world premiere setting Nizami Ganjavi's romantic epic."
-      }
-    ]
+            {
+                  "title": "Zal and Rudabeh",
+                  "composer": "Samin Baghtcheban",
+                  "premiereYear": 1967,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Inaugural Iranian grand opera world premiere based on Ferdowsi's Shahnameh, opening Roudaki Hall."
+            },
+            {
+                  "title": "Khosrow and Shirin",
+                  "composer": "Hossein Dehlavi",
+                  "premiereYear": 1970,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Landmark Persian classical opera world premiere setting Nizami Ganjavi's romantic epic."
+            }
+      ]
   },
   {
     "id": "gaiety-theatre-shimla",
@@ -6869,21 +6978,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "300 seats",
     "historicSignificance": "The legendary cultural heart of the British Raj's summer capital in the Himalayas; historic venue for colonial operettas, light operas, and performances by Rudyard Kipling and Lord Baden-Powell.",
     "historicPremieres": [
-      {
-        "title": "Time Will Tell",
-        "composer": "F. E. Phillips",
-        "premiereYear": 1887,
-        "type": "WORLD_PREMIERE",
-        "details": "Landmark gala inaugural stage production opening the British Raj's Himalayan jewel box theatre."
-      },
-      {
-        "title": "The Charmed Ring",
-        "composer": "Shimla ADC",
-        "premiereYear": 1891,
-        "type": "WORLD_PREMIERE",
-        "details": "Original Raj-era operatic burlesque written and produced for the Shimla stage."
-      }
-    ]
+            {
+                  "title": "Time Will Tell",
+                  "composer": "F. E. Phillips",
+                  "premiereYear": 1887,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Landmark gala inaugural stage production opening the British Raj's Himalayan jewel box theatre."
+            },
+            {
+                  "title": "The Charmed Ring",
+                  "composer": "Shimla ADC",
+                  "premiereYear": 1891,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Original Raj-era operatic burlesque written and produced for the Shimla stage."
+            }
+      ]
   },
   {
     "id": "teatro-dom-pedro-v-macau",
@@ -6903,21 +7012,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "276 seats",
     "historicSignificance": "The first Western-style theater in China and East Asia; hosted Giacomo Puccini's Madama Butterfly East Asian premiere.",
     "historicPremieres": [
-      {
-        "title": "Madama Butterfly (East Asian Staging Premiere)",
-        "composer": "Giacomo Puccini",
-        "premiereYear": 1910,
-        "type": "CONTINENTAL_PREMIERE",
-        "details": "Historic first full-scale staging of Puccini's Asian masterpiece in greater China."
-      },
-      {
-        "title": "Soror Mariana",
-        "composer": "Júlio Dantas",
-        "premiereYear": 1928,
-        "type": "WORLD_PREMIERE",
-        "details": "Historic Portuguese lyric drama premiered in Macau's landmark theater."
-      }
-    ]
+            {
+                  "title": "Madama Butterfly (East Asian Staging Premiere)",
+                  "composer": "Giacomo Puccini",
+                  "premiereYear": 1910,
+                  "type": "CONTINENTAL_PREMIERE",
+                  "details": "Historic first full-scale staging of Puccini's Asian masterpiece in greater China."
+            },
+            {
+                  "title": "Soror Mariana",
+                  "composer": "Júlio Dantas",
+                  "premiereYear": 1928,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Historic Portuguese lyric drama premiered in Macau's landmark theater."
+            }
+      ]
   },
   {
     "id": "gedung-kesenian-jakarta",
@@ -6936,21 +7045,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "475 seats",
     "historicSignificance": "The historic cradle of Western performing arts and lyric opera in Indonesia, hosting European touring troupes throughout the 19th and early 20th centuries.",
     "historicPremieres": [
-      {
-        "title": "Oeroeg: The Lyric Drama",
-        "composer": "Indonesian-Dutch Ensemble",
-        "premiereYear": 1948,
-        "type": "WORLD_PREMIERE",
-        "details": "Historic dramatic-lyric staging performed at Gedung Kesenian Jakarta."
-      },
-      {
-        "title": "The Barber of Seville (Batavia Grand Gala)",
-        "composer": "Gioachino Rossini",
-        "premiereYear": 1835,
-        "type": "CONTINENTAL_PREMIERE",
-        "details": "First documented full European grand opera season produced in Batavia (Jakarta)."
-      }
-    ]
+            {
+                  "title": "The Barber of Seville (Batavia Grand Gala)",
+                  "composer": "Gioachino Rossini",
+                  "premiereYear": 1835,
+                  "type": "CONTINENTAL_PREMIERE",
+                  "details": "First documented full European grand opera season produced in Batavia (Jakarta)."
+            },
+            {
+                  "title": "Oeroeg: The Lyric Drama",
+                  "composer": "Indonesian-Dutch Ensemble",
+                  "premiereYear": 1948,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Historic dramatic-lyric staging performed at Gedung Kesenian Jakarta."
+            }
+      ]
   },
   {
     "id": "istana-budaya-kuala-lumpur",
@@ -6969,21 +7078,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,412 seats (Panggung Sari)",
     "historicSignificance": "The national lyric theatre of Malaysia; permanent home to national opera productions, international touring companies, and traditional musical dramas.",
     "historicPremieres": [
-      {
-        "title": "Puteri Gunung Ledang (The Musical-Opera)",
-        "composer": "Dick Lee",
-        "premiereYear": 2006,
-        "type": "WORLD_PREMIERE",
-        "details": "Spectacular Malaysian lyric epic world premiere based on the mythical fairy princess of Mount Ophir."
-      },
-      {
-        "title": "The Merry Widow (Malaysian National Opera Staging)",
-        "composer": "Franz Lehár",
-        "premiereYear": 2014,
-        "type": "NATIONAL_PREMIERE",
-        "details": "First full-scale international operatic co-production staged at Istana Budaya."
-      }
-    ]
+            {
+                  "title": "Puteri Gunung Ledang (The Musical-Opera)",
+                  "composer": "Dick Lee",
+                  "premiereYear": 2006,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Spectacular Malaysian lyric epic world premiere based on the mythical fairy princess of Mount Ophir."
+            },
+            {
+                  "title": "The Merry Widow (Malaysian National Opera Staging)",
+                  "composer": "Franz Lehár",
+                  "premiereYear": 2014,
+                  "type": "NATIONAL_PREMIERE",
+                  "details": "First full-scale international operatic co-production staged at Istana Budaya."
+            }
+      ]
   },
   {
     "id": "cultural-center-of-the-philippines",
@@ -7003,21 +7112,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,815 seats",
     "historicSignificance": "The premier lyric house of the Philippines; cradle of the Philippine Opera Company and world premieres of national operas.",
     "historicPremieres": [
-      {
-        "title": "Noli Me Tángere (Grand Opera)",
-        "composer": "Felipe Padilla de León",
-        "premiereYear": 1974,
-        "type": "WORLD_PREMIERE",
-        "details": "Landmark complete grand opera production of José Rizal's revolutionary novel."
-      },
-      {
-        "title": "El Filibusterismo",
-        "composer": "Felipe Padilla de León",
-        "premiereYear": 1970,
-        "type": "WORLD_PREMIERE",
-        "details": "World premiere of the second national grand opera based on Rizal's anti-colonial saga."
-      }
-    ]
+            {
+                  "title": "El Filibusterismo",
+                  "composer": "Felipe Padilla de León",
+                  "premiereYear": 1970,
+                  "type": "WORLD_PREMIERE",
+                  "details": "World premiere of the second national grand opera based on Rizal's anti-colonial saga."
+            },
+            {
+                  "title": "Noli Me Tángere (Grand Opera)",
+                  "composer": "Felipe Padilla de León",
+                  "premiereYear": 1974,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Landmark complete grand opera production of José Rizal's revolutionary novel."
+            }
+      ]
   },
   {
     "id": "thailand-cultural-centre-bangkok",
@@ -7037,21 +7146,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,000 seats",
     "historicSignificance": "The primary lyric stage of Thailand; home to Somtow Sucharitkul's groundbreaking opera cycles including the first Ring Cycle in Southeast Asia.",
     "historicPremieres": [
-      {
-        "title": "Madana",
-        "composer": "Somtow Sucharitkul",
-        "premiereYear": 2001,
-        "type": "WORLD_PREMIERE",
-        "details": "The very first Western-style grand opera composed by a Thai composer, based on King Rama VI's play."
-      },
-      {
-        "title": "Mae Naak",
-        "composer": "Somtow Sucharitkul",
-        "premiereYear": 2003,
-        "type": "WORLD_PREMIERE",
-        "details": "Acclaimed Thai ghost story grand opera world premiere, subsequently toured to London."
-      }
-    ]
+            {
+                  "title": "Madana",
+                  "composer": "Somtow Sucharitkul",
+                  "premiereYear": 2001,
+                  "type": "WORLD_PREMIERE",
+                  "details": "The very first Western-style grand opera composed by a Thai composer, based on King Rama VI's play."
+            },
+            {
+                  "title": "Mae Naak",
+                  "composer": "Somtow Sucharitkul",
+                  "premiereYear": 2003,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Acclaimed Thai ghost story grand opera world premiere, subsequently toured to London."
+            }
+      ]
   },
   {
     "id": "teatru-manoel-malta",
@@ -7071,21 +7180,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "623 seats",
     "historicSignificance": "Europe's third-oldest functioning theater; national theatre of Malta and home of the annual Valletta Baroque Opera Festival.",
     "historicPremieres": [
-      {
-        "title": "Il Merope",
-        "composer": "Scipione Maffei (Music: Domenico Sarro)",
-        "premiereYear": 1732,
-        "type": "WORLD_PREMIERE",
-        "details": "Inaugural Baroque opera tragedy opening the theatre on January 9, 1732."
-      },
-      {
-        "title": "In-Nassaba Malti (The Maltese Bird Catcher)",
-        "composer": "Pietro Paolo Bugeja",
-        "premiereYear": 1846,
-        "type": "WORLD_PREMIERE",
-        "details": "First documented Maltese lyric opera world premiere sung in local language."
-      }
-    ]
+            {
+                  "title": "Il Merope",
+                  "composer": "Scipione Maffei (Music: Domenico Sarro)",
+                  "premiereYear": 1732,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Inaugural Baroque opera tragedy opening the theatre on January 9, 1732."
+            },
+            {
+                  "title": "In-Nassaba Malti (The Maltese Bird Catcher)",
+                  "composer": "Pietro Paolo Bugeja",
+                  "premiereYear": 1846,
+                  "type": "WORLD_PREMIERE",
+                  "details": "First documented Maltese lyric opera world premiere sung in local language."
+            }
+      ]
   },
   {
     "id": "grand-theatre-de-luxembourg",
@@ -7105,21 +7214,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "943 seats",
     "historicSignificance": "The primary lyric opera and performing arts house of the Grand Duchy of Luxembourg, acclaimed for international opera co-productions across Europe.",
     "historicPremieres": [
-      {
-        "title": "Münchhausen",
-        "composer": "Camille Kerger",
-        "premiereYear": 1997,
-        "type": "WORLD_PREMIERE",
-        "details": "Celebrated contemporary Luxembourgish national opera commission."
-      },
-      {
-        "title": "Like Flesh",
-        "composer": "Sivan Eldar & Cordelia Lynn",
-        "premiereYear": 2022,
-        "type": "WORLD_PREMIERE",
-        "details": "Acclaimed 21st-century opera co-premiere and winner of the prestigious Fedora Opera Prize."
-      }
-    ]
+            {
+                  "title": "Münchhausen",
+                  "composer": "Camille Kerger",
+                  "premiereYear": 1997,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Celebrated contemporary Luxembourgish national opera commission."
+            },
+            {
+                  "title": "Like Flesh",
+                  "composer": "Sivan Eldar & Cordelia Lynn",
+                  "premiereYear": 2022,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Acclaimed 21st-century opera co-premiere and winner of the prestigious Fedora Opera Prize."
+            }
+      ]
   },
   {
     "id": "estonian-national-opera-tallinn",
@@ -7139,21 +7248,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "690 seats",
     "historicSignificance": "The historic national cradle of Estonian musical theater and statehood, where the Estonian Constituent Assembly convened in 1919.",
     "historicPremieres": [
-      {
-        "title": "Vikerlased (The Vikings)",
-        "composer": "Evald Aav",
-        "premiereYear": 1928,
-        "type": "WORLD_PREMIERE",
-        "details": "The definitive first Estonian national opera in history, depicting the 1187 Viking raid on Sigtuna."
-      },
-      {
-        "title": "Cyrano de Bergerac",
-        "composer": "Eino Tamberg",
-        "premiereYear": 1976,
-        "type": "WORLD_PREMIERE",
-        "details": "Estonia's most internationally performed 20th-century opera masterpiece."
-      }
-    ]
+            {
+                  "title": "Vikerlased (The Vikings)",
+                  "composer": "Evald Aav",
+                  "premiereYear": 1928,
+                  "type": "WORLD_PREMIERE",
+                  "details": "The definitive first Estonian national opera in history, depicting the 1187 Viking raid on Sigtuna."
+            },
+            {
+                  "title": "Cyrano de Bergerac",
+                  "composer": "Eino Tamberg",
+                  "premiereYear": 1976,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Estonia's most internationally performed 20th-century opera masterpiece."
+            }
+      ]
   },
   {
     "id": "harpa-eldborg-reykjavik",
@@ -7173,14 +7282,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,800 seats",
     "historicSignificance": "The national lyric opera and symphonic palace of Iceland, winner of the prestigious Mies van der Rohe European Architecture Award.",
     "historicPremieres": [
-      {
-        "title": "Ragnheiður",
-        "composer": "Gunnar Þórðarson",
-        "premiereYear": 2014,
-        "type": "WORLD_PREMIERE",
-        "details": "The definitive modern Icelandic grand opera world premiere, based on the historical 17th-century bishop's daughter."
-      }
-    ]
+            {
+                  "title": "Ragnheiður",
+                  "composer": "Gunnar Þórðarson",
+                  "premiereYear": 2014,
+                  "type": "WORLD_PREMIERE",
+                  "details": "The definitive modern Icelandic grand opera world premiere, based on the historical 17th-century bishop's daughter."
+            }
+      ]
   },
   {
     "id": "cuvillies-theater-munich",
@@ -7200,26 +7309,26 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "523 seats",
     "historicSignificance": "Wittelsbach royal court jewel box; premiere venue for Mozart's Idomeneo (1781) and King Ludwig II's private midnight Wagner stagings.",
     "historicPremieres": [
-      {
-        "title": "Idomeneo, re di Creta",
-        "composer": "Wolfgang Amadeus Mozart",
-        "premiereYear": 1781,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Wolfgang Amadeus Mozart",
-        "patronageType": "ROYAL_COURT",
-        "details": "Mozart's opera seria breakthrough, conducted by the 25-year-old composer on 29 January 1781.",
-        "commissionContext": "Commissioned by Prince-Elector Karl Theodor of Bavaria for the Munich Carnival. Financed entirely by the Bavarian electoral treasury with Europe's most virtuosic orchestra, granting Mozart unprecedented orchestral freedom."
-      },
-      {
-        "title": "Private Royal Wagner Stagings",
-        "composer": "Richard Wagner",
-        "premiereYear": 1884,
-        "type": "HISTORIC_STAGING",
-        "patronageType": "ROYAL_COURT",
-        "details": "Private solo operatic performances arranged in total secrecy exclusively for King Ludwig II of Bavaria.",
-        "commissionContext": "Financed by King Ludwig II's royal privy purse for his personal solitary enjoyment in the dead of night."
-      }
-    ],
+            {
+                  "title": "Idomeneo, re di Creta",
+                  "composer": "Wolfgang Amadeus Mozart",
+                  "premiereYear": 1781,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Wolfgang Amadeus Mozart",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Mozart's opera seria breakthrough, conducted by the 25-year-old composer on 29 January 1781.",
+                  "commissionContext": "Commissioned by Prince-Elector Karl Theodor of Bavaria for the Munich Carnival. Financed entirely by the Bavarian electoral treasury with Europe's most virtuosic orchestra, granting Mozart unprecedented orchestral freedom."
+            },
+            {
+                  "title": "Private Royal Wagner Stagings",
+                  "composer": "Richard Wagner",
+                  "premiereYear": 1884,
+                  "type": "HISTORIC_STAGING",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Private solo operatic performances arranged in total secrecy exclusively for King Ludwig II of Bavaria.",
+                  "commissionContext": "Financed by King Ludwig II's royal privy purse for his personal solitary enjoyment in the dead of night."
+            }
+      ],
     "buildingStatus": "HISTORIC_MONUMENT"
   },
   {
@@ -7240,14 +7349,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "614 seats",
     "historicSignificance": "Aristocratic court theatre of the House of Savoy-Carignano; historic venue for Rossini and early Italian bel canto.",
     "historicPremieres": [
-      {
-        "title": "Ciro in Babilonia",
-        "composer": "Gioachino Rossini",
-        "premiereYear": 1813,
-        "type": "HISTORIC_STAGING",
-        "details": "Celebrated early performance presented under the direct patronage of the Prince of Carignano."
-      }
-    ]
+            {
+                  "title": "Ciro in Babilonia",
+                  "composer": "Gioachino Rossini",
+                  "premiereYear": 1813,
+                  "type": "HISTORIC_STAGING",
+                  "details": "Celebrated early performance presented under the direct patronage of the Prince of Carignano."
+            }
+      ]
   },
   {
     "id": "teatro-farnese-parma",
@@ -7267,14 +7376,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,500 seats",
     "historicSignificance": "First permanent proscenium arch in world theatre; ducal monument of the Farnese dynasty; inaugurated with Claudio Monteverdi.",
     "historicPremieres": [
-      {
-        "title": "Mercurio e Marte",
-        "composer": "Claudio Monteverdi",
-        "premiereYear": 1628,
-        "type": "WORLD_PREMIERE",
-        "details": "Tournament opera with libretto by Claudio Achillini celebrating the marriage of Duke Odoardo Farnese and Margherita de' Medici."
-      }
-    ]
+            {
+                  "title": "Mercurio e Marte",
+                  "composer": "Claudio Monteverdi",
+                  "premiereYear": 1628,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Tournament opera with libretto by Claudio Achillini celebrating the marriage of Duke Odoardo Farnese and Margherita de' Medici."
+            }
+      ]
   },
   {
     "id": "teatro-bibiena-mantua",
@@ -7294,14 +7403,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "360 seats",
     "historicSignificance": "Bibiena architectural masterwork in the Gonzaga ducal capital; site of Mozart's celebrated 1770 inaugural recital.",
     "historicPremieres": [
-      {
-        "title": "Inaugural Mozart Recital",
-        "composer": "Wolfgang Amadeus Mozart",
-        "premiereYear": 1770,
-        "type": "INAUGURAL_STAGING",
-        "details": "Astounding recital by 14-year-old Mozart on harpsichord and violin during his first Italian tour."
-      }
-    ]
+            {
+                  "title": "Inaugural Mozart Recital",
+                  "composer": "Wolfgang Amadeus Mozart",
+                  "premiereYear": 1770,
+                  "type": "INAUGURAL_STAGING",
+                  "details": "Astounding recital by 14-year-old Mozart on harpsichord and violin during his first Italian tour."
+            }
+      ]
   },
   {
     "id": "teatro-corte-caserta",
@@ -7321,14 +7430,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "450 seats",
     "historicSignificance": "Royal court theatre of the Bourbon monarchy of the Two Sicilies; designed by Luigi Vanvitelli inside Europe's largest royal palace.",
     "historicPremieres": [
-      {
-        "title": "Festa Teatrale di Corte",
-        "composer": "Giovanni Paisiello",
-        "premiereYear": 1770,
-        "type": "HISTORIC_STAGING",
-        "details": "Private royal court performance for King Ferdinand IV and Queen Maria Carolina of Austria."
-      }
-    ]
+            {
+                  "title": "Festa Teatrale di Corte",
+                  "composer": "Giovanni Paisiello",
+                  "premiereYear": 1770,
+                  "type": "HISTORIC_STAGING",
+                  "details": "Private royal court performance for King Ferdinand IV and Queen Maria Carolina of Austria."
+            }
+      ]
   },
   {
     "id": "schlosstheater-schoenbrunn",
@@ -7348,14 +7457,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "400 seats",
     "historicSignificance": "Habsburg imperial court theatre; premiere site of Mozart's Der Schauspieldirektor (1786) alongside Salieri.",
     "historicPremieres": [
-      {
-        "title": "Der Schauspieldirektor (The Impresario)",
-        "composer": "Wolfgang Amadeus Mozart",
-        "premiereYear": 1786,
-        "type": "WORLD_PREMIERE",
-        "details": "Commissioned by Emperor Joseph II for an imperial banquet, staged in musical competition with Salieri's Prima la musica."
-      }
-    ]
+            {
+                  "title": "Der Schauspieldirektor (The Impresario)",
+                  "composer": "Wolfgang Amadeus Mozart",
+                  "premiereYear": 1786,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Commissioned by Emperor Joseph II for an imperial banquet, staged in musical competition with Salieri's Prima la musica."
+            }
+      ]
   },
   {
     "id": "schlosstheater-ludwigsburg",
@@ -7375,14 +7484,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "350 seats",
     "historicSignificance": "Europe's oldest court theatre with intact, functioning 18th-century wooden stage machinery; hub of Jommelli's operatic reforms.",
     "historicPremieres": [
-      {
-        "title": "L'olimpiade",
-        "composer": "Niccolò Jommelli",
-        "premiereYear": 1761,
-        "type": "WORLD_PREMIERE",
-        "details": "Landmark court opera composed for Duke Carl Eugen's birthday celebration."
-      }
-    ]
+            {
+                  "title": "L'olimpiade",
+                  "composer": "Niccolò Jommelli",
+                  "premiereYear": 1761,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Landmark court opera composed for Duke Carl Eugen's birthday celebration."
+            }
+      ]
   },
   {
     "id": "schlosstheater-schwetzingen",
@@ -7402,14 +7511,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "512 seats",
     "historicSignificance": "Oldest surviving palace theatre with boxes; summer seat of Karl Theodor's Mannheim Court; home of the Schwetzingen SWR Festival.",
     "historicPremieres": [
-      {
-        "title": "Il figlio delle selve",
-        "composer": "Ignaz Holzbauer",
-        "premiereYear": 1753,
-        "type": "WORLD_PREMIERE",
-        "details": "Inaugural opera composed by the Mannheim court Kapellmeister for the Elector."
-      }
-    ]
+            {
+                  "title": "Il figlio delle selve",
+                  "composer": "Ignaz Holzbauer",
+                  "premiereYear": 1753,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Inaugural opera composed by the Mannheim court Kapellmeister for the Elector."
+            }
+      ]
   },
   {
     "id": "ekhof-theater-gotha",
@@ -7429,14 +7538,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "165 seats",
     "historicSignificance": "World's oldest court theatre with original 17th-century wooden machinery; foundational cradle of the German ensemble theatrical tradition.",
     "historicPremieres": [
-      {
-        "title": "Romeo und Julie",
-        "composer": "Georg Anton Benda",
-        "premiereYear": 1776,
-        "type": "WORLD_PREMIERE",
-        "details": "Celebrated German Singspiel composed for the court of Duke Ernst II of Saxe-Gotha-Altenburg."
-      }
-    ]
+            {
+                  "title": "Romeo und Julie",
+                  "composer": "Georg Anton Benda",
+                  "premiereYear": 1776,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Celebrated German Singspiel composed for the court of Duke Ernst II of Saxe-Gotha-Altenburg."
+            }
+      ]
   },
   {
     "id": "schlosstheater-neues-palais-potsdam",
@@ -7491,14 +7600,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "250 seats",
     "historicSignificance": "Imperial Romanov private court theatre; Catherine the Great's personal cultural stage designed by Giacomo Quarenghi.",
     "historicPremieres": [
-      {
-        "title": "The Early Reign of Oleg",
-        "composer": "Giuseppe Sarti & Carlo Canobbio",
-        "premiereYear": 1790,
-        "type": "WORLD_PREMIERE",
-        "details": "Grand patriotic court opera with original libretto penned directly by Empress Catherine the Great."
-      }
-    ]
+            {
+                  "title": "The Early Reign of Oleg",
+                  "composer": "Giuseppe Sarti & Carlo Canobbio",
+                  "premiereYear": 1790,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Grand patriotic court opera with original libretto penned directly by Empress Catherine the Great."
+            }
+      ]
   },
   {
     "id": "yusupov-palace-theatre-st-petersburg",
@@ -7554,14 +7663,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "726 seats",
     "historicSignificance": "Ducal court theatre that revolutionized European theatrical staging; home of the Meiningen Court Orchestra under Brahms and Strauss.",
     "historicPremieres": [
-      {
-        "title": "Symphony No. 4 in E Minor",
-        "composer": "Johannes Brahms",
-        "premiereYear": 1885,
-        "type": "WORLD_PREMIERE",
-        "details": "Premiered by the Meiningen Court Orchestra conducted by the composer."
-      }
-    ]
+            {
+                  "title": "Symphony No. 4 in E Minor",
+                  "composer": "Johannes Brahms",
+                  "premiereYear": 1885,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Premiered by the Meiningen Court Orchestra conducted by the composer."
+            }
+      ]
   },
   {
     "id": "landestheater-coburg",
@@ -7683,14 +7792,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "inauguratedYear": 1690,
     "historicSignificance": "Ducal court theatre of Brunswick founded 1690; venue for the world premiere of Goethe's Faust Part I.",
     "historicPremieres": [
-      {
-        "title": "Faust, Part One",
-        "composer": "Johann Wolfgang von Goethe",
-        "premiereYear": 1829,
-        "type": "WORLD_PREMIERE",
-        "details": "Historic first theatrical staging of Goethe's tragedy directed by August Klingemann."
-      }
-    ],
+            {
+                  "title": "Faust, Part One",
+                  "composer": "Johann Wolfgang von Goethe",
+                  "premiereYear": 1829,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Historic first theatrical staging of Goethe's tragedy directed by August Klingemann."
+            }
+      ],
     "capacity": "896 seats (Großes Haus) / 297 (Kleines Haus)",
     "architecturalStyle": "Neoclassical Ducal Theatre / Post-War Rebuild"
   },
@@ -7712,21 +7821,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,650 seats",
     "historicSignificance": "Flagship national opera house of Ukraine; cradle of Ukrainian grand opera and premier stage for Lysenko's Taras Bulba.",
     "historicPremieres": [
-      {
-        "title": "Taras Bulba",
-        "composer": "Mykola Lysenko",
-        "premiereYear": 1924,
-        "type": "HISTORIC_STAGING",
-        "details": "Landmark staging of Ukraine's definitive national epic opera, orchestrated by Levko Revutsky."
-      },
-      {
-        "title": "Natalka Poltavka",
-        "composer": "Mykola Lysenko",
-        "premiereYear": 1936,
-        "type": "HISTORIC_STAGING",
-        "details": "Iconic classical Ukrainian folk opera performed by the National Opera company."
-      }
-    ]
+            {
+                  "title": "Taras Bulba",
+                  "composer": "Mykola Lysenko",
+                  "premiereYear": 1924,
+                  "type": "HISTORIC_STAGING",
+                  "details": "Landmark staging of Ukraine's definitive national epic opera, orchestrated by Levko Revutsky."
+            },
+            {
+                  "title": "Natalka Poltavka",
+                  "composer": "Mykola Lysenko",
+                  "premiereYear": 1936,
+                  "type": "HISTORIC_STAGING",
+                  "details": "Iconic classical Ukrainian folk opera performed by the National Opera company."
+            }
+      ]
   },
   {
     "id": "kharkiv-national-opera-ballet",
@@ -7746,14 +7855,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,500 seats",
     "historicSignificance": "First permanent opera stage in Ukraine; premier cultural institution of eastern Ukraine.",
     "historicPremieres": [
-      {
-        "title": "Zaporozhets za Dunayem (A Cossack Beyond the Danube)",
-        "composer": "Semen Hulak-Artemovsky",
-        "premiereYear": 1926,
-        "type": "HISTORIC_STAGING",
-        "details": "Seminal staging of the beloved Ukrainian comic opera."
-      }
-    ]
+            {
+                  "title": "Zaporozhets za Dunayem (A Cossack Beyond the Danube)",
+                  "composer": "Semen Hulak-Artemovsky",
+                  "premiereYear": 1926,
+                  "type": "HISTORIC_STAGING",
+                  "details": "Seminal staging of the beloved Ukrainian comic opera."
+            }
+      ]
   },
   {
     "id": "dnipro-academic-opera-ballet",
@@ -7809,14 +7918,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "3,000 (Roman Theatre) / 600 seats",
     "historicSignificance": "Home of the international Opera Open festival in a preserved 2nd-century Roman Theatre; cultural crown of Plovdiv.",
     "historicPremieres": [
-      {
-        "title": "Opera Open Festival Highlights",
-        "composer": "Giuseppe Verdi & Giacomo Puccini",
-        "premiereYear": 2014,
-        "type": "HISTORIC_STAGING",
-        "details": "Monumental open-air productions of Aida and Turandot amidst ancient Roman marble colonnades."
-      }
-    ]
+            {
+                  "title": "Opera Open Festival Highlights",
+                  "composer": "Giuseppe Verdi & Giacomo Puccini",
+                  "premiereYear": 2014,
+                  "type": "HISTORIC_STAGING",
+                  "details": "Monumental open-air productions of Aida and Turandot amidst ancient Roman marble colonnades."
+            }
+      ]
   },
   {
     "id": "state-opera-varna",
@@ -7836,14 +7945,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "600 seats",
     "historicSignificance": "Principal opera house of the Bulgarian Black Sea coast; cornerstone of the Varna Summer International Music Festival.",
     "historicPremieres": [
-      {
-        "title": "The Bartered Bride (Bulgarian Premiere)",
-        "composer": "Bedřich Smetana",
-        "premiereYear": 1947,
-        "type": "INAUGURAL_STAGING",
-        "details": "Inaugural performance of the Varna People's Opera conducted by Asen Naydenov."
-      }
-    ]
+            {
+                  "title": "The Bartered Bride (Bulgarian Premiere)",
+                  "composer": "Bedřich Smetana",
+                  "premiereYear": 1947,
+                  "type": "INAUGURAL_STAGING",
+                  "details": "Inaugural performance of the Varna People's Opera conducted by Asen Naydenov."
+            }
+      ]
   },
   {
     "id": "state-opera-ruse",
@@ -7863,14 +7972,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "600 seats",
     "historicSignificance": "Birthplace of professional operatic performance in Bulgaria; artistic cradle of legendary bass Nicolai Ghiaurov.",
     "historicPremieres": [
-      {
-        "title": "Katerina Ismailova (Bulgarian Premiere)",
-        "composer": "Dmitri Shostakovich",
-        "premiereYear": 1965,
-        "type": "NATIONAL_PREMIERE",
-        "details": "Staged in the presence of Dmitri Shostakovich, who praised the Ruse ensemble as one of Europe's finest."
-      }
-    ]
+            {
+                  "title": "Katerina Ismailova (Bulgarian Premiere)",
+                  "composer": "Dmitri Shostakovich",
+                  "premiereYear": 1965,
+                  "type": "NATIONAL_PREMIERE",
+                  "details": "Staged in the presence of Dmitri Shostakovich, who praised the Ruse ensemble as one of Europe's finest."
+            }
+      ]
   },
   {
     "id": "state-opera-stara-zagora",
@@ -7925,14 +8034,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "650 seats",
     "historicSignificance": "Fellner & Helmer opera monument; historic balcony cradle of the 1989 Romanian Revolution; European Capital of Culture 2023.",
     "historicPremieres": [
-      {
-        "title": "Aida (Inaugural Opera)",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1947,
-        "type": "INAUGURAL_STAGING",
-        "details": "Gala performance inaugurating the Romanian State Opera of Timișoara."
-      }
-    ]
+            {
+                  "title": "Aida (Inaugural Opera)",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1947,
+                  "type": "INAUGURAL_STAGING",
+                  "details": "Gala performance inaugurating the Romanian State Opera of Timișoara."
+            }
+      ]
   },
   {
     "id": "romanian-national-opera-iasi",
@@ -7952,14 +8061,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "740 seats",
     "historicSignificance": "Fellner & Helmer masterpiece considered among Europe's most beautiful historic theatres; cultural heart of Romanian Moldavia.",
     "historicPremieres": [
-      {
-        "title": "Tosca (Inaugural Opera)",
-        "composer": "Giacomo Puccini",
-        "premiereYear": 1956,
-        "type": "INAUGURAL_STAGING",
-        "details": "Inaugural gala performance of the Iași Romanian State Opera conducted by Radu Botez."
-      }
-    ]
+            {
+                  "title": "Tosca (Inaugural Opera)",
+                  "composer": "Giacomo Puccini",
+                  "premiereYear": 1956,
+                  "type": "INAUGURAL_STAGING",
+                  "details": "Inaugural gala performance of the Iași Romanian State Opera conducted by Radu Botez."
+            }
+      ]
   },
   {
     "id": "hungarian-opera-of-cluj",
@@ -7979,14 +8088,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "860 seats",
     "historicSignificance": "Premier Hungarian-language state opera company in Transylvania; champion of Erkel, Bartók, and Kodály.",
     "historicPremieres": [
-      {
-        "title": "Hunyadi László",
-        "composer": "Ferenc Erkel",
-        "premiereYear": 1948,
-        "type": "INAUGURAL_STAGING",
-        "details": "Inaugural performance celebrating the founding of the Hungarian State Opera in Cluj."
-      }
-    ]
+            {
+                  "title": "Hunyadi László",
+                  "composer": "Ferenc Erkel",
+                  "premiereYear": 1948,
+                  "type": "INAUGURAL_STAGING",
+                  "details": "Inaugural performance celebrating the founding of the Hungarian State Opera in Cluj."
+            }
+      ]
   },
   {
     "id": "brasov-opera",
@@ -8078,14 +8187,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,050 Pavilion seats (plus lawn) / 500 (Harris Hall)",
     "historicSignificance": "Summer home to the Aspen Festival Orchestra; venue for monumental concert operas, vocal masterworks, and international symphonic summits in the Colorado Rockies.",
     "historicPremieres": [
-      {
-        "title": "Aspen Festival Grand Opera Series",
-        "composer": "Various",
-        "premiereYear": 2000,
-        "type": "HISTORIC_STAGING",
-        "details": "Showcases monumental symphonic-operatic works, Mahler symphonies, and oratorios co-programmed with the Aspen Opera Theater."
-      }
-    ]
+            {
+                  "title": "Aspen Festival Grand Opera Series",
+                  "composer": "Various",
+                  "premiereYear": 2000,
+                  "type": "HISTORIC_STAGING",
+                  "details": "Showcases monumental symphonic-operatic works, Mahler symphonies, and oratorios co-programmed with the Aspen Opera Theater."
+            }
+      ]
   },
   {
     "id": "ravinia-festival-pavilion",
@@ -8532,14 +8641,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "810 seats",
     "historicSignificance": "The creative epicenter of Benjamin Britten; site of major 20th-century opera premieres including Britten's A Midsummer Night's Dream and Death in Venice.",
     "historicPremieres": [
-      {
-        "title": "Death in Venice",
-        "composer": "Benjamin Britten",
-        "premiereYear": 1973,
-        "type": "WORLD_PREMIERE",
-        "details": "Britten's final opera, premiered at Snape Maltings on 16 June 1973 conducted by Steuart Bedford."
-      }
-    ]
+            {
+                  "title": "Death in Venice",
+                  "composer": "Benjamin Britten",
+                  "premiereYear": 1973,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Britten's final opera, premiered at Snape Maltings on 16 June 1973 conducted by Steuart Bedford."
+            }
+      ]
   },
   {
     "id": "edinburgh-festival-theatre",
@@ -9102,14 +9211,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "2,448 seats",
     "historicSignificance": "Winner of a Grammy Award for Penderecki's Credo; premier American destination for monumental choral-vocal masterworks (Bach Passions, B Minor Mass, Handel oratorios).",
     "historicPremieres": [
-      {
-        "title": "Credo",
-        "composer": "Krzysztof Penderecki",
-        "premiereYear": 1998,
-        "type": "WORLD_PREMIERE",
-        "details": "Commissioned by the Oregon Bach Festival; premiered on 11 July 1998 conducted by Helmuth Rilling."
-      }
-    ]
+            {
+                  "title": "Credo",
+                  "composer": "Krzysztof Penderecki",
+                  "premiereYear": 1998,
+                  "type": "WORLD_PREMIERE",
+                  "details": "Commissioned by the Oregon Bach Festival; premiered on 11 July 1998 conducted by Helmuth Rilling."
+            }
+      ]
   },
   {
     "id": "interlochen-kresge-auditorium",
@@ -9651,47 +9760,47 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "The historic cradle of Viennese Classical opera. Demolished in 1888 when the new Burgtheater opened on the Ringstraße. The historic footprint is today the Michaelerplatz rotunda of the Hofburg Palace.",
     "historicalLineage": "Founded inside a former royal tennis court (Ballhaus) adjoining the Hofburg palace. Demolished in October 1888 after its farewell performance. Its artistic company transitioned directly into the monumental Gottfried Semper-designed Burgtheater on Vienna's Ringstraße.",
     "historicPremieres": [
-      {
-        "title": "Le nozze di Figaro",
-        "composer": "Wolfgang Amadeus Mozart",
-        "premiereYear": 1786,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Wolfgang Amadeus Mozart",
-        "patronageType": "ROYAL_COURT",
-        "details": "World premiere conducted from the keyboard by Mozart on 1 May 1786.",
-        "commissionContext": "Commissioned by Emperor Joseph II for the Imperial Court Theatre. Librettist Lorenzo Da Ponte and Mozart famously adapted Beaumarchais' politically explosive French play, stripping out overt anti-aristocratic sedition to satisfy imperial censors while retaining its subversive social critique."
-      },
-      {
-        "title": "Così fan tutte",
-        "composer": "Wolfgang Amadeus Mozart",
-        "premiereYear": 1790,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Wolfgang Amadeus Mozart",
-        "patronageType": "ROYAL_COURT",
-        "details": "Mozart's final Italian opera buffa collaboration with Lorenzo Da Ponte, premiered on 26 January 1790.",
-        "commissionContext": "Commissioned directly by Emperor Joseph II following the successful court revivals of Figaro. Produced on imperial court treasury funds without commercial box-office pressures."
-      },
-      {
-        "title": "Die Entführung aus dem Serail",
-        "composer": "Wolfgang Amadeus Mozart",
-        "premiereYear": 1782,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Wolfgang Amadeus Mozart",
-        "patronageType": "ROYAL_COURT",
-        "details": "Mozart's breakthrough German Singspiel triumph in Vienna, premiered 16 July 1782.",
-        "commissionContext": "Commissioned by Emperor Joseph II to inaugurate his 'Nationalsingspiel' project, demonstrating that the German language was fully worthy of high operatic art alongside Italian."
-      },
-      {
-        "title": "Orfeo ed Euridice",
-        "composer": "Christoph Willibald Gluck",
-        "premiereYear": 1762,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Christoph Willibald Gluck",
-        "patronageType": "ROYAL_COURT",
-        "details": "Historic premiere of Gluck's 'reform opera', stripping away excessive vocal ornamentation in favor of dramatic truth.",
-        "commissionContext": "Commissioned by imperial theatre intendant Count Giacomo Durazzo to celebrate Emperor Francis I's name day at the court."
-      }
-    ]
+            {
+                  "title": "Orfeo ed Euridice",
+                  "composer": "Christoph Willibald Gluck",
+                  "premiereYear": 1762,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Christoph Willibald Gluck",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Historic premiere of Gluck's 'reform opera', stripping away excessive vocal ornamentation in favor of dramatic truth.",
+                  "commissionContext": "Commissioned by imperial theatre intendant Count Giacomo Durazzo to celebrate Emperor Francis I's name day at the court."
+            },
+            {
+                  "title": "Die Entführung aus dem Serail",
+                  "composer": "Wolfgang Amadeus Mozart",
+                  "premiereYear": 1782,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Wolfgang Amadeus Mozart",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Mozart's breakthrough German Singspiel triumph in Vienna, premiered 16 July 1782.",
+                  "commissionContext": "Commissioned by Emperor Joseph II to inaugurate his 'Nationalsingspiel' project, demonstrating that the German language was fully worthy of high operatic art alongside Italian."
+            },
+            {
+                  "title": "Le nozze di Figaro",
+                  "composer": "Wolfgang Amadeus Mozart",
+                  "premiereYear": 1786,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Wolfgang Amadeus Mozart",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "World premiere conducted from the keyboard by Mozart on 1 May 1786.",
+                  "commissionContext": "Commissioned by Emperor Joseph II for the Imperial Court Theatre. Librettist Lorenzo Da Ponte and Mozart famously adapted Beaumarchais' politically explosive French play, stripping out overt anti-aristocratic sedition to satisfy imperial censors while retaining its subversive social critique."
+            },
+            {
+                  "title": "Così fan tutte",
+                  "composer": "Wolfgang Amadeus Mozart",
+                  "premiereYear": 1790,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Wolfgang Amadeus Mozart",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Mozart's final Italian opera buffa collaboration with Lorenzo Da Ponte, premiered on 26 January 1790.",
+                  "commissionContext": "Commissioned directly by Emperor Joseph II following the successful court revivals of Figaro. Produced on imperial court treasury funds without commercial box-office pressures."
+            }
+      ]
   },
   {
     "id": "burgtheater-vienna",
@@ -9714,17 +9823,17 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "Austria’s foremost national stage and institutional heir to the Habsburg Imperial Court Theatre. Designed by master opera-house architect Gottfried Semper, featuring ceiling frescoes by Gustav Klimt depicting ancient and Elizabethan theatre history.",
     "historicalLineage": "Direct institutional successor to the Old Burgtheater at Michaelerplatz (1741–1888). While grand opera in Vienna shifted primarily to the Wiener Staatsoper in 1869, the Burgtheater retained vital operatic connections: designed by Semper (architect of Dresden's Semperoper), sharing scenic workshops at the Semperdepot, and premiering landmark incidental music by Viennese opera composers, notably Erich Wolfgang Korngold.",
     "historicPremieres": [
-      {
-        "title": "Much Ado About Nothing (Incidental Music Op. 11)",
-        "composer": "Erich Wolfgang Korngold",
-        "premiereYear": 1920,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Franz Schalk",
-        "patronageType": "CIVIC_STATE",
-        "details": "World premiere of Korngold's complete theatrical incidental music for Shakespeare's comedy on 6 May 1920, composed the same year his opera masterpiece Die tote Stadt took the musical world by storm.",
-        "commissionContext": "Commissioned by the Burgtheater under the directorship of Albert Heine. Korngold, Vienna's reigning young opera prodigy, expanded the score into a full chamber orchestral suite conducted by Vienna State Opera director Franz Schalk."
-      }
-    ]
+            {
+                  "title": "Much Ado About Nothing (Incidental Music Op. 11)",
+                  "composer": "Erich Wolfgang Korngold",
+                  "premiereYear": 1920,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Franz Schalk",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "World premiere of Korngold's complete theatrical incidental music for Shakespeare's comedy on 6 May 1920, composed the same year his opera masterpiece Die tote Stadt took the musical world by storm.",
+                  "commissionContext": "Commissioned by the Burgtheater under the directorship of Albert Heine. Korngold, Vienna's reigning young opera prodigy, expanded the score into a full chamber orchestral suite conducted by Vienna State Opera director Franz Schalk."
+            }
+      ]
   },
   {
     "id": "palazzo-bardi-florence",
@@ -9745,16 +9854,16 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "Birthplace of the Florentine Camerata and operatic theory. Vincenzo Galilei conducted his revolutionary experiments in monodic singing here, demonstrating that a single expressive melodic line mirrored speech far more powerfully than choral polyphony.",
     "historicalLineage": "Preserved today as a registered historical monument in Florence's Oltrarno quarter. When Count Bardi relocated to Rome in 1592, leadership of the operatic circle passed to Jacopo Corsi, who went on to finance and co-produce the first staged opera.",
     "historicPremieres": [
-      {
-        "title": "Il Conte Ugolino (Dante, Inferno XXXIII)",
-        "composer": "Vincenzo Galilei",
-        "premiereYear": 1582,
-        "type": "WORLD_PREMIERE",
-        "patronageType": "PRIVATE_BENEFACTOR",
-        "details": "Groundbreaking musical experiment performed by Vincenzo Galilei singing Dante's verse accompanied on the viola; proved that solo monody could convey visceral tragic pathos.",
-        "commissionContext": "Commissioned and hosted by Count Giovanni de' Bardi for the Camerata meetings. Galilei's theoretical treatise Dialogo della musica antica et della moderna established the aesthetic blueprint for operatic recitative."
-      }
-    ]
+            {
+                  "title": "Il Conte Ugolino (Dante, Inferno XXXIII)",
+                  "composer": "Vincenzo Galilei",
+                  "premiereYear": 1582,
+                  "type": "WORLD_PREMIERE",
+                  "patronageType": "PRIVATE_BENEFACTOR",
+                  "details": "Groundbreaking musical experiment performed by Vincenzo Galilei singing Dante's verse accompanied on the viola; proved that solo monody could convey visceral tragic pathos.",
+                  "commissionContext": "Commissioned and hosted by Count Giovanni de' Bardi for the Camerata meetings. Galilei's theoretical treatise Dialogo della musica antica et della moderna established the aesthetic blueprint for operatic recitative."
+            }
+      ]
   },
   {
     "id": "palazzo-corsi-florence",
@@ -9775,16 +9884,16 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "World premiere of Jacopo Peri's Dafne (1598), universally documented as history's first favola in musica (opera). Demonstrated that an entire theatrical drama could be sung throughout in dramatic recitative.",
     "historicalLineage": "Preserved on Via de' Tornabuoni in the heart of Florence. The sensational acclaim of Dafne within Florentine aristocratic circles led directly to the Medici court commission of Euridice for the royal wedding of 1600.",
     "historicPremieres": [
-      {
-        "title": "Dafne (Favola in musica)",
-        "composer": "Jacopo Peri & Jacopo Corsi",
-        "premiereYear": 1598,
-        "type": "WORLD_PREMIERE",
-        "patronageType": "PRIVATE_BENEFACTOR",
-        "details": "The first opera in history. Staged during the Carnival of 1598 before an elite gathering of Florentine humanists and aristocrats, with Jacopo Peri singing Apollo.",
-        "commissionContext": "Financed, hosted, and co-composed by Jacopo Corsi with poet Ottavio Rinuccini and singer-composer Jacopo Peri. Conceived as a practical realization of the Camerata's classical ideals, proving music could sustain continuous dramatic dialogue."
-      }
-    ]
+            {
+                  "title": "Dafne (Favola in musica)",
+                  "composer": "Jacopo Peri & Jacopo Corsi",
+                  "premiereYear": 1598,
+                  "type": "WORLD_PREMIERE",
+                  "patronageType": "PRIVATE_BENEFACTOR",
+                  "details": "The first opera in history. Staged during the Carnival of 1598 before an elite gathering of Florentine humanists and aristocrats, with Jacopo Peri singing Apollo.",
+                  "commissionContext": "Financed, hosted, and co-composed by Jacopo Corsi with poet Ottavio Rinuccini and singer-composer Jacopo Peri. Conceived as a practical realization of the Camerata's classical ideals, proving music could sustain continuous dramatic dialogue."
+            }
+      ]
   },
   {
     "id": "palazzo-pitti-florence",
@@ -9806,27 +9915,27 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "Site of the world premiere of Euridice (1600), the earliest surviving complete opera score. Marked the transition of opera from private intellectual experiment into supreme dynastic state spectacle.",
     "historicalLineage": "Preserved intact as one of Italy's greatest monumental palace museum complexes. Grand Duke Ferdinando I de' Medici mounted Euridice as an instrument of European diplomacy, inspiring visiting dignitaries and rival courts across Italy to commission their own musical spectacles.",
     "historicPremieres": [
-      {
-        "title": "Euridice",
-        "composer": "Jacopo Peri & Giulio Caccini",
-        "premiereYear": 1600,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Jacopo Peri",
-        "patronageType": "ROYAL_COURT",
-        "details": "Earliest surviving complete opera score in world history. Premiered on 6 October 1600 before the combined nobility of France and Italy during the royal wedding festivities of Marie de' Medici and King Henry IV of France.",
-        "commissionContext": "Commissioned by Grand Duke Ferdinando I de' Medici with libretto by Ottavio Rinuccini. Jacopo Peri sang the role of Orfeo. Demonstrated to European courts the immense prestige of continuous sung musical drama."
-      },
-      {
-        "title": "Il rapimento di Cefalo",
-        "composer": "Giulio Caccini",
-        "premiereYear": 1600,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Giulio Caccini",
-        "patronageType": "ROYAL_COURT",
-        "details": "Monumental court spectacle produced on 9 October 1600 during the royal Medici wedding celebrations in the Teatro Mediceo, attended by over 3,000 international dignitaries with sets and machinery by Bernardo Buontalenti.",
-        "commissionContext": "Commissioned by the Medici grand ducal court to showcase cutting-edge Tuscan stagecraft, virtuosic monodic ornamentation, and vast choral ensembles."
-      }
-    ]
+            {
+                  "title": "Euridice",
+                  "composer": "Jacopo Peri & Giulio Caccini",
+                  "premiereYear": 1600,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Jacopo Peri",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Earliest surviving complete opera score in world history. Premiered on 6 October 1600 before the combined nobility of France and Italy during the royal wedding festivities of Marie de' Medici and King Henry IV of France.",
+                  "commissionContext": "Commissioned by Grand Duke Ferdinando I de' Medici with libretto by Ottavio Rinuccini. Jacopo Peri sang the role of Orfeo. Demonstrated to European courts the immense prestige of continuous sung musical drama."
+            },
+            {
+                  "title": "Il rapimento di Cefalo",
+                  "composer": "Giulio Caccini",
+                  "premiereYear": 1600,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Giulio Caccini",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Monumental court spectacle produced on 9 October 1600 during the royal Medici wedding celebrations in the Teatro Mediceo, attended by over 3,000 international dignitaries with sets and machinery by Bernardo Buontalenti.",
+                  "commissionContext": "Commissioned by the Medici grand ducal court to showcase cutting-edge Tuscan stagecraft, virtuosic monodic ornamentation, and vast choral ensembles."
+            }
+      ]
   },
   {
     "id": "palazzo-ducale-mantova",
@@ -9847,27 +9956,27 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "Birthplace of full-length dramatic opera; Monteverdi spent 22 years in Gonzaga ducal service here before taking up the post of Maestro di Cappella at San Marco in Venice. Performances were strictly private court affairs reserved for invited aristocrats, diplomats, and court intellectuals.",
     "historicalLineage": "Preserved intact today as an Italian State Museum and UNESCO World Heritage monument. Monteverdi created his foundational court masterpieces here under Gonzaga ducal patronage before transitioning decades later to public commercial stages in Venice.",
     "historicPremieres": [
-      {
-        "title": "L'Orfeo (Favola in musica)",
-        "composer": "Claudio Monteverdi",
-        "premiereYear": 1607,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Claudio Monteverdi",
-        "patronageType": "ROYAL_COURT",
-        "details": "World premiere for the Carnival season on 24 February 1607; universally recognized as the earliest operatic masterwork in the active international repertoire.",
-        "commissionContext": "Commissioned by Prince Francesco Gonzaga for the aristocratic Accademia degli Invaghiti. Funded entirely from the ducal treasury as a dynastic prestige statement competing with the Medici court in Florence, performed exclusively for invited court nobles without public admission."
-      },
-      {
-        "title": "L'Arianna",
-        "composer": "Claudio Monteverdi",
-        "premiereYear": 1608,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Claudio Monteverdi",
-        "patronageType": "ROYAL_COURT",
-        "details": "Commissioned for the royal wedding of Francesco Gonzaga and Infanta Margherita of Savoy; only the immortal 'Lamento d'Arianna' survives.",
-        "commissionContext": "A lavish dynastic celebration uniting the houses of Gonzaga and Savoy, performed before thousands of visiting European dignitaries in a temporary court pavilion."
-      }
-    ]
+            {
+                  "title": "L'Orfeo (Favola in musica)",
+                  "composer": "Claudio Monteverdi",
+                  "premiereYear": 1607,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Claudio Monteverdi",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "World premiere for the Carnival season on 24 February 1607; universally recognized as the earliest operatic masterwork in the active international repertoire.",
+                  "commissionContext": "Commissioned by Prince Francesco Gonzaga for the aristocratic Accademia degli Invaghiti. Funded entirely from the ducal treasury as a dynastic prestige statement competing with the Medici court in Florence, performed exclusively for invited court nobles without public admission."
+            },
+            {
+                  "title": "L'Arianna",
+                  "composer": "Claudio Monteverdi",
+                  "premiereYear": 1608,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Claudio Monteverdi",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Commissioned for the royal wedding of Francesco Gonzaga and Infanta Margherita of Savoy; only the immortal 'Lamento d'Arianna' survives.",
+                  "commissionContext": "A lavish dynastic celebration uniting the houses of Gonzaga and Savoy, performed before thousands of visiting European dignitaries in a temporary court pavilion."
+            }
+      ]
   },
   {
     "id": "teatro-san-cassiano-venice",
@@ -9890,37 +9999,37 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "World's first public commercial paying opera house in history. Demolished in 1812 under Napoleonic administration. Currently the subject of an international historical reconstruction project.",
     "historicalLineage": "Demolished in 1812. The ongoing Teatro San Cassiano Reconstruction Project is actively working to recreate the 1637 theatre on its historical site in Venice as a fully functioning Baroque opera laboratory.",
     "historicPremieres": [
-      {
-        "title": "L'Andromeda",
-        "composer": "Francesco Manelli",
-        "premiereYear": 1637,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Francesco Manelli",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "The historic inaugural opera that launched commercial public opera for ticket-paying audiences.",
-        "commissionContext": "Created by impresarios Benedetto Ferrari and Francesco Manelli, who rented the Tron family theatre during Carnival, selling admission tickets and rented private boxes. This established the commercial box-office impresario model that defined European opera for centuries."
-      },
-      {
-        "title": "Le nozze di Teti e di Peleo",
-        "composer": "Francesco Cavalli",
-        "premiereYear": 1639,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Francesco Cavalli",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Earliest surviving Venetian opera score for a public commercial stage.",
-        "commissionContext": "Cavalli pioneered fast-paced dramatic pacing, smaller orchestras, and memorable arias specifically adapted for the commercial theatre's budget and audience taste."
-      },
-      {
-        "title": "Il ritorno d'Ulisse in patria",
-        "composer": "Claudio Monteverdi",
-        "premiereYear": 1640,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Claudio Monteverdi",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Monteverdi's sensational public opera comeback in Venice during the 1639–1640 Carnival season.",
-        "commissionContext": "After decades in noble court service, the 72-year-old Monteverdi embraced Venice's vibrant commercial market, composing directly for ticket-buying Venetian republicans and visiting Carnival tourists."
-      }
-    ]
+            {
+                  "title": "L'Andromeda",
+                  "composer": "Francesco Manelli",
+                  "premiereYear": 1637,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Francesco Manelli",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "The historic inaugural opera that launched commercial public opera for ticket-paying audiences.",
+                  "commissionContext": "Created by impresarios Benedetto Ferrari and Francesco Manelli, who rented the Tron family theatre during Carnival, selling admission tickets and rented private boxes. This established the commercial box-office impresario model that defined European opera for centuries."
+            },
+            {
+                  "title": "Le nozze di Teti e di Peleo",
+                  "composer": "Francesco Cavalli",
+                  "premiereYear": 1639,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Francesco Cavalli",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Earliest surviving Venetian opera score for a public commercial stage.",
+                  "commissionContext": "Cavalli pioneered fast-paced dramatic pacing, smaller orchestras, and memorable arias specifically adapted for the commercial theatre's budget and audience taste."
+            },
+            {
+                  "title": "Il ritorno d'Ulisse in patria",
+                  "composer": "Claudio Monteverdi",
+                  "premiereYear": 1640,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Claudio Monteverdi",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Monteverdi's sensational public opera comeback in Venice during the 1639–1640 Carnival season.",
+                  "commissionContext": "After decades in noble court service, the 72-year-old Monteverdi embraced Venice's vibrant commercial market, composing directly for ticket-buying Venetian republicans and visiting Carnival tourists."
+            }
+      ]
   },
   {
     "id": "teatro-delle-quattro-fontane-barberini",
@@ -9942,26 +10051,26 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "Summit of 17th-century Roman Counter-Reformation opera and scenic engineering. Premiered Stefano Landi's Il Sant'Alessio in 1632, combining religious hagiography, moral allegory, virtuoso castrati, and Gian Lorenzo Bernini's revolutionary mechanical stage illusions.",
     "historicalLineage": "Palazzo Barberini is preserved today as Italy's Galleria Nazionale d'Arte Antica. The theatrical complex exemplified how Roman papal dynasties used monumental musical drama to project theological authority and cultural magnificence during the Baroque era.",
     "historicPremieres": [
-      {
-        "title": "Il Sant'Alessio",
-        "composer": "Stefano Landi",
-        "premiereYear": 1632,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Stefano Landi",
-        "patronageType": "ROYAL_COURT",
-        "details": "Historic sacred opera detailing the ascetic life and trials of Saint Alexis, featuring an all-male cast of virtuoso castrati and Gian Lorenzo Bernini's spectacular stage machinery depicting flying angels and demonic descents.",
-        "commissionContext": "Commissioned by Cardinal Francesco Barberini to inaugurate the Barberini palace theatre during Carnival in 1632. The libretto was penned by Giulio Rospigliosi (the future Pope Clement IX)."
-      },
-      {
-        "title": "Chi soffre, speri",
-        "composer": "Virgilio Mazzocchi & Marco Marazzoli",
-        "premiereYear": 1639,
-        "type": "WORLD_PREMIERE",
-        "patronageType": "ROYAL_COURT",
-        "details": "Considered the first comic opera in history, featuring Bernini's famous intermedio with two genuine carriages moving across a realistic recreation of Carnival in Rome.",
-        "commissionContext": "Commissioned by the Barberini papal court with libretto by Giulio Rospigliosi, attended by Cardinal Mazarin and John Milton during his Italian tour."
-      }
-    ]
+            {
+                  "title": "Il Sant'Alessio",
+                  "composer": "Stefano Landi",
+                  "premiereYear": 1632,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Stefano Landi",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Historic sacred opera detailing the ascetic life and trials of Saint Alexis, featuring an all-male cast of virtuoso castrati and Gian Lorenzo Bernini's spectacular stage machinery depicting flying angels and demonic descents.",
+                  "commissionContext": "Commissioned by Cardinal Francesco Barberini to inaugurate the Barberini palace theatre during Carnival in 1632. The libretto was penned by Giulio Rospigliosi (the future Pope Clement IX)."
+            },
+            {
+                  "title": "Chi soffre, speri",
+                  "composer": "Virgilio Mazzocchi & Marco Marazzoli",
+                  "premiereYear": 1639,
+                  "type": "WORLD_PREMIERE",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Considered the first comic opera in history, featuring Bernini's famous intermedio with two genuine carriages moving across a realistic recreation of Carnival in Rome.",
+                  "commissionContext": "Commissioned by the Barberini papal court with libretto by Giulio Rospigliosi, attended by Cardinal Mazarin and John Milton during his Italian tour."
+            }
+      ]
   },
   {
     "id": "teatro-apollo-rome",
@@ -9984,27 +10093,27 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "Rome's preeminent 19th-century lyric theatre. Demolished in 1888 to build the Lungotevere flood walls along the River Tiber. Its artistic mantle was inherited by the Teatro dell'Opera di Roma (Teatro Costanzi).",
     "historicalLineage": "Demolished in 1888 during Rome's post-unification modernization of the Tiber embankments. A marble commemorative stele marks the site today near Ponte Sant'Angelo. Its operatic archives and legacy transitioned to the Teatro dell'Opera di Roma.",
     "historicPremieres": [
-      {
-        "title": "Il trovatore",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1853,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Emilio Angelini",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Rapturous world premiere where tickets sold out days in advance despite heavy Tiber flooding in Rome.",
-        "commissionContext": "Commissioned by Roman theatrical impresario Camillo Jacovacci. Operas at Teatro Apollo operated under papal commercial concession, requiring rigorous navigation of Roman box office economics and church moral censorship."
-      },
-      {
-        "title": "Un ballo in maschera",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1859,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Emilio Angelini",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "World premiere following fierce censorship clashes after the Felice Orsini assassination attempt on Napoleon III.",
-        "commissionContext": "Papal censors in Rome barred depicting the regicide of King Gustav III of Sweden on stage. Verdi and impresario Jacovacci relocated the action from Stockholm to colonial Boston, Massachusetts, transforming the monarch into the British governor Riccardo."
-      }
-    ]
+            {
+                  "title": "Il trovatore",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1853,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Emilio Angelini",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Rapturous world premiere where tickets sold out days in advance despite heavy Tiber flooding in Rome.",
+                  "commissionContext": "Commissioned by Roman theatrical impresario Camillo Jacovacci. Operas at Teatro Apollo operated under papal commercial concession, requiring rigorous navigation of Roman box office economics and church moral censorship."
+            },
+            {
+                  "title": "Un ballo in maschera",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1859,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Emilio Angelini",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "World premiere following fierce censorship clashes after the Felice Orsini assassination attempt on Napoleon III.",
+                  "commissionContext": "Papal censors in Rome barred depicting the regicide of King Gustav III of Sweden on stage. Verdi and impresario Jacovacci relocated the action from Stockholm to colonial Boston, Massachusetts, transforming the monarch into the British governor Riccardo."
+            }
+      ]
   },
   {
     "id": "his-majestys-theatre-london",
@@ -10024,44 +10133,44 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "1,216 seats",
     "historicSignificance": "London’s preeminent 18th- and 19th-century Italian opera house; historic cradle of Handel's operatic triumphs (Rinaldo, Giulio Cesare), the world premiere of Verdi’s I masnadieri conducted by the composer for Queen Victoria, the British premieres of Mozart's Don Giovanni and The Magic Flute, and the first complete London Ring cycle (1882).",
     "historicPremieres": [
-      {
-        "title": "Rinaldo",
-        "composer": "George Frideric Handel",
-        "premiereYear": 1711,
-        "type": "WORLD_PREMIERE",
-        "conductor": "George Frideric Handel",
-        "patronageType": "ROYAL_COURT",
-        "details": "Handel's sensational London operatic debut; the first Italian opera composed specifically for the London stage, featuring the immortal aria 'Lascia ch'io pianga'.",
-        "commissionContext": "Staged under Queen Anne's reign at the Queen's Theatre by impresario Aaron Hill and Handel, launching London's enduring 18th-century craze for Italian opera."
-      },
-      {
-        "title": "Giulio Cesare in Egitto",
-        "composer": "George Frideric Handel",
-        "premiereYear": 1724,
-        "type": "WORLD_PREMIERE",
-        "conductor": "George Frideric Handel",
-        "patronageType": "ROYAL_COURT",
-        "details": "Handel's crowning heroic masterpiece starring the legendary castrato Senesino as Cesare and Francesca Cuzzoni as Cleopatra.",
-        "commissionContext": "Composed for the Royal Academy of Music, a joint-stock operatic venture supported by British aristocratic subscribers and King George I."
-      },
-      {
-        "title": "I masnadieri",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1847,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Giuseppe Verdi",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "World premiere conducted personally by Giuseppe Verdi, starring Jenny Lind as Amalia, with Queen Victoria and Prince Albert in the royal box.",
-        "commissionContext": "Commissioned by theatrical impresario Benjamin Lumley for Her Majesty's Theatre; the only opera Verdi ever composed specifically for London."
-      },
-      {
-        "title": "Don Giovanni",
-        "composer": "Wolfgang Amadeus Mozart",
-        "premiereYear": 1817,
-        "type": "NATIONAL_PREMIERE",
-        "details": "Historic British premiere conducted by Michael Kelly; ignited a sensation that dominated London's 1817 musical season."
-      }
-    ]
+            {
+                  "title": "Rinaldo",
+                  "composer": "George Frideric Handel",
+                  "premiereYear": 1711,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "George Frideric Handel",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Handel's sensational London operatic debut; the first Italian opera composed specifically for the London stage, featuring the immortal aria 'Lascia ch'io pianga'.",
+                  "commissionContext": "Staged under Queen Anne's reign at the Queen's Theatre by impresario Aaron Hill and Handel, launching London's enduring 18th-century craze for Italian opera."
+            },
+            {
+                  "title": "Giulio Cesare in Egitto",
+                  "composer": "George Frideric Handel",
+                  "premiereYear": 1724,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "George Frideric Handel",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Handel's crowning heroic masterpiece starring the legendary castrato Senesino as Cesare and Francesca Cuzzoni as Cleopatra.",
+                  "commissionContext": "Composed for the Royal Academy of Music, a joint-stock operatic venture supported by British aristocratic subscribers and King George I."
+            },
+            {
+                  "title": "Don Giovanni",
+                  "composer": "Wolfgang Amadeus Mozart",
+                  "premiereYear": 1817,
+                  "type": "NATIONAL_PREMIERE",
+                  "details": "Historic British premiere conducted by Michael Kelly; ignited a sensation that dominated London's 1817 musical season."
+            },
+            {
+                  "title": "I masnadieri",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1847,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Giuseppe Verdi",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "World premiere conducted personally by Giuseppe Verdi, starring Jenny Lind as Amalia, with Queen Victoria and Prince Albert in the royal box.",
+                  "commissionContext": "Commissioned by theatrical impresario Benjamin Lumley for Her Majesty's Theatre; the only opera Verdi ever composed specifically for London."
+            }
+      ]
   },
   {
     "id": "opernhaus-eszterhaza",
@@ -10083,67 +10192,67 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "The supreme private court opera laboratory of the Classical era; venue of Joseph Haydn's operatic world premieres (Lo speziale, L'infedeltà delusa, Il mondo della luna, Armida, Orlando paladino). Prompted Empress Maria Theresa's famous declaration: 'If I want to hear good opera, I go to Eszterháza.'",
     "historicalLineage": "Inaugurated in 1768 with Haydn's Lo speziale. After a devastating fire in November 1779, Prince Nikolaus rebuilt the theatre even more sumptuously, reopening in 1781 with La fedeltà premiata. Following Prince Nikolaus's death in 1790, the resident opera company was disbanded, and the freestanding theatre building was eventually demolished in the 19th century. The surrounding Eszterháza Palace complex survives as a magnificent UNESCO World Heritage museum and concert venue.",
     "historicPremieres": [
-      {
-        "title": "Lo speziale (The Apothecary)",
-        "composer": "Joseph Haydn",
-        "premiereYear": 1768,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Joseph Haydn",
-        "patronageType": "ROYAL_COURT",
-        "details": "Inaugural opera buffa premiere opening the new Eszterháza Opera House in autumn 1768, with libretto by Carlo Goldoni.",
-        "commissionContext": "Commissioned by Prince Nikolaus Esterházy to inaugurate his newly constructed 400-seat court opera house at Eszterháza Palace."
-      },
-      {
-        "title": "L'infedeltà delusa",
-        "composer": "Joseph Haydn",
-        "premiereYear": 1773,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Joseph Haydn",
-        "patronageType": "ROYAL_COURT",
-        "details": "Staged on 1 September 1773 for the imperial visit of Holy Roman Empress Maria Theresa, who declared: 'If I want to hear good opera, I go to Eszterháza.'",
-        "commissionContext": "Commissioned by Prince Nikolaus Esterházy for the state visit of Empress Maria Theresa to Eszterháza Palace."
-      },
-      {
-        "title": "Il mondo della luna (The World on the Moon)",
-        "composer": "Joseph Haydn",
-        "premiereYear": 1777,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Joseph Haydn",
-        "patronageType": "ROYAL_COURT",
-        "details": "Dramma giocoso premiere with libretto by Carlo Goldoni, composed for the wedding celebrations of Count Peter Esterházy.",
-        "commissionContext": "Commissioned by Prince Nikolaus Esterházy for aristocratic wedding festivities at the court theatre."
-      },
-      {
-        "title": "La fedeltà premiata",
-        "composer": "Joseph Haydn",
-        "premiereYear": 1781,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Joseph Haydn",
-        "patronageType": "ROYAL_COURT",
-        "details": "Inaugural gala premiere of the rebuilt Eszterháza Opera House on 25 February 1781 following the devastating 1779 fire.",
-        "commissionContext": "Composed by Haydn to celebrate the grand reopening of the newly reconstructed Eszterháza Opera House."
-      },
-      {
-        "title": "Orlando paladino",
-        "composer": "Joseph Haydn",
-        "premiereYear": 1782,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Joseph Haydn",
-        "patronageType": "ROYAL_COURT",
-        "details": "Haydn's most widely performed opera during his lifetime, receiving dozens of productions across Europe.",
-        "commissionContext": "Commissioned by Prince Nikolaus Esterházy for the expected visit of Archduke Paul of Russia and Maria Feodorovna."
-      },
-      {
-        "title": "Armida",
-        "composer": "Joseph Haydn",
-        "premiereYear": 1784,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Joseph Haydn",
-        "patronageType": "ROYAL_COURT",
-        "details": "Haydn's supreme heroic opera seria based on Tasso's Jerusalem Delivered, performed 54 times at Eszterháza between 1784 and 1788.",
-        "commissionContext": "Commissioned by Prince Nikolaus Esterházy as the centerpiece of the court's 1784 operatic season."
-      }
-    ]
+            {
+                  "title": "Lo speziale (The Apothecary)",
+                  "composer": "Joseph Haydn",
+                  "premiereYear": 1768,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Joseph Haydn",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Inaugural opera buffa premiere opening the new Eszterháza Opera House in autumn 1768, with libretto by Carlo Goldoni.",
+                  "commissionContext": "Commissioned by Prince Nikolaus Esterházy to inaugurate his newly constructed 400-seat court opera house at Eszterháza Palace."
+            },
+            {
+                  "title": "L'infedeltà delusa",
+                  "composer": "Joseph Haydn",
+                  "premiereYear": 1773,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Joseph Haydn",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Staged on 1 September 1773 for the imperial visit of Holy Roman Empress Maria Theresa, who declared: 'If I want to hear good opera, I go to Eszterháza.'",
+                  "commissionContext": "Commissioned by Prince Nikolaus Esterházy for the state visit of Empress Maria Theresa to Eszterháza Palace."
+            },
+            {
+                  "title": "Il mondo della luna (The World on the Moon)",
+                  "composer": "Joseph Haydn",
+                  "premiereYear": 1777,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Joseph Haydn",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Dramma giocoso premiere with libretto by Carlo Goldoni, composed for the wedding celebrations of Count Peter Esterházy.",
+                  "commissionContext": "Commissioned by Prince Nikolaus Esterházy for aristocratic wedding festivities at the court theatre."
+            },
+            {
+                  "title": "La fedeltà premiata",
+                  "composer": "Joseph Haydn",
+                  "premiereYear": 1781,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Joseph Haydn",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Inaugural gala premiere of the rebuilt Eszterháza Opera House on 25 February 1781 following the devastating 1779 fire.",
+                  "commissionContext": "Composed by Haydn to celebrate the grand reopening of the newly reconstructed Eszterháza Opera House."
+            },
+            {
+                  "title": "Orlando paladino",
+                  "composer": "Joseph Haydn",
+                  "premiereYear": 1782,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Joseph Haydn",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Haydn's most widely performed opera during his lifetime, receiving dozens of productions across Europe.",
+                  "commissionContext": "Commissioned by Prince Nikolaus Esterházy for the expected visit of Archduke Paul of Russia and Maria Feodorovna."
+            },
+            {
+                  "title": "Armida",
+                  "composer": "Joseph Haydn",
+                  "premiereYear": 1784,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Joseph Haydn",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Haydn's supreme heroic opera seria based on Tasso's Jerusalem Delivered, performed 54 times at Eszterháza between 1784 and 1788.",
+                  "commissionContext": "Commissioned by Prince Nikolaus Esterházy as the centerpiece of the court's 1784 operatic season."
+            }
+      ]
   }
 ,
   {
@@ -10164,40 +10273,40 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "Rome’s most celebrated 18th-century opera house; fabled site of the world premiere of Rossini’s Il barbiere di Siviglia (1816) and Verdi’s I due Foscari (1844) and La battaglia di Legnano (1849).",
     "description": "Inaugurated on 31 January 1732 with Domenico Sarro’s Berenice, Teatro Argentina was commissioned by Duke Giuseppe Sforza Cesarini on the ancient site of the Curia of Pompey in Largo di Torre Argentina. Throughout the 18th and 19th centuries, it stood at the pinnacle of Roman lyric drama. It achieved immortality on 20 February 1816 when Gioachino Rossini premiered Il barbiere di Siviglia—a tumultuous opening night that swiftly became the most beloved comic opera in history. Giuseppe Verdi chose the Argentina for the world premieres of I due Foscari (1844) and his fiery patriotic anthem La battaglia di Legnano (1849) during the Roman Republic.",
     "historicPremieres": [
-      {
-        "title": "Il barbiere di Siviglia (Almaviva, o sia L’inutile precauzione)",
-        "composer": "Gioachino Rossini",
-        "premiereYear": 1816,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Gioachino Rossini",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Historic world premiere of the supreme masterpiece of Italian opera buffa."
-      },
-      {
-        "title": "I due Foscari",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1844,
-        "type": "WORLD_PREMIERE",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Verdi’s Venetian tragic masterwork based on Lord Byron’s historical drama."
-      },
-      {
-        "title": "La battaglia di Legnano",
-        "composer": "Giuseppe Verdi",
-        "premiereYear": 1849,
-        "type": "WORLD_PREMIERE",
-        "patronageType": "CIVIC_STATE",
-        "details": "Incendiary patriotic opera premiered during the 1849 Roman Republic, inciting mass chants of Viva Verdi!"
-      },
-      {
-        "title": "L’Olimpiade",
-        "composer": "Giovanni Battista Pergolesi",
-        "premiereYear": 1735,
-        "type": "WORLD_PREMIERE",
-        "patronageType": "PRIVATE_BENEFACTOR",
-        "details": "Landmark 18th-century opera seria based on Metastasio’s celebrated libretto."
-      }
-    ]
+            {
+                  "title": "L’Olimpiade",
+                  "composer": "Giovanni Battista Pergolesi",
+                  "premiereYear": 1735,
+                  "type": "WORLD_PREMIERE",
+                  "patronageType": "PRIVATE_BENEFACTOR",
+                  "details": "Landmark 18th-century opera seria based on Metastasio’s celebrated libretto."
+            },
+            {
+                  "title": "Il barbiere di Siviglia (Almaviva, o sia L’inutile precauzione)",
+                  "composer": "Gioachino Rossini",
+                  "premiereYear": 1816,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Gioachino Rossini",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Historic world premiere of the supreme masterpiece of Italian opera buffa."
+            },
+            {
+                  "title": "I due Foscari",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1844,
+                  "type": "WORLD_PREMIERE",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Verdi’s Venetian tragic masterwork based on Lord Byron’s historical drama."
+            },
+            {
+                  "title": "La battaglia di Legnano",
+                  "composer": "Giuseppe Verdi",
+                  "premiereYear": 1849,
+                  "type": "WORLD_PREMIERE",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "Incendiary patriotic opera premiered during the 1849 Roman Republic, inciting mass chants of Viva Verdi!"
+            }
+      ]
   },
   {
     "id": "teatro-valle-rome",
@@ -10217,32 +10326,32 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "Rome’s oldest surviving theatre building; legendary birthplace of Rossini’s La Cenerentola (1817) and major Bel Canto premieres.",
     "description": "Commissioned in 1726 by Count Camillo Capranica and designed by Tommaso Morelli, Teatro Valle is Rome’s oldest surviving theatre hall, situated between the Pantheon and Piazza Navona. Rebuilt in brick and stone with neoclassical elegance by Francesco Salvi in 1791, the intimate wooden horseshoe auditorium became Rome’s undisputed temple for opera buffa and dramma giocoso. On 25 January 1817, Gioachino Rossini unveiled La Cenerentola (Cinderella) here, composed in just three weeks. The theatre also fostered Gaetano Donizetti with premieres of Torquato Tasso (1833) and Il furioso all’isola di San Domingo (1833).",
     "historicPremieres": [
-      {
-        "title": "La Cenerentola (Ossia La bontà in trionfo)",
-        "composer": "Gioachino Rossini",
-        "premiereYear": 1817,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Gioachino Rossini",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "World premiere of Rossini’s beloved Cinderella masterpiece."
-      },
-      {
-        "title": "Torvaldo e Dorliska",
-        "composer": "Gioachino Rossini",
-        "premiereYear": 1815,
-        "type": "WORLD_PREMIERE",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Dramma semiserio composed for the opening of the 1815 Roman carnival season."
-      },
-      {
-        "title": "Torquato Tasso",
-        "composer": "Gaetano Donizetti",
-        "premiereYear": 1833,
-        "type": "WORLD_PREMIERE",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Bel canto melodramma based on the tragic life of Renaissance poet Torquato Tasso."
-      }
-    ]
+            {
+                  "title": "Torvaldo e Dorliska",
+                  "composer": "Gioachino Rossini",
+                  "premiereYear": 1815,
+                  "type": "WORLD_PREMIERE",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Dramma semiserio composed for the opening of the 1815 Roman carnival season."
+            },
+            {
+                  "title": "La Cenerentola (Ossia La bontà in trionfo)",
+                  "composer": "Gioachino Rossini",
+                  "premiereYear": 1817,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Gioachino Rossini",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "World premiere of Rossini’s beloved Cinderella masterpiece."
+            },
+            {
+                  "title": "Torquato Tasso",
+                  "composer": "Gaetano Donizetti",
+                  "premiereYear": 1833,
+                  "type": "WORLD_PREMIERE",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Bel canto melodramma based on the tragic life of Renaissance poet Torquato Tasso."
+            }
+      ]
   },
   {
     "id": "terme-di-caracalla-rome",
@@ -10263,16 +10372,16 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "Legendary open-air summer opera stage of Teatro dell’Opera di Roma set against ancient Roman ruins; site of the historic original Three Tenors Concert (1990).",
     "description": "Since 1937, the colossal ruins of the 3rd-century imperial Baths of Caracalla have served as the summer stage for Teatro dell’Opera di Roma. With the ancient red-brick caldarium walls providing a dramatic 30-meter backdrop under the Roman night sky, Caracalla is world-renowned for monumental productions of Verdi’s Aida, Nabucco, and Puccini’s Madama Butterfly. On 7 July 1990, on the eve of the FIFA World Cup Final, it gained global immortality when Luciano Pavarotti, Plácido Domingo, and José Carreras joined conductor Zubin Mehta for the first-ever Three Tenors concert—a broadcast heard by 800 million people that became the best-selling classical album of all time.",
     "historicPremieres": [
-      {
-        "title": "The Original Three Tenors Concert",
-        "composer": "Carreras, Domingo, Pavarotti (Conducted by Zubin Mehta)",
-        "premiereYear": 1990,
-        "type": "HISTORIC_STAGING",
-        "conductor": "Zubin Mehta",
-        "patronageType": "FESTIVAL_COMMISSION",
-        "details": "Historic 1990 inaugural Three Tenors concert watched live by 800 million global viewers."
-      }
-    ]
+            {
+                  "title": "The Original Three Tenors Concert",
+                  "composer": "Carreras, Domingo, Pavarotti (Conducted by Zubin Mehta)",
+                  "premiereYear": 1990,
+                  "type": "HISTORIC_STAGING",
+                  "conductor": "Zubin Mehta",
+                  "patronageType": "FESTIVAL_COMMISSION",
+                  "details": "Historic 1990 inaugural Three Tenors concert watched live by 800 million global viewers."
+            }
+      ]
   },
   {
     "id": "teatro-dal-verme-milan",
@@ -10292,24 +10401,24 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "Milanese lyric monument; fabled birthplace of Leoncavallo’s Pagliacci (1892, conducted by Arturo Toscanini) and Giacomo Puccini’s debut opera Le Villi (1884).",
     "description": "Commissioned by Count Francesco Dal Verme and opened in 1872 on the site of the former Politeama Ciniselli, Teatro Dal Verme served as Milan’s premier alternative lyric stage to Teatro alla Scala. Designed as a grand horseshoe opera house with exceptional acoustics, it was the proving ground for the Italian Giovane Scuola and Verismo movement. On 21 May 1892, Ruggero Leoncavallo’s Pagliacci received its historic world premiere here under the baton of a 25-year-old Arturo Toscanini. Eight years earlier, on 31 May 1884, an unknown Giacomo Puccini saw his operatic debut Le Villi premiere here, financed by subscriptions organized by Arrigo Boito, which immediately earned him his legendary contract with publisher Giulio Ricordi.",
     "historicPremieres": [
-      {
-        "title": "Pagliacci",
-        "composer": "Ruggero Leoncavallo",
-        "premiereYear": 1892,
-        "type": "WORLD_PREMIERE",
-        "conductor": "Arturo Toscanini",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Sensational world premiere of the supreme verismo double-bill masterwork, conducting debut for 25-year-old Toscanini."
-      },
-      {
-        "title": "Le Villi",
-        "composer": "Giacomo Puccini",
-        "premiereYear": 1884,
-        "type": "WORLD_PREMIERE",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "World premiere of Puccini’s debut opera, launching his legendary lifelong contract with Casa Ricordi."
-      }
-    ]
+            {
+                  "title": "Le Villi",
+                  "composer": "Giacomo Puccini",
+                  "premiereYear": 1884,
+                  "type": "WORLD_PREMIERE",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "World premiere of Puccini’s debut opera, launching his legendary lifelong contract with Casa Ricordi."
+            },
+            {
+                  "title": "Pagliacci",
+                  "composer": "Ruggero Leoncavallo",
+                  "premiereYear": 1892,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Arturo Toscanini",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Sensational world premiere of the supreme verismo double-bill masterwork, conducting debut for 25-year-old Toscanini."
+            }
+      ]
   },
   {
     "id": "teatro-de-la-zarzuela-madrid",
@@ -10329,31 +10438,31 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "Spain’s national theatre for Spanish lyric opera and zarzuela; founded in 1856 to celebrate indigenous musical heritage.",
     "description": "Inaugurated on 10 October 1856 (the birthday of Queen Isabel II), Teatro de la Zarzuela was founded by composer Francisco Asenjo Barbieri, the Gaztambide brothers, and a society of Spanish lyric authors to establish a permanent grand home for Spain’s national musical theatre against the aristocratic monopoly of Italian opera at the Teatro Real. Modelled on La Scala in an Italian horseshoe plan, the theatre was declared a National Monument of Spain. It has witnessed the world premieres of virtually all masterworks of the zarzuela repertoire, including Barbieri’s Pan y toros (1864) and El barberillo de Lavapiés (1874), Chapí’s La revoltosa (1897), and Bretón’s La verbena de la Paloma (1894).",
     "historicPremieres": [
-      {
-        "title": "El barberillo de Lavapiés",
-        "composer": "Francisco Asenjo Barbieri",
-        "premiereYear": 1874,
-        "type": "WORLD_PREMIERE",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "The pinnacle masterpiece of Spanish zarzuela grande."
-      },
-      {
-        "title": "Pan y toros",
-        "composer": "Francisco Asenjo Barbieri",
-        "premiereYear": 1864,
-        "type": "WORLD_PREMIERE",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Epic three-act historical zarzuela set in Goya-era Madrid."
-      },
-      {
-        "title": "La verbena de la Paloma",
-        "composer": "Tomás Bretón",
-        "premiereYear": 1894,
-        "type": "WORLD_PREMIERE",
-        "patronageType": "COMMERCIAL_IMPRESARIO",
-        "details": "Spain’s most beloved sainete lírico celebrating Madrid popular life."
-      }
-    ]
+            {
+                  "title": "Pan y toros",
+                  "composer": "Francisco Asenjo Barbieri",
+                  "premiereYear": 1864,
+                  "type": "WORLD_PREMIERE",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Epic three-act historical zarzuela set in Goya-era Madrid."
+            },
+            {
+                  "title": "El barberillo de Lavapiés",
+                  "composer": "Francisco Asenjo Barbieri",
+                  "premiereYear": 1874,
+                  "type": "WORLD_PREMIERE",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "The pinnacle masterpiece of Spanish zarzuela grande."
+            },
+            {
+                  "title": "La verbena de la Paloma",
+                  "composer": "Tomás Bretón",
+                  "premiereYear": 1894,
+                  "type": "WORLD_PREMIERE",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Spain’s most beloved sainete lírico celebrating Madrid popular life."
+            }
+      ]
   },
   {
     "id": "teatro-de-la-maestranza-seville",
@@ -10373,14 +10482,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "Andalusia’s premier opera house located on the banks of the Guadalquivir in Seville—the legendary setting of over 100 classic operas.",
     "description": "Inaugurated in 1991 for the Seville Expo ’92, Teatro de la Maestranza stands opposite the iconic Torre del Oro on the banks of the Guadalquivir River. Built behind the neoclassical 1854 artillery barracks facade (Real Maestranza de Artillería), this magnificent 1,800-seat lyric theatre finally gave Seville—the setting for more than 100 of history’s greatest operas, including Mozart’s Don Giovanni and Le nozze di Figaro, Bizet’s Carmen, Rossini’s Il barbiere di Siviglia, and Beethoven’s Fidelio—its own world-class opera house. Today, it hosts full operatic seasons, international co-productions, and the Real Orquesta Sinfónica de Sevilla.",
     "historicPremieres": [
-      {
-        "title": "Inaugural Gala: Plácido Domingo & Victoria de los Ángeles",
-        "composer": "Mozart, Bizet, Rossini, Verdi",
-        "premiereYear": 1991,
-        "type": "INAUGURAL_STAGING",
-        "details": "Gala opening celebrating Seville’s incomparable status as opera’s favorite dramatic backdrop."
-      }
-    ]
+            {
+                  "title": "Inaugural Gala: Plácido Domingo & Victoria de los Ángeles",
+                  "composer": "Mozart, Bizet, Rossini, Verdi",
+                  "premiereYear": 1991,
+                  "type": "INAUGURAL_STAGING",
+                  "details": "Gala opening celebrating Seville’s incomparable status as opera’s favorite dramatic backdrop."
+            }
+      ]
   },
   {
     "id": "real-coliseo-de-carlos-iii-escorial",
@@ -10400,15 +10509,15 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "The oldest covered royal court theatre in Spain (1771); designed for the Bourbon Court of King Charles III.",
     "description": "Commissioned in 1770 by King Charles III of Spain and designed by French architect Jaime Marquet, the Real Coliseo de Carlos III in San Lorenzo de El Escorial opened in 1771 as Spain’s first enclosed, purpose-built royal court playhouse. Built to entertain the Spanish royal family and diplomatic corps during their autumn residencies at the Escorial Monastery, the theatre combines Bourbon neoclassical symmetry with an intimate, horseshoe Italianate interior with painted wooden ceilings. Restored in the 20th century, it is the only surviving 18th-century royal court theatre in Spain, hosting early music, baroque opera, and chamber recitals.",
     "historicPremieres": [
-      {
-        "title": "La Briseida",
-        "composer": "Antonio Rodríguez de Hita",
-        "premiereYear": 1771,
-        "type": "WORLD_PREMIERE",
-        "patronageType": "ROYAL_COURT",
-        "details": "Royal court production staged for King Charles III and the royal household."
-      }
-    ]
+            {
+                  "title": "La Briseida",
+                  "composer": "Antonio Rodríguez de Hita",
+                  "premiereYear": 1771,
+                  "type": "WORLD_PREMIERE",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Royal court production staged for King Charles III and the royal household."
+            }
+      ]
   },
   {
     "id": "grand-theatre-de-geneve",
@@ -10428,15 +10537,15 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "French-speaking Switzerland’s premier Class-A opera house; fabled 19th-century Beaux-Arts temple of lyric drama.",
     "description": "Inaugurated in 1879 with Rossini’s Guillaume Tell, the Grand Théâtre de Genève is French-speaking Switzerland’s largest and most prestigious opera house. Facing the Place Neuve with an opulent Beaux-Arts facade inspired by the Palais Garnier, the theatre was rebuilt after a devastating 1951 stage fire and reopened in 1962. Renowned for its world-class resident chorus, the Orchestre de la Suisse Romande in the pit, and daring international stage directors, it has hosted landmark productions and world premieres, including Frank Martin’s Monsieur de Pourceaugnac (1963) and major modern commissions.",
     "historicPremieres": [
-      {
-        "title": "Monsieur de Pourceaugnac",
-        "composer": "Frank Martin",
-        "premiereYear": 1963,
-        "type": "WORLD_PREMIERE",
-        "patronageType": "CIVIC_STATE",
-        "details": "World premiere of the Swiss master’s comic opera based on Molière."
-      }
-    ]
+            {
+                  "title": "Monsieur de Pourceaugnac",
+                  "composer": "Frank Martin",
+                  "premiereYear": 1963,
+                  "type": "WORLD_PREMIERE",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "World premiere of the Swiss master’s comic opera based on Molière."
+            }
+      ]
   },
   {
     "id": "holland-festival-amsterdam",
@@ -10457,15 +10566,15 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "The Netherlands’ foremost international performing arts festival since 1947; landmark presenter of monumental avant-garde and contemporary opera.",
     "description": "Founded in 1947, the Holland Festival is the oldest and largest performing arts festival in the Netherlands. Each June, Amsterdam transforms into a world hub for international opera, music theatre, and groundbreaking contemporary productions across landmark venues including the Muziekgebouw aan ’t IJ, the Gashouder, and ITA. The festival has premiered and presented legendary operatic masterworks by Pierre Boulez, Karlheinz Stockhausen (including aus LICHT), and John Adams, serving as the progressive artistic pulse of the Low Countries.",
     "historicPremieres": [
-      {
-        "title": "aus LICHT (Stockhausen Cycle Staging)",
-        "composer": "Karlheinz Stockhausen",
-        "premiereYear": 2019,
-        "type": "HISTORIC_STAGING",
-        "patronageType": "FESTIVAL_COMMISSION",
-        "details": "Monumental 3-day marathon staging of Stockhausen’s operatic epic at the Gashouder."
-      }
-    ]
+            {
+                  "title": "aus LICHT (Stockhausen Cycle Staging)",
+                  "composer": "Karlheinz Stockhausen",
+                  "premiereYear": 2019,
+                  "type": "HISTORIC_STAGING",
+                  "patronageType": "FESTIVAL_COMMISSION",
+                  "details": "Monumental 3-day marathon staging of Stockhausen’s operatic epic at the Gashouder."
+            }
+      ]
   }
 
 ];
