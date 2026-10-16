@@ -34,9 +34,10 @@ const CameraRig: React.FC<{ controlsRef: React.RefObject<OrbitControlsImpl> }> =
     // Centering the Globe in Available Visible Viewport:
     // When the right dossier panel is open, both panels flank the screen, so the globe centers in the middle of the screen (offset = 0).
     // When the dossier is closed, the globe centers in the right ~2/3 of the screen.
+    const isMobile = size.width < 1024;
     const isRightPanelOpen = Boolean(selectedHouseId);
     const leftPanelWidth = Math.min(size.width * 0.28, 420);
-    const targetOffset = isRightPanelOpen ? 0 : -Math.round(leftPanelWidth * 0.5);
+    const targetOffset = isMobile ? 0 : (isRightPanelOpen ? 0 : -Math.round(leftPanelWidth * 0.5));
 
     if (!isInitializedRef.current) {
       // Immediately set the offset on initial page load (prevents the globe from flying in / swooping across the screen)

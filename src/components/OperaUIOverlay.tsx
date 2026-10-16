@@ -74,6 +74,23 @@ export const OperaUIOverlay: React.FC = () => {
   const [isFullscreen, setIsFullscreen] = useState(false);
   const [showFiltersPanel, setShowFiltersPanel] = useState(true);
   const [showTierFilters, setShowTierFilters] = useState(true);
+  const [isMobile, setIsMobile] = useState(() => (typeof window !== 'undefined' ? window.innerWidth < 1024 : false));
+  const [showMobileDirectory, setShowMobileDirectory] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 1024);
+    };
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  // When a house is selected on mobile, auto-close the mobile directory so the user sees the globe and the bottom dossier sheet
+  useEffect(() => {
+    if (selectedHouseId && isMobile) {
+      setShowMobileDirectory(false);
+    }
+  }, [selectedHouseId, isMobile]);
 
   useEffect(() => {
     const handleFullscreenChange = () => {
@@ -370,41 +387,54 @@ export const OperaUIOverlay: React.FC = () => {
       {/* 1. TOP HEADER: FLUSH ACROSS TOP, LEFT, AND RIGHT EDGES        */}
       {/* ------------------------------------------------------------- */}
       <header
-        className="pointer-events-auto flex flex-wrap items-center justify-between gap-4 border-b border-amber-500/50 px-6 py-2.5 shadow-2xl backdrop-blur-md shrink-0 w-full z-30"
+        className="pointer-events-auto flex items-center justify-between gap-2 border-b border-amber-500/50 px-3.5 sm:px-6 py-2 sm:py-2.5 shadow-2xl backdrop-blur-md shrink-0 w-full z-30"
         style={panelBg}
       >
-        <div className="flex items-center space-x-3">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg border border-amber-500/70 bg-gradient-to-br from-[#8d1720] to-[#5a0d15] text-amber-200 shadow-lg">
-            <Landmark className="h-4.5 w-4.5 text-amber-300" />
+        <div className="flex items-center space-x-2.5 sm:space-x-3 min-w-0">
+          <div className="flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-lg border border-amber-500/70 bg-gradient-to-br from-[#8d1720] to-[#5a0d15] text-amber-200 shadow-lg shrink-0">
+            <Landmark className="h-4 w-4 sm:h-4.5 sm:w-4.5 text-amber-300" />
           </div>
-          <h1 className="font-cinzel text-lg md:text-xl font-bold tracking-[0.16em] text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-100 to-amber-300">
+          <h1 className="font-cinzel text-base sm:text-lg md:text-xl font-bold tracking-[0.10em] sm:tracking-[0.16em] text-transparent bg-clip-text bg-gradient-to-r from-amber-200 via-yellow-100 to-amber-300 truncate">
             The World of Opera
           </h1>
         </div>
 
-        {/* Info Guide & Fullscreen Toggle */}
-        <div className="flex items-center gap-2.5">
+        {/* Info Guide, Mobile Directory Toggle & Fullscreen Toggle */}
+        <div className="flex items-center gap-1.5 sm:gap-2.5 shrink-0">
+          {/* Mobile Directory Toggle in Header */}
+          <button
+            onClick={() => setShowMobileDirectory(!showMobileDirectory)}
+            className={`lg:hidden flex items-center gap-1.5 rounded-lg border px-2.5 py-1 text-xs font-cinzel font-bold transition cursor-pointer shadow-md ${
+              showMobileDirectory
+                ? 'bg-amber-500/30 text-amber-200 border-amber-400'
+                : 'border-amber-500/70 bg-[#223552] text-amber-200 hover:bg-[#2c4468]'
+            }`}
+            title="Toggle Directory & Filters"
+          >
+            <Building className="h-3.5 w-3.5 text-amber-300" />
+            <span>{showMobileDirectory ? 'Close' : 'Directory'}</span>
+          </button>
 
           <button
             onClick={() => setShowInfoModal(true)}
-            className="flex items-center gap-2 rounded-lg border border-amber-500/70 bg-[#223552] hover:bg-[#2c4468] hover:border-amber-400 px-3.5 py-1.5 text-sm md:text-base font-cinzel font-bold text-amber-200 transition cursor-pointer shadow-md"
+            className="flex items-center gap-1.5 sm:gap-2 rounded-lg border border-amber-500/70 bg-[#223552] hover:bg-[#2c4468] hover:border-amber-400 px-2.5 sm:px-3.5 py-1 sm:py-1.5 text-xs sm:text-sm md:text-base font-cinzel font-bold text-amber-200 transition cursor-pointer shadow-md"
             title="Opera History, Palaces & Atlas Guide"
           >
-            <BookOpen className="h-4 w-4 text-amber-300" />
+            <BookOpen className="h-3.5 w-3.5 sm:h-4 sm:w-4 text-amber-300" />
             <span className="hidden sm:inline">Opera History & Atlas Guide</span>
-            <span className="sm:hidden">History & Guide</span>
+            <span className="sm:hidden">Guide</span>
           </button>
 
           <button
             onClick={toggleFullscreen}
-            className="flex h-9 w-9 items-center justify-center rounded-lg border border-amber-500/70 bg-[#223552] hover:bg-[#2c4468] hover:border-amber-400 text-amber-200 transition cursor-pointer shadow-md shrink-0"
+            className="hidden sm:flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-lg border border-amber-500/70 bg-[#223552] hover:bg-[#2c4468] hover:border-amber-400 text-amber-200 transition cursor-pointer shadow-md shrink-0"
             title={isFullscreen ? 'Exit Fullscreen' : 'Toggle Fullscreen'}
             aria-label={isFullscreen ? 'Exit Fullscreen' : 'Toggle Fullscreen'}
           >
             {isFullscreen ? (
-              <Minimize className="h-4.5 w-4.5 text-amber-300" />
+              <Minimize className="h-4 w-4 sm:h-4.5 sm:w-4.5 text-amber-300" />
             ) : (
-              <Maximize className="h-4.5 w-4.5 text-amber-300" />
+              <Maximize className="h-4 w-4 sm:h-4.5 sm:w-4.5 text-amber-300" />
             )}
           </button>
         </div>
@@ -414,9 +444,15 @@ export const OperaUIOverlay: React.FC = () => {
       {/* 2. MAIN BODY: SIDEBARS FLUSH TO EDGES WITH INTERNAL BUFFER    */}
       {/* ------------------------------------------------------------- */}
       <div className="relative flex flex-1 items-stretch justify-between pointer-events-none min-h-0 w-full overflow-hidden">
-        {/* LEFT SIDEBAR: DIRECTORY (Flush to left screen edge with generous internal buffer) */}
+        {/* LEFT SIDEBAR: DIRECTORY (Flush to left screen edge on desktop, full drawer on mobile) */}
         <aside
-          className="pointer-events-auto flex w-[410px] xl:w-[430px] 2xl:w-[450px] flex-col space-y-3.5 border-r border-amber-500/40 p-5 shadow-2xl backdrop-blur-md min-h-0 overflow-hidden h-full z-20"
+          className={`pointer-events-auto flex flex-col space-y-3.5 border-amber-500/40 p-4 sm:p-5 shadow-2xl backdrop-blur-md min-h-0 overflow-hidden z-30 transition-all duration-300 ${
+            isMobile
+              ? showMobileDirectory
+                ? 'fixed inset-x-0 bottom-0 top-[49px] w-full border-t'
+                : 'hidden'
+              : 'w-[410px] xl:w-[430px] 2xl:w-[450px] border-r h-full'
+          }`}
           style={panelBg}
         >
           {/* Header */}
@@ -424,9 +460,20 @@ export const OperaUIOverlay: React.FC = () => {
             <h2 className="font-cinzel text-lg md:text-xl font-bold tracking-wider text-amber-300 uppercase flex items-center gap-2">
               <Building className="h-5 w-5 text-amber-300" /> Opera Directory
             </h2>
-            <span className="text-sm font-cinzel font-bold text-amber-200 bg-[#1c2c44] px-3 py-0.5 rounded border border-slate-600">
-              {filteredHouses.length}
-            </span>
+            <div className="flex items-center gap-2">
+              <span className="text-sm font-cinzel font-bold text-amber-200 bg-[#1c2c44] px-3 py-0.5 rounded border border-slate-600">
+                {filteredHouses.length}
+              </span>
+              {isMobile && (
+                <button
+                  onClick={() => setShowMobileDirectory(false)}
+                  className="rounded-lg p-1 text-slate-300 hover:bg-slate-800 hover:text-amber-200 border border-slate-700/60 transition cursor-pointer"
+                  title="Close Directory"
+                >
+                  <X className="h-5 w-5" />
+                </button>
+              )}
+            </div>
           </div>
 
           {/* Search Box */}
@@ -714,7 +761,12 @@ export const OperaUIOverlay: React.FC = () => {
                 return (
                   <div
                     key={house.id}
-                    onClick={() => setSelectedHouse(house.id)}
+                    onClick={() => {
+                      setSelectedHouse(house.id);
+                      if (isMobile) {
+                        setShowMobileDirectory(false);
+                      }
+                    }}
                     className={`cursor-pointer rounded-lg border p-2.5 transition-all duration-150 ${getCardBorderClass(
                       house.tier,
                       isSelected
@@ -765,12 +817,25 @@ export const OperaUIOverlay: React.FC = () => {
           </div>
         </aside>
 
-        {/* RIGHT SIDEBAR: DOSSIER & PROFILE (Flush to right screen edge) */}
+        {/* RIGHT SIDEBAR: DOSSIER & PROFILE (Flush to right screen edge on desktop, slide-up bottom sheet on mobile) */}
         {selectedHouse && (
           <aside
-            className="pointer-events-auto flex w-[420px] xl:w-[450px] 2xl:w-[480px] flex-col border-l border-amber-500/40 p-5 shadow-2xl backdrop-blur-md min-h-0 overflow-hidden h-full z-20 animate-in fade-in duration-200"
+            className={`pointer-events-auto flex flex-col border-amber-500/40 p-4 sm:p-5 shadow-2xl backdrop-blur-md min-h-0 overflow-hidden z-30 animate-in fade-in duration-200 ${
+              isMobile
+                ? 'fixed inset-x-0 bottom-0 max-h-[72vh] w-full rounded-t-2xl border-t border-x-0 shadow-[0_-12px_36px_rgba(0,0,0,0.85)] pb-6'
+                : 'w-[420px] xl:w-[450px] 2xl:w-[480px] border-l h-full'
+            }`}
             style={panelBg}
           >
+            {/* Mobile Drag / Dismiss Handle */}
+            {isMobile && (
+              <div
+                onClick={() => setSelectedHouse(null)}
+                className="mx-auto w-12 h-1 rounded-full bg-amber-500/50 mb-2 cursor-pointer hover:bg-amber-400 shrink-0"
+                title="Tap to close dossier"
+              />
+            )}
+
             {/* BESPOKE OPERA HOUSE PROFILE & HISTORICAL DOSSIER */}
             <div className="flex flex-col h-full min-h-0 space-y-3">
               {/* Header: Title, City/Country, Tier Badge, Close Button */}
@@ -1049,10 +1114,10 @@ export const OperaUIOverlay: React.FC = () => {
 
         {/* ------------------------------------------------------------- */}
         {/* 3. CENTER BOTTOM CONTROLS: COMPACT FLOATING CONTROL BAR       */}
-        {/* Centers dynamically in the visible globe viewport             */}
+        {/* Centers dynamically in the visible globe viewport on desktop  */}
         {/* ------------------------------------------------------------- */}
         <footer
-          className="pointer-events-auto absolute bottom-3 -translate-x-1/2 flex items-center gap-2.5 px-3 py-1.5 rounded-full border border-amber-500/60 bg-[#18263a]/95 shadow-xl backdrop-blur-md text-xs md:text-[13px] font-cinzel text-amber-100 z-20 font-bold whitespace-nowrap transition-all duration-300 ease-out"
+          className="pointer-events-auto hidden lg:flex absolute bottom-3 -translate-x-1/2 items-center gap-2.5 px-3 py-1.5 rounded-full border border-amber-500/60 bg-[#18263a]/95 shadow-xl backdrop-blur-md text-xs md:text-[13px] font-cinzel text-amber-100 z-20 font-bold whitespace-nowrap transition-all duration-300 ease-out"
           style={{
             left: selectedHouse
               ? '50%'
@@ -1076,6 +1141,21 @@ export const OperaUIOverlay: React.FC = () => {
             <span>{isAutoRotating ? 'Auto-Rotate: On' : 'Auto-Rotate: Off'}</span>
           </button>
         </footer>
+
+        {/* ------------------------------------------------------------- */}
+        {/* 4. MOBILE FLOATING PILL: BROWSE DIRECTORY & FILTERS           */}
+        {/* ------------------------------------------------------------- */}
+        {!selectedHouse && !showMobileDirectory && (
+          <div className="pointer-events-auto lg:hidden absolute bottom-4 inset-x-0 flex justify-center items-center px-4 z-20">
+            <button
+              onClick={() => setShowMobileDirectory(true)}
+              className="flex items-center gap-2 px-4 py-2.5 rounded-full border border-amber-500/80 bg-[#18263a]/95 text-amber-200 font-cinzel font-bold text-xs shadow-2xl backdrop-blur-md hover:bg-[#223552] active:scale-95 transition cursor-pointer"
+            >
+              <Building className="h-4 w-4 text-amber-400" />
+              <span>Browse Directory & Filters ({filteredHouses.length})</span>
+            </button>
+          </div>
+        )}
       </div>
 
       {/* ATLAS GUIDE & TIER CLASSIFICATION MODAL */}
