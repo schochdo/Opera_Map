@@ -53,16 +53,16 @@ export const GlobeContinents: React.FC<GlobeContinentsProps> = ({ globeRadius })
 
   return (
     <group>
-      {/* 1. Tactile 3D Papier-Mâché Continents Mesh */}
+      {/* 1. Tactile 3D Cold-Press Paper Continents Mesh (Line-Free Eggshell Tooth) */}
       {continentsGeo && (
         <mesh geometry={continentsGeo}>
           <meshStandardMaterial
             map={paperTexture}
             bumpMap={paperBumpMap}
-            bumpScale={0.022}
-            color="#f7f2e5"
-            roughness={0.88}
-            metalness={0.02}
+            bumpScale={0.016}
+            color="#f5eee2"
+            roughness={0.92}
+            metalness={0.01}
             side={THREE.DoubleSide}
           />
         </mesh>
