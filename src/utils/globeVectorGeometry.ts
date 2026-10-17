@@ -223,7 +223,8 @@ function buildAntarcticaPolarCap(
   outerRing: [number, number][],
   radius: number,
   positions: number[],
-  normals: number[]
+  normals: number[],
+  uvs: number[]
 ) {
   // 1. Extract the continuous 360-degree coastline loop, omitting the artificial GIS slit to the South Pole
   const coast: [number, number][] = [];
@@ -289,6 +290,14 @@ function buildAntarcticaPolarCap(
       const n2 = p2.clone().normalize();
       const n3 = p3.clone().normalize();
       normals.push(n1.x, n1.y, n1.z, n2.x, n2.y, n2.z, n3.x, n3.y, n3.z);
+
+      const u1 = 0.5 + Math.atan2(n1.x, n1.z) / (2 * Math.PI);
+      const v1 = 0.5 + Math.asin(Math.max(-1, Math.min(1, n1.y))) / Math.PI;
+      const u2 = 0.5 + Math.atan2(n2.x, n2.z) / (2 * Math.PI);
+      const v2 = 0.5 + Math.asin(Math.max(-1, Math.min(1, n2.y))) / Math.PI;
+      const u3 = 0.5 + Math.atan2(n3.x, n3.z) / (2 * Math.PI);
+      const v3 = 0.5 + Math.asin(Math.max(-1, Math.min(1, n3.y))) / Math.PI;
+      uvs.push(u1, v1, u2, v2, u3, v3);
     }
   } catch (err) {
     // Silently skip on error
@@ -306,6 +315,7 @@ export function buildContinentsGeometry(
 ): THREE.BufferGeometry {
   const positions: number[] = [];
   const normals: number[] = [];
+  const uvs: number[] = [];
 
   if (!countriesGeojson?.features) {
     return new THREE.BufferGeometry();
@@ -332,7 +342,7 @@ export function buildContinentsGeometry(
           feature.properties?.NAME === 'Antarctica') &&
         outerRing.some((pt: any) => pt[1] < -85)
       ) {
-        buildAntarcticaPolarCap(outerRing, radius, positions, normals);
+        buildAntarcticaPolarCap(outerRing, radius, positions, normals, uvs);
         return;
       }
 
@@ -388,6 +398,14 @@ export function buildContinentsGeometry(
           const n2 = p2.clone().normalize();
           const n3 = p3.clone().normalize();
           normals.push(n1.x, n1.y, n1.z, n2.x, n2.y, n2.z, n3.x, n3.y, n3.z);
+
+          const u1 = 0.5 + Math.atan2(n1.x, n1.z) / (2 * Math.PI);
+          const v1 = 0.5 + Math.asin(Math.max(-1, Math.min(1, n1.y))) / Math.PI;
+          const u2 = 0.5 + Math.atan2(n2.x, n2.z) / (2 * Math.PI);
+          const v2 = 0.5 + Math.asin(Math.max(-1, Math.min(1, n2.y))) / Math.PI;
+          const u3 = 0.5 + Math.atan2(n3.x, n3.z) / (2 * Math.PI);
+          const v3 = 0.5 + Math.asin(Math.max(-1, Math.min(1, n3.y))) / Math.PI;
+          uvs.push(u1, v1, u2, v2, u3, v3);
         }
       } catch (err) {
         // Silently skip malformed polygon geometries
@@ -398,6 +416,7 @@ export function buildContinentsGeometry(
   const geometry = new THREE.BufferGeometry();
   geometry.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
   geometry.setAttribute('normal', new THREE.Float32BufferAttribute(normals, 3));
+  geometry.setAttribute('uv', new THREE.Float32BufferAttribute(uvs, 2));
   return geometry;
 }
 

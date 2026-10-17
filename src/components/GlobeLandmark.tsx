@@ -223,33 +223,33 @@ export const GlobeLandmark: React.FC<LandmarkProps> = ({
           <meshBasicMaterial transparent opacity={0} depthWrite={false} />
         </mesh>
 
-        {/* Slender polished pin needle */}
+        {/* Slender pin needle (soft satin finish) */}
         <mesh position={[0, needleHeight / 2, 0]}>
           <cylinderGeometry args={[needleR * 0.8, needleR, needleHeight, 8]} />
           <meshStandardMaterial
             color={house.tier === 2 ? '#cbd5e1' : '#d4af37'}
-            metalness={0.45}
-            roughness={0.22}
+            metalness={0.25}
+            roughness={0.45}
           />
         </mesh>
 
-        {/* Dark contrast collar beneath Tier 2 pearl: guarantees edge definition against white continents */}
+        {/* Dark contrast collar beneath Tier 2 pearl: guarantees edge definition against continents */}
         {house.tier === 2 && (
           <mesh position={[0, tipY - headRadius * 0.45, 0]}>
             <cylinderGeometry args={[headRadius * 0.85, headRadius * 0.95, headRadius * 0.25, 16]} />
-            <meshStandardMaterial color="#0f172a" metalness={0.7} roughness={0.3} />
+            <meshStandardMaterial color="#0f172a" metalness={0.3} roughness={0.5} />
           </mesh>
         )}
 
-        {/* Smooth spherical pearl head (clean classic pushpin) */}
+        {/* Refined satin pearl head: reduced glossiness, softer organic specular sheen */}
         <mesh position={[0, tipY, 0]}>
           <sphereGeometry args={[headRadius, 24, 24]} />
           <meshStandardMaterial
             color={headColor}
             emissive={headEmissive}
-            emissiveIntensity={headEmissiveIntensity}
-            metalness={house.tier === 2 ? 0.60 : 0.45}
-            roughness={house.tier === 2 ? 0.18 : 0.22}
+            emissiveIntensity={headEmissiveIntensity * 0.65}
+            metalness={0.15}
+            roughness={0.52}
           />
         </mesh>
 

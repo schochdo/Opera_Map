@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
 import * as THREE from 'three';
 import { useOperaStore } from '../store/useOperaStore';
 import {
@@ -6,6 +6,7 @@ import {
   buildLakesGeometry,
 } from '../utils/globeVectorGeometry';
 import { fetchCountriesGeoJSON, fetchLakesGeoJSON } from '../utils/globeGeoJsonLoader';
+import { createPapierMacheTextures } from '../utils/paperTexture';
 
 interface GlobeContinentsProps {
   globeRadius: number;
@@ -16,6 +17,9 @@ export const GlobeContinents: React.FC<GlobeContinentsProps> = ({ globeRadius })
   const setIsLandLoaded = useOperaStore((state) => state.setIsLandLoaded);
   const [continentsGeo, setContinentsGeo] = useState<THREE.BufferGeometry | null>(null);
   const [lakesGeo, setLakesGeo] = useState<THREE.BufferGeometry | null>(null);
+
+  // High-tactile papier-mâché material textures (Style 1)
+  const { paperTexture, paperBumpMap } = useMemo(() => createPapierMacheTextures(), []);
 
   useEffect(() => {
     let isMounted = true;
@@ -49,12 +53,15 @@ export const GlobeContinents: React.FC<GlobeContinentsProps> = ({ globeRadius })
 
   return (
     <group>
-      {/* 1. Luminous 3D Ivory Continents Mesh (Razor-sharp vector edges at all zoom levels) */}
+      {/* 1. Tactile 3D Papier-Mâché Continents Mesh */}
       {continentsGeo && (
         <mesh geometry={continentsGeo}>
           <meshStandardMaterial
-            color="#faf5ea"
-            roughness={0.72}
+            map={paperTexture}
+            bumpMap={paperBumpMap}
+            bumpScale={0.022}
+            color="#f7f2e5"
+            roughness={0.88}
             metalness={0.02}
             side={THREE.DoubleSide}
           />
