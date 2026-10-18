@@ -89,6 +89,16 @@ export const OPERA_HOUSES: OperaHouse[] = [
                   "patronageType": "COMMERCIAL_IMPRESARIO",
                   "details": "Conducted by Arturo Toscanini, who lowered his baton where Puccini ceased writing before his death.",
                   "commissionContext": "Arturo Toscanini famously halted the premiere after Liù's death scene, turning to the audience: 'Here the opera ends, because at this point the Maestro died.' Posthumously finished by Franco Alfano."
+            },
+            {
+                  "title": "Dialogues des Carmélites",
+                  "composer": "Francis Poulenc",
+                  "premiereYear": 1957,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Nino Sanzogno",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "World premiere in Italian translation ('I dialoghi delle Carmelitane'), starring Virginia Zeani and Leyla Gencer.",
+                  "commissionContext": "Commissioned by music publisher Ricordi for Teatro alla Scala; Poulenc's profound 20th-century spiritual drama depicting the martyrdom of the Carmelite nuns of Compiègne during the Reign of Terror."
             }
       ]
   },
@@ -121,6 +131,26 @@ export const OPERA_HOUSES: OperaHouse[] = [
                   "patronageType": "PRIVATE_BENEFACTOR",
                   "details": "Inaugural festival attended by Franz Liszt, Pyotr Tchaikovsky, Edvard Grieg, and Friedrich Nietzsche.",
                   "commissionContext": "Wagner's revolutionary conception of an autonomous festival free from commercial repertoire; funded by private subscription certificates from Wagner Societies worldwide and backed by a royal credit guarantee from King Ludwig II of Bavaria."
+            },
+            {
+                  "title": "Siegfried",
+                  "composer": "Richard Wagner",
+                  "premiereYear": 1876,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Hans Richter",
+                  "patronageType": "PRIVATE_BENEFACTOR",
+                  "details": "First complete performance of the third Ring drama on 16 August 1876.",
+                  "commissionContext": "Composed as the third day of the Ring tetralogy; premiered as part of the historic first Bayreuth Festival."
+            },
+            {
+                  "title": "Götterdämmerung",
+                  "composer": "Richard Wagner",
+                  "premiereYear": 1876,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Hans Richter",
+                  "patronageType": "PRIVATE_BENEFACTOR",
+                  "details": "First complete performance of the colossal final Ring drama on 17 August 1876.",
+                  "commissionContext": "The monumental culmination of Wagner's 26-year creation of Der Ring des Nibelungen, concluding the inaugural Bayreuth Festival."
             },
             {
                   "title": "Parsifal",
@@ -211,6 +241,16 @@ export const OPERA_HOUSES: OperaHouse[] = [
                   "patronageType": "COMMERCIAL_IMPRESARIO",
                   "details": "World premiere of Puccini's three one-act operas.",
                   "commissionContext": "World premiere of Puccini's triptych under Met box-office contract during wartime European travel restrictions."
+            },
+            {
+                  "title": "Vanessa",
+                  "composer": "Samuel Barber",
+                  "premiereYear": 1958,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Dimitri Mitropoulos",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Winner of the 1958 Pulitzer Prize for Music, libretto by Gian Carlo Menotti, starring Eleanor Steber, Rosalind Elias, and Nicolai Gedda.",
+                  "commissionContext": "Commissioned by Met General Manager Rudolf Bing; celebrated as the crowning traditional grand opera in American classical music."
             }
       ]
   },
@@ -300,6 +340,16 @@ export const OPERA_HOUSES: OperaHouse[] = [
                   "premiereYear": 1951,
                   "type": "WORLD_PREMIERE",
                   "details": "Conducted by Benjamin Britten, libretto by E.M. Forster and Eric Crozier starring Peter Pears."
+            },
+            {
+                  "title": "Gloriana",
+                  "composer": "Benjamin Britten",
+                  "premiereYear": 1953,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "John Pritchard",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Commissioned to celebrate the coronation of Queen Elizabeth II, starring Joan Cross as Elizabeth I and Peter Pears.",
+                  "commissionContext": "Direct royal commission for the coronation gala of Queen Elizabeth II at Covent Garden; Britten's grand historical chronicle of Tudor court politics."
             },
             {
                   "title": "The Midsummer Marriage",
@@ -719,6 +769,15 @@ export const OPERA_HOUSES: OperaHouse[] = [
                   "premiereYear": 1938,
                   "type": "WORLD_PREMIERE",
                   "details": "Premiered in neutral Zurich after being banned by the Nazi regime in Germany."
+            },
+            {
+                  "title": "Moses und Aron",
+                  "composer": "Arnold Schoenberg",
+                  "premiereYear": 1957,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Hans Rosbaud",
+                  "details": "First staged world premiere of Schoenberg’s unfinished 12-tone theological masterpiece.",
+                  "commissionContext": "Landmark staged production in Zurich conducted by Hans Rosbaud, proving that Schoenberg's complex serialist masterwork could triumph on the operatic stage."
             }
       ]
   },
@@ -837,6 +896,16 @@ export const OPERA_HOUSES: OperaHouse[] = [
                   "commissionContext": "Commissioned by Teatro La Fenice for the Carnival season; launched Rossini's pan-European celebrity."
             },
             {
+                  "title": "Semiramide",
+                  "composer": "Gioachino Rossini",
+                  "premiereYear": 1823,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Gioachino Rossini",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Rossini's crowning Italian Bel Canto tragic masterpiece, composed for his prima donna wife Isabella Colbran.",
+                  "commissionContext": "Rossini's final opera composed for Italy before his move to Paris; marked the summit of monumental 19th-century Bel Canto vocal architecture."
+            },
+            {
                   "title": "I Capuleti e i Montecchi",
                   "composer": "Vincenzo Bellini",
                   "premiereYear": 1830,
@@ -875,6 +944,16 @@ export const OPERA_HOUSES: OperaHouse[] = [
                   "patronageType": "COMMERCIAL_IMPRESARIO",
                   "details": "Original version premiered at La Fenice on 12 March 1857.",
                   "commissionContext": "Commissioned for La Fenice's spring 1857 season."
+            },
+            {
+                  "title": "The Rake's Progress",
+                  "composer": "Igor Stravinsky",
+                  "premiereYear": 1951,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Igor Stravinsky",
+                  "patronageType": "FESTIVAL_COMMISSION",
+                  "details": "Conducted by Igor Stravinsky, libretto by W. H. Auden and Chester Kallman, starring Elisabeth Schwarzkopf.",
+                  "commissionContext": "Commissioned by the Venice Biennale International Contemporary Music Festival; the crowning neoclassical opera of the 20th century."
             },
             {
                   "title": "The Turn of the Screw",
@@ -3212,6 +3291,15 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "Birthplace of Carmen and Pelléas et Mélisande; pioneer of the French opéra-comique genre.",
     "historicPremieres": [
             {
+                  "title": "La fille du régiment",
+                  "composer": "Gaetano Donizetti",
+                  "premiereYear": 1840,
+                  "type": "WORLD_PREMIERE",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Donizetti’s French comic masterpiece, famed for the tenor showpiece 'Ah! mes amis' with its nine high Cs.",
+                  "commissionContext": "Donizetti's first opera in the French language following his move from Naples to Paris; premiered at the Salle de la Bourse during the reconstruction of the Salle Favart."
+            },
+            {
                   "title": "La damnation de Faust",
                   "composer": "Hector Berlioz",
                   "premiereYear": 1846,
@@ -3240,6 +3328,26 @@ export const OPERA_HOUSES: OperaHouse[] = [
                   "patronageType": "COMMERCIAL_IMPRESARIO",
                   "details": "Offenbach’s supreme posthumous masterpiece premiered on 10 February 1881.",
                   "commissionContext": "Posthumous premiere produced by Léon Carvalho at the Opéra-Comique."
+            },
+            {
+                  "title": "Lakmé",
+                  "composer": "Léo Delibes",
+                  "premiereYear": 1883,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Jules Danbé",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Orientalist romantic masterpiece starring Marie van Zandt; featuring the immortal 'Flower Duet' and 'Bell Song'.",
+                  "commissionContext": "Commissioned by Opéra-Comique director Léon Carvalho specifically to showcase the extraordinary coloratura vocal agility of American soprano Marie van Zandt."
+            },
+            {
+                  "title": "Manon",
+                  "composer": "Jules Massenet",
+                  "premiereYear": 1884,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Jules Danbé",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Massenet’s definitive French romantic masterpiece starring Marie Heilbronn as Manon Lescaut.",
+                  "commissionContext": "Commissioned by Opéra-Comique director Léon Carvalho; captured the sensual elegance and tragic pathos of 18th-century France to become one of the most performed French operas in history."
             },
             {
                   "title": "Pelléas et Mélisande",
