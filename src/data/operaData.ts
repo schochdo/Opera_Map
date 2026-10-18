@@ -1915,7 +1915,18 @@ export const OPERA_HOUSES: OperaHouse[] = [
                   "composer": "Richard Strauss",
                   "premiereYear": 1912,
                   "type": "WORLD_PREMIERE",
+                  "conductor": "Richard Strauss",
                   "details": "Original version conducted by Richard Strauss, directed by Max Reinhardt."
+            },
+            {
+                  "title": "Akhnaten",
+                  "composer": "Philip Glass",
+                  "premiereYear": 1984,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Dennis Russell Davies",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "Conducted by Dennis Russell Davies, directed by Achim Freyer; concluding Glass's groundbreaking 'Portrait Trilogy' of operas.",
+                  "commissionContext": "Commissioned by the Staatsoper Stuttgart; celebrated as one of the most influential and widely performed minimalist operas in world history."
             }
       ]
   },
@@ -3261,8 +3272,21 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "architect": "Celestial Sacardim",
     "architecturalStyle": "Belle Époque Renaissance Revival with 36,000 Mosaic Ceramic Dome Tiles",
     "capacity": "701 seats",
-    "historicSignificance": "The legendary \"Opera House in the Jungle\"; immortalized in Werner Herzog’s film Fitzcarraldo; home of the Amazonas Opera Festival.",
-    "seasonalOnly": false
+    "historicSignificance": "The legendary \"Opera House in the Jungle\"; immortalized in Werner Herzog’s film Fitzcarraldo; destination of the heroine in Daniel Catán's Florencia en el Amazonas; home of the Amazonas Opera Festival.",
+    "venueCategory": "FRONTIER_LEGACY_HOUSE",
+    "buildingEra": "19TH_CENTURY",
+    "seasonalOnly": false,
+    "historicPremieres": [
+            {
+                  "title": "La Gioconda",
+                  "composer": "Amilcare Ponchielli",
+                  "premiereYear": 1897,
+                  "type": "INAUGURAL_STAGING",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "Inaugural opera performance on 7 January 1897, staged by an imported Italian opera troupe in the Amazon rainforest.",
+                  "commissionContext": "Financed by Amazon Rubber Boom tycoons; immortalized as the destination house for the opera singer in Daniel Catán's 'Florencia en el Amazonas'."
+            }
+      ]
   },
   {
     "id": "teatro-malibran",
