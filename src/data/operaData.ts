@@ -438,7 +438,19 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "architect": "Carlos Ott",
     "architecturalStyle": "Late Modernist Curved Glass & Blue Granite Colossus",
     "capacity": "2,745 seats",
-    "historicSignificance": "Primary grand-scale production house of the Paris Opera; one of the largest acoustic theatre volumes in Europe."
+    "historicSignificance": "Primary grand-scale production house of the Paris Opera; one of the largest acoustic theatre volumes in Europe.",
+    "historicPremieres": [
+            {
+                  "title": "Adriana Mater",
+                  "composer": "Kaija Saariaho",
+                  "premiereYear": 2006,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Esa-Pekka Salonen",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "Conducted by Esa-Pekka Salonen, directed by Peter Sellars; exploring motherhood and memory amid wartime.",
+                  "commissionContext": "Commissioned by Gerard Mortier for the Opéra National de Paris following Saariaho's international acclaim for L'Amour de loin."
+            }
+      ]
   },
   {
     "id": "sydney-opera-house",
@@ -456,7 +468,29 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "architect": "Jørn Utzon & Peter Hall",
     "architecturalStyle": "Expressionist Sculptural Shell Vaults",
     "capacity": "1,507 seats (Opera Theatre)",
-    "historicSignificance": "Architectural wonder of the 20th century; the preeminent cultural temple of the Southern Hemisphere."
+    "historicSignificance": "Architectural wonder of the 20th century; the preeminent cultural temple of the Southern Hemisphere.",
+    "historicPremieres": [
+            {
+                  "title": "Voss",
+                  "composer": "Richard Meale",
+                  "premiereYear": 1986,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Stuart Challender",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "The definitive Australian grand opera, adapted by David Malouf from Patrick White's Nobel Prize-winning novel.",
+                  "commissionContext": "Commissioned by The Australian Opera to create a monumental indigenous Australian operatic masterpiece for the Sydney stage."
+            },
+            {
+                  "title": "The Eighth Wonder",
+                  "composer": "Alan John",
+                  "premiereYear": 1995,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Richard Gill",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "Opera chronicling the architectural triumph, political heartbreak, and creation of the Sydney Opera House itself and Danish architect Jørn Utzon.",
+                  "commissionContext": "Commissioned by The Australian Opera specifically exploring the dramatic history of the building's creation on Bennelong Point."
+            }
+      ]
   },
   {
     "id": "teatro-colon",
@@ -474,7 +508,29 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "architect": "Francesco Tamburini, Vittorio Meano & Julio Dormal",
     "architecturalStyle": "Italian Renaissance Eclectic Horseshoe with French Stucco",
     "capacity": "2,487 seats",
-    "historicSignificance": "The Southern Hemisphere’s greatest opera palace; regular host to Toscanini, Callas, Caruso, and Pavarotti."
+    "historicSignificance": "The Southern Hemisphere’s greatest opera palace; regular host to Toscanini, Callas, Caruso, and Pavarotti.",
+    "historicPremieres": [
+            {
+                  "title": "Aurora",
+                  "composer": "Héctor Panizza",
+                  "premiereYear": 1908,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Luigi Mancinelli",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "Inaugural season commission; its aria 'Canción a la Bandera' became Argentina’s official national patriotic salute to the flag.",
+                  "commissionContext": "Commissioned by the Argentine national government to celebrate the opening of the new Teatro Colón building."
+            },
+            {
+                  "title": "Don Rodrigo",
+                  "composer": "Alberto Ginastera",
+                  "premiereYear": 1964,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Bruno Bartoletti",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "Monumental expressionist premiere starring a 23-year-old Plácido Domingo, launching Domingo onto the global operatic stage.",
+                  "commissionContext": "Commissioned by the Municipality of Buenos Aires for the Teatro Colón; one of Latin America's landmark 20th-century operatic achievements."
+            }
+      ]
   },
   {
     "id": "cincinnati-opera",
@@ -797,7 +853,37 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "architect": "Antonio López Aguado & Custodio Moreno",
     "architecturalStyle": "Neoclassical Hexagonal Citadel with Royal Balconies",
     "capacity": "1,746 seats",
-    "historicSignificance": "National opera theatre of Spain; visited historically by Verdi for the staging of La forza del destino."
+    "historicSignificance": "National opera theatre of Spain; visited historically by Verdi for the staging of La forza del destino.",
+    "historicPremieres": [
+            {
+                  "title": "La Dolores",
+                  "composer": "Tomás Bretón",
+                  "premiereYear": 1895,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Tomás Bretón",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Landmark Spanish opera triumph featuring the famous Jota aragonesa, establishing a serious Spanish national opera tradition on the royal stage.",
+                  "commissionContext": "Premiered at the Teatro Real under the composer's baton to ecstatic public acclaim, proving Spanish opera could rival Italian verismo."
+            },
+            {
+                  "title": "The Perfect American",
+                  "composer": "Philip Glass",
+                  "premiereYear": 2013,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Dennis Russell Davies",
+                  "details": "Commissioned by intendant Gerard Mortier for Teatro Real, exploring the mythic and troubled final months of Walt Disney.",
+                  "commissionContext": "Co-commissioned by Teatro Real Madrid and English National Opera under Gerard Mortier's artistic directorship."
+            },
+            {
+                  "title": "Brokeback Mountain",
+                  "composer": "Charles Wuorinen",
+                  "premiereYear": 2014,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Tito Ceccherini",
+                  "details": "World premiere based on Annie Proulx's short story, directed by Ivo van Hove; attracted global media attention to Madrid.",
+                  "commissionContext": "Commissioned by Gerard Mortier for Teatro Real Madrid; a major international artistic statement."
+            }
+      ]
   },
   {
     "id": "gran-teatre-del-liceu",
@@ -815,7 +901,27 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "architect": "Miquel Garriga i Roca & Josep Oriol Mestres",
     "architecturalStyle": "Italianate Horseshoe with Sumptuous Gold Foil Stucco",
     "capacity": "2,292 seats",
-    "historicSignificance": "Largest opera house in Europe when built; historic launchpad for Catalan vocalists Montserrat Caballé and José Carreras."
+    "historicSignificance": "Largest opera house in Europe when built; historic launchpad for Catalan vocalists Montserrat Caballé and José Carreras.",
+    "historicPremieres": [
+            {
+                  "title": "María del Carmen",
+                  "composer": "Enrique Granados",
+                  "premiereYear": 1898,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Enrique Granados",
+                  "details": "Granados's lyrical Catalan masterwork set in the orchards of Murcia; received royal honors from Queen Regent Maria Christina.",
+                  "commissionContext": "Premiered at the Liceu to triumphant acclaim, establishing Granados alongside Albéniz as a giant of Spanish music."
+            },
+            {
+                  "title": "Cristóbal Colón",
+                  "composer": "Leonardo Balada",
+                  "premiereYear": 1989,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Theo Alcántara",
+                  "details": "World premiere starring Catalan legends José Carreras in the title role and Montserrat Caballé as Queen Isabella I.",
+                  "commissionContext": "Commissioned by the Gran Teatre del Liceu to celebrate the historic 500th anniversary of Columbus's voyage, uniting Catalonia's two greatest living vocalists."
+            }
+      ]
   },
   {
     "id": "teatro-di-san-carlo",
@@ -1789,7 +1895,29 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "architect": "Fritz Bornemann",
     "architecturalStyle": "Brutalist / Modernist Concrete Acoustic Hall",
     "capacity": "1,859 seats",
-    "historicSignificance": "West Berlin’s premier grand opera house; stage of legendary Wagner and Verdi productions with Dietrich Fischer-Dieskau."
+    "historicSignificance": "West Berlin’s premier grand opera house; stage of legendary Wagner and Verdi productions with Dietrich Fischer-Dieskau.",
+    "historicPremieres": [
+            {
+                  "title": "Der junge Lord",
+                  "composer": "Hans Werner Henze",
+                  "premiereYear": 1965,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Christoph von Dohnányi",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "Comic opera satire conducted by Christoph von Dohnányi, directed by Gustav Rudolf Sellner; one of post-war Germany's most celebrated premieres.",
+                  "commissionContext": "Commissioned by the Deutsche Oper Berlin as West Berlin's cultural showcase during the height of the Cold War."
+            },
+            {
+                  "title": "Lear",
+                  "composer": "Aribert Reimann",
+                  "premiereYear": 1978,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Gerd Albrecht",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "Searing Shakespearean expressionist masterwork composed specifically for legendary baritone Dietrich Fischer-Dieskau.",
+                  "commissionContext": "Dietrich Fischer-Dieskau personally suggested the Shakespearean subject to Reimann; commissioned and produced by the Deutsche Oper Berlin to worldwide critical acclaim."
+            }
+      ]
   },
   {
     "id": "theater-an-der-wien",
@@ -3914,7 +4042,18 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "architect": "Ferdinand Fellner & Hermann Helmer",
     "architecturalStyle": "Neo-Baroque / French Rococo Horseshoe Theatre",
     "capacity": "1,664 seats",
-    "historicSignificance": "Acoustic wonder of the Black Sea; legendary stage trodden by Feodor Chaliapin, Enrico Caruso, and Anna Pavlova."
+    "historicSignificance": "Acoustic wonder of the Black Sea; legendary stage trodden by Feodor Chaliapin, Enrico Caruso, and Anna Pavlova.",
+    "historicPremieres": [
+            {
+                  "title": "Taras Bulba",
+                  "composer": "Mykola Lysenko",
+                  "premiereYear": 1924,
+                  "type": "WORLD_PREMIERE",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "First professional staged world premiere of Lysenko's epic national opera, based on Nikolai Gogol's Cossack novel.",
+                  "commissionContext": "Posthumously orchestrated and brought to full theatrical life in Odesa, establishing Ukrainian operatic identity on the grand stage."
+            }
+      ]
   },
   {
     "id": "lviv-national-opera",
@@ -4770,7 +4909,18 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "architect": "José da Costa e Silva",
     "architecturalStyle": "Neoclassical / Italian Rococo Royal Horseshoe with Imperial Box",
     "capacity": "1,148 seats",
-    "historicSignificance": "Portugal’s primary lyrical monument for over two centuries; site of Maria Callas’s legendary 1958 Lisbon Traviata."
+    "historicSignificance": "Portugal’s primary lyrical monument for over two centuries; site of Maria Callas’s legendary 1958 Lisbon Traviata.",
+    "historicPremieres": [
+            {
+                  "title": "Serrana",
+                  "composer": "Alfredo Keil",
+                  "premiereYear": 1899,
+                  "type": "WORLD_PREMIERE",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "The foundational Portuguese national opera, composed by Alfredo Keil (who also composed Portugal's national anthem).",
+                  "commissionContext": "Premiered at the royal theatre under the patronage of King Carlos I, marking the historic emergence of a distinct Portuguese operatic school."
+            }
+      ]
   },
   {
     "id": "royal-opera-house-mumbai",
