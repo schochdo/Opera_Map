@@ -578,11 +578,20 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "historicSignificance": "One of the powerhouse Big Three opera companies of the United States alongside the Met and San Francisco.",
     "historicPremieres": [
             {
-                  "title": "A Streetcar Named Desire",
-                  "composer": "André Previn",
-                  "premiereYear": 1998,
+                  "title": "McTeague",
+                  "composer": "William Bolcom",
+                  "premiereYear": 1992,
                   "type": "WORLD_PREMIERE",
-                  "details": "Historic world premiere starring Renée Fleming as Blanche DuBois and Rodney Gilfry as Stanley Kowalski."
+                  "conductor": "Dennis Russell Davies",
+                  "details": "World premiere directed by Robert Altman, starring Ben Heppner and Catherine Malfitano."
+            },
+            {
+                  "title": "A View from the Bridge",
+                  "composer": "William Bolcom",
+                  "premiereYear": 1999,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Dennis Russell Davies",
+                  "details": "Commissioned for Lyric's 45th anniversary, libretto by Arnold Weinstein and Arthur Miller."
             }
       ]
   },
@@ -604,6 +613,14 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "capacity": "3,146 seats",
     "historicSignificance": "Third oldest major opera company in the US; premier American gateway for European stars and new American masterworks.",
     "historicPremieres": [
+            {
+                  "title": "A Streetcar Named Desire",
+                  "composer": "André Previn",
+                  "premiereYear": 1998,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "André Previn",
+                  "details": "Historic world premiere starring Renée Fleming as Blanche DuBois and Rodney Gilfry as Stanley Kowalski."
+            },
             {
                   "title": "Doctor Atomic",
                   "composer": "John Adams",
@@ -1672,7 +1689,18 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "architect": "Carlo Barabino (Reconstructed 1991 by Aldo Rossi)",
     "architecturalStyle": "Neoclassical Doric Portico with Postmodern Amphitheatre",
     "capacity": "2,000 seats",
-    "historicSignificance": "Major North Italian opera house; winter artistic home of Giuseppe Verdi for decades."
+    "historicSignificance": "Major North Italian opera house; winter artistic home of Giuseppe Verdi for decades.",
+    "historicPremieres": [
+            {
+                  "title": "Bianca e Fernando",
+                  "composer": "Vincenzo Bellini",
+                  "premiereYear": 1828,
+                  "type": "WORLD_PREMIERE",
+                  "patronageType": "ROYAL_COURT",
+                  "details": "Inaugural opera extensively recomposed by Bellini specifically for the grand opening of Genoa's Carlo Felice on 7 April 1828.",
+                  "commissionContext": "Commissioned by royal authorities to inaugurate Carlo Barabino's magnificent new theatre, starring Henriette Méric-Lalande."
+            }
+      ]
   },
   {
     "id": "teatro-comunale-bologna",
@@ -1690,7 +1718,19 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "architect": "Antonio Galli da Bibiena",
     "architecturalStyle": "Baroque Bell-Shaped Hall with Masonry Vaults",
     "capacity": "1,034 seats",
-    "historicSignificance": "The premier Wagnerian hub of Italy; first Italian theatre to embrace modern German music drama."
+    "historicSignificance": "The premier Wagnerian hub of Italy; first Italian theatre to embrace modern German music drama.",
+    "historicPremieres": [
+            {
+                  "title": "Il trionfo di Clelia",
+                  "composer": "Christoph Willibald Gluck",
+                  "premiereYear": 1763,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Christoph Willibald Gluck",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "Inaugural opera composed by Gluck to Pietro Metastasio's libretto, opening the new Bibiena-designed theatre on 14 May 1763.",
+                  "commissionContext": "Commissioned by the Senate of Bologna to inaugurate Antonio Galli da Bibiena's revolutionary masonry opera house."
+            }
+      ]
   },
   {
     "id": "teatro-massimo-palermo",
@@ -2082,6 +2122,16 @@ export const OPERA_HOUSES: OperaHouse[] = [
                   "details": "Miracle opera world premiere starring Lucien Fugère."
             },
             {
+                  "title": "La rondine",
+                  "composer": "Giacomo Puccini",
+                  "premiereYear": 1917,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Gino Marinuzzi",
+                  "patronageType": "COMMERCIAL_IMPRESARIO",
+                  "details": "Puccini's lyrical comedy featuring the immortal 'Chi il bel sogno di Doretta', starring Gilda Dalla Rizza and Tito Schipa.",
+                  "commissionContext": "Commissioned by the Carltheater in Vienna; due to WWI hostilities between Italy and Austria, the world premiere was safely relocated to neutral Monaco under Raoul Gunsbourg."
+            },
+            {
                   "title": "L’enfant et les sortilèges",
                   "composer": "Maurice Ravel",
                   "premiereYear": 1925,
@@ -2178,7 +2228,29 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "architect": "Henning Larsen",
     "architecturalStyle": "Monumental Waterfront Canopy with Maple Acoustic Shell",
     "capacity": "1,703 seats",
-    "historicSignificance": "One of the most modern and technically advanced opera houses in the world, gifted by the A.P. Møller Foundation."
+    "historicSignificance": "One of the most modern and technically advanced opera houses in the world, gifted by the A.P. Møller Foundation.",
+    "historicPremieres": [
+            {
+                  "title": "The Handmaid's Tale (Tjenerindens fortælling)",
+                  "composer": "Poul Ruders",
+                  "premiereYear": 2000,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Michael Schønwandt",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "Acclaimed dystopian masterpiece adapted from Margaret Atwood's novel, premiered by the Royal Danish Opera.",
+                  "commissionContext": "Commissioned by the Royal Danish Theatre; became one of the most internationally performed Scandinavian contemporary operas."
+            },
+            {
+                  "title": "Kafka's Trial (Proces)",
+                  "composer": "Poul Ruders",
+                  "premiereYear": 2005,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Thomas Søndergård",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "Inaugural commission composed specifically for the opening season of the new Henning Larsen Operaen on Holmen.",
+                  "commissionContext": "Commissioned by the Royal Danish Opera to celebrate the opening of Copenhagen's new waterfront opera house."
+            }
+      ]
   },
   {
     "id": "english-national-opera",
@@ -2366,7 +2438,19 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "architect": "Ramos de Azevedo",
     "architecturalStyle": "Eclectic Renaissance Baroque with Gilded Balconies & Stained Glass",
     "capacity": "1,523 seats",
-    "historicSignificance": "Brazil’s primary operatic temple; site of the 1922 Modern Art Week which launched modern Brazilian culture."
+    "historicSignificance": "Brazil’s primary operatic temple; site of the 1922 Modern Art Week which launched modern Brazilian culture.",
+    "historicPremieres": [
+            {
+                  "title": "Izath",
+                  "composer": "Heitor Villa-Lobos",
+                  "premiereYear": 1958,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Edoardo de Guarnieri",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "First complete staged world premiere of Villa-Lobos's dramatic grand opera, set in Paris.",
+                  "commissionContext": "Staged by the Municipal Theatre of São Paulo under municipal cultural patronage, bringing Brazil's greatest composer's full operatic vision to the stage."
+            }
+      ]
   },
   {
     "id": "palacio-bellas-artes-mexico",
@@ -2384,7 +2468,19 @@ export const OPERA_HOUSES: OperaHouse[] = [
     "architect": "Adamo Boari & Federico Mariscal",
     "architecturalStyle": "Art Nouveau Exterior & Art Deco Interior with Tiffany Glass",
     "capacity": "1,396 seats",
-    "historicSignificance": "National opera house of Mexico; where Maria Callas famously sang her legendary high E-flats in Aida in 1950."
+    "historicSignificance": "National opera house of Mexico; where Maria Callas famously sang her legendary high E-flats in Aida in 1950.",
+    "historicPremieres": [
+            {
+                  "title": "La hija de Rappaccini",
+                  "composer": "Daniel Catán",
+                  "premiereYear": 1991,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Eduardo Diazmuñoz",
+                  "patronageType": "CIVIC_STATE",
+                  "details": "World premiere of Mexico's most internationally celebrated contemporary opera, with libretto by Juan Tovar based on the play by Nobel laureate Octavio Paz.",
+                  "commissionContext": "Commissioned and produced by the Instituto Nacional de Bellas Artes (INBA); launched Daniel Catán's historic international career."
+            }
+      ]
   },
   {
     "id": "teatro-municipal-santiago",
@@ -2950,6 +3046,16 @@ export const OPERA_HOUSES: OperaHouse[] = [
                   "patronageType": "PRIVATE_BENEFACTOR",
                   "details": "Britten’s chamber opera world premiere conducted by Ernest Ansermet starring Kathleen Ferrier.",
                   "commissionContext": "Founded by John Christie and Audrey Mildmay; premiere marked the launch of Britten's English Opera Group for chamber opera."
+            },
+            {
+                  "title": "Albert Herring",
+                  "composer": "Benjamin Britten",
+                  "premiereYear": 1947,
+                  "type": "WORLD_PREMIERE",
+                  "conductor": "Benjamin Britten",
+                  "patronageType": "FESTIVAL_COMMISSION",
+                  "details": "Britten’s comic chamber opera masterpiece conducted by the composer, starring Peter Pears as Albert.",
+                  "commissionContext": "Composed for the English Opera Group and premiered during the 1947 Glyndebourne Festival season."
             }
       ]
   },
