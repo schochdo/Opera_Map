@@ -351,10 +351,12 @@ export const MAJOR_COMPOSERS: ComposerFilter[] = [
   { id: 'BIZET', name: 'Georges Bizet', displayName: 'Georges Bizet (Carmen, Pêcheurs de perles)', era: 'Romantic' },
   { id: 'BRITTEN', name: 'Benjamin Britten', displayName: 'Benjamin Britten (Peter Grimes, Screw, Lucretia)', era: '20th Century' },
   { id: 'DONIZETTI', name: 'Gaetano Donizetti', displayName: 'Gaetano Donizetti (Lucia, L’elisir, Don Pasquale)', era: 'Bel Canto' },
+  { id: 'GLASS', name: 'Philip Glass', displayName: 'Philip Glass (Akhnaten, Satyagraha, Perfect American)', era: 'Contemporary / Minimalist' },
   { id: 'GLUCK', name: 'Christoph Willibald Gluck', displayName: 'C. W. Gluck (Orfeo ed Euridice, Alceste)', era: 'Reform Classical' },
   { id: 'HANDEL', name: 'George Frideric Handel', displayName: 'G. F. Handel (Rinaldo, Giulio Cesare, Rodelinda)', era: 'Baroque' },
   { id: 'HAYDN', name: 'Joseph Haydn', displayName: 'Joseph Haydn (Lo speziale, Il mondo della luna, Armida)', era: 'Classical' },
   { id: 'LEONCAVALLO', name: 'Ruggero Leoncavallo', displayName: 'Ruggero Leoncavallo (Pagliacci)', era: 'Verismo' },
+  { id: 'MASSENET', name: 'Jules Massenet', displayName: 'Jules Massenet (Manon, Werther, Thaïs)', era: 'Romantic' },
   { id: 'MONTEVERDI', name: 'Claudio Monteverdi', displayName: 'Claudio Monteverdi (L’Orfeo, Ulisse, Poppea)', era: 'Renaissance / Early Baroque' },
   { id: 'MOZART', name: 'Wolfgang Amadeus Mozart', displayName: 'W. A. Mozart (Figaro, Don Giovanni, Zauberflöte)', era: 'Classical' },
   { id: 'PUCCINI', name: 'Giacomo Puccini', displayName: 'Giacomo Puccini (La bohème, Tosca, Turandot)', era: 'Late Romantic / Verismo' },
@@ -394,6 +396,10 @@ export function houseHasComposerPremiere(house: OperaHouse, composerId: string):
         return c.includes('bellini');
       case 'GLUCK':
         return c.includes('gluck');
+      case 'GLASS':
+        return c.includes('glass');
+      case 'MASSENET':
+        return c.includes('massenet');
       case 'BIZET':
         return c.includes('bizet');
       case 'TCHAIKOVSKY':
