@@ -116,7 +116,19 @@ export const OperaUIOverlay: React.FC = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [selectedHouseId, showInfoModal, setSelectedHouse]);
 
+  const isIOS = useMemo(() => {
+    if (typeof navigator === 'undefined') return false;
+    return (
+      /iPad|iPhone|iPod/.test(navigator.userAgent || '') ||
+      (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1)
+    );
+  }, []);
+
   const toggleFullscreen = async () => {
+    // Avoid triggering iOS WebKit's native modal fullscreen, which displays a large
+    // close button and automatically exits when dragging or scrolling.
+    if (isIOS) return;
+
     try {
       const doc = document as any;
       const docEl = document.documentElement as any;
@@ -388,7 +400,12 @@ export const OperaUIOverlay: React.FC = () => {
       {/* ------------------------------------------------------------- */}
       <header
         className="pointer-events-auto flex items-center justify-between gap-2 border-b border-amber-500/50 px-3.5 sm:px-6 py-2 sm:py-2.5 shadow-2xl backdrop-blur-md shrink-0 w-full z-30"
-        style={panelBg}
+        style={{
+          ...panelBg,
+          paddingTop: 'max(0.5rem, env(safe-area-inset-top, 0px))',
+          paddingLeft: 'max(0.875rem, env(safe-area-inset-left, 0px))',
+          paddingRight: 'max(0.875rem, env(safe-area-inset-right, 0px))',
+        }}
       >
         <div className="flex items-center space-x-2.5 sm:space-x-3 min-w-0">
           <div className="flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-lg border border-amber-500/70 bg-gradient-to-br from-[#8d1720] to-[#5a0d15] text-amber-200 shadow-lg shrink-0">
@@ -425,18 +442,20 @@ export const OperaUIOverlay: React.FC = () => {
             <span className="sm:hidden">Guide</span>
           </button>
 
-          <button
-            onClick={toggleFullscreen}
-            className="hidden sm:flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-lg border border-amber-500/70 bg-[#223552] hover:bg-[#2c4468] hover:border-amber-400 text-amber-200 transition cursor-pointer shadow-md shrink-0"
-            title={isFullscreen ? 'Exit Fullscreen' : 'Toggle Fullscreen'}
-            aria-label={isFullscreen ? 'Exit Fullscreen' : 'Toggle Fullscreen'}
-          >
-            {isFullscreen ? (
-              <Minimize className="h-4 w-4 sm:h-4.5 sm:w-4.5 text-amber-300" />
-            ) : (
-              <Maximize className="h-4 w-4 sm:h-4.5 sm:w-4.5 text-amber-300" />
-            )}
-          </button>
+          {!isIOS && (
+            <button
+              onClick={toggleFullscreen}
+              className="hidden sm:flex h-8 w-8 sm:h-9 sm:w-9 items-center justify-center rounded-lg border border-amber-500/70 bg-[#223552] hover:bg-[#2c4468] hover:border-amber-400 text-amber-200 transition cursor-pointer shadow-md shrink-0"
+              title={isFullscreen ? 'Exit Fullscreen' : 'Toggle Fullscreen'}
+              aria-label={isFullscreen ? 'Exit Fullscreen' : 'Toggle Fullscreen'}
+            >
+              {isFullscreen ? (
+                <Minimize className="h-4 w-4 sm:h-4.5 sm:w-4.5 text-amber-300" />
+              ) : (
+                <Maximize className="h-4 w-4 sm:h-4.5 sm:w-4.5 text-amber-300" />
+              )}
+            </button>
+          )}
         </div>
       </header>
 
@@ -449,7 +468,7 @@ export const OperaUIOverlay: React.FC = () => {
           className={`pointer-events-auto flex flex-col space-y-3.5 border-amber-500/40 p-4 sm:p-5 shadow-2xl backdrop-blur-md min-h-0 overflow-hidden z-30 transition-all duration-300 ${
             isMobile
               ? showMobileDirectory
-                ? 'fixed inset-x-0 bottom-0 top-[49px] w-full border-t'
+                ? 'fixed inset-x-0 bottom-0 top-[calc(49px+env(safe-area-inset-top,0px))] w-full border-t pb-[max(1.25rem,env(safe-area-inset-bottom,0px))]'
                 : 'hidden'
               : 'w-[410px] xl:w-[430px] 2xl:w-[450px] border-r h-full'
           }`}
@@ -822,7 +841,7 @@ export const OperaUIOverlay: React.FC = () => {
           <aside
             className={`pointer-events-auto flex flex-col border-amber-500/40 p-4 sm:p-5 shadow-2xl backdrop-blur-md min-h-0 overflow-hidden z-30 animate-in fade-in duration-200 ${
               isMobile
-                ? 'fixed inset-x-0 bottom-0 max-h-[72vh] w-full rounded-t-2xl border-t border-x-0 shadow-[0_-12px_36px_rgba(0,0,0,0.85)] pb-6'
+                ? 'fixed inset-x-0 bottom-0 max-h-[72vh] w-full rounded-t-2xl border-t border-x-0 shadow-[0_-12px_36px_rgba(0,0,0,0.85)] pb-[max(1.5rem,env(safe-area-inset-bottom,0px))]'
                 : 'w-[420px] xl:w-[450px] 2xl:w-[480px] border-l h-full'
             }`}
             style={panelBg}
@@ -1146,7 +1165,7 @@ export const OperaUIOverlay: React.FC = () => {
         {/* 4. MOBILE FLOATING PILL: BROWSE DIRECTORY & FILTERS           */}
         {/* ------------------------------------------------------------- */}
         {!selectedHouse && !showMobileDirectory && (
-          <div className="pointer-events-auto lg:hidden absolute bottom-4 inset-x-0 flex justify-center items-center px-4 z-20">
+          <div className="pointer-events-auto lg:hidden absolute bottom-[max(1rem,env(safe-area-inset-bottom,0px))] inset-x-0 flex justify-center items-center px-4 z-20">
             <button
               onClick={() => setShowMobileDirectory(true)}
               className="flex items-center gap-2 px-4 py-2.5 rounded-full border border-amber-500/80 bg-[#18263a]/95 text-amber-200 font-cinzel font-bold text-xs shadow-2xl backdrop-blur-md hover:bg-[#223552] active:scale-95 transition cursor-pointer"

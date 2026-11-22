@@ -23,12 +23,24 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  overscroll-behavior: none;
 }
 
 body {
   background-color: #090f18;
   color: #f5f5f4;
   overflow: hidden;
+  height: 100%;
+  width: 100%;
+  overscroll-behavior: none;
+  -webkit-touch-callout: none;
+}
+
+canvas {
+  touch-action: none;
 }
 
 /* ─────────────────────────────────────────────────────────────
